@@ -17,6 +17,16 @@ body {
     background-color: #111124;
 }
 
+ul{
+    list-style: none;
+}
+
+#backSoon{
+    color: #898989;
+    font-family: 'Varela Round', sans-serif;
+    text-align: center;
+}
+
 .sign {
     position: relative;
     background: none;
