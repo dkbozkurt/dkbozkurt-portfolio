@@ -1,12 +1,26 @@
-import React from 'react'
-import SectionHeading from './section-heading'
-import { FaPaperPlane } from 'react-icons/fa'
+"use client";
+
+import React from 'react';
+import SectionHeading from './section-heading';
+import { FaPaperPlane } from 'react-icons/fa';
+import { motion } from "framer-motion";
+import { useSectionInView } from '@/lib/hooks';
 
 export default function Contact() {
+    const {ref} = useSectionInView("Contact");
   return (
-    <section
+    <motion.section
+    ref ={ ref }
     id="contact"
     className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+    initial={{ opacity: 0,}}
+    whileInView={{ opacity: 1,}}
+    transition={{
+        duration: 1.5,
+    }}
+    viewport={{
+        once: true,
+    }}
     >
         <SectionHeading>Contact Me</SectionHeading>
 
@@ -26,6 +40,6 @@ export default function Contact() {
                     Submit <FaPaperPlane className="text-xs transition-all opacity-70 group-hover:translate-x-1 group-hover:-translate-y-1"/>{" "}
                 </button>
             </form>
-    </section>
+    </motion.section>
   )
 }
