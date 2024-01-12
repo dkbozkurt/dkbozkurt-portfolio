@@ -57,33 +57,49 @@ export default function Intro() {
             building <span className="italic">automation tools, eating sushi and geography.</span>
         </motion.h1>
 
-        <div 
-        className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row">
+        <motion.div 
+        className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
+        initial={{opacity: 0,y:100}}
+        animate={{opacity:1,y:0}}
+        transition={{
+            delay: 0.1,
+        }}
+        >
             <Link href="#contect"
-            className="flex items-center gap-2 py-3 text-white bg-gray-900 rounded-full px-7" >
-                Contact me here <BsArrowRight />
+            className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105" >
+                Contact me here 
+                <BsArrowRight 
+                className ="transition opacity-70 group-hover:translate-x-2"/>
             </Link>
+
+            
             <a 
             className="flex items-center gap-2 py-3 bg-white rounded-full px-7"
             >
                 Download CV <HiDownload />
             </a>
+
+
             <a
             className="flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full"
             >
                 <BsLinkedin />
             </a>
+
+
             <a
             className="flex items-center text-[1.35rem] gap-2 p-4 text-gray-700 bg-white rounded-full"
             >
                 <FaGithubSquare/>
             </a>
+
+
             <a
             className="flex items-center text-[1.35rem] gap-2 p-4 text-gray-700 bg-white rounded-full"
             >
                 <FaBehanceSquare/>
             </a>
-        </div>
+        </motion.div>
     </section>
   );
 }
