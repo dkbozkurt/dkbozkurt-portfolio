@@ -1,11 +1,13 @@
 "use client";
 
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from 'framer-motion';
 import { links } from "@/lib/data";
 import Link from 'next/link';
+import clsx from "clsx";
 
 export default function Header() {
+    const [activeSection, setActiveSection] = useState('Home');
   return (
     <header className="z-[999] relative">
         <motion.div className ="fixed top-0 left-1/2 h-[4.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem] sm:top-6 sm:h-[3.25rem] sm:w-[36rem] sm:rounded-full"
@@ -18,13 +20,35 @@ export default function Header() {
                 {
                     links.map(link => (
                         <motion.li
-                        className = "flex items-center justify-center h-3/4" 
+                        className = "relative flex items-center justify-center h-3/4" 
                         key={link.hash}
                         initial={{y: -100, opacity: 0}}
                         animate={{y: 0,  opacity: 1}}
                         >
-                            <Link className="flex items-center justify-center w-full px-3 py-3 transition hover:text-gray-950" href={link.hash}>
+                            <Link
+                            className={clsx("flex items-center justify-center w-full px-3 py-3 transition hover:text-gray-950",{
+                               "text-gray-950": activeSection === link.name,
+                            })} 
+                            href={link.hash}
+                            onClick={() => setActiveSection(link.name)}
+                            >
                                 {link.name}
+
+                                {
+                                    link.name === activeSection && (
+                                        <motion.span 
+                                        className="absolute inset-0 bg-gray-100 rounded-full -z-10"  
+                                        layoutId="activeSection"
+                                        transition={{
+                                            type:"spring",
+                                            stiffness:380,
+                                            damping:30,
+                                        }}
+                                        >
+                                        </motion.span>
+                                    )
+                                }
+
                             </Link>
                         </motion.li>
                     ))
