@@ -52,9 +52,9 @@ export default function Intro() {
         animate={{ opacity: 1, y: 0 }}
         >
             <span className="font-bold">Hello, I'm Dogukan.</span> I'm a{" "}
-            <span className="font-bold">playable ads and web developer</span> with{" "}
-            <span className="font-bold">3 years</span> of experience. I enjoy
-            building <span className="italic">automation tools, eating sushi and geography.</span>
+            <span className="font-bold">Playable Ads/ Web Developer</span> with{" "}
+            <span className="font-bold">3.5 years</span> of experience. I enjoy
+            building <span className="italic">automation tools,</span> savoring <span className="italic">sushi</span> and exploring the fascinating world of <span className="italic">geography</span>.
         </motion.h1>
 
         <motion.div 
