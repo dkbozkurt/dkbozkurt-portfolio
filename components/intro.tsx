@@ -22,11 +22,11 @@ export default function Intro() {
                     }}
                 >
                 <Image 
-                src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?fit=crop&w=368&h=368&q=100"
+                src="/images/DogukanProfile.jpg"
                 alt="Dogukan portrait"
                 width = "192"
                 height= "192"
-                quality="95"
+                quality="100"
                 priority={true}
                 className = "w-36 h-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
                 />
@@ -74,9 +74,13 @@ export default function Intro() {
 
             
             <a 
-            className="flex items-center gap-2 py-3 bg-white rounded-full px-7"
+            className="flex items-center gap-2 py-3 transition bg-white border rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 border-black/20"
+            href="/CV_DogukanKaanBozkurt.pdf" 
+            download={true}
             >
-                Download CV <HiDownload />
+                Download CV 
+                <HiDownload 
+                className= "opacity-60 group-hover:translate-y-1 translation"/>
             </a>
 
 
