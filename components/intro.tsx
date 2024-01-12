@@ -3,6 +3,10 @@
 import Image from 'next/image'
 import React from 'react'
 import {motion} from "framer-motion";
+import Link from 'next/link';
+import { BsArrowRight, BsBehance, BsLinkedin} from "react-icons/bs";
+import { HiDownload } from "react-icons/hi";
+import { FaBehance, FaBehanceSquare, FaGithubSquare } from 'react-icons/fa';
 
 export default function Intro() {
   return (
@@ -52,6 +56,34 @@ export default function Intro() {
             <span className="font-bold">3 years</span> of experience. I enjoy
             building <span className="italic">automation tools, eating sushi and geography.</span>
         </motion.h1>
+
+        <div 
+        className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row">
+            <Link href="#contect"
+            className="flex items-center gap-2 py-3 text-white bg-gray-900 rounded-full px-7" >
+                Contact me here <BsArrowRight />
+            </Link>
+            <a 
+            className="flex items-center gap-2 py-3 bg-white rounded-full px-7"
+            >
+                Download CV <HiDownload />
+            </a>
+            <a
+            className="flex items-center gap-2 p-4 text-gray-700 bg-white rounded-full"
+            >
+                <BsLinkedin />
+            </a>
+            <a
+            className="flex items-center text-[1.35rem] gap-2 p-4 text-gray-700 bg-white rounded-full"
+            >
+                <FaGithubSquare/>
+            </a>
+            <a
+            className="flex items-center text-[1.35rem] gap-2 p-4 text-gray-700 bg-white rounded-full"
+            >
+                <FaBehanceSquare/>
+            </a>
+        </div>
     </section>
   );
 }
