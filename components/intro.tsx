@@ -36,11 +36,11 @@ export default function Intro() {
                 height= "192"
                 quality="100"
                 priority={true}
-                className = "w-36 h-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl"
+                className = "w-36 h-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl sm:w-48 sm:h-48"
                 />
                 </motion.div>
                 <motion.span 
-                className= "absolute bottom-0 right-0 text-4xl"
+                className= "absolute bottom-0 right-0 text-4xl sm:text-6xl "
                 initial ={{opacity: 0, scale: 0}}
                 animate={{opacity: 1, scale: 1}}
                 transition={{
@@ -55,14 +55,15 @@ export default function Intro() {
         </div>
 
         <motion.h1
-        className="mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-4xl"
+        className="mb-16 mt-16 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         >
             <span className="font-bold">Hello, I'm Dogukan.</span> I'm a{" "}
-            <span className="font-bold">Playable Ads/ Web Developer</span> with{" "}
-            <span className="font-bold">3.5 years</span> of experience. I enjoy
-            building <span className="italic">automation tools,</span> savoring <span className="italic">sushi</span> and exploring the fascinating world of <span className="italic">geography</span>.
+            <span className="font-bold">Playable Ads. Developer/ Web Developer.</span> I enjoy crafting{" "}
+            <span className="italic">automation tools,</span> building{" "}
+            <span className="italic">interactive advertisements,</span> and bringing{" "}
+            <span className="italic">innovative designs</span> to life.
         </motion.h1>
 
         <motion.div 
@@ -85,7 +86,6 @@ export default function Intro() {
                 className ="transition opacity-70 group-hover:translate-x-2"/>
             </Link>
 
-            
             <a 
             className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack"
             href="/CV_DogukanKaanBozkurt.pdf" 
@@ -96,7 +96,7 @@ export default function Intro() {
                 className= "opacity-60 group-hover:translate-y-1 translation"/>
             </a>
 
-
+            <div className= "flex items-stretch gap-2">
             <a
             className="flex items-center gap-2 p-4 text-gray-700 transition bg-white rounded-full cursor-pointer focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 borderBlack"
             href="https://de.linkedin.com/in/dkbozkurt/en" target="_blank"
@@ -119,6 +119,9 @@ export default function Intro() {
             >
                 <FaBehanceSquare/>
             </a>
+            </div>
+
+            
         </motion.div>
     </section>
   );
