@@ -1,24 +1,24 @@
-"use client";
+"use client"
 
 import React from 'react'
 import SectionHeading from './section-heading'
 import { VerticalTimeline, VerticalTimelineElement} from 'react-vertical-timeline-component';
 import "react-vertical-timeline-component/style.min.css";
-import { educationData } from '@/lib/data';
-import { useSectionInView } from '@/lib/hooks';
+import { activitiesData } from '@/lib/data';
 
-export default function Education() {
-    const { ref } = useSectionInView("Education");
+import { useSectionInView } from '@/lib/hooks';
+export default function Activities() {
+    const { ref } = useSectionInView("Activities");
   
     return (
     <section
-    id="education"
+    id="activities"
     ref = {ref} 
     className = "scroll-mt-28 mb-28 sm:mb-40"
     >
-        <SectionHeading>My Education</SectionHeading>
+        <SectionHeading>Activities</SectionHeading>
         <VerticalTimeline lineColor="">
-            {educationData.map((item, index) => (
+            {activitiesData.map((item, index) => (
                 <React.Fragment key={index}>
                     <VerticalTimelineElement
                         contentStyle ={{
@@ -43,7 +43,7 @@ export default function Education() {
                         </h3>
                         <p className="font-normal !mt-0"
                         >
-                            {item.university}
+                            {item.company}
                             {" "}<span>&#8226;</span>{" "}
                             {item.location}
                         </p>
@@ -55,5 +55,5 @@ export default function Education() {
             ))}
     </VerticalTimeline>
     </section>
-  )
+    );
 }

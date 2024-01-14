@@ -1,7 +1,7 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
+import { VscOrganization } from "react-icons/vsc";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
@@ -9,6 +9,8 @@ import turkishFlagImg from "@/public/flagImages/turkishFlag.png";
 import englishFlagImg from "@/public/flagImages/englishFlag.png";
 import germanFlagImg from "@/public/flagImages/germanFlag.png";
 import koreaFlagImg from "@/public/flagImages/koreaFlag.png";
+
+
 
 export const links = [
   {
@@ -207,5 +209,32 @@ export const languageData = [
         level: "A2",
         icon: germanFlagImg,
         description: "",
+    },
+] as const;
+
+export const activitiesData = [
+    {
+        title: "Software Engineer",
+        company: "Pink Waffle",
+        location: "Hamburg, Germany",
+        description: "",
+        icon: React.createElement(VscOrganization),
+        date: "Jan. 2024 - Present",
+    },
+    {
+        title: "Co-Founder & Administrative Assistant",
+        company: "Eskisehir Korean Culture Academy",
+        location: "Eskisehir, Turkey",
+        description: "Engaged in founding, overseeing, and managing academy operations, including event coordination, planning, and teaching introductory A1-level Korean to beginners.",
+        icon: React.createElement(VscOrganization),
+        date: "Jun. 2019 - Nov. 2021",
+    },
+    {
+        title: "IGET-IT Member",
+        company: "AIESEC Turkey",
+        location: "Eskisehir, Turkey",
+        description: "Provided mentorship and translation services to foreign talents and entrepreneurs in Turkey, aiding in navigating permit procedures and resolving associated challenges.",
+        icon: React.createElement(VscOrganization),
+        date: "Oct. 2017 - Jun. 2018",
     },
 ] as const;
