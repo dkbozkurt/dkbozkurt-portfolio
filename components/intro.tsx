@@ -36,11 +36,11 @@ export default function Intro() {
                 height= "192"
                 quality="100"
                 priority={true}
-                className = "w-36 h-36 rounded-full object-cover border-[0.35rem] border-white shadow-xl sm:w-48 sm:h-48"
+                className = "mt-16 w-40 h-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl sm:w-48 sm:h-48 sm:mt-0 w-"
                 />
                 </motion.div>
                 <motion.span 
-                className= "absolute bottom-0 right-0 text-4xl sm:text-6xl "
+                className= "absolute bottom-0 right-0 text-5xl sm:text-6xl "
                 initial ={{opacity: 0, scale: 0}}
                 animate={{opacity: 1, scale: 1}}
                 transition={{

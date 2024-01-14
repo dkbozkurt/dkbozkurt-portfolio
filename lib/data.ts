@@ -28,8 +28,20 @@ export const links = [
     hash: "#skills",
   },
   {
+    name: "Languages",
+    hash: "#language",
+  },
+  {
+    name: "Activities",
+    hash: "#activities",
+  },
+  {
     name: "Projects",
     hash: "#projects",
+  },
+  {
+    name: "Certificates",
+    hash: "#certificates",
   },
   {
     name: "Contact",
