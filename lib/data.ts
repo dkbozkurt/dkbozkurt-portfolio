@@ -16,16 +16,16 @@ export const links = [
     hash: "#about",
   },
   {
+    name: "Experience",
+    hash: "#experience",
+  },
+  {
     name: "Projects",
     hash: "#projects",
   },
   {
     name: "Skills",
     hash: "#skills",
-  },
-  {
-    name: "Experience",
-    hash: "#experience",
   },
   {
     name: "Contact",
@@ -35,29 +35,70 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
-    description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+    title: "Playable Ads Developer",
+    company: "JustDice",
+    location: "Hamburg, Germany",
+    description: "Developing playable ads for apps and mobile games by using Unity, LunaLabs, and C# programming language.Developing automation tools/ extensions for Unity using C# programming language and for Adobe programs by using UXP, ExtendScript, HTML, CSS and JavaScript. Creating 3D and 2D assets for marketing campaigns and playable ads by using Blender, Spline, Figma and PhotoShop.",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "Apr. 2023 - Present",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Playable Ads & Marketing Game Developer",
+    company: "Panteon Games",
+    location: "Ankara, Turkey",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
+      "Developing and designing playable ads for marketing campaigns by using Unity, LunaLabs, and C# programming language. Modifying and iterating games on the gameplay, adding new mechanics/ features, and being creative to make games as attractive as possible for the advertising campaigns Developing ready-to-use tools/ packages for playable ads development in unity by using editor scripting.",
     icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
+    date: "Nov. 2021 - Apr. 2023",
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Technical Customer Support Specialist",
+    company: "Ekmob SFA",
+    location: "Istanbul, Turkey",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Solving the problems/ bugs customers have experienced while using the software. Describing the software properties to our customers using our company's sale/organizing-based software from a technical point of view.",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "Sep. 2021 - Oct. 2021",
   },
+  {
+    title: "Project Engineer Intern",
+    company: "TUPRAS",
+    location: "Kocaeli, Turkey",
+    description:
+      "Led 'susTRAINable' project at TUPRAS, targeting net-zero railway emissions by 2050, aligning with 6 UN Sustainable Development Goals. Spearheaded 'TogetHER' project focused on improving women's lives in the refinery and energy sectors, including mentorship programs for STEM-inclined women.",
+    icon: React.createElement(FaReact),
+    date: "Aug. 2021 - Sep. 2021",
+  },
+  {
+    title: "Software Engineer",
+    company: "Avocuda",
+    location: "Istanbul, Turkey",
+    description:
+      "Worked in the development team on mobile application development by using React-Native and Adobe XD.",
+    icon: React.createElement(FaReact),
+    date: "Feb. 2020 - Jun. 2020",
+  },
+  {
+    title: "Electrical Design Engineering Intern",
+    company: "Tempa Pano",
+    location: "Kocaeli, Turkey",
+    description:
+      "Engineering internship in an electrical enclosure-producing factory, as a test and design engineer. Worked on EPLAN, AutoCAD, and electrical enclosure projects such as Rayyan Stadium (Qatar), International Reception Center of Ashgabat (Turkmenistan).",
+    icon: React.createElement(FaReact),
+    date: "Aug. 2019 - Sep. 2019",
+  },
+] as const;
+
+export const educationData = [
+    {
+        title: "B.S., Electrical & Electronics Engineering (%100 English)",
+        university: "Eskisehir Osmangazi University",
+        location: "Eskisehir, Turkey",
+        description:
+          "3.01/4.00 GPA Activities: Artificial intelligence and Robotics Lab. Intern",
+        icon: React.createElement(LuGraduationCap),
+        date: "Sep. 2016 - Aug. 2021",
+    },
 ] as const;
 
 export const projectsData = [
