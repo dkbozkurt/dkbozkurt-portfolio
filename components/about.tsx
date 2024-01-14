@@ -21,32 +21,17 @@ export default function About() {
             About me
         </SectionHeading>
         <p
-        className="mb-3"
+        className="mb-6"
         >
-            After graduating with a degree in{" "}
-            <span className="font-medium">Accounting</span>, I decided to pursue my
-            passion for programming. I enrolled in a coding bootcamp and learned{" "}
-            <span className="font-medium">full-stack web development</span>.{" "}
-            <span className="italic">My favorite part of programming</span> is the
-            problem-solving aspect. I <span className="underline">love</span> the
-            feeling of finally figuring out a solution to a problem. My core stack
-            is{" "}
-            <span className="font-medium">
-              React, Next.js, Node.js, and MongoDB
-            </span>
-            . I am also familiar with TypeScript and Prisma. I am always looking to
-            learn new technologies. I am currently looking for a{" "}
-            <span className="font-medium">full-time position</span> as a software
-            developer.
+            After completing programming-based courses in university and earning a bachelor's degree in Electrical & Electronics Engineering, I decided to pursue my passion for software development. I enrolled in volunteer software development internships and acquired the fundamentals of software development through hands-on work. My favorite aspect of programming is discovering creative solutions to problems. I love the feeling of finally figuring out a solution. My core stack includes C#, C++, Python, and JavaScript, and I am also familiar with TypeScript. I am always eager to learn new technologies and keep my GitHub fresh and updated.
+        </p>
+        <p className = "mb-6">
+            After starting my working life, I closely collaborated with design and marketing teams. My interest in the field of art drew me into the world of design. "Design" helps me express my creative ideas. I wouldn't call myself a designer, but I like to spend time doodling or using modeling apps.
         </p>
         <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+            When I'm not coding or designing, I love traveling, savoring sushi and exploring the fascinating world of geography. I have traveled to 25 countries so far and want to continually explore the planet I live on. I also enjoy learning new things and am currently learning German.
         </p>
+
     </motion.section>
     );
 }
