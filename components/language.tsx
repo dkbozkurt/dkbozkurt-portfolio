@@ -22,14 +22,14 @@ export default function Language({
         className="mx-[1rem] group sm:mb-8 last:mb-0"
         >
             <section 
-        className="bg-gray-100 w-[18rem] border border-black/5 overflow-hidden relative sm:h-[15rem] hover:bg-gray-200 transition rounded-lg flex flex-col items-center"
+        className="bg-gray-100 w-[12rem] border border-black/5 overflow-hidden relative sm:h-[12rem] hover:bg-gray-200 transition rounded-lg flex flex-col items-center"
         >
             <Image 
             src={icon} 
             alt="Language Image" 
             quality={95}
-            className="flex justify-center sm:block mt-8 mb-4 w-[3rem] transition
-            group-hover:scale-[1.2] rounded-xl shadow-2xl sm:w-[7rem]"
+            className="flex justify-center sm:block mt-8 mb-4 w-[3rem] transition rounded-s 
+            group-hover:scale-[1.2] shadow-2xl sm:w-[4rem] sm:rounded-xl"
             />
 
             <div className="flex flex-col items-center pb-4">
