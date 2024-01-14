@@ -99,7 +99,7 @@ export default function Intro() {
             <div className= "flex items-stretch gap-2">
             <a
             className="flex items-center gap-2 p-4 text-gray-700 transition bg-white rounded-full cursor-pointer focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 borderBlack"
-            href="https://de.linkedin.com/in/dkbozkurt/en" target="_blank"
+            href="https://www.linkedin.com/in/dkbozkurt/en" target="_blank"
             >
                 <BsLinkedin />
             </a>
