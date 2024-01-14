@@ -23,7 +23,7 @@ export default function Languages() {
             Languages
         </SectionHeading>
         
-        <div>
+        <div className = "flex flex-wrap justify-center w-[24rem] gap-2 text-lg text-gray-800 sm:w-[42rem]">
             {
                 languageData.map((language, index) => (
                     <React.Fragment key={index}>

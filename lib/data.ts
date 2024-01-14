@@ -5,6 +5,10 @@ import { LuGraduationCap } from "react-icons/lu";
 import corpcommentImg from "@/public/corpcomment.png";
 import rmtdevImg from "@/public/rmtdev.png";
 import wordanalyticsImg from "@/public/wordanalytics.png";
+import turkishFlagImg from "@/public/flagImages/turkishFlag.png";
+import englishFlagImg from "@/public/flagImages/englishFlag.png";
+import germanFlagImg from "@/public/flagImages/germanFlag.png";
+import koreaFlagImg from "@/public/flagImages/koreaFlag.png";
 
 export const links = [
   {
@@ -183,25 +187,25 @@ export const languageData = [
     {
         title: "Turkish",
         level: "Native",
-        icon: corpcommentImg,
+        icon: turkishFlagImg,
         description: "",
     },
     {
         title: "English",
         level: "C1",
-        icon: corpcommentImg,
+        icon: englishFlagImg,
         description: "EF Standard Test 81/100",
     },
     {
         title: "Korean",
         level: "A2",
-        icon: corpcommentImg,
+        icon: koreaFlagImg,
         description: "TOPIK I 156/200",
     },
     {
         title: "German",
         level: "A2",
-        icon: corpcommentImg,
+        icon: germanFlagImg,
         description: "",
     },
 ] as const;
