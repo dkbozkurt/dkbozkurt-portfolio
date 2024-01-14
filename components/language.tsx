@@ -28,8 +28,8 @@ export default function Language({
             src={icon} 
             alt="Language Image" 
             quality={95}
-            className="flex justify-center sm:block mt-8 mb-4 w-[7rem] transition
-            group-hover:scale-[1.2] rounded-xl shadow-2xl"
+            className="flex justify-center sm:block mt-8 mb-4 w-[3rem] transition
+            group-hover:scale-[1.2] rounded-xl shadow-2xl sm:w-[7rem]"
             />
 
             <div className="flex flex-col items-center pb-4">
