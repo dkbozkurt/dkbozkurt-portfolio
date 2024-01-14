@@ -20,12 +20,12 @@ export const links = [
     hash: "#experience",
   },
   {
-    name: "Projects",
-    hash: "#projects",
-  },
-  {
     name: "Skills",
     hash: "#skills",
+  },
+  {
+    name: "Projects",
+    hash: "#projects",
   },
   {
     name: "Contact",
@@ -126,23 +126,54 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-  "HTML",
-  "CSS",
-  "JavaScript",
-  "TypeScript",
-  "React",
-  "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
-  "Express",
-  "PostgreSQL",
-  "Python",
-  "Django",
-  "Framer Motion",
+    "C#",
+    "C++",
+    "Python",
+    "C",
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "TypeScript",
+    "React",
+    "Tailwind",
+    "ThreeJS",
+    "Node.js",
+    "Express",
+    "Next.js",
+    "Jest",
+    "Qt",
+    "CannonJS",
+    "ExtendScript",
+    "Framer Motion",
+    "PyTorch",
+    "pandas",
+    "NumPy",
+    "SciPy",
+    "Blender",
+    "Spline",
+    "Figma",
+    "Adobe PhotoShop"
+] as const;
+
+export const languageSkillsData = [
+    {
+        language: "Turkish",
+        level: "Native",
+        icon: React.createElement(CgWorkAlt),
+    },
+    {
+        language: "English",
+        level: "C1",
+        icon: React.createElement(CgWorkAlt),
+    },
+    {
+        language: "Korean",
+        level: "A2",
+        icon: React.createElement(CgWorkAlt),
+    },
+    {
+        language: "German",
+        level: "A2",
+        icon: React.createElement(CgWorkAlt),
+    },
 ] as const;
