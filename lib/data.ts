@@ -38,7 +38,7 @@ export const experiencesData = [
     title: "Playable Ads Developer",
     company: "JustDice",
     location: "Hamburg, Germany",
-    description: "Developing playable ads for apps and mobile games by using Unity, LunaLabs, and C# programming language.Developing automation tools/ extensions for Unity using C# programming language and for Adobe programs by using UXP, ExtendScript, HTML, CSS and JavaScript. Creating 3D and 2D assets for marketing campaigns and playable ads by using Blender, Spline, Figma and PhotoShop.",
+    description: "Creating interactive ads for apps and games using Unity and C#. Developing automation tools for Unity and Adobe programs with C#, UXP, ExtendScript, HTML, CSS, and JavaScript. Designing 3D and 2D assets for marketing campaigns with Blender, Figma, and PhotoShop.",
     icon: React.createElement(LuGraduationCap),
     date: "Apr. 2023 - Present",
   },
@@ -47,7 +47,7 @@ export const experiencesData = [
     company: "Panteon Games",
     location: "Ankara, Turkey",
     description:
-      "Developing and designing playable ads for marketing campaigns by using Unity, LunaLabs, and C# programming language. Modifying and iterating games on the gameplay, adding new mechanics/ features, and being creative to make games as attractive as possible for the advertising campaigns Developing ready-to-use tools/ packages for playable ads development in unity by using editor scripting.",
+      "Creating captivating playable ads for marketing campaigns with Unity, LunaLabs, and C#. Enhancing gameplay, introducing new mechanics/features, and applying creative elements to maximize game attractiveness for advertising. Developing customizable tools/packages in Unity through editor scripting to streamline playable ads development.",
     icon: React.createElement(CgWorkAlt),
     date: "Nov. 2021 - Apr. 2023",
   },
@@ -56,7 +56,7 @@ export const experiencesData = [
     company: "Ekmob SFA",
     location: "Istanbul, Turkey",
     description:
-      "Solving the problems/ bugs customers have experienced while using the software. Describing the software properties to our customers using our company's sale/organizing-based software from a technical point of view.",
+      "Addressing customer-reported problems and resolving software bugs. Communicating technical aspects of our company's sales/organizing-based software to customers, providing clear insights into software properties.",
     icon: React.createElement(FaReact),
     date: "Sep. 2021 - Oct. 2021",
   },
@@ -65,16 +65,25 @@ export const experiencesData = [
     company: "TUPRAS",
     location: "Kocaeli, Turkey",
     description:
-      "Led 'susTRAINable' project at TUPRAS, targeting net-zero railway emissions by 2050, aligning with 6 UN Sustainable Development Goals. Spearheaded 'TogetHER' project focused on improving women's lives in the refinery and energy sectors, including mentorship programs for STEM-inclined women.",
+      "Led the 'susTRAINable' initiative at TUPRAS, aiming for net-zero railway emissions by 2050, aligning with 6 UN Sustainable Development Goals. Spearheaded the 'TogetHER' project, dedicated to enhancing the lives of women in the refinery and energy sectors, incorporating mentorship programs for women inclined towards STEM.",
     icon: React.createElement(FaReact),
     date: "Aug. 2021 - Sep. 2021",
+  },
+  {
+    title: "Game Developer",
+    company: "GEFEASOFT",
+    location: "Mugla, Turkey",
+    description:
+      "Designed WebGL and mobile-based serious games, along with a VR-based Anatomy Atlas for the healthcare industry. Developed using Unity and C# programming language",
+    icon: React.createElement(FaReact),
+    date: "Mar. 2021 - Jun. 2021",
   },
   {
     title: "Software Engineer",
     company: "Avocuda",
     location: "Istanbul, Turkey",
     description:
-      "Worked in the development team on mobile application development by using React-Native and Adobe XD.",
+      "Contributed to mobile application development in the development team, utilizing React-Native and Adobe XD",
     icon: React.createElement(FaReact),
     date: "Feb. 2020 - Jun. 2020",
   },
@@ -83,7 +92,7 @@ export const experiencesData = [
     company: "Tempa Pano",
     location: "Kocaeli, Turkey",
     description:
-      "Engineering internship in an electrical enclosure-producing factory, as a test and design engineer. Worked on EPLAN, AutoCAD, and electrical enclosure projects such as Rayyan Stadium (Qatar), International Reception Center of Ashgabat (Turkmenistan).",
+      "Interned as a test and design engineer in an electrical enclosure-producing factory. Engaged in projects utilizing EPLAN and AutoCAD, including electrical enclosure projects such as Rayyan Stadium in Qatar and the International Reception Center of Ashgabat in Turkmenistan.",
     icon: React.createElement(FaReact),
     date: "Aug. 2019 - Sep. 2019",
   },
