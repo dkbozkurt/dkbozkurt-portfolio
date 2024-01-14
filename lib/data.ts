@@ -20,6 +20,10 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Education",
+    hash: "#education",
+  },
+  {
     name: "Skills",
     hash: "#skills",
   },
@@ -39,7 +43,7 @@ export const experiencesData = [
     company: "JustDice",
     location: "Hamburg, Germany",
     description: "Creating interactive ads for apps and games using Unity and C#. Developing automation tools for Unity and Adobe programs with C#, UXP, ExtendScript, HTML, CSS, and JavaScript. Designing 3D and 2D assets for marketing campaigns with Blender, Figma, and PhotoShop.",
-    icon: React.createElement(LuGraduationCap),
+    icon: React.createElement(CgWorkAlt),
     date: "Apr. 2023 - Present",
   },
   {
@@ -57,7 +61,7 @@ export const experiencesData = [
     location: "Istanbul, Turkey",
     description:
       "Addressing customer-reported problems and resolving software bugs. Communicating technical aspects of our company's sales/organizing-based software to customers, providing clear insights into software properties.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "Sep. 2021 - Oct. 2021",
   },
   {
@@ -66,7 +70,7 @@ export const experiencesData = [
     location: "Kocaeli, Turkey",
     description:
       "Led the 'susTRAINable' initiative at TUPRAS, aiming for net-zero railway emissions by 2050, aligning with 6 UN Sustainable Development Goals. Spearheaded the 'TogetHER' project, dedicated to enhancing the lives of women in the refinery and energy sectors, incorporating mentorship programs for women inclined towards STEM.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "Aug. 2021 - Sep. 2021",
   },
   {
@@ -75,7 +79,7 @@ export const experiencesData = [
     location: "Mugla, Turkey",
     description:
       "Designed WebGL and mobile-based serious games, along with a VR-based Anatomy Atlas for the healthcare industry. Developed using Unity and C# programming language",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "Mar. 2021 - Jun. 2021",
   },
   {
@@ -84,7 +88,7 @@ export const experiencesData = [
     location: "Istanbul, Turkey",
     description:
       "Contributed to mobile application development in the development team, utilizing React-Native and Adobe XD",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "Feb. 2020 - Jun. 2020",
   },
   {
@@ -93,7 +97,7 @@ export const experiencesData = [
     location: "Kocaeli, Turkey",
     description:
       "Interned as a test and design engineer in an electrical enclosure-producing factory. Engaged in projects utilizing EPLAN and AutoCAD, including electrical enclosure projects such as Rayyan Stadium in Qatar and the International Reception Center of Ashgabat in Turkmenistan.",
-    icon: React.createElement(FaReact),
+    icon: React.createElement(CgWorkAlt),
     date: "Aug. 2019 - Sep. 2019",
   },
 ] as const;
@@ -103,11 +107,10 @@ export const educationData = [
         title: "B.S., Electrical & Electronics Engineering (%100 English)",
         university: "Eskisehir Osmangazi University",
         location: "Eskisehir, Turkey",
-        description:
-          "3.01/4.00 GPA Activities: Artificial intelligence and Robotics Lab. Intern",
+        description: "After completing the English preparatory year, I pursued software-related courses in computer science and graduated with a GPA of 3.01/4.0. During my academic journey, I had the opportunity to work as an intern in the Artificial Intelligence and Robotics Lab.. Additionally, I took an active role in developing the website for the university's Artificial Intelligence and Robotics Lab. course",
         icon: React.createElement(LuGraduationCap),
         date: "Sep. 2016 - Aug. 2021",
-    },
+    }
 ] as const;
 
 export const projectsData = [
