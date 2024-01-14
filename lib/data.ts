@@ -29,7 +29,7 @@ export const links = [
   },
   {
     name: "Languages",
-    hash: "#language",
+    hash: "#languages",
   },
   {
     name: "Activities",
@@ -179,25 +179,29 @@ export const skillsData = [
     "Adobe PhotoShop"
 ] as const;
 
-export const languageSkillsData = [
+export const languageData = [
     {
-        language: "Turkish",
+        title: "Turkish",
         level: "Native",
-        icon: React.createElement(CgWorkAlt),
+        icon: corpcommentImg,
+        description: "",
     },
     {
-        language: "English",
+        title: "English",
         level: "C1",
-        icon: React.createElement(CgWorkAlt),
+        icon: corpcommentImg,
+        description: "EF Standard Test 81/100",
     },
     {
-        language: "Korean",
+        title: "Korean",
         level: "A2",
-        icon: React.createElement(CgWorkAlt),
+        icon: corpcommentImg,
+        description: "TOPIK I 156/200",
     },
     {
-        language: "German",
+        title: "German",
         level: "A2",
-        icon: React.createElement(CgWorkAlt),
+        icon: corpcommentImg,
+        description: "",
     },
 ] as const;

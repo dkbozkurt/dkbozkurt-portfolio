@@ -6,6 +6,7 @@ import Skills from "@/components/skills";
 import Experience from "@/components/experience";
 import Contact from "@/components/contact";
 import Education from "@/components/education";
+import Languages from "@/components/languages";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
         <Experience />
         <Education />
         <Skills />
+        <Languages />
         <Projects />
         <Contact />
     </main>
