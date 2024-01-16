@@ -10,8 +10,6 @@ import englishFlagImg from "@/public/flagImages/englishFlag.png";
 import germanFlagImg from "@/public/flagImages/germanFlag.png";
 import koreaFlagImg from "@/public/flagImages/koreaFlag.png";
 
-
-
 export const links = [
   {
     name: "Home",
@@ -133,48 +131,98 @@ export const educationData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Playable Ads",
+    date: "",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "A collection of playable ads that I have designed and developed throughout my career.",
+    tags: [ "C#", "Unity", "LunaLabs", "Blender", "Figma" ],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Chrome Extension- Waffle Flash Cards",
+    date: "Jan. 2024 - Present",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Developed a Google Chrome extension focused on English-German flashcards, aimed at enhancing vocabulary skills.",
+    tags: [ "React", "TypeScript", "Tailwind", "HTML", "CSS" ],
+    imageUrl: corpcommentImg,
+  },
+  {
+    title: "PhotoShop Design Tool",
+    date: "Jun. 2023 - Dec. 2023",
+    description:
+      "Developed an extension that automates tasks such as creation of store screens, generation of endcards for various Ad networks with correct sizes and target language.",
+    tags: ["JavaScript", "ExtendScript", "CSS", "HTML", "UXP"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Unity Playable Ads Kit",
+    date: "Apr. 2022 - Sep. 2023",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Developed a plugin for playable ads development, featuring essential template generation, translation(localization) package, utility methods, ...",
+    tags: ["C#", "Unity"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Semantic Segmentation using Deep Learning",
+    date: "Sep. 2020 - Jun. 2021",
+    description:
+      "Implemented deep learning methods using Python libraries for semantic segmentation, improving a robot's capabilities in search and rescue scenarios.",
+    tags: ["Python", "NumPy", "PyTorch","pandas","SciPy","OpenGL"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Interface design for Segmentation Data",
+    date: "May. 2021 - Jun. 2021",
+    description:
+      "An interface for streamlined input organization in deep learning, facilitating  training, testing, and visualization with S3DIS and ESOGU RAMPS datasets.",
+    tags: ["Python", "Qt", "OpenGL"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Point Cloud Data Optimization",
+    date: "Nov. 2020- Jan. 2021",
+    description:
+      "Developed a data size reduction technique using point cloud information for a specified object, employing similarity measures and midpoints for classification in deep learning applications.",
+    tags: ["C++"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Counting products on a Conveyor Belt",
+    date: "Sep. 2018 - Dec. 2018",
+    description:
+      "Utilized Proteus to design a circuit system that sorts and separates products on a conveyor belt according to their individual colors.",
+    tags: ["Proteus"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
 
 export const skillsData = [
     "C#",
-    "C++",
+    "JavaScript",
+    "TypeScript",
+    "Unity",
+    "LunaLabs",
     "Python",
+    "C++",
     "C",
     "HTML",
     "CSS",
-    "JavaScript",
-    "TypeScript",
     "React",
     "Tailwind",
     "ThreeJS",
     "Node.js",
     "Express",
     "Next.js",
+    "Git",
+    "npm",
+    "Linux",
     "Jest",
     "Qt",
     "CannonJS",
     "ExtendScript",
     "Framer Motion",
+    "UXP",
+    "MATLAB",
     "PyTorch",
     "pandas",
     "NumPy",
