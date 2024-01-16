@@ -58,7 +58,7 @@ export const experiencesData = [
     title: "Playable Ads Developer",
     company: "JustDice",
     location: "Hamburg, Germany",
-    description: "Creating interactive ads for apps and games using Unity and C#. Developing automation tools for Unity and Adobe programs with C#, UXP, ExtendScript, HTML, CSS, and JavaScript. Designing 3D and 2D assets for marketing campaigns with Blender, Figma, and PhotoShop.",
+    description: "Developing playable ads for apps and mobile games using Unity, LunaLabs, and C#. Developing automation tools/ extensions for Unity using C#. Developing plugins for Adobe Apps. using ExtendScript, JavaScript, HTML, CSS and UXP. Designing 3D& 2D assets for marketing campaigns by using Blender, Spline and Figma.",
     icon: React.createElement(CgWorkAlt),
     date: "Apr. 2023 - Present",
   },
@@ -67,7 +67,7 @@ export const experiencesData = [
     company: "Panteon Games",
     location: "Ankara, Turkey",
     description:
-      "Creating captivating playable ads for marketing campaigns with Unity, LunaLabs, and C#. Enhancing gameplay, introducing new mechanics/features, and applying creative elements to maximize game attractiveness for advertising. Developing customizable tools/packages in Unity through editor scripting to streamline playable ads development.",
+      "Developing and designing playable ads using Unity, LunaLabs, and C#. Enhancing game play, integrating new mechanics/features, and applying creative elements to maximize game attractiveness for advertising. Developing extensions/ packages for playable ads development in Unity using C#.",
     icon: React.createElement(CgWorkAlt),
     date: "Nov. 2021 - Apr. 2023",
   },
@@ -76,16 +76,16 @@ export const experiencesData = [
     company: "Ekmob SFA",
     location: "Istanbul, Turkey",
     description:
-      "Addressing customer-reported problems and resolving software bugs. Communicating technical aspects of our company's sales/organizing-based software to customers, providing clear insights into software properties.",
+      "Addressing customer-reported problems and resolving software bugs. Communicating technical aspects of our software apps and to customers.",
     icon: React.createElement(CgWorkAlt),
     date: "Sep. 2021 - Oct. 2021",
   },
   {
-    title: "Project Engineer Intern",
+    title: "Project Engineer - Intern",
     company: "TUPRAS",
     location: "Kocaeli, Turkey",
     description:
-      "Led the 'susTRAINable' initiative at TUPRAS, aiming for net-zero railway emissions by 2050, aligning with 6 UN Sustainable Development Goals. Spearheaded the 'TogetHER' project, dedicated to enhancing the lives of women in the refinery and energy sectors, incorporating mentorship programs for women inclined towards STEM.",
+      "Led 'susTRAINable' project at TUPRAS, targeting net-zero railway emissions by 2050, aligning with 6 UN Sustainable Development Goals. Moreover, 'TogetHER' project focused on improving women's lives in the refinery and energy sectors, including mentorship programs for STEM-inclined women.",
     icon: React.createElement(CgWorkAlt),
     date: "Aug. 2021 - Sep. 2021",
   },
@@ -94,21 +94,21 @@ export const experiencesData = [
     company: "GEFEASOFT",
     location: "Mugla, Turkey",
     description:
-      "Designed WebGL and mobile-based serious games, along with a VR-based Anatomy Atlas for the healthcare industry. Developed using Unity and C# programming language",
+      "Developed WebGL & Mobile based serious games and VR-based Anatomy Atlas in the healthcare industry by using Unity and C#.",
     icon: React.createElement(CgWorkAlt),
     date: "Mar. 2021 - Jun. 2021",
   },
   {
-    title: "Software Engineer",
+    title: "Software Engineer - Intern",
     company: "Avocuda",
     location: "Istanbul, Turkey",
     description:
-      "Contributed to mobile application development in the development team, utilizing React-Native and Adobe XD",
+      "Contributed to mobile application development in the development team, utilizing React-Native and Adobe XD.",
     icon: React.createElement(CgWorkAlt),
     date: "Feb. 2020 - Jun. 2020",
   },
   {
-    title: "Electrical Design Engineering Intern",
+    title: "Electrical Design Engineer - Intern",
     company: "Tempa Pano",
     location: "Kocaeli, Turkey",
     description:
@@ -131,11 +131,11 @@ export const educationData = [
 
 export const projectsData = [
   {
-    title: "Playable Ads",
+    title: "Playable Ads.& Game Projects",
     date: "",
     description:
-      "A collection of playable ads that I have designed and developed throughout my career.",
-    tags: [ "C#", "Unity", "LunaLabs", "Blender", "Figma" ],
+      "A collection of Playable Ads. and games that I have designed and developed throughout my career.",
+    tags: [ "C#", "Unity", "LunaLabs", "JavaScript", "ThreeJS", "CannonJS" ],
     imageUrl: corpcommentImg,
   },
   {
@@ -145,14 +145,6 @@ export const projectsData = [
       "Developed a Google Chrome extension focused on English-German flashcards, aimed at enhancing vocabulary skills.",
     tags: [ "React", "TypeScript", "Tailwind", "HTML", "CSS" ],
     imageUrl: corpcommentImg,
-  },
-  {
-    title: "PhotoShop Design Tool",
-    date: "Jun. 2023 - Dec. 2023",
-    description:
-      "Developed an extension that automates tasks such as creation of store screens, generation of endcards for various Ad networks with correct sizes and target language.",
-    tags: ["JavaScript", "ExtendScript", "CSS", "HTML", "UXP"],
-    imageUrl: rmtdevImg,
   },
   {
     title: "Unity Playable Ads Kit",
@@ -166,7 +158,7 @@ export const projectsData = [
     title: "Semantic Segmentation using Deep Learning",
     date: "Sep. 2020 - Jun. 2021",
     description:
-      "Implemented deep learning methods using Python libraries for semantic segmentation, improving a robot's capabilities in search and rescue scenarios.",
+      "Implemented deep learning methods using Python libraries, for robot's capabilities in search and rescue scenarios.",
     tags: ["Python", "NumPy", "PyTorch","pandas","SciPy","OpenGL"],
     imageUrl: wordanalyticsImg,
   },
