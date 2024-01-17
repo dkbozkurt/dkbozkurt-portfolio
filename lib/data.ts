@@ -278,3 +278,48 @@ export const activitiesData = [
         date: "Oct. 2017 - Jun. 2018",
     },
 ] as const;
+
+export const certificatesData =[
+    {
+        title:"Back-End Apps with Node.js and Express",
+        company:"IBM",
+        date:"Dec. 2023",
+        tags:[""],
+        imageUrl:"",
+    },
+    {
+        title:"Professional Meta Front-End Developer Certificate",
+        company:"META",
+        date:"Nov. 2023",
+        tags:[""],
+        imageUrl:"",
+    },
+    {
+        title:"3D Web Game Development With Three.JS",
+        company:"Udemy",
+        date:"Sep. 2023",
+        tags:[""],
+        imageUrl:"",
+    },
+    {
+        title:"JavaScript Algorithms and Data Structures",
+        company:"freeCodeCamp",
+        date:"Jul. 2023",
+        tags:[""],
+        imageUrl:"",
+    },
+    {
+        title:"Intermediate Object-Oriented Programming for Unity",
+        company:"University of Colorado",
+        date:"May 2021",
+        tags:[""],
+        imageUrl:"",
+    },
+    {
+        title:"Game Design and Development",
+        company:"Michigan State University",
+        date:"Mar. 2021",
+        tags:[""],
+        imageUrl:"",
+    },
+]
