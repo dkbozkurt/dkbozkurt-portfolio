@@ -19,10 +19,11 @@ export default function Language({
     return (
         <motion.div
         ref={ref}
-        className="mx-[1rem] group sm:mb-8 last:mb-0"
+        className="mx-[1rem] group sm:mb-8 last:mb-0 bg-green-500"
         >
             <section 
-        className="bg-gray-100 w-[12rem] border border-black/5 overflow-hidden relative sm:h-[12rem] hover:bg-gray-200 transition rounded-lg flex flex-col items-center"
+        className="bg-gray-100 border border-black/5 overflow-hidden relative hover:bg-gray-200 transition rounded-lg flex flex-col items-center w-[24rem] h-[5rem] 
+        sm:h-[12rem] sm:w-[12rem]"
         >
             <Image 
             src={icon} 
