@@ -19,7 +19,7 @@ export default function Language({
     return (
         <motion.div
         ref={ref}
-        className="mx-[1rem] group sm:mb-8 last:mb-0 bg-green-500"
+        className="mx-[1rem] group sm:mb-8 last:mb-0"
         >
             <section 
         className="bg-gray-100 border border-black/5 overflow-hidden relative hover:bg-gray-200 transition rounded-lg flex flex-col items-center w-[24rem] h-[5rem] 
@@ -29,8 +29,10 @@ export default function Language({
             src={icon} 
             alt="Language Image" 
             quality={95}
-            className="flex justify-center sm:block mt-8 mb-4 w-[3rem] transition rounded-s 
-            group-hover:scale-[1.2] shadow-2xl sm:w-[4rem] sm:rounded-xl"
+            className="
+            transition rounded-s flex justify-center group-hover:scale-[1.2] shadow-2xl 
+            absolute m-5 w-[3rem] mr-[18rem]
+            sm:relative sm:w-[4rem] sm:rounded-xl sm:mt-8 sm:mb-4 sm:mr-5"
             />
 
             <div className="flex flex-col items-center pb-4">
