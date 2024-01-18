@@ -9,6 +9,7 @@ import turkishFlagImg from "@/public/flagImages/turkishFlag.png";
 import englishFlagImg from "@/public/flagImages/englishFlag.png";
 import germanFlagImg from "@/public/flagImages/germanFlag.png";
 import koreaFlagImg from "@/public/flagImages/koreaFlag.png";
+import playableAdsKitImg from "@/public/projectImages/playableAdsKitImg.png";
 
 export const links = [
   {
@@ -152,7 +153,7 @@ export const projectsData = [
     description:
       "Developed a plugin for playable ads development, featuring essential template generation, translation(localization) package, utility methods, ...",
     tags: ["C#", "Unity"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: playableAdsKitImg ,
   },
   {
     title: "Semantic Segmentation using Deep Learning",
