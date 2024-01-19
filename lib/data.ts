@@ -43,12 +43,12 @@ export const links = [
     hash: "#languages",
   },
   {
-    name: "Activities",
-    hash: "#activities",
-  },
-  {
     name: "Projects",
     hash: "#projects",
+  },
+  {
+    name: "Activities",
+    hash: "#activities",
   },
   {
     name: "Certificates",

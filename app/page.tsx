@@ -20,8 +20,8 @@ export default function Home() {
         <Education />
         <Skills />
         <Languages />
-        <Activities />
         <Projects />
+        <Activities />
         <Certificates />
         <Contact />
     </main>
