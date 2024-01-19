@@ -20,7 +20,7 @@ export default function Certificate({
     return (
     <motion.div
     ref={ref}
-    className="mb-3 group sm:mb-8 last:mb-0"
+    className="mb-3 h-50 group sm:mb-8 last:mb-6"
     >
         <section 
         className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 rounded-lg"
@@ -44,12 +44,6 @@ export default function Certificate({
                 className="mt-2 leading-relaxed text-gray-700"
                 >
                     {company}
-                </p>
-    
-                <p
-                className="mt-2 leading-relaxed text-gray-700"
-                >
-                    {imageUrl}
                 </p>
                 <ul
                 className="flex flex-wrap gap-2 mt-4 sm:mt-auto"

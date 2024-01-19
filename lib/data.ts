@@ -10,6 +10,12 @@ import englishFlagImg from "@/public/flagImages/englishFlag.png";
 import germanFlagImg from "@/public/flagImages/germanFlag.png";
 import koreaFlagImg from "@/public/flagImages/koreaFlag.png";
 import playableAdsKitImg from "@/public/projectImages/playableAdsKitImg.png";
+import coloradoCertificate from "@/public/certificateImages/coloradoCertificate.png";
+import freeCodeCampCertificate from "@/public/certificateImages/freeCodeCampCertificate.png";
+import ibmCertificate from "@/public/certificateImages/ibmCertificate.png";
+import metaCertificate from "@/public/certificateImages/metaCertificate.png";
+import michiganCertificate from "@/public/certificateImages/michiganCertificate.png";
+import udemyCertificate from "@/public/certificateImages/udemyCertificate.png";
 
 export const links = [
   {
@@ -286,41 +292,41 @@ export const certificatesData =[
         company:"IBM",
         date:"Dec. 2023",
         tags:["JavaScript", "Node.js", "Express"],
-        imageUrl:"",
+        imageUrl:ibmCertificate,
     },
     {
         title:"Professional Meta Front-End Developer Certificate",
         company:"META",
         date:"Nov. 2023",
         tags:["React","JavaScript","Bootstrap","HTML","CSS","npm","Jest","Figma","Sass"],
-        imageUrl:"",
+        imageUrl:metaCertificate,
     },
     {
         title:"3D Web Game Development With Three.JS",
         company:"Udemy",
         date:"Sep. 2023",
         tags:["JavaScript","ThreeJs","CannonJS"],
-        imageUrl:"",
+        imageUrl:udemyCertificate,
     },
     {
         title:"JavaScript Algorithms and Data Structures",
         company:"freeCodeCamp",
         date:"Jul. 2023",
         tags:["Javascript"],
-        imageUrl:"",
+        imageUrl:freeCodeCampCertificate,
     },
     {
         title:"Intermediate Object-Oriented Programming for Unity",
         company:"University of Colorado",
         date:"May 2021",
         tags:["C#","Unity"],
-        imageUrl:"",
+        imageUrl:coloradoCertificate,
     },
     {
         title:"Game Design and Development",
         company:"Michigan State University",
         date:"Mar. 2021",
         tags:["C#","Unity"],
-        imageUrl:"",
+        imageUrl:michiganCertificate,
     },
 ]
