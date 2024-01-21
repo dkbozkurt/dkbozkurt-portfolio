@@ -2,9 +2,6 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import { VscOrganization } from "react-icons/vsc";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
 import turkishFlagImg from "@/public/flagImages/turkishFlag.png";
 import englishFlagImg from "@/public/flagImages/englishFlag.png";
 import germanFlagImg from "@/public/flagImages/germanFlag.png";
@@ -143,7 +140,6 @@ export const projectsData = [
     description:
       "A collection of Playable Ads. and games that I have designed and developed throughout my career.",
     tags: [ "C#", "Unity", "LunaLabs", "JavaScript", "ThreeJS", "CannonJS" ],
-    imageUrl: corpcommentImg,
   },
   {
     title: "Chrome Extension- Waffle Flash Cards",
@@ -151,7 +147,6 @@ export const projectsData = [
     description:
       "Developed a Google Chrome extension focused on English-German flashcards, aimed at enhancing vocabulary skills.",
     tags: [ "React", "TypeScript", "Tailwind", "HTML", "CSS" ],
-    imageUrl: corpcommentImg,
   },
   {
     title: "Unity Playable Ads Kit",
@@ -167,7 +162,6 @@ export const projectsData = [
     description:
       "Implemented deep learning methods using Python libraries, for robot's capabilities in search and rescue scenarios.",
     tags: ["Python", "NumPy", "PyTorch","pandas","SciPy","OpenGL"],
-    imageUrl: wordanalyticsImg,
   },
   {
     title: "Interface design for Segmentation Data",
@@ -175,7 +169,6 @@ export const projectsData = [
     description:
       "An interface for streamlined input organization in deep learning, facilitating  training, testing, and visualization with S3DIS and ESOGU RAMPS datasets.",
     tags: ["Python", "Qt", "OpenGL"],
-    imageUrl: wordanalyticsImg,
   },
   {
     title: "Point Cloud Data Optimization",
@@ -183,7 +176,6 @@ export const projectsData = [
     description:
       "Developed a data size reduction technique using point cloud information for a specified object, employing similarity measures and midpoints for classification in deep learning applications.",
     tags: ["C++"],
-    imageUrl: wordanalyticsImg,
   },
   {
     title: "Counting products on a Conveyor Belt",
@@ -191,7 +183,6 @@ export const projectsData = [
     description:
       "Utilized Proteus to design a circuit system that sorts and separates products on a conveyor belt according to their individual colors.",
     tags: ["Proteus"],
-    imageUrl: wordanalyticsImg,
   },
 ] as const;
 
