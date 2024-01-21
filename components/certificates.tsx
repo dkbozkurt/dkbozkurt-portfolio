@@ -15,7 +15,7 @@ export default function Certificates() {
     className="scroll-mt-28 mb-28"
     id="certificates">
         <SectionHeading>
-            My Certificates
+            Certificates
         </SectionHeading>
         <div>
             {

@@ -15,7 +15,7 @@ export default function Projects() {
     className="scroll-mt-28 mb-28"
     id="projects">
         <SectionHeading>
-            My Projects
+            Projects
         </SectionHeading>
         <div>
             {
