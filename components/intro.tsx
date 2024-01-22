@@ -59,8 +59,9 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         >
-            <span className="font-bold">Hello, I'm Dogukan.</span> I'm a{" "}
-            <span className="font-bold">Playable Ads. Developer/ Web Developer.</span> I enjoy crafting{" "}
+            <span className="font-bold">Hello,</span> I'm {" "}
+            <span className="font-bold">Dogukan Kaan Bozkurt.</span> I'm a{" "}
+            <span className="font-bold">Playable Ads Developer/ Web Developer.</span> I enjoy crafting{" "}
             <span className="italic">automation tools,</span> building{" "}
             <span className="italic">interactive advertisements,</span> and bringing{" "}
             <span className="italic">innovative designs</span> to life.
