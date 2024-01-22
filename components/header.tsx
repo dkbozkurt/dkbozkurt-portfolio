@@ -14,7 +14,7 @@ export default function Header() {
     <header className="z-[999] relative">
         <motion.div className ="fixed top-0 left-1/2 h-[6.5rem] w-full rounded-none border border-white border-opacity-40 bg-white bg-opacity-80 shadow-lg shadow-black/[0.03] backdrop-blur-[0.5rem]
         sm:top-6 sm:h-[5.25rem] sm:w-[36rem] sm:rounded-full
-        lg:top-6 lg:h-[3.25rem] lg:w-[68rem] lg:rounded-full"
+        lg:top-6 lg:h-[3.25rem] lg:w-[65rem] lg:rounded-full"
             initial={{y: -100, x: "-50%", opacity: 0}}
             animate={{y: 0,  x: "-50%", opacity: 1}}
         ></motion.div>
@@ -24,7 +24,7 @@ export default function Header() {
         lg:top-[1.7rem] lg:h-[initial] lg:py-0 lg:w-[63rem] 
         ">
             <ul className ="flex w-[30rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] 
-            lg:flex-nowrap lg:gap-5">
+            lg:flex-nowrap lg:gap-[2.12rem]">
                 {
                     links.map(link => (
                         <motion.li
