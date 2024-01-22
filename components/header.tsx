@@ -19,11 +19,12 @@ export default function Header() {
             animate={{y: 0,  x: "-50%", opacity: 1}}
         ></motion.div>
 
-        <nav className="flex fixed top-[0.15rem] h-16 left-1/2 -translate-x-1/2 py-2 
+        <nav className="flex fixed top-[0.15rem] h-16 left-1/2 -translate-x-1/2 py-2 w-[24rem]
         sm:top-[1.7rem] sm:h-12 sm:py-0 sm:w-[34rem] 
         lg:top-[1.7rem] lg:h-[initial] lg:py-0 lg:w-[63rem] 
         ">
-            <ul className ="flex w-[30rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 sm:w-[initial] 
+            <ul className ="flex w-[30rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium text-gray-500 gap-x-0
+            sm:w-[initial] sm:gap-x-0
             lg:flex-nowrap lg:gap-[2.12rem]">
                 {
                     links.map(link => (
