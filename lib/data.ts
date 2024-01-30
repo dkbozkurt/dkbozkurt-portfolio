@@ -40,6 +40,10 @@ export const links = [
     hash: "#languages",
   },
   {
+    name: "PlayableAds",
+    hash: "#playableAds",
+  },
+  {
     name: "Projects",
     hash: "#projects",
   },
