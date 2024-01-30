@@ -7,7 +7,7 @@ export default function SectionHeading({
 children }: SectionHeadingProps) {
   return (
     <h2 
-    className = "mb-8 text-3xl font-medium text-center capitalize">
+    className = "mt-10 mb-8 text-3xl font-medium text-center capitalize sm:mt-0">
         {children}
     </h2>
   )
