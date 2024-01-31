@@ -30,12 +30,10 @@ export default function PlyAd({
             alt="Language Image" 
             quality={95}
             className="
-            transition rounded-s flex justify-center group-hover:scale-[1.2] shadow-2xl 
-            absolute m-5 w-[3rem] mr-[18rem]
-            sm:relative sm:w-[4rem] sm:rounded-xl sm:mt-8 sm:mb-4 sm:mr-5"
+            transition flex justify-center group-hover:scale-[1.4] shadow-2xl m-5 relative w-[4rem] rounded-m mt-8 mb-4 mr-5"
             />
 
-            <div className="flex flex-col items-center pb-4 mt-3 sm:mt-auto">
+            <div className="flex flex-col items-center pb-4 mt-3 mt-auto">
                 <h3
                 className = "text-2xl font-bold"
                 >
@@ -47,7 +45,7 @@ export default function PlyAd({
                     {level}
                 </p>
                 <p
-                className="hidden mt-1 text-sm leading-relaxed text-gray-500 sm:flex"
+                className="flex mt-1 text-sm leading-relaxed text-gray-500"
                 >
                     {description}
                 </p>
