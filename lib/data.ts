@@ -137,6 +137,44 @@ export const educationData = [
     }
 ] as const;
 
+export const playableAdsData = [
+    {
+        title: "Turkish",
+        level: "Native",
+        icon: turkishFlagImg,
+        description: "",
+    },
+    {
+        title: "English",
+        level: "C1",
+        icon: englishFlagImg,
+        description: "EF Standard Test 81/100",
+    },
+    {
+        title: "Korean",
+        level: "A2",
+        icon: koreaFlagImg,
+        description: "TOPIK I 156/200",
+    },
+    {
+        title: "German",
+        level: "A2",
+        icon: germanFlagImg,
+        description: "",
+    },
+    {
+        title: "German",
+        level: "A2",
+        icon: germanFlagImg,
+        description: "",
+    },
+    {
+        title: "German",
+        level: "A2",
+        icon: germanFlagImg,
+        description: "",
+    },
+] as const;
 export const projectsData = [
   {
     title: "Playable Ads.& Game Projects",
