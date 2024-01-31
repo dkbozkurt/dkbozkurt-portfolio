@@ -22,7 +22,7 @@ export default function Language({
         className="mx-[1rem] group sm:mb-8 last:mb-0"
         >
             <section 
-        className="bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition rounded-lg flex flex-col items-center w-[24rem] h-[5rem] 
+        className="bg-white border borderBlack overflow-hidden transition rounded-lg flex flex-col items-center w-[24rem] h-[5rem] 
         sm:h-[12rem] sm:w-[12rem]"
         >
             <Image 
