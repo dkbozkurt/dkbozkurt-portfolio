@@ -236,7 +236,6 @@ export const skillsData = [
     "LunaLabs",
     "Python",
     "C++",
-    "C",
     "HTML",
     "CSS",
     "React",
@@ -249,20 +248,15 @@ export const skillsData = [
     "npm",
     "Linux",
     "Jest",
-    "Qt",
     "CannonJS",
     "ExtendScript",
     "Framer Motion",
     "UXP",
-    "MATLAB",
-    "PyTorch",
-    "pandas",
-    "NumPy",
-    "SciPy",
     "Blender",
     "Spline",
     "Figma",
-    "Adobe PhotoShop"
+    "Adobe PhotoShop",
+    "Adobe Illustrator",
 ] as const;
 
 export const languageData = [
