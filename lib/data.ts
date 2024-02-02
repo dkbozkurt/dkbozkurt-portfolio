@@ -191,6 +191,12 @@ export const projectsData = [
     tags: [ "React", "TypeScript", "Tailwind", "HTML", "CSS" ],
   },
   {
+    title:"Adobe PhotoShop Design Tool",
+    date: "Jul. 2023 - Dec. 2023",
+    description:"Developed a Adobe PhotoShop extension focused on generating static store screens, network end cards and marketing purposed resources.",
+    tags:["ExtendScript","JavaScript","CSS","HTML","UXP"]
+  },
+  {
     title: "Unity Playable Ads Kit",
     date: "Apr. 2022 - Sep. 2023",
     description:
