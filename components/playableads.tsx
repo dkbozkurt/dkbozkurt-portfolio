@@ -24,6 +24,11 @@ export default function PlayableAds() {
             Playable Ads.
         </SectionHeading>
         
+        <p
+        className="px-4 mb-10 text-center text-gray-500 text-s "
+        >
+            Playable Ad. projects that have been scaled in market campaigns.
+        </p>
         <div className="flex flex-wrap justify-center w-[32rem] gap-x-1 text-lg text-gray-800 gap-y-8
         sm:w-[40rem] sm:gap-x-2
         lg:w-[72rem] 
