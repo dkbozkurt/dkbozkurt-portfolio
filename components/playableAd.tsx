@@ -23,8 +23,7 @@ export default function PlyAd({
         className="mx-[1rem] group sm:mb-8 last:mb-0"
         >
             <section 
-        className="bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[12rem] h-[12rem] 
-        sm:h-[16rem] sm:w-[16rem]"
+        className="bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[16rem] h-[16rem]"
         >
             <Image 
             src={icon} 
@@ -46,7 +45,7 @@ export default function PlyAd({
                     {playableName}
                 </p>
                 <a
-                className="transition items-center flex w-[12rem] h-2 gap-1 pl-8 p-4 text-white cursor-pointer text-m bg-gray-900 rounded-full outline-none"
+                className="transition items-center flex w-[11rem] h-2 gap-1 pl-8 p-4 text-white cursor-pointer text-m bg-gray-900 rounded-full outline-none sm:w-[12rem]"
                 href={url} target="_blank"
                 >
                     Click to Play

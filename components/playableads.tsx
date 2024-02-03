@@ -29,10 +29,10 @@ export default function PlayableAds() {
         >
             Playable Ad. projects that I have developed, which has been scaled in market campaigns.
         </p>
-        <div className="flex flex-wrap justify-center w-[32rem] gap-x-1 text-lg text-gray-800 gap-y-8
-        sm:w-[40rem] sm:gap-x-2
-        lg:w-[72rem] 
-        xl:w-[90rem]">
+        <div className="flex flex-wrap justify-center w-[24rem] gap-x-0 text-lg text-gray-800 gap-y-8
+        sm:w-[48rem] sm:gap-x-1
+        lg:w-[60rem] 
+        xl:w-[80rem]">
             {
                 playableAdsData.map((playableAd, index) => (
                     <React.Fragment key={index}>

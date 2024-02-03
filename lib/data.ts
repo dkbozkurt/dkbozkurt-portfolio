@@ -494,7 +494,7 @@ export const playableAdsData = [
         url:"empty",
     },
     {
-        appName: "Rabbit VS Monsters",
+        appName: "Rabbits VS Monsters",
         playableName: "Kill The Monsters",
         icon: rabbitsVSMonsterLogo,
         url:"empty",
