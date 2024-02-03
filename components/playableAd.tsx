@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { playableAdsData } from "@/lib/data";
 import Image from 'next/image'
 import { motion } from "framer-motion"
+import { BsArrowRight } from "react-icons/bs";
 
 type PlayableAdsProps = typeof playableAdsData[number];
 
@@ -11,7 +12,6 @@ export default function PlyAd({
     appName,
     playableName,
     icon,
-    playButton,
     url
 }: PlayableAdsProps)
 {
@@ -23,7 +23,7 @@ export default function PlyAd({
         className="mx-[1rem] group sm:mb-8 last:mb-0"
         >
             <section 
-        className="bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition rounded-lg flex flex-col items-center w-[12rem] h-[12rem] 
+        className="bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[12rem] h-[12rem] 
         sm:h-[16rem] sm:w-[16rem]"
         >
             <Image 
@@ -31,25 +31,28 @@ export default function PlyAd({
             alt="Language Image" 
             quality={95}
             className="
-            rounded-[2rem] transition flex justify-center group-hover:scale-[1.15] shadow-2xl m-5 relative w-[8rem] rounded-m mt-6 mb-2 mr-5"
+            rounded-[2rem] transition flex justify-center group-hover:scale-[1.1] shadow-2xl m-5 relative h-[8rem] w-[8rem] rounded-m mt-3 mb-2 mr-5"
             />
 
-            <div className="flex flex-col items-center pb-4 mt-auto">
+            <div className="flex flex-col items-center pb-3 mt-auto">
                 <h3
                 className = "text-2xl font-bold"
                 >
                     {appName}
                 </h3>
                 <p
-                className="text-gray-700"
+                className="pb-1 text-gray-700"
                 >
                     {playableName}
                 </p>
-                <p
-                className="flex mt-1 text-sm leading-relaxed text-gray-500"
+                <a
+                className="transition items-center flex w-[8rem] h-2 gap-1 pl-10 p-4 text-white cursor-pointer text-m bg-gray-900 rounded-full outline-none"
+                href={url} target="_blank"
                 >
-                    {playButton}
-                </p>
+                    Play
+                    <BsArrowRight 
+                className ="transition opacity-70 group-hover:translate-x-2"/>
+                </a>
             </div>
         </section>
         </motion.div>
