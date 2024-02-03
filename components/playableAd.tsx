@@ -46,10 +46,10 @@ export default function PlyAd({
                     {playableName}
                 </p>
                 <a
-                className="transition items-center flex w-[8rem] h-2 gap-1 pl-10 p-4 text-white cursor-pointer text-m bg-gray-900 rounded-full outline-none"
+                className="transition items-center flex w-[12rem] h-2 gap-1 pl-8 p-4 text-white cursor-pointer text-m bg-gray-900 rounded-full outline-none"
                 href={url} target="_blank"
                 >
-                    Play
+                    Click to Play
                     <BsArrowRight 
                 className ="transition opacity-70 group-hover:translate-x-2"/>
                 </a>

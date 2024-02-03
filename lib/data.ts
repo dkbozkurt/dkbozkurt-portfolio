@@ -14,7 +14,45 @@ import metaCertificate from "@/public/certificateImages/metaCertificate.png";
 import michiganCertificate from "@/public/certificateImages/michiganCertificate.png";
 import udemyCertificate from "@/public/certificateImages/udemyCertificate.png";
 
-import tradingMaster3D from "@/public/AppIcons/Trading Master 3D.png";
+import hundredMysteryButtonsLogo from "@/public/AppIcons/100 Mystery Buttons.png";
+import airportMasterLogo from "@/public/AppIcons/Airport Master.png";
+import appStationLogo from "@/public/AppIcons/App Station.png";
+import ballBrawl3DLogo from "@/public/AppIcons/Ball Brawl 3D - Soccer Cup.png";
+import beMyGuest from "@/public/AppIcons/Be My Guest.png";
+import bounceAndPopLogo from "@/public/AppIcons/Bounce And Pop.png";
+import carnivalClashLogo from "@/public/AppIcons/Carnival Clash.png";
+import cashAlarmLogo from "@/public/AppIcons/Cash Alarm.png";
+import cashCowLogo from "@/public/AppIcons/Cas hCow.png";
+import cashEmAllLogo from "@/public/AppIcons/Cash Em All.png";
+import cashEmpireLogo from "@/public/AppIcons/Cash Empire.png";
+import cashGiraffeLogo from "@/public/AppIcons/Cash Giraffe.png";
+import cashyyLogo from "@/public/AppIcons/Cashyy.png";
+import clayShopLogo from "@/public/AppIcons/Clay Shop.png";
+import destroyMasterLogo from "@/public/AppIcons/Destroy Master.png";
+import fashionFamousLogo from "@/public/AppIcons/Fashion Famous.png";
+import gamePerksLogo from "@/public/AppIcons/Game Perks.png";
+import gameXpertLogo from "@/public/AppIcons/GameXpert.png";
+import ginRummyLogo from "@/public/AppIcons/GinRummy.png";
+import goalPartyLogo from "@/public/AppIcons/Goal Party.png";
+import guessAndHitLogo from "@/public/AppIcons/Guess And Hit.png";
+import homeRestorationLogo from "@/public/AppIcons/Home Restoration.png";
+import mobu2Logo from "@/public/AppIcons/Mobu2.png";
+import modelAgencyLogo from "@/public/AppIcons/Model Agency.png";
+import moneyBunnyLogo from "@/public/AppIcons/Money Bunny.png.png";
+import moneySlotsLogo from "@/public/AppIcons/Money Slots.png";
+import moneyWellLogo from "@/public/AppIcons/Money Well.png";
+import muscleLandLogo from "@/public/AppIcons/Muscle Land.png";
+import myChocolateShopLogo from "@/public/AppIcons/My Chocolate Shop.png";
+import rabbitsVSMonsterLogo from "@/public/AppIcons/Rabbits VS Monsters.png";
+import raidRushLogo from "@/public/AppIcons/Raid Rush.png";
+import rollMerge3DLogo from "@/public/AppIcons/Roll Merge 3D.png";
+import scratch4LifeLogo from "@/public/AppIcons/Scratch 4 Life.png";
+import slingPlaneLogo from "@/public/AppIcons/Sling Plane.png";
+import testEmAllLogo from "@/public/AppIcons/Test Em All.png";
+import theLuckyMinerLogo from "@/public/AppIcons/The Lucky Miner.png";
+import tradingMaster3DLogo from "@/public/AppIcons/Trading Master 3D.png";
+import valetMasterLogo from "@/public/AppIcons/Valet Master.png";
+import wChallengeLogo from "@/public/AppIcons/W Challenge.png";
 
 export const links = [
   {
@@ -380,7 +418,7 @@ export const playableAdsData = [
     {
         appName: "Trading Master 3D",
         playableName: "IPhone Scam",
-        icon: tradingMaster3D,
+        icon: tradingMaster3DLogo,
         url:"empty",
     },
 ] as const;
