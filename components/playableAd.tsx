@@ -26,7 +26,7 @@ export default function PlyAd({
       };
       
     return (
-        <a href={url} onClick={handleClick} className="group mx-[1rem] sm:mb-8 last:mb-0">
+        <a href={url} onClick={handleClick}>
         <motion.div
         ref={ref}
         className="mx-[1rem] group sm:mb-8 last:mb-0"
