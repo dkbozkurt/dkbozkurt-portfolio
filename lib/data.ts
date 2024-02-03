@@ -18,11 +18,11 @@ import hundredMysteryButtonsLogo from "@/public/AppIcons/100 Mystery Buttons.png
 import airportMasterLogo from "@/public/AppIcons/Airport Master.png";
 import appStationLogo from "@/public/AppIcons/App Station.png";
 import ballBrawl3DLogo from "@/public/AppIcons/Ball Brawl 3D - Soccer Cup.png";
-import beMyGuest from "@/public/AppIcons/Be My Guest.png";
+import beMyGuestLogo from "@/public/AppIcons/Be My Guest.png";
 import bounceAndPopLogo from "@/public/AppIcons/Bounce And Pop.png";
 import carnivalClashLogo from "@/public/AppIcons/Carnival Clash.png";
 import cashAlarmLogo from "@/public/AppIcons/Cash Alarm.png";
-import cashCowLogo from "@/public/AppIcons/Cas hCow.png";
+import cashCowLogo from "@/public/AppIcons/Cash Cow.png";
 import cashEmAllLogo from "@/public/AppIcons/Cash Em All.png";
 import cashEmpireLogo from "@/public/AppIcons/Cash Empire.png";
 import cashGiraffeLogo from "@/public/AppIcons/Cash Giraffe.png";
@@ -38,7 +38,7 @@ import guessAndHitLogo from "@/public/AppIcons/Guess And Hit.png";
 import homeRestorationLogo from "@/public/AppIcons/Home Restoration.png";
 import mobu2Logo from "@/public/AppIcons/Mobu2.png";
 import modelAgencyLogo from "@/public/AppIcons/Model Agency.png";
-import moneyBunnyLogo from "@/public/AppIcons/Money Bunny.png.png";
+import moneyBunnyLogo from "@/public/AppIcons/Money Bunny.png";
 import moneySlotsLogo from "@/public/AppIcons/Money Slots.png";
 import moneyWellLogo from "@/public/AppIcons/Money Well.png";
 import muscleLandLogo from "@/public/AppIcons/Muscle Land.png";
@@ -368,51 +368,465 @@ export const certificatesData =[
 
 export const playableAdsData = [
     {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
+        appName: "Cash Cow",
+        playableName: "Feed The Cow",
+        icon: cashCowLogo,
         url:"empty",
     },
     {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
+        appName: "Test Em All",
+        playableName: "Match Factory",
+        icon: testEmAllLogo,
         url:"empty",
     },
     {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
+        appName: "Test Em All",
+        playableName: "Knot Words",
+        icon: testEmAllLogo,
         url:"empty",
     },
     {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
+        appName: "Cash Giraffe",
+        playableName: "Water Sort",
+        icon: cashGiraffeLogo,
         url:"empty",
     },
     {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
+        appName: "Cash Giraffe",
+        playableName: "Match3",
+        icon: cashGiraffeLogo,
         url:"empty",
     },
     {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
+        appName: "Scratch 4 Life",
+        playableName: "Memorize And Scratch",
+        icon: scratch4LifeLogo,
         url:"empty",
     },
     {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
+        appName: "The Lucky Miner",
+        playableName: "Gold Miner",
+        icon: theLuckyMinerLogo,
         url:"empty",
     },
     {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
+        appName: "Money Bunny",
+        playableName: "Boss Fight",
+        icon: moneyBunnyLogo,
+        url:"empty",
+    },
+    {
+        appName: "Money Bunny",
+        playableName: "Upgrade Your Bunny",
+        icon: moneyBunnyLogo,
+        url:"empty",
+    },
+    {
+        appName: "Cash Em All",
+        playableName: "Parking Lot",
+        icon: cashEmAllLogo,
+        url:"empty",
+    },
+    {
+        appName: "Game Perks",
+        playableName: "Cafe Clicker",
+        icon: gamePerksLogo,
+        url:"empty",
+    },
+    {
+        appName: "App Station",
+        playableName: "Toon Blast",
+        icon: appStationLogo,
+        url:"empty",
+    },
+    {
+        appName: "Money Well",
+        playableName: "Carousel Gifs",
+        icon: moneyWellLogo,
+        url:"empty",
+    },
+    {
+        appName: "Money Well",
+        playableName: "Free Fall",
+        icon: moneyWellLogo,
+        url:"empty",
+    },
+    {
+        appName: "Cash Empire",
+        playableName: "Shell Game",
+        icon: cashEmpireLogo,
+        url:"empty",
+    },
+    {
+        appName: "GameXpert",
+        playableName: "Chicks Revenge",
+        icon: gameXpertLogo,
+        url:"empty",
+    },
+    {
+        appName: "Money Slots",
+        playableName: "Slot Machine",
+        icon: moneySlotsLogo,
+        url:"empty",
+    },
+    {
+        appName: "Cashyy",
+        playableName: "",
+        icon: cashyyLogo,
+        url:"empty",
+    },
+    {
+        appName: "Cashyy",
+        playableName: "Three Click Chest",
+        icon: cashyyLogo,
+        url:"empty",
+    },
+    {
+        appName: "Cash Alarm",
+        playableName: "3D Pillow Throw",
+        icon: cashAlarmLogo,
+        url:"empty",
+    },
+    {
+        appName: "Carnival Clash",
+        playableName: "Whack A Mole",
+        icon: carnivalClashLogo,
+        url:"empty",
+    },
+    {
+        appName: "Rabbit VS Monsters",
+        playableName: "Kill The Monsters",
+        icon: rabbitsVSMonsterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Raid Rush",
+        playableName: "Re-Claim America",
+        icon: raidRushLogo,
+        url:"empty",
+    },
+    {
+        appName: "Raid Rush",
+        playableName: "Drag And Place Towers",
+        icon: raidRushLogo,
+        url:"empty",
+    },
+    {
+        appName: "Raid Rush",
+        playableName: "FPS Tower Shooter",
+        icon: raidRushLogo,
+        url:"empty",
+    },
+    {
+        appName: "Raid Rush",
+        playableName: "Fight In The Middle",
+        icon: raidRushLogo,
+        url:"empty",
+    },
+    {
+        appName: "Raid Rush",
+        playableName: "Cross Camera",
+        icon: raidRushLogo,
+        url:"empty",
+    },
+    {
+        appName: "Raid Rush",
+        playableName: "Rushing Enemies",
+        icon: raidRushLogo,
+        url:"empty",
+    },
+    {
+        appName: "Raid Rush",
+        playableName: "Shoot Bombs",
+        icon: raidRushLogo,
+        url:"empty",
+    },
+    {
+        appName: "Raid Rush",
+        playableName: "Call Enemy Waves",
+        icon: raidRushLogo,
+        url:"empty",
+    },
+    {
+        appName: "Gin Rummy",
+        playableName: "Draw And Sort",
+        icon: ginRummyLogo,
+        url:"empty",
+    },
+    {
+        appName: "Fashion Famous",
+        playableName: "Pick Costumes On Podium",
+        icon: fashionFamousLogo,
+        url:"empty",
+    },
+    {
+        appName: "Fashion Famous",
+        playableName: "Get Ready For Podium",
+        icon: fashionFamousLogo,
+        url:"empty",
+    },
+    {
+        appName: "Be My Guest",
+        playableName: "AirBnb Idle",
+        icon: beMyGuestLogo,
+        url:"empty",
+    },
+    {
+        appName: "Be My Guest",
+        playableName: "Place House Items",
+        icon: beMyGuestLogo,
+        url:"empty",
+    },
+    {
+        appName: "Be My Guest",
+        playableName: "Clean The House",
+        icon: beMyGuestLogo,
+        url:"empty",
+    },
+    {
+        appName: "Be My Guest",
+        playableName: "Order From Amazon",
+        icon: beMyGuestLogo,
+        url:"empty",
+    },
+    {
+        appName: "My Chocolate Shop",
+        playableName: "Cacao Factory",
+        icon: myChocolateShopLogo,
+        url:"empty",
+    },
+    {
+        appName: "Model Agency",
+        playableName: "Hire Model",
+        icon: modelAgencyLogo,
+        url:"empty",
+    },
+    {
+        appName: "Model Agency",
+        playableName: "Create Your Top Model",
+        icon: modelAgencyLogo,
+        url:"empty",
+    },
+    {
+        appName: "Model Agency",
+        playableName: "Concept Gala",
+        icon: modelAgencyLogo,
+        url:"empty",
+    },
+    {
+        appName: "Airport Master",
+        playableName: "Seat Jam",
+        icon: airportMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Airport Master",
+        playableName: "Passport Check In Island",
+        icon: airportMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Airport Master",
+        playableName: "Select Destination",
+        icon: airportMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Airport Master",
+        playableName: "Scan Billie",
+        icon: airportMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Airport Master",
+        playableName: "Manage And Clean",
+        icon: airportMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Airport Master",
+        playableName: "Airport Island",
+        icon: airportMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Airport Master",
+        playableName: "Place Passengers",
+        icon: airportMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Airport Master",
+        playableName: "Carry Baggages",
+        icon: airportMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Airport Master",
+        playableName: "Passport Please",
+        icon: airportMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Airport Master",
+        playableName: "Airport Manager",
+        icon: airportMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Valet Master",
+        playableName: "Manage Park Steps",
+        icon: valetMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Valet Master",
+        playableName: "Cross Park",
+        icon: valetMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Valet Master",
+        playableName: "Repair The Car",
+        icon: valetMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Valet Master",
+        playableName: "Drive The Van",
+        icon: valetMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Valet Master",
+        playableName: "Park Manager",
+        icon: valetMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Destroy Master",
+        playableName: "Kill The Avocado",
+        icon: destroyMasterLogo,
+        url:"empty",
+    },
+    {
+        appName: "Clay Shop",
+        playableName: "Customize Your Monster",
+        icon: clayShopLogo,
+        url:"empty",
+    },
+    {
+        appName: "Guess And Hit",
+        playableName: "Guess The Country",
+        icon: guessAndHitLogo,
+        url:"empty",
+    },
+    {
+        appName: "Bounce And Pop",
+        playableName: "Pop Balloons Level 2",
+        icon: bounceAndPopLogo,
+        url:"empty",
+    },
+    {
+        appName: "Bounce And Pop",
+        playableName: "Pop Balloons Level 1",
+        icon: bounceAndPopLogo,
+        url:"empty",
+    },
+    {
+        appName: "W Challenge",
+        playableName: "Guess The Word",
+        icon: wChallengeLogo,
+        url:"empty",
+    },
+    {
+        appName: "Muscle Land",
+        playableName: "Calories And Energies",
+        icon: muscleLandLogo,
+        url:"empty",
+    },
+    {
+        appName: "Muscle Land",
+        playableName: "Tap To Grow",
+        icon: muscleLandLogo,
+        url:"empty",
+    },
+    {
+        appName: "100 Mystery Buttons",
+        playableName: "Water Prank",
+        icon: hundredMysteryButtonsLogo,
+        url:"empty",
+    },
+    {
+        appName: "100 Mystery Buttons",
+        playableName: "Box Prank - Roblox",
+        icon: hundredMysteryButtonsLogo,
+        url:"empty",
+    },
+    {
+        appName: "Sling Plane",
+        playableName: "Flight In City",
+        icon: slingPlaneLogo,
+        url:"empty",
+    },
+    {
+        appName: "Sling Plane",
+        playableName: "Runner",
+        icon: slingPlaneLogo,
+        url:"empty",
+    },
+    {
+        appName: "Sling Plane",
+        playableName: "Land On Airport",
+        icon: slingPlaneLogo,
+        url:"empty",
+    },
+    {
+        appName: "Sling Plane",
+        playableName: "Crush Control",
+        icon: slingPlaneLogo,
+        url:"empty",
+    },
+    {
+        appName: "Sling Plane",
+        playableName: "Throw And Tunnel Ride",
+        icon: slingPlaneLogo,
+        url:"empty",
+    },
+    {
+        appName: "Roll Merge 3D",
+        playableName: "Throw And Merge",
+        icon: rollMerge3DLogo,
+        url:"empty",
+    },
+    {
+        appName: "Home Restoration",
+        playableName: "Clear and Paint",
+        icon: homeRestorationLogo,
+        url:"empty",
+    },
+    {
+        appName: "Goal Party",
+        playableName: "Penalties",
+        icon: goalPartyLogo,
+        url:"empty",
+    },
+    {
+        appName: "Goal Party",
+        playableName: "FranceVSArgentina",
+        icon: goalPartyLogo,
+        url:"empty",
+    },
+    {
+        appName: "Ball Brawl 3D",
+        playableName: "World Cup Final",
+        icon: ballBrawl3DLogo,
+        url:"empty",
+    },
+    {
+        appName: "Mobu 2",
+        playableName: "Pirate Mobu",
+        icon: mobu2Logo,
         url:"empty",
     },
     {
