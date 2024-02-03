@@ -8,11 +8,12 @@ import { motion } from "framer-motion"
 type PlayableAdsProps = typeof playableAdsData[number];
 
 export default function PlyAd({
-    title,
-    level,
+    appName,
+    playableName,
     icon,
-    description,
-}: PlayableAdsProps) 
+    playButton,
+    url
+}: PlayableAdsProps)
 {
     const ref = useRef<HTMLDivElement>(null);
     
@@ -37,17 +38,17 @@ export default function PlyAd({
                 <h3
                 className = "text-2xl font-bold"
                 >
-                    {title}
+                    {appName}
                 </h3>
                 <p
                 className="text-gray-700"
                 >
-                    {level}
+                    {playableName}
                 </p>
                 <p
                 className="flex mt-1 text-sm leading-relaxed text-gray-500"
                 >
-                    {description}
+                    {playButton}
                 </p>
             </div>
         </section>
