@@ -2,11 +2,12 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
 import { VscOrganization } from "react-icons/vsc";
+
 import turkishFlagImg from "@/public/flagImages/turkishFlag.png";
 import englishFlagImg from "@/public/flagImages/englishFlag.png";
 import germanFlagImg from "@/public/flagImages/germanFlag.png";
 import koreaFlagImg from "@/public/flagImages/koreaFlag.png";
-import playableAdsKitImg from "@/public/projectImages/playableAdsKitImg.png";
+
 import coloradoCertificate from "@/public/certificateImages/coloradoCertificate.png";
 import freeCodeCampCertificate from "@/public/certificateImages/freeCodeCampCertificate.png";
 import ibmCertificate from "@/public/certificateImages/ibmCertificate.png";
@@ -53,6 +54,8 @@ import theLuckyMinerLogo from "@/public/AppIcons/The Lucky Miner.png";
 import tradingMaster3DLogo from "@/public/AppIcons/Trading Master 3D.png";
 import valetMasterLogo from "@/public/AppIcons/Valet Master.png";
 import wChallengeLogo from "@/public/AppIcons/W Challenge.png";
+
+import tradingMaster3D_iPhoneScam from "@/public/playableAds/iPhoneScam_TradingMaster_PLY_01.html";
 
 export const links = [
   {
@@ -204,7 +207,6 @@ export const projectsData = [
     description:
       "Developed a plugin for playable ads development, featuring essential template generation, translation(localization) package, utility methods, ...",
     tags: ["C#", "Unity"],
-    imageUrl: playableAdsKitImg ,
   },
   {
     title: "Semantic Segmentation using Deep Learning",
@@ -833,6 +835,6 @@ export const playableAdsData = [
         appName: "Trading Master 3D",
         playableName: "IPhone Scam",
         icon: tradingMaster3DLogo,
-        url:"empty",
+        url:"https://github.com/dkbozkurt",
     },
 ] as const;
