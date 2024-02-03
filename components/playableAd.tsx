@@ -31,7 +31,7 @@ export default function PlyAd({
             alt="Language Image" 
             quality={95}
             className="
-            scale-[1.6] transition flex justify-center group-hover:scale-[1.4] shadow-2xl m-5 relative w-[4rem] rounded-m mt-8 mb-4 mr-5"
+            rounded-[2rem] transition flex justify-center group-hover:scale-[1.15] shadow-2xl m-5 relative w-[8rem] rounded-m mt-6 mb-2 mr-5"
             />
 
             <div className="flex flex-col items-center pb-4 mt-auto">

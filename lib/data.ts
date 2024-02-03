@@ -14,6 +14,8 @@ import metaCertificate from "@/public/certificateImages/metaCertificate.png";
 import michiganCertificate from "@/public/certificateImages/michiganCertificate.png";
 import udemyCertificate from "@/public/certificateImages/udemyCertificate.png";
 
+import tradingMaster3D from "@/public/AppIcons/Trading Master 3D.png";
+
 export const links = [
   {
     name: "Home",
@@ -137,72 +139,6 @@ export const educationData = [
     }
 ] as const;
 
-export const playableAdsData = [
-    {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
-        playButton: "Play",
-        url:"empty",
-    },
-    {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
-        playButton: "Play",
-        url:"empty",
-    },
-    {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
-        playButton: "Play",
-        url:"empty",
-    },
-    {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
-        playButton: "Play",
-        url:"empty",
-    },
-    {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
-        playButton: "Play",
-        url:"empty",
-    },
-    {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
-        playButton: "Play",
-        url:"empty",
-    },
-    {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
-        playButton: "Play",
-        url:"empty",
-    },
-    {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
-        playButton: "Play",
-        url:"empty",
-    },
-    {
-        appName: "App Name",
-        playableName: "Playable Name",
-        icon: englishFlagImg,
-        playButton: "Play",
-        url:"empty",
-    },
-    
-] as const;
 export const projectsData = [
   {
     title: "Playable Ads.& Game Projects",
@@ -391,3 +327,69 @@ export const certificatesData =[
         imageUrl:michiganCertificate,
     },
 ]
+
+export const playableAdsData = [
+    {
+        appName: "App Name",
+        playableName: "Playable Name",
+        icon: englishFlagImg,
+        playButton: "Play",
+        url:"empty",
+    },
+    {
+        appName: "App Name",
+        playableName: "Playable Name",
+        icon: englishFlagImg,
+        playButton: "Play",
+        url:"empty",
+    },
+    {
+        appName: "App Name",
+        playableName: "Playable Name",
+        icon: englishFlagImg,
+        playButton: "Play",
+        url:"empty",
+    },
+    {
+        appName: "App Name",
+        playableName: "Playable Name",
+        icon: englishFlagImg,
+        playButton: "Play",
+        url:"empty",
+    },
+    {
+        appName: "App Name",
+        playableName: "Playable Name",
+        icon: englishFlagImg,
+        playButton: "Play",
+        url:"empty",
+    },
+    {
+        appName: "App Name",
+        playableName: "Playable Name",
+        icon: englishFlagImg,
+        playButton: "Play",
+        url:"empty",
+    },
+    {
+        appName: "App Name",
+        playableName: "Playable Name",
+        icon: englishFlagImg,
+        playButton: "Play",
+        url:"empty",
+    },
+    {
+        appName: "App Name",
+        playableName: "Playable Name",
+        icon: englishFlagImg,
+        playButton: "Play",
+        url:"empty",
+    },
+    {
+        appName: "Trading Master 3D",
+        playableName: "IPhone Scam",
+        icon: tradingMaster3D,
+        playButton: "Play",
+        url:"empty",
+    },
+] as const;
