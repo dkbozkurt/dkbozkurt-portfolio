@@ -17,7 +17,16 @@ export default function PlyAd({
 {
     const ref = useRef<HTMLDivElement>(null);
     
+    const handleClick = () => {
+        // Perform any actions you need before navigating, if necessary
+        // For example, sending analytics events, tracking the click, etc.
+    
+        // Navigate to the specified URL
+        window.location.href = url;
+      };
+      
     return (
+        <a href={url} onClick={handleClick} className="group mx-[1rem] sm:mb-8 last:mb-0">
         <motion.div
         ref={ref}
         className="mx-[1rem] group sm:mb-8 last:mb-0"
@@ -44,16 +53,16 @@ export default function PlyAd({
                 >
                     {playableName}
                 </p>
-                <a
-                className="transition items-center flex w-[11rem] h-2 gap-1 pl-8 p-4 text-white cursor-pointer text-m bg-gray-900 rounded-full outline-none sm:w-[12rem]"
-                href={url} target="_blank"
+                <div
+                className="transition items-center flex w-[11rem] h-2 gap-1 pl-8 p-4 text-white text-m bg-gray-900 rounded-full outline-none sm:w-[12rem]"
                 >
                     Click to Play
                     <BsArrowRight 
                 className ="transition opacity-70 group-hover:translate-x-2"/>
-                </a>
+                </div>
             </div>
         </section>
         </motion.div>
+        </a>
     );
 }
