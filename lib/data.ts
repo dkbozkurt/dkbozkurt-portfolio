@@ -473,7 +473,7 @@ export const playableAdsData = [
     },
     {
         appName: "Cashyy",
-        playableName: "",
+        playableName: "Planet Drive",
         icon: cashyyLogo,
         url:"empty",
     },
