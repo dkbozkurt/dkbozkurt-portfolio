@@ -17,16 +17,14 @@ export default function PlyAd({
 {
     const ref = useRef<HTMLDivElement>(null);
     
-    const handleClick = () => {
-        // Perform any actions you need before navigating, if necessary
-        // For example, sending analytics events, tracking the click, etc.
-    
-        // Navigate to the specified URL
-        window.location.href = url;
-      };
+    const handleClick = (targetURL:string) => {
+        const basePath = process.env.PUBLIC_URL || '';
+        const url = `${basePath}${targetURL}`;
+        window.open(url, '_blank');
+    };
       
     return (
-        <a href={url} onClick={handleClick}>
+        <a onClick={()=> handleClick(url)}>
         <motion.div
         ref={ref}
         className="mx-[1rem] group sm:mb-8 last:mb-0"

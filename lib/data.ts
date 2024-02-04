@@ -1,3 +1,4 @@
+
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { LuGraduationCap } from "react-icons/lu";
@@ -55,7 +56,6 @@ import tradingMaster3DLogo from "@/public/AppIcons/Trading Master 3D.png";
 import valetMasterLogo from "@/public/AppIcons/Valet Master.png";
 import wChallengeLogo from "@/public/AppIcons/W Challenge.png";
 
-import tradingMaster3D_iPhoneScam from "@/public/playableAds/iPhoneScam_TradingMaster_PLY_01.html";
 
 export const links = [
   {
@@ -835,6 +835,6 @@ export const playableAdsData = [
         appName: "Trading Master 3D",
         playableName: "IPhone Scam",
         icon: tradingMaster3DLogo,
-        url:"https://github.com/dkbozkurt",
+        url:'/playableAds/iPhoneScam_TradingMaster_PLY_01.html',
     },
 ] as const;
