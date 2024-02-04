@@ -55,7 +55,7 @@ export default function PlyAd({
                 quality={95}
                 className="rounded-[2rem] transition flex justify-center group-hover:scale-[1.1] shadow-2xl m-5 relative h-[8rem] w-[8rem] rounded-m mt-3 mb-2 mr-5"
               />
-        
+    
               <div className="flex flex-col items-center pb-3 mt-auto">
                 <h3 className="text-2xl font-bold">{appName}</h3>
                 <p className="pb-1 text-gray-700">{playableName}</p>
@@ -66,7 +66,7 @@ export default function PlyAd({
               </div>
             </section>
           </motion.div>
-        
+    
           {isOverlayVisible && (
             <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 9998 }}>
               {/* Semi-transparent overlay */}
@@ -81,7 +81,7 @@ export default function PlyAd({
                   zIndex: 9998,
                 }}
               ></div>
-        
+    
               {/* Content inside the overlay */}
               <div
                 style={{
@@ -95,7 +95,8 @@ export default function PlyAd({
                   zIndex: 9999,
                   display: 'flex',
                   flexDirection: 'column',
-                  borderRadius: '8px', // Adjust as needed
+                  borderRadius: '16px', // Adjust as needed
+                  border: '4px solid white', // Thicker and white border
                 }}
               >
                 <button
@@ -104,7 +105,7 @@ export default function PlyAd({
                     top: '-20px', // Adjust to move the button outside the pop-up
                     right: '-20px', // Adjust to move the button outside the pop-up
                     background: 'white',
-                    border: 'none',
+                    border: '4px solid white', // Border color matching the pop-up border
                     borderRadius: '50%',
                     cursor: 'pointer',
                     width: '40px',
@@ -118,9 +119,15 @@ export default function PlyAd({
                 >
                   <span style={{ color: 'black', fontSize: '20px' }}>X</span>
                 </button>
-                <p style={{ color: 'black', textAlign: 'center', padding: '20px' }}>
-                  This is the 720x1080 overlay.
-                </p>
+                {/* Display HTML content from the given URL using an iframe */}
+                <iframe
+                  title="Popup Content"
+                  src={url}
+                  width="100%"
+                  height="100%"
+                  frameBorder="0"
+                  style={{ borderRadius: '16px' }}
+                />
               </div>
             </div>
           )}
