@@ -5,7 +5,7 @@ import { playableAdsData } from "@/lib/data";
 import Image from 'next/image'
 import { motion } from "framer-motion"
 import { BsArrowRight } from "react-icons/bs";
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 type PlayableAdsProps = typeof playableAdsData[number];
 
@@ -19,6 +19,20 @@ export default function PlyAd({
     const [isOverlayVisible, setOverlayVisible] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
     
+    useEffect(() => {
+        // Disable scrolling when the overlay is visible
+        if (isOverlayVisible) {
+          document.body.style.overflow = 'hidden';
+        } else {
+          document.body.style.overflow = 'visible';
+        }
+    
+        // Cleanup effect
+        return () => {
+          document.body.style.overflow = 'visible';
+        };
+      }, [isOverlayVisible]);
+
     const handleClick = (targetURL:string) => {
         setOverlayVisible(!isOverlayVisible);
 
@@ -26,8 +40,12 @@ export default function PlyAd({
         // const url = `${basePath}${targetURL}`;
         // window.open(url, '_blank');
     };
+
+    const handleClose = () => {
+        setOverlayVisible(false);
+      };
       
-    return (
+      return (
         <a onClick={() => handleClick(url)}>
           <motion.div ref={ref} className="mx-[1rem] group sm:mb-8 last:mb-0">
             <section className="bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[16rem] h-[16rem]">
@@ -37,7 +55,7 @@ export default function PlyAd({
                 quality={95}
                 className="rounded-[2rem] transition flex justify-center group-hover:scale-[1.1] shadow-2xl m-5 relative h-[8rem] w-[8rem] rounded-m mt-3 mb-2 mr-5"
               />
-    
+        
               <div className="flex flex-col items-center pb-3 mt-auto">
                 <h3 className="text-2xl font-bold">{appName}</h3>
                 <p className="pb-1 text-gray-700">{playableName}</p>
@@ -48,10 +66,10 @@ export default function PlyAd({
               </div>
             </section>
           </motion.div>
-    
+        
           {isOverlayVisible && (
             <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 9998 }}>
-              {/* Semi-transparent white overlay */}
+              {/* Semi-transparent overlay */}
               <div
                 style={{
                   position: 'absolute',
@@ -63,7 +81,7 @@ export default function PlyAd({
                   zIndex: 9998,
                 }}
               ></div>
-    
+        
               {/* Content inside the overlay */}
               <div
                 style={{
@@ -76,12 +94,32 @@ export default function PlyAd({
                   backgroundColor: 'white',
                   zIndex: 9999,
                   display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
+                  flexDirection: 'column',
+                  borderRadius: '8px', // Adjust as needed
                 }}
               >
+                <button
+                  style={{
+                    position: 'absolute',
+                    top: '-20px', // Adjust to move the button outside the pop-up
+                    right: '-20px', // Adjust to move the button outside the pop-up
+                    background: 'white',
+                    border: 'none',
+                    borderRadius: '50%',
+                    cursor: 'pointer',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Optional shadow
+                  }}
+                  onClick={handleClose}
+                >
+                  <span style={{ color: 'black', fontSize: '20px' }}>X</span>
+                </button>
                 <p style={{ color: 'black', textAlign: 'center', padding: '20px' }}>
-                  This is the 405x720 overlay.
+                  This is the 720x1080 overlay.
                 </p>
               </div>
             </div>
