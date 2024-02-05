@@ -72,32 +72,23 @@ export default function PlyAd({
                 style={{ zIndex: 9998 }}
                 ></div>
 
-                <div 
+                <div className="fixed z-50 flex flex-col items-center justify-center transform -translate-x-1/2 -translate-y-1/2 bg-white border-white top-1/2 left-1/2"
                 style={{
-                    position: 'fixed',
-                    top: '50%',
-                    left: '50%',
-                    transform: 'translate(-50%, -50%)',
                     width: '405px',
                     height: '720px',
-                    backgroundColor: 'white',
                     zIndex: 9999,
-                    display: 'flex',
-                    flexDirection: 'column',
                     borderRadius: '16px', // Adjust as needed
                     border: '4px solid white', // Thicker and white border
                 }}
                 >
 
-                    <button
+                    <button className="absolute flex items-center justify-center bg-white shadow-md cursor-pointer"
                         style={{
-                            position: 'absolute',
-                            top: '-20px', // Adjust to move the button outside the pop-up
-                            right: '-20px', // Adjust to move the button outside the pop-up
+                            top: '-20px',
+                            right: '-20px',
                             background: 'white',
                             border: '4px solid white', // Border color matching the pop-up border
                             borderRadius: '50%',
-                            cursor: 'pointer',
                             width: '40px',
                             height: '40px',
                             display: 'flex',
