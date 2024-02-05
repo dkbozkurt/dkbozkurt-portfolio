@@ -66,20 +66,13 @@ export default function PlyAd({
             </motion.div>
 
         {isOverlayVisible && (
-            <div style={{ position: 'fixed', top: 0, left: 0, width: '100%', height: '100%', zIndex: 9998 }}>
-                <div
-                style={{
-                    position: 'absolute',
-                    top: 0,
-                    left: 0,
-                    width: '100%',
-                    height: '100%',
-                    backgroundColor: 'rgba(0, 0, 0, 0.5)',
-                    zIndex: 9998,
-                }}
+            <div className="fixed top-0 left-0 w-full h-full" style={{ zIndex: 9998 }}>
+                
+                <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"
+                style={{ zIndex: 9998 }}
                 ></div>
 
-                <div
+                <div 
                 style={{
                     position: 'fixed',
                     top: '50%',
@@ -114,7 +107,7 @@ export default function PlyAd({
                         }}
                         onClick={handleClose}
                     >
-                        <span style={{ color: 'black', fontSize: '20px' }}>X</span>
+                        <span className="font-black text-[20px]">X</span>
                     </button>
 
                     <iframe
