@@ -78,7 +78,7 @@ export default function PlyAd({
                     height: '720px',
                     zIndex: 9999,
                     borderRadius: '16px', // Adjust as needed
-                    border: '4px solid white', // Thicker and white border
+                    border: '6px solid white', // Thicker and white border
                 }}
                 >
 
