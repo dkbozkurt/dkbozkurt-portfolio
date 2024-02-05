@@ -29,7 +29,7 @@ export default function PlayableAds() {
         >
             Playable Ad. projects that I have developed, which has been scaled in market campaigns.
         </p>
-        <div className="flex flex-wrap justify-center w-[24rem] gap-x-0 text-lg text-gray-800 gap-y-8
+        <div className="flex flex-wrap justify-center w-[35rem] gap-x-0 text-lg text-gray-800 gap-y-8
         sm:w-[48rem] sm:gap-x-1
         lg:w-[60rem] 
         xl:w-[80rem]">
