@@ -373,7 +373,7 @@ export const playableAdsData = [
         appName: "Cash Cow",
         playableName: "Feed The Cow",
         icon: cashCowLogo,
-        url:"/playableAds/",
+        url:"/playableAds/FeedTheCow_CashCow_Responsive_Playable_01_Unity_ALL.html",
     },
     {
         appName: "Test Em All",
