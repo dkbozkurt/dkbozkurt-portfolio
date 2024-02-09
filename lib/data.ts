@@ -513,6 +513,13 @@ export const playableAdsData = [
         icon: raidRushLogo,
         url:"/playableAds/DragAndPlaceTowers_DefenseLand_PLY_09.html",
     },
+    
+    {
+        appName: "Gin Rummy",
+        playableName: "Draw And Sort",
+        icon: ginRummyLogo,
+        url:"/playableAds/DrawAndSort_GinnRummy_PLY_01.html",
+    },
     {
         appName: "Raid Rush",
         playableName: "FPS Tower Shooter",
@@ -520,16 +527,28 @@ export const playableAdsData = [
         url:"/playableAds/FPSTowerShooter_DefenseLand_PLY_08.html",
     },
     {
-        appName: "Raid Rush",
-        playableName: "Fight In The Middle",
-        icon: raidRushLogo,
-        url:"/playableAds/FightInTheMiddle_DefenseLand_PLY_07.html",
+        appName: "Be My Guest",
+        playableName: "AirBnb Idle",
+        icon: beMyGuestLogo,
+        url:"/playableAds/AirbnbIdle_BeMyGuest_PLY_07.html",
+    },
+    {
+        appName: "Airport Master",
+        playableName: "Seat Jam",
+        icon: airportMasterLogo,
+        url:"/playableAds/SeatJam_AirportMaster_PLY_14.html",
     },
     {
         appName: "Raid Rush",
         playableName: "Cross Camera",
         icon: raidRushLogo,
         url:"/playableAds/CrossCamera_DefenseLand_PLY_05.html",
+    },
+    {
+        appName: "Fashion Famous",
+        playableName: "Get Ready For Podium",
+        icon: fashionFamousLogo,
+        url:"/playableAds/GetReadyForPodium_FashionFamous_PLY_01.html",
     },
     {
         appName: "Raid Rush",
@@ -544,40 +563,22 @@ export const playableAdsData = [
         url:"/playableAds/ShootBombs_DefenseLand_PLY_02.html",
     },
     {
-        appName: "Raid Rush",
-        playableName: "Call Enemy Waves",
-        icon: raidRushLogo,
-        url:"/playableAds/CallEnemyWaves_DefenseLand_PLY_01.html",
-    },
-    {
-        appName: "Gin Rummy",
-        playableName: "Draw And Sort",
-        icon: ginRummyLogo,
-        url:"/playableAds/DrawAndSort_GinnRummy_PLY_01.html",
-    },
-    {
-        appName: "Fashion Famous",
-        playableName: "Pick Costumes On Podium",
-        icon: fashionFamousLogo,
-        url:"/playableAds/PickCostumesOnPodium_FashionFamous_PLY_03.html",
-    },
-    {
-        appName: "Fashion Famous",
-        playableName: "Get Ready For Podium",
-        icon: fashionFamousLogo,
-        url:"/playableAds/GetReadyForPodium_FashionFamous_PLY_01.html",
-    },
-    {
-        appName: "Be My Guest",
-        playableName: "AirBnb Idle",
-        icon: beMyGuestLogo,
-        url:"/playableAds/AirbnbIdle_BeMyGuest_PLY_07.html",
-    },
-    {
         appName: "Be My Guest",
         playableName: "Place House Items",
         icon: beMyGuestLogo,
         url:"/playableAds/PlaceHouseItems_BeMyGuest_PLY_05.html",
+    },
+    {
+        appName: "Model Agency",
+        playableName: "Hire Model",
+        icon: modelAgencyLogo,
+        url:"/playableAds/HireModel_ModelAgent_PLY_03.html",
+    },
+    {
+        appName: "Raid Rush",
+        playableName: "Call Enemy Waves",
+        icon: raidRushLogo,
+        url:"/playableAds/CallEnemyWaves_DefenseLand_PLY_01.html",
     },
     {
         appName: "Be My Guest",
@@ -586,35 +587,28 @@ export const playableAdsData = [
         url:"/playableAds/CleanTheHouse_BeMyGuest_PLY_03.html",
     },
     {
+        appName: "Fashion Famous",
+        playableName: "Pick Costumes On Podium",
+        icon: fashionFamousLogo,
+        url:"/playableAds/PickCostumesOnPodium_FashionFamous_PLY_03.html",
+    },
+    {
         appName: "Be My Guest",
         playableName: "Order From Amazon",
         icon: beMyGuestLogo,
         url:"/playableAds/OrderFromAmazon_BeMyGuest_PLY_02.html",
-    },
-    
-    {
-        appName: "Model Agency",
-        playableName: "Hire Model",
-        icon: modelAgencyLogo,
-        url:"/playableAds/HireModel_ModelAgent_PLY_03.html",
-    },
-    {
-        appName: "Model Agency",
-        playableName: "Create Your Top Model",
-        icon: modelAgencyLogo,
-        url:"/playableAds/CreateYourTopModel_ModelAgent_PLY_02.html",
-    },
-    {
-        appName: "Airport Master",
-        playableName: "Seat Jam",
-        icon: airportMasterLogo,
-        url:"/playableAds/SeatJam_AirportMaster_PLY_14.html",
     },
     {
         appName: "Sling Plane",
         playableName: "Flight In City",
         icon: slingPlaneLogo,
         url:"/playableAds/FlightInCity_SlingPlane_PLY_07.html",
+    },
+    {
+        appName: "Model Agency",
+        playableName: "Create Your Top Model",
+        icon: modelAgencyLogo,
+        url:"/playableAds/CreateYourTopModel_ModelAgent_PLY_02.html",
     },
     {
         appName: "Airport Master",
@@ -635,6 +629,12 @@ export const playableAdsData = [
         url:"/playableAds/ScanBillie_AirportMaster_PLY_07.html",
     },
     {
+        appName: "Airport Master",
+        playableName: "Manage And Clean",
+        icon: airportMasterLogo,
+        url:"/playableAds/ManageAndClean_AirportMaster_PLY_06.html",
+    },
+    {
         appName: "Valet Master",
         playableName: "Manage Park Steps",
         icon: valetMasterLogo,
@@ -653,12 +653,6 @@ export const playableAdsData = [
         url:"/playableAds/SelectDestination_AirportMaster_PLY_10.html",
     },
     {
-        appName: "Airport Master",
-        playableName: "Manage And Clean",
-        icon: airportMasterLogo,
-        url:"/playableAds/ManageAndClean_AirportMaster_PLY_06.html",
-    },
-    {
         appName: "100 Mystery Buttons",
         playableName: "Water Prank",
         icon: hundredMysteryButtonsLogo,
@@ -671,16 +665,16 @@ export const playableAdsData = [
         url:"/playableAds/AirportIsland_AirportMaster_PLY_05.html",
     },
     {
-        appName: "Destroy Master",
-        playableName: "Destroy The Avocado",
-        icon: destroyMasterLogo,
-        url:"/playableAds/KillTheAvacado_DestroyMaster_PLY_01.html",
-    },
-    {
         appName: "Airport Master",
         playableName: "Place Passengers",
         icon: airportMasterLogo,
         url:"/playableAds/PlacePassengers_AirportMaster_PLY_04.html",
+    },
+    {
+        appName: "Destroy Master",
+        playableName: "Destroy The Avocado",
+        icon: destroyMasterLogo,
+        url:"/playableAds/KillTheAvacado_DestroyMaster_PLY_01.html",
     },
     {
         appName: "Guess And Hit",
