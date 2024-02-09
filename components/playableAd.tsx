@@ -32,8 +32,14 @@ export default function PlyAd({
     }, [isOverlayVisible]);
 
     const handleClick = (targetURL:string) => {
-        setOverlayVisible(!isOverlayVisible);
-
+        if(window.innerWidth < 640 || window.innerHeight < 640)
+        {
+            window.open(targetURL,'_blank');
+        }
+        else{
+            setOverlayVisible(!isOverlayVisible);
+        }
+        
         // const basePath = process.env.PUBLIC_URL || '';
         // const url = `${basePath}${targetURL}`;
         // window.open(url, '_blank');
