@@ -370,6 +370,12 @@ export const certificatesData =[
 
 export const playableAdsData = [
     {
+        appName: "Test Em All",
+        playableName: "Hexa Sort",
+        icon: testEmAllLogo,
+        url:"/playableAds/HexaSort_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
+    },
+    {
         appName: "Cash Cow",
         playableName: "Feed The Cow",
         icon: cashCowLogo,
