@@ -371,6 +371,12 @@ export const certificatesData =[
 export const playableAdsData = [
     {
         appName: "Test Em All",
+        playableName: "IEC-Water Sort",
+        icon: testEmAllLogo,
+        url:"/playableAds/IEC-WaterSort_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
+    },
+    {
+        appName: "Test Em All",
         playableName: "Hexa Sort",
         icon: testEmAllLogo,
         url:"/playableAds/HexaSort_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
