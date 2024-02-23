@@ -370,6 +370,12 @@ export const certificatesData =[
 
 export const playableAdsData = [
     {
+        appName:"Money Well",
+        playableName: "Block Blast",
+        icon: moneyWellLogo,
+        url:"/playableAds/BlockBlast_MoneyWell_Responsive_Playable_01_Unity_ALL.html",
+    },
+    {
         appName: "Test Em All",
         playableName: "IEC-Water Sort",
         icon: testEmAllLogo,
