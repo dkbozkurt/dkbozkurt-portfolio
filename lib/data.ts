@@ -55,7 +55,7 @@ import theLuckyMinerLogo from "@/public/AppIcons/The Lucky Miner.png";
 import tradingMaster3DLogo from "@/public/AppIcons/Trading Master 3D.png";
 import valetMasterLogo from "@/public/AppIcons/Valet Master.png";
 import wChallengeLogo from "@/public/AppIcons/W Challenge.png";
-
+import moneyTurnLogo from "@/public/AppIcons/Money Turn.png";
 
 export const links = [
   {
@@ -369,6 +369,12 @@ export const certificatesData =[
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Money Turn",
+        playableName:"Tap Away",
+        icon:moneyTurnLogo,
+        url:"/playableAds/TapAway_MoneyTurn_Responsive_Playable_01_Unity_ALL.html"
+    },
     {
         appName:"AppStation",
         playableName:"Traffic Escape!",
