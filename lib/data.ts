@@ -15,6 +15,7 @@ import ibmCertificate from "@/public/certificateImages/ibmCertificate.png";
 import metaCertificate from "@/public/certificateImages/metaCertificate.png";
 import michiganCertificate from "@/public/certificateImages/michiganCertificate.png";
 import udemyCertificate from "@/public/certificateImages/udemyCertificate.png";
+import udemyThreeJSCertificate from "@/public/certificateImages/udemyThreeJSCertificate.png";
 
 import hundredMysteryButtonsLogo from "@/public/AppIcons/100 Mystery Buttons.png";
 import airportMasterLogo from "@/public/AppIcons/Airport Master.png";
@@ -324,6 +325,13 @@ export const activitiesData = [
 ] as const;
 
 export const certificatesData =[
+    {
+        title:"Three.js and TypeScript",
+        company:"Udemy",
+        date:"Apr. 2024",
+        tags:["ThreeJS", "TypeScript", "Blender"],
+        imageUrl:udemyThreeJSCertificate,
+    },
     {
         title:"Back-End Apps with Node.js and Express",
         company:"IBM",
