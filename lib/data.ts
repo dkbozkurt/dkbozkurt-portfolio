@@ -300,11 +300,11 @@ export const languageData = [
 export const activitiesData = [
     {
         title: "Software Engineer",
-        company: "Pink Waffle",
+        company: "Kind Crab",
         location: "Hamburg, Germany",
         description: "",
         icon: React.createElement(VscOrganization),
-        date: "Jan. 2024 - Present",
+        date: "Apr. 2024 - Present",
     },
     {
         title: "Co-Founder & Administrative Assistant",
