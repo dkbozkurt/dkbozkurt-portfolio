@@ -378,6 +378,12 @@ export const certificatesData =[
 
 export const playableAdsData = [
     {
+        appName:"Cash Cow",
+        playableName:"Dice Merge",
+        icon: cashCowLogo,
+        url:"/playableAds/DiceMerge_CashCow_Responsive_Playable_01_Unity_ALL.html"
+    },
+    {
         appName:"Money Turn",
         playableName:"Tap Away",
         icon:moneyTurnLogo,
