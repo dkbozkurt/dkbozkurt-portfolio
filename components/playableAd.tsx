@@ -13,12 +13,17 @@ export default function PlyAd({
     appName,
     playableName,
     icon,
-    url
+    url,
+    isHighlighted
 }: PlayableAdsProps)
 {
     const [isOverlayVisible, setOverlayVisible] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
     
+    const cardClasses = `bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[16rem] h-[16rem] ${
+        isHighlighted ? "bg-amber-200 hover:bg-amber-300" : "" // Add golden color class if isGolden is true
+      }`;
+
     useEffect(() => {
         // Disable scrolling when the overlay is visible
         if (isOverlayVisible) {
@@ -52,7 +57,7 @@ export default function PlyAd({
     return (
         <a onClick={() => handleClick(url)}>
             <motion.div ref={ref} className="mx-[1rem] group sm:mb-8 last:mb-0">
-                <section className="bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[16rem] h-[16rem]">
+                <section className={cardClasses}>
                     <Image
                         src={icon}
                         alt="Playable icon"
