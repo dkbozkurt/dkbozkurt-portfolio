@@ -21,7 +21,7 @@ export default function PlyAd({
     const ref = useRef<HTMLDivElement>(null);
     
     const cardClasses = `bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[16rem] h-[16rem] ${
-        isHighlighted ? "bg-amber-200 hover:bg-amber-300" : "" // Add golden color class if isGolden is true
+        isHighlighted ? "bg-yellow-100 hover:bg-yellow-300" : "" // Add golden color class if isGolden is true
       }`;
 
     useEffect(() => {
