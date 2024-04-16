@@ -578,22 +578,21 @@ export const playableAdsData = [
         playableName: "Re-Claim America",
         icon: raidRushLogo,
         url:"/playableAds/ReClaimAmerica_DefenseLand_PLY_11.html",
-        isHighlighted:true,
+        isHighlighted:false,
     },
     {
         appName: "Raid Rush",
         playableName: "Drag And Place Towers",
         icon: raidRushLogo,
         url:"/playableAds/DragAndPlaceTowers_DefenseLand_PLY_09.html",
-        isHighlighted:false,
+        isHighlighted:true,
     },
-    
     {
         appName: "Gin Rummy",
         playableName: "Draw And Sort",
         icon: ginRummyLogo,
         url:"/playableAds/DrawAndSort_GinnRummy_PLY_01.html",
-        isHighlighted:false,
+        isHighlighted:true,
     },
     {
         appName: "Raid Rush",
@@ -656,7 +655,7 @@ export const playableAdsData = [
         playableName: "Hire Model",
         icon: modelAgencyLogo,
         url:"/playableAds/HireModel_ModelAgent_PLY_03.html",
-        isHighlighted:false,
+        isHighlighted:true,
     },
     {
         appName: "Raid Rush",
@@ -705,7 +704,7 @@ export const playableAdsData = [
         playableName: "Passport Check In Island",
         icon: airportMasterLogo,
         url:"/playableAds/PassportCheckInIslandAirport_AirportMaster_PLY_13.html",
-        isHighlighted:true,
+        isHighlighted:false,
     },
     {
         appName: "My Chocolate Shop",
@@ -796,7 +795,7 @@ export const playableAdsData = [
         playableName: "Hardest Level Ever",
         icon: bounceAndPopLogo,
         url:"/playableAds/PopBalloons_BounceAndPop_PLY_06.html",
-        isHighlighted:true,
+        isHighlighted:false,
     },
     {
         appName: "Airport Master",
@@ -838,14 +837,14 @@ export const playableAdsData = [
         playableName: "Easy to Pop",
         icon: bounceAndPopLogo,
         url:"/playableAds/PopBalloons_BounceAndPop_PLY_01.html",
-        isHighlighted:false,
+        isHighlighted:true,
     },
     {
         appName: "W Challenge",
         playableName: "Guess The Word",
         icon: wChallengeLogo,
         url:"/playableAds/Drink_Worle_PLY_02.html",
-        isHighlighted:false,
+        isHighlighted:true,
     },
     {
         appName: "Roll Merge 3D",
@@ -894,7 +893,7 @@ export const playableAdsData = [
         playableName: "IPhone Scam",
         icon: tradingMaster3DLogo,
         url:"/playableAds/iPhoneScam_TradingMaster_PLY_01.html",
-        isHighlighted:false,
+        isHighlighted:true,
     },
     {
         appName: "Mobu 2",
