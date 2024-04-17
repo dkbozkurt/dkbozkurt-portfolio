@@ -250,10 +250,9 @@ export const skillsData = [
     "HTML",
     "CSS",
     "React",
-    "Tailwind",
+    "TailwindCSS",
     "ThreeJS",
     "Node.js",
-    "Express",
     "Next.js",
     "Git",
     "npm",
@@ -267,7 +266,15 @@ export const skillsData = [
     "Spline",
     "Figma",
     "Adobe PhotoShop",
-    "Adobe Illustrator",
+] as const;
+
+export const softSkillsData = [
+    "Problem Solving",
+    "Marketing KPI analysis",
+    "Creativity",
+    "Communication",
+    "Teamwork",
+    "Market- Trend analysis",
 ] as const;
 
 export const languageData = [
