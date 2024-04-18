@@ -385,6 +385,13 @@ export const certificatesData =[
 
 export const playableAdsData = [
     {
+        appName:"Test Em All",
+        playableName:"Monopoly",
+        icon: testEmAllLogo,
+        url:"/playableAds/Monopoly_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted:false,
+    },
+    {
         appName:"Cash Cow",
         playableName:"Dice Merge",
         icon: cashCowLogo,
