@@ -57,6 +57,7 @@ import tradingMaster3DLogo from "@/public/AppIcons/Trading Master 3D.png";
 import valetMasterLogo from "@/public/AppIcons/Valet Master.png";
 import wChallengeLogo from "@/public/AppIcons/W Challenge.png";
 import moneyTurnLogo from "@/public/AppIcons/Money Turn.png";
+import newTestEmAllLogo from "@/public/AppIcons/NewTestEmAllLogo.png";
 
 export const links = [
   {
@@ -387,7 +388,7 @@ export const playableAdsData = [
     {
         appName:"Test Em All",
         playableName:"Monopoly",
-        icon: testEmAllLogo,
+        icon: newTestEmAllLogo,
         url:"/playableAds/Monopoly_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted:false,
     },
