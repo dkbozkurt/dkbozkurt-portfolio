@@ -262,6 +262,7 @@ export const skillsData = [
     "CannonJS",
     "ExtendScript",
     "Framer Motion",
+    "GSAP",
     "UXP",
     "Blender",
     "Spline",
