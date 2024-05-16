@@ -242,27 +242,29 @@ export const projectsData = [
 
 export const skillsData = [
     "C#",
-    "JavaScript",
-    "TypeScript",
     "Unity",
     "LunaLabs",
-    "Python",
-    "C++",
+    "JavaScript",
+    "TypeScript",
     "HTML",
     "CSS",
+    "ThreeJS",
+    "CannonJS",
+    "GSAP",
+    "Tween.js",
+    "Cocos Creator",
     "React",
     "TailwindCSS",
-    "ThreeJS",
+    "Framer Motion",
     "Node.js",
     "Next.js",
+    "Python",
+    "C++",
     "Git",
     "npm",
     "Linux",
     "Jest",
-    "CannonJS",
     "ExtendScript",
-    "Framer Motion",
-    "GSAP",
     "UXP",
     "Blender",
     "Spline",
@@ -272,11 +274,12 @@ export const skillsData = [
 
 export const softSkillsData = [
     "Problem Solving",
-    "Marketing KPI analysis",
+    "Marketing KPI Analysis",
     "Creativity",
     "Communication",
     "Teamwork",
-    "Market- Trend analysis",
+    "Market-Trend Analysis",
+    "Quick Learner"
 ] as const;
 
 export const languageData = [
