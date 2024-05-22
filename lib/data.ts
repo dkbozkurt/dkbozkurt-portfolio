@@ -390,6 +390,13 @@ export const certificatesData =[
 
 export const playableAdsData = [
     {
+        appName:"Money Turn",
+        playableName:"KnifeHit",
+        icon: moneyTurnLogo,
+        url:"/playableAds/KnifeHit_MoneyTurn_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted:false,
+    },
+    {
         appName:"Test Em All",
         playableName:"OneLine",
         icon: newTestEmAllLogo,
