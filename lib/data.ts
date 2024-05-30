@@ -395,7 +395,7 @@ export const playableAdsData = [
         appName:"Test Em All",
         playableName:"Screw Puzzle: Wood Nut & Bolt",
         icon: testEmAllLogo,
-        url:"/playableAds/KnifeHit_MoneyTurn_Responsive_Playable_01_Unity_ALL.html",
+        url:"/playableAds/ScrewPuzzle_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted:false,
     },
     {
