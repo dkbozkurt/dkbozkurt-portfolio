@@ -392,11 +392,18 @@ export const certificatesData =[
 
 export const playableAdsData = [
     {
+        appName:"Test Em All",
+        playableName:"Screw Puzzle: Wood Nut & Bolt",
+        icon: testEmAllLogo,
+        url:"/playableAds/KnifeHit_MoneyTurn_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted:false,
+    },
+    {
         appName:"Money Turn",
         playableName:"KnifeHit",
         icon: moneyTurnLogo,
         url:"/playableAds/KnifeHit_MoneyTurn_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted:false,
+        isHighlighted:true,
     },
     {
         appName:"Test Em All",
