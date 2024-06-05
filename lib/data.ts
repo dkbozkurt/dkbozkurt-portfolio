@@ -339,6 +339,13 @@ export const activitiesData = [
 ] as const;
 
 export const certificatesData =[
+    // {
+    //     title:"Three.js Journey",
+    //     company:"by Bruno Simon",
+    //     date:"Jun. 2024",
+    //     tags:["ThreeJS", "JavaScript", "React", "HTML", "CSS", "Blender", "GLSL", "GSAP"],
+    //     imageUrl:udemyThreeJSCertificate,
+    // },
     {
         title:"Three.js and TypeScript",
         company:"Udemy",
