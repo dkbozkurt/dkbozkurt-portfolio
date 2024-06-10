@@ -251,6 +251,7 @@ export const skillsData = [
     "ThreeJS",
     "CannonJS",
     "GSAP",
+    "React Three Fiber",
     "Tween.js",
     "GLSL",
     "Cocos Creator",
@@ -343,7 +344,7 @@ export const certificatesData =[
     //     title:"Three.js Journey",
     //     company:"by Bruno Simon",
     //     date:"Jun. 2024",
-    //     tags:["ThreeJS", "JavaScript", "React", "HTML", "CSS", "Blender", "GLSL", "GSAP"],
+    //     tags:["ThreeJS", "JavaScript", "React","React Three Fiber", "HTML", "CSS", "Blender", "GLSL", "GSAP"],
     //     imageUrl:udemyThreeJSCertificate,
     // },
     {
