@@ -16,6 +16,7 @@ import metaCertificate from "@/public/certificateImages/metaCertificate.png";
 import michiganCertificate from "@/public/certificateImages/michiganCertificate.png";
 import udemyCertificate from "@/public/certificateImages/udemyCertificate.png";
 import udemyThreeJSCertificate from "@/public/certificateImages/udemyThreeJSCertificate.png";
+import threeJSJourneyCertificate from "@/public/certificateImages/threeJSJourneyCertificate.png";
 
 import hundredMysteryButtonsLogo from "@/public/AppIcons/100 Mystery Buttons.png";
 import airportMasterLogo from "@/public/AppIcons/Airport Master.png";
@@ -341,13 +342,13 @@ export const activitiesData = [
 ] as const;
 
 export const certificatesData =[
-    // {
-    //     title:"Three.js Journey",
-    //     company:"three.js journey by Bruno Simon",
-    //     date:"Jun. 2024",
-    //     tags:["ThreeJS", "JavaScript", "React","React Three Fiber", "HTML", "CSS", "Blender", "GLSL", "GSAP","CannonJS", "Rapier"],
-    //     imageUrl:udemyThreeJSCertificate,
-    // },
+    {
+        title:"Three.js Journey",
+        company:"three.js journey by Bruno Simon",
+        date:"Jun. 2024",
+        tags:["ThreeJS", "JavaScript", "React","React Three Fiber", "HTML", "CSS", "Blender", "GLSL", "GSAP","CannonJS", "Rapier"],
+        imageUrl:threeJSJourneyCertificate,
+    },
     {
         title:"Three.js and TypeScript",
         company:"Udemy",
