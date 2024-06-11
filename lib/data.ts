@@ -250,6 +250,7 @@ export const skillsData = [
     "CSS",
     "ThreeJS",
     "CannonJS",
+    "Rapier",
     "GSAP",
     "React Three Fiber",
     "Tween.js",
@@ -342,9 +343,9 @@ export const activitiesData = [
 export const certificatesData =[
     // {
     //     title:"Three.js Journey",
-    //     company:"by Bruno Simon",
+    //     company:"three.js journey by Bruno Simon",
     //     date:"Jun. 2024",
-    //     tags:["ThreeJS", "JavaScript", "React","React Three Fiber", "HTML", "CSS", "Blender", "GLSL", "GSAP"],
+    //     tags:["ThreeJS", "JavaScript", "React","React Three Fiber", "HTML", "CSS", "Blender", "GLSL", "GSAP","CannonJS", "Rapier"],
     //     imageUrl:udemyThreeJSCertificate,
     // },
     {
