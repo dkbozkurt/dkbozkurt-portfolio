@@ -61,7 +61,7 @@ export default function Intro() {
         >
             <span className="font-bold">Hello,</span> I'm {" "}
             <span className="font-bold">Dogukan Kaan Bozkurt.</span> I'm a{" "}
-            <span className="font-bold">Playable Ads. Developer/ Web Developer.</span> I enjoy crafting{" "}
+            <span className="font-bold">Playable Ads. Developer/ Creative Developer.</span> I enjoy crafting{" "}
             <span className="italic">automation tools,</span> building{" "}
             <span className="italic">interactive advertisements,</span> and bringing{" "}
             <span className="italic">innovative designs</span> to life.
