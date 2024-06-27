@@ -59,6 +59,7 @@ import valetMasterLogo from "@/public/AppIcons/Valet Master.png";
 import wChallengeLogo from "@/public/AppIcons/W Challenge.png";
 import moneyTurnLogo from "@/public/AppIcons/Money Turn.png";
 import newTestEmAllLogo from "@/public/AppIcons/NewTestEmAllLogo.png";
+import cashGrannyLogo from '@/public/AppIcons/CashGrannyLogo.png'
 
 export const links = [
   {
@@ -401,6 +402,13 @@ export const certificatesData =[
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Cash Granny",
+        playableName:"Kill The Snake",
+        icon: cashGrannyLogo,
+        url:"/playableAds/KillTheSnake_CashGranny_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted:false,
+    },
     {
         appName:"Test Em All",
         playableName:"Wood Nut & Bolt Puzzle",
