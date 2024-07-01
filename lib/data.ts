@@ -403,13 +403,6 @@ export const certificatesData =[
 
 export const playableAdsData = [
     {
-        appName:"Test",
-        playableName:"Test",
-        icon: cashGrannyLogo,
-        url:"/playableAds/test.html",
-        isHighlighted:false,
-    },
-    {
         appName:"Cash Granny",
         playableName:"Kill The Snake",
         icon: cashGrannyLogo,
