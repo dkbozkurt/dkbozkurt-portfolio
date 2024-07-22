@@ -257,6 +257,8 @@ export const skillsData = [
     "React Three Fiber",
     "Tween.js",
     "GLSL",
+    "Vite",
+    "Rollup",
     "Cocos Creator",
     "React",
     "TailwindCSS",
