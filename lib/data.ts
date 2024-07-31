@@ -404,13 +404,13 @@ export const certificatesData =[
 ]
 
 export const playableAdsData = [
-    {
-        appName:"Cash Granny",
-        playableName:"Kill The Snake",
-        icon: cashGrannyLogo,
-        url:"/playableAds/KillTheSnake_CashGranny_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted:false,
-    },
+    // {
+    //     appName:"Cash Granny",
+    //     playableName:"Kill The Snake",
+    //     icon: cashGrannyLogo,
+    //     url:"/playableAds/KillTheSnake_CashGranny_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted:false,
+    // },
     {
         appName:"Test Em All",
         playableName:"Wood Nut & Bolt Puzzle",
