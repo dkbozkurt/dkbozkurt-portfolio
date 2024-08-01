@@ -404,6 +404,13 @@ export const certificatesData =[
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Game Perks",
+        playableName:"Gold Rush",
+        icon: gamePerksLogo,
+        url:"/playableAds/GoldRush_GamePerks_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted:false,
+    },
     // {
     //     appName:"Cash Granny",
     //     playableName:"Kill The Snake",
