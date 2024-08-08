@@ -405,6 +405,13 @@ export const certificatesData =[
 
 export const playableAdsData = [
     {
+        appName:"TEST",
+        playableName:"Test",
+        icon: cashGiraffeLogo,
+        url:"/playableAds/IEC_TEST_VideoRun.html",
+        isHighlighted:true,
+    },
+    {
         appName:"Game Perks",
         playableName:"MoneyBunny Base GP",
         icon: gamePerksLogo,
