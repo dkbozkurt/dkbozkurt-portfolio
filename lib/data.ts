@@ -60,6 +60,7 @@ import wChallengeLogo from "@/public/AppIcons/W Challenge.png";
 import moneyTurnLogo from "@/public/AppIcons/Money Turn.png";
 import newTestEmAllLogo from "@/public/AppIcons/NewTestEmAllLogo.png";
 import cashGrannyLogo from '@/public/AppIcons/CashGrannyLogo.png'
+import shootDefenderLogo from '@/public/AppIcons/Shoot Defender.png'
 
 export const links = [
   {
@@ -404,6 +405,13 @@ export const certificatesData =[
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Shoot Defender",
+        playableName:"Evolving Weapons",
+        icon: shootDefenderLogo,
+        url:"/playableAds/ShootDefender_unityads.html",
+        isHighlighted:true,
+    },
     {
         appName:"Game Perks",
         playableName:"MoneyBunny Base GP",
