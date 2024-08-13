@@ -260,7 +260,6 @@ export const skillsData = [
     "GLSL",
     "Vite",
     "Rollup",
-    "Cocos Creator",
     "React",
     "TailwindCSS",
     "Framer Motion",
@@ -279,6 +278,8 @@ export const skillsData = [
     "Spline",
     "Figma",
     "Adobe PhotoShop",
+    "Adobe Illustrator",
+    "Adobe Premier Pro",
 ] as const;
 
 export const softSkillsData = [
