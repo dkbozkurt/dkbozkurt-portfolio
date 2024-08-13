@@ -114,7 +114,7 @@ export const experiencesData = [
     title: "Playable Ads Developer",
     company: "JustDice",
     location: "Hamburg, Germany",
-    description: "Developing playable ads for apps and mobile games using TypeScript, ThreeJS, Unity, LunaLabs, and C#. Developing optimization and conversation tools for ad network exports. Developing automation tools/ extensions for Unity using C#. Developing plugins for Adobe Apps. using ExtendScript, JavaScript, HTML, CSS and UXP. Designing 3D& 2D assets for marketing campaigns by using Blender, Spline and Figma.",
+    description: "Developing IEC and Playable Ads. building tool using JavaScript and Node.js. Developing playable ads for apps and mobile games using TypeScript, ThreeJS, Unity, LunaLabs, and C#. Developing optimization and conversation tools for ad network exports. Developing automation tools/ extensions for Unity using C#. Developing plugins for Adobe Apps. using ExtendScript, JavaScript, HTML, CSS and UXP. Designing 3D& 2D assets for marketing campaigns by using Blender, Spline and Figma.",
     icon: React.createElement(CgWorkAlt),
     date: "Apr. 2023 - Present",
   },
