@@ -140,9 +140,9 @@ export const experiencesData = [
         icon: <Image
             src={justdiceLogo}
             alt="logo"
-            style={{ 
+            style={{
                 objectFit: 'contain',
-                borderRadius: '50%' 
+                borderRadius: '50%'
             }}
         />,
         date: "Apr. 2023 - Present",
@@ -159,9 +159,9 @@ export const experiencesData = [
         icon: <Image
             src={panteonLogo}
             alt="logo"
-            style={{ 
+            style={{
                 objectFit: 'contain',
-                borderRadius: '50%' 
+                borderRadius: '50%'
             }}
         />,
         date: "Nov. 2021 - Apr. 2023",
@@ -177,9 +177,9 @@ export const experiencesData = [
         icon: <Image
             src={ekmobLogo}
             alt="logo"
-            style={{ 
+            style={{
                 objectFit: 'contain',
-                borderRadius: '50%' 
+                borderRadius: '50%'
             }}
         />,
         date: "Sep. 2021 - Oct. 2021",
@@ -195,9 +195,9 @@ export const experiencesData = [
         icon: <Image
             src={tuprasLogo}
             alt="logo"
-            style={{ 
+            style={{
                 objectFit: 'contain',
-                borderRadius: '50%' 
+                borderRadius: '50%'
             }}
         />,
         date: "Aug. 2021 - Sep. 2021",
@@ -212,9 +212,9 @@ export const experiencesData = [
         icon: <Image
             src={gefeasoftLogo}
             alt="logo"
-            style={{ 
+            style={{
                 objectFit: 'contain',
-                borderRadius: '50%' 
+                borderRadius: '50%'
             }}
         />,
         date: "Mar. 2021 - Jun. 2021",
@@ -229,9 +229,9 @@ export const experiencesData = [
         icon: <Image
             src={avocudaLogo}
             alt="logo"
-            style={{ 
+            style={{
                 objectFit: 'contain',
-                borderRadius: '50%' 
+                borderRadius: '50%'
             }}
         />,
         date: "Feb. 2020 - Jun. 2020",
@@ -247,9 +247,9 @@ export const experiencesData = [
         icon: <Image
             src={tempaPanoLogo}
             alt="logo"
-            style={{ 
+            style={{
                 objectFit: 'contain',
-                borderRadius: '50%' 
+                borderRadius: '50%'
             }}
         />,
         date: "Aug. 2019 - Sep. 2019",
@@ -261,13 +261,18 @@ export const educationData = [
         title: "B.S., Electrical & Electronics Engineering (%100 English)",
         university: "Eskisehir Osmangazi University",
         location: "Eskisehir, Turkey",
-        description: "After completing the English preparatory year, I pursued software-related courses in computer science and graduated with a GPA of 3.01/4.0. During my academic journey, I had the opportunity to work as an intern in the Artificial Intelligence and Robotics Lab.. Additionally, I took an active role in developing the website for the university's Artificial Intelligence and Robotics Lab. course",
+        description: [
+            "Successfully completed the English preparatory year and took elective courses from the Computer Science department, in addition to my regular classes.",
+            "Graduated with a GPA of 3.01/4.0.",
+            "Worked as an intern in the Artificial Intelligence and Robotics Lab.",
+            "Played an active role in developing the website for the university's Artificial Intelligence and Robotics Lab course."
+        ],
         icon: <Image
             src={oguLogo}
             alt="logo"
-            style={{ 
+            style={{
                 objectFit: 'contain',
-                borderRadius: '50%' 
+                borderRadius: '50%'
             }}
         />,
         date: "Sep. 2016 - Aug. 2021",
@@ -413,13 +418,16 @@ export const activitiesData = [
         title: "Software Engineer",
         company: "Kind Crab",
         location: "Hamburg, Germany",
-        description: "",
+        description: [
+            "Contributing to the development of the website as a Fullstack developer.",
+            "Integrating logic code for creating and editing interactive end cards."
+        ],
         icon: <Image
             src={kindCrabLogo}
             alt="logo"
-            style={{ 
+            style={{
                 objectFit: 'contain',
-                borderRadius: '50%' 
+                borderRadius: '50%'
             }}
         />,
         date: "Apr. 2024 - Present",
@@ -428,13 +436,17 @@ export const activitiesData = [
         title: "Co-Founder & Administrative Assistant",
         company: "Eskisehir Korean Culture Academy",
         location: "Eskisehir, Turkey",
-        description: "Engaged in founding, overseeing, and managing academy operations, including event coordination, planning, and teaching introductory A1-level Korean to beginners.",
+        description: [
+            "Engaged in founding, overseeing, and managing academy operations.",
+            "Coordinated and planned events for the academy.",
+            "Taught introductory A1-level Korean to beginners."
+        ],
         icon: <Image
             src={koreanCulturalCenterLogo}
             alt="logo"
-            style={{ 
+            style={{
                 objectFit: 'contain',
-                borderRadius: '50%' 
+                borderRadius: '50%'
             }}
         />,
         date: "Jun. 2019 - Nov. 2021",
@@ -443,13 +455,16 @@ export const activitiesData = [
         title: "IGET-IT Member",
         company: "AIESEC Turkey",
         location: "Eskisehir, Turkey",
-        description: "Provided mentorship and translation services to foreign talents and entrepreneurs in Turkey, aiding in navigating permit procedures and resolving associated challenges.",
+        description: [
+            "Provided mentorship and translation services to foreign talents and entrepreneurs in Turkey.",
+            "Aided in navigating permit procedures and resolving associated challenges for foreign talents."
+        ],
         icon: <Image
             src={aiesecLogo}
             alt="logo"
-            style={{ 
+            style={{
                 objectFit: 'contain',
-                borderRadius: '50%' 
+                borderRadius: '50%'
             }}
         />,
         date: "Oct. 2017 - Jun. 2018",
