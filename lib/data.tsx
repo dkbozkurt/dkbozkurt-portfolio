@@ -129,13 +129,21 @@ export const experiencesData = [
         title: "Playable Ads Developer",
         company: "JustDice",
         location: "Hamburg, Germany",
-        description: "Developing IEC and Playable Ads. building tool using JavaScript and Node.js. Developing playable ads for apps and mobile games using TypeScript, ThreeJS, Unity, LunaLabs, and C#. Developing optimization and conversation tools for ad network exports. Developing automation tools/ extensions for Unity using C#. Developing plugins for Adobe Apps. using ExtendScript, JavaScript, HTML, CSS and UXP. Designing 3D& 2D assets for marketing campaigns by using Blender, Spline and Figma.",
+        description: [
+            "Developing IEC and Playable Ads. building tool using JavaScript and Node.js",
+            "Developing optimization and conversion tools for ad network exports using TypeScript",
+            "Developing playable ads. for apps and mobile games using TypeScript, ThreeJS, Unity, LunaLabs, and C#.",
+            "Developing automation tools/extensions for Unity using C#.",
+            "Developing plugins for Adobe Apps using ExtendScript, JavaScript, HTML, CSS, and UXP.",
+            "Designing 3D & 2D assets for marketing campaigns using Blender, Spline, and Figma."
+        ],
         icon: <Image
             src={justdiceLogo}
             alt="logo"
-            layout="fill"
-            objectFit="contain"
-            style={{ borderRadius: '50%' }}
+            style={{ 
+                objectFit: 'contain',
+                borderRadius: '50%' 
+            }}
         />,
         date: "Apr. 2023 - Present",
     },
@@ -143,14 +151,18 @@ export const experiencesData = [
         title: "Playable Ads & Marketing Game Developer",
         company: "Panteon Games",
         location: "Ankara, Turkey",
-        description:
-            "Developing and designing playable ads using Unity, LunaLabs, and C#. Enhancing game play, integrating new mechanics/features, and applying creative elements to maximize game attractiveness for advertising. Developing extensions/ packages for playable ads development in Unity using C#.",
+        description: [
+            "Developed and designed playable ads using Unity, LunaLabs, and C#.",
+            "Enhanced gameplay, integrated new mechanics/features, and applied creative elements to maximize game attractiveness for advertising.",
+            "Developed extensions/packages for playable ads. and creative game development in Unity using C#."
+        ],
         icon: <Image
             src={panteonLogo}
             alt="logo"
-            layout="fill"
-            objectFit="contain"
-            style={{ borderRadius: '50%' }}
+            style={{ 
+                objectFit: 'contain',
+                borderRadius: '50%' 
+            }}
         />,
         date: "Nov. 2021 - Apr. 2023",
     },
@@ -158,14 +170,17 @@ export const experiencesData = [
         title: "Technical Customer Support Specialist",
         company: "Ekmob SFA",
         location: "Istanbul, Turkey",
-        description:
-            "Addressing customer-reported problems and resolving software bugs. Communicating technical aspects of our software apps and to customers.",
+        description: [
+            "Addressed customer-reported problems and resolved software bugs.",
+            "Communicated technical aspects of our software apps to customers."
+        ],
         icon: <Image
             src={ekmobLogo}
             alt="logo"
-            layout="fill"
-            objectFit="contain"
-            style={{ borderRadius: '50%' }}
+            style={{ 
+                objectFit: 'contain',
+                borderRadius: '50%' 
+            }}
         />,
         date: "Sep. 2021 - Oct. 2021",
     },
@@ -173,14 +188,17 @@ export const experiencesData = [
         title: "Project Engineer - Intern",
         company: "TUPRAS",
         location: "Kocaeli, Turkey",
-        description:
-            "Led 'susTRAINable' project at TUPRAS, targeting net-zero railway emissions by 2050, aligning with 6 UN Sustainable Development Goals. Moreover, 'TogetHER' project focused on improving women's lives in the refinery and energy sectors, including mentorship programs for STEM-inclined women.",
+        description: [
+            "Led 'susTRAINable' project at TUPRAS, targeting net-zero railway emissions by 2050, aligning with 6 UN Sustainable Development Goals.",
+            "Led 'TogetHER' project focused on improving women's lives in the refinery and energy sectors, including mentorship programs for STEM-inclined women."
+        ],
         icon: <Image
             src={tuprasLogo}
             alt="logo"
-            layout="fill"
-            objectFit="contain"
-            style={{ borderRadius: '50%' }}
+            style={{ 
+                objectFit: 'contain',
+                borderRadius: '50%' 
+            }}
         />,
         date: "Aug. 2021 - Sep. 2021",
     },
@@ -188,14 +206,16 @@ export const experiencesData = [
         title: "Game Developer",
         company: "GEFEASOFT",
         location: "Mugla, Turkey",
-        description:
-            "Developed WebGL & Mobile based serious games and VR-based Anatomy Atlas in the healthcare industry by using Unity and C#.",
+        description: [
+            "Developed WebGL & Mobile based serious games and VR-based Anatomy Atlas in the healthcare industry using Unity and C#."
+        ],
         icon: <Image
             src={gefeasoftLogo}
             alt="logo"
-            layout="fill"
-            objectFit="contain"
-            style={{ borderRadius: '50%' }}
+            style={{ 
+                objectFit: 'contain',
+                borderRadius: '50%' 
+            }}
         />,
         date: "Mar. 2021 - Jun. 2021",
     },
@@ -203,14 +223,16 @@ export const experiencesData = [
         title: "Software Engineer - Intern",
         company: "Avocuda",
         location: "Istanbul, Turkey",
-        description:
-            "Contributed to mobile application development in the development team, utilizing React-Native and Adobe XD.",
+        description: [
+            "Contributed to mobile application development in the development team, utilizing React-Native and Adobe XD."
+        ],
         icon: <Image
             src={avocudaLogo}
             alt="logo"
-            layout="fill"
-            objectFit="contain"
-            style={{ borderRadius: '50%' }}
+            style={{ 
+                objectFit: 'contain',
+                borderRadius: '50%' 
+            }}
         />,
         date: "Feb. 2020 - Jun. 2020",
     },
@@ -218,14 +240,17 @@ export const experiencesData = [
         title: "Electrical Design Engineer - Intern",
         company: "Tempa Pano",
         location: "Kocaeli, Turkey",
-        description:
-            "Interned as a test and design engineer in an electrical enclosure-producing factory. Engaged in projects utilizing EPLAN and AutoCAD, including electrical enclosure projects such as Rayyan Stadium in Qatar and the International Reception Center of Ashgabat in Turkmenistan.",
+        description: [
+            "Interned as a test and design engineer in an electrical enclosure-producing factory.",
+            "Engaged in projects utilizing EPLAN and AutoCAD, including electrical enclosure projects such as Rayyan Stadium in Qatar and the International Reception Center of Ashgabat in Turkmenistan."
+        ],
         icon: <Image
             src={tempaPanoLogo}
             alt="logo"
-            layout="fill"
-            objectFit="contain"
-            style={{ borderRadius: '50%' }}
+            style={{ 
+                objectFit: 'contain',
+                borderRadius: '50%' 
+            }}
         />,
         date: "Aug. 2019 - Sep. 2019",
     },
@@ -240,9 +265,10 @@ export const educationData = [
         icon: <Image
             src={oguLogo}
             alt="logo"
-            layout="fill"
-            objectFit="contain"
-            style={{ borderRadius: '50%' }}
+            style={{ 
+                objectFit: 'contain',
+                borderRadius: '50%' 
+            }}
         />,
         date: "Sep. 2016 - Aug. 2021",
     }
@@ -391,9 +417,10 @@ export const activitiesData = [
         icon: <Image
             src={kindCrabLogo}
             alt="logo"
-            layout="fill"
-            objectFit="contain"
-            style={{ borderRadius: '50%' }}
+            style={{ 
+                objectFit: 'contain',
+                borderRadius: '50%' 
+            }}
         />,
         date: "Apr. 2024 - Present",
     },
@@ -405,9 +432,10 @@ export const activitiesData = [
         icon: <Image
             src={koreanCulturalCenterLogo}
             alt="logo"
-            layout="fill"
-            objectFit="contain"
-            style={{ borderRadius: '50%' }}
+            style={{ 
+                objectFit: 'contain',
+                borderRadius: '50%' 
+            }}
         />,
         date: "Jun. 2019 - Nov. 2021",
     },
@@ -419,9 +447,10 @@ export const activitiesData = [
         icon: <Image
             src={aiesecLogo}
             alt="logo"
-            layout="fill"
-            objectFit="contain"
-            style={{ borderRadius: '50%' }}
+            style={{ 
+                objectFit: 'contain',
+                borderRadius: '50%' 
+            }}
         />,
         date: "Oct. 2017 - Jun. 2018",
     },

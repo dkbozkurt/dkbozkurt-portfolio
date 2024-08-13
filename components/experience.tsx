@@ -47,9 +47,18 @@ export default function Experience() {
                             {" "}<span>&#8226;</span>{" "}
                             {item.location}
                         </p>
-                        <p className ="!mt-1 !font-normal text-gray-700">
-                            {item.description}
-                        </p>
+                        {Array.isArray(item.description) ? (
+                                <ul className="list-disc ml-5 !mt-1 !font-normal text-gray-700">
+                                    {item.description.map((desc, i) => (
+                                        <li key={i}>{desc}</li>
+                                    ))}
+                                </ul>
+                            ) : (
+                                <p className="!mt-1 !font-normal text-gray-700">
+                                    {item.description}
+                                </p>
+                            )}
+
                     </VerticalTimelineElement>
                 </React.Fragment>
             ))}
