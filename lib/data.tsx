@@ -419,8 +419,7 @@ export const activitiesData = [
         company: "Kind Crab",
         location: "Hamburg, Germany",
         description: [
-            "Contributing to the development of the website as a Fullstack developer.",
-            "Integrating logic code for creating and editing interactive end cards."
+            "Integrating logic code for creating and editing interactive end cards and contributing to the development of the website as a Fullstack developer.",
         ],
         icon: <Image
             src={kindCrabLogo}
