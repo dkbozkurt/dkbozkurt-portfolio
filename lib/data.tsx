@@ -130,7 +130,7 @@ export const experiencesData = [
         company: "JustDice",
         location: "Hamburg, Germany",
         description: [
-            "Developing IEC and Playable Ads. building tool using JavaScript and Node.js",
+            "Developing IEC and Playable Ads. building engine using JavaScript and Node.js",
             "Developing optimization and conversion tools for ad network exports using TypeScript",
             "Developing playable ads. for apps and mobile games using TypeScript, ThreeJS, Unity, LunaLabs, and C#.",
             "Developing automation tools/extensions for Unity using C#.",
