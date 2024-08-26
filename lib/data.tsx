@@ -1,8 +1,5 @@
 
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { LuGraduationCap } from "react-icons/lu";
-import { VscOrganization } from "react-icons/vsc";
 import Image from 'next/image';
 
 import turkishFlagImg from "@/public/flagImages/turkishFlag.png";
@@ -130,7 +127,7 @@ export const experiencesData = [
         company: "JustDice",
         location: "Hamburg, Germany",
         description: [
-            "Developing IEC and Playable Ads. building engine using JavaScript and Node.js",
+            "Developing IEC and Playable Ads. building engine using TypeScript and Node.js",
             "Developing optimization and conversion tools for ad network exports using TypeScript",
             "Developing playable ads. for apps and mobile games using TypeScript, ThreeJS, Unity, LunaLabs, and C#.",
             "Developing automation tools/extensions for Unity using C#.",
