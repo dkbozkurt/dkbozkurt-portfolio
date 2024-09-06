@@ -540,6 +540,13 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Cash Em All",
+        playableName: "Fruit Merge",
+        icon: cashEmAllLogo,
+        url: "/playableAds/FruitMerge_CashEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
         appName: "Shoot Defender",
         playableName: "Evolving Weapons",
         icon: shootDefenderLogo,
