@@ -127,12 +127,11 @@ export const experiencesData = [
         company: "JustDice",
         location: "Hamburg, Germany",
         description: [
-            "Developing IEC and Playable Ads. building engine using TypeScript and Node.js",
-            "Developing optimization and conversion tools for ad network exports using TypeScript",
-            "Developing playable ads. for apps and mobile games using TypeScript, ThreeJS, Unity, LunaLabs, and C#.",
-            "Developing automation tools/extensions for Unity using C#.",
-            "Developing plugins for Adobe Apps using ExtendScript, JavaScript, HTML, CSS, and UXP.",
-            "Designing 3D & 2D assets for marketing campaigns using Blender, Spline, and Figma."
+            "Designing engaging playable ads for apps and mobile games utilizing JavaScript, ThreeJS, CannonJS, PixiJS as well as Unity, LunaLabs, and C#",
+            "Developing a web-based platform using TypeScript and Node.js to streamline IEC and Playable Ads creation, featuring built-in optimization and network export tools.",
+            "Designing 3D & 2D assets for marketing campaigns using Blender, Adobe PhotoShop and Figma.",
+            "Developing plugins to automate the playable ads development process, including an integrated auto-translation extension for Unity.",
+            "Building automation plugins for Adobe Apps to support the Design Team, utilizing ExtendScript, JavaScript, HTML, CSS, and UXP.",
         ],
         icon: <Image
             src={justdiceLogo}
@@ -149,7 +148,7 @@ export const experiencesData = [
         company: "Panteon Games",
         location: "Ankara, Turkey",
         description: [
-            "Developed and designed playable ads using Unity, LunaLabs, and C#.",
+            "Designed and developed captivating playable ads using Unity, LunaLabs, and C#.",
             "Enhanced gameplay, integrated new mechanics/features, and applied creative elements to maximize game attractiveness for advertising.",
             "Developed extensions/packages for playable ads. and creative game development in Unity using C#."
         ],
@@ -259,10 +258,8 @@ export const educationData = [
         university: "Eskisehir Osmangazi University",
         location: "Eskisehir, Turkey",
         description: [
-            "Successfully completed the English preparatory year and took elective courses from the Computer Science department, in addition to my regular classes.",
             "Graduated with a GPA of 3.01/4.0.",
-            "Worked as an intern in the Artificial Intelligence and Robotics Lab.",
-            "Played an active role in developing the website for the university's Artificial Intelligence and Robotics Lab course."
+            "Worked as an intern in the Artificial Intelligence and Robotics Lab. Played an active role in developing the website for the course.",
         ],
         icon: <Image
             src={oguLogo}
