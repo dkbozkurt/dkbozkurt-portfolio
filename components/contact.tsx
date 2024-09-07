@@ -19,7 +19,7 @@ export default function Contact() {
     initial={{ opacity: 0,}}
     whileInView={{ opacity: 1,}}
     transition={{
-        duration: 1.5,
+        duration: 0.75,
     }}
     viewport={{
         once: true,

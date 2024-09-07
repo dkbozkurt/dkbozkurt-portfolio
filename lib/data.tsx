@@ -278,13 +278,6 @@ export const educationData = [
 
 export const projectsData = [
     {
-        title: "Playable Ads.& Game Projects",
-        date: "",
-        description:
-            "A collection of Playable Ads. and games that I have designed and developed throughout my career.",
-        tags: ["C#", "Unity", "LunaLabs", "JavaScript", "ThreeJS", "CannonJS"],
-    },
-    {
         title: "Chrome Extension- Waffle Flash Cards",
         date: "Jan. 2024 - Present",
         description:
@@ -357,25 +350,27 @@ export const skillsData = [
 
     "Git",
     "npm",
+
     "Vite",
     "Rollup",
     "Linux",
 
     "Unity",
     "LunaLabs",
+
     "ThreeJS",
-    "Phaser",
+    "CannonJS",
+    "PixiJS",
     "GSAP",
+    "GLSL",
+    "Tween.js",
+    "Framer Motion",
+    "React Three Fiber",
+
     "ExtendScript",
     "UXP",
-    "Jest",
-    "Qt",
 
-    "CannonJS",
-    "React Three Fiber",
-    "Tween.js",
-    "GLSL",
-    "Framer Motion",
+    "Jest",
 
     "Blender",
     "Spline",
