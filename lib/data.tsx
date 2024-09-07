@@ -128,7 +128,7 @@ export const experiencesData = [
         location: "Hamburg, Germany",
         description: [
             "Designing engaging playable ads for apps and mobile games utilizing JavaScript, ThreeJS, CannonJS, PixiJS as well as Unity, LunaLabs, and C#",
-            "Developing a web-based platform using TypeScript and Node.js to streamline IEC and Playable Ads creation, featuring built-in optimization and network export tools.",
+            "Developing a web-based platform using TypeScript and Node.js to streamline IEC and Playable Ads creation, featuring built-in optimization and Ad network export tools.",
             "Designing 3D & 2D assets for marketing campaigns using Blender, Adobe PhotoShop and Figma.",
             "Developing plugins to automate the playable ads development process, including an integrated auto-translation extension for Unity.",
             "Building automation plugins for Adobe Apps to support the Design Team, utilizing ExtendScript, JavaScript, HTML, CSS, and UXP.",
