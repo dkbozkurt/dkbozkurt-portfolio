@@ -328,57 +328,76 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
-    "C#",
-    "TypeScript",
-    "JavaScript",
-    "Python",
-    "Bash",
-    "C++",
-    "C",
+    // Programming Languages
+    [
+        "C#",
+        "TypeScript",
+        "JavaScript",
+        "Python",
+        "C++",
+        "C",
+    ],
 
-    "HTML5",
-    "CSS",
-    "TailwindCSS",
-    "React",
+    // Frontend & Styling
+    [
+        "HTML5",
+        "CSS",
+        "TailwindCSS",
+        "React",
+    ],
 
-    "Node.js",
-    "Express",
-    ".Net",
+    // Backend & Databases
+    [
+        "Node.js",
+        "Express",
+        ".Net",
+        "MySQL",
+        "MongoDB",
+    ],
 
-    "MySQL",
-    "MongoDB",
+    // Tools, Package Managers
+    [
+        "Git",
+        "npm",
+        "Vite",
+        "Rollup",
+    ],
 
-    "Git",
-    "npm",
+    // Game Development
+    [
+        "Unity",
+        "LunaLabs",
+    ],
 
-    "Vite",
-    "Rollup",
-    "Linux",
+    // Graphics & Animation Libraries
+    [
+        "ThreeJS",
+        "CannonJS",
+        "PixiJS",
+        "GSAP",
+        "GLSL",
+        "Tween.js",
+        "Framer Motion",
+        "React Three Fiber",
+        "Jest",
+    ],
 
-    "Unity",
-    "LunaLabs",
+    // Tool Development
+    [
+        "ExtendScript",
+        "UXP",
+    ],
 
-    "ThreeJS",
-    "CannonJS",
-    "PixiJS",
-    "GSAP",
-    "GLSL",
-    "Tween.js",
-    "Framer Motion",
-    "React Three Fiber",
-
-    "ExtendScript",
-    "UXP",
-
-    "Jest",
-
-    "Blender",
-    "Spline",
-
-    "Figma",
-    "Adobe PhotoShop",
-    "Adobe Premier Pro",
+    // Design Tools
+    [
+        "Blender",
+        "Spline",
+        "Figma",
+        "Adobe PhotoShop",
+        "Adobe Premier Pro",
+    ]
 ] as const;
+
 
 export const softSkillsData = [
     "Problem Solving",
