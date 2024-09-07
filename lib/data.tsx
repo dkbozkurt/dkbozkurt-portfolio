@@ -330,17 +330,19 @@ export const skillsData = [
         "C#",
         "TypeScript",
         "JavaScript",
+        "ExtendScript",
         "Python",
         "C++",
         "C",
     ],
 
-    // Frontend & Styling
+    // Frontend & Styling & Testing
     [
         "HTML5",
         "CSS",
         "TailwindCSS",
         "React",
+        "Jest"
     ],
 
     // Backend & Databases
@@ -358,6 +360,7 @@ export const skillsData = [
         "npm",
         "Vite",
         "Rollup",
+        "UXP",
     ],
 
     // Game Development
@@ -376,13 +379,6 @@ export const skillsData = [
         "Tween.js",
         "Framer Motion",
         "React Three Fiber",
-        "Jest",
-    ],
-
-    // Tool Development
-    [
-        "ExtendScript",
-        "UXP",
     ],
 
     // Design Tools
