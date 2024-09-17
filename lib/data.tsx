@@ -359,6 +359,7 @@ export const skillsData = [
         "Git",
         "npm",
         "Vite",
+        "Webpack",
         "Rollup",
         "UXP",
     ],
