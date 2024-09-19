@@ -375,6 +375,7 @@ export const skillsData = [
         "ThreeJS",
         "CannonJS",
         "PixiJS",
+        "MatterJS",
         "GSAP",
         "GLSL",
         "Tween.js",
