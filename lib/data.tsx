@@ -549,6 +549,13 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Cash Giraffe",
+        playableName: "Goods Sort",
+        icon: cashGiraffeLogo,
+        url: "/playableAds/GoodsSorting_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
         appName: "Cash Em All",
         playableName: "Fruit Merge",
         icon: cashEmAllLogo,
