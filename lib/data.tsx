@@ -59,6 +59,7 @@ import moneyTurnLogo from "@/public/AppIcons/Money Turn.png";
 import newTestEmAllLogo from "@/public/AppIcons/NewTestEmAllLogo.png";
 import cashGrannyLogo from '@/public/AppIcons/CashGrannyLogo.png'
 import shootDefenderLogo from '@/public/AppIcons/Shoot Defender.png'
+import mobControlLogo from '@/public/AppIcons/MobControl.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -548,6 +549,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName: "Mob Control",
+        playableName: "Defeat Enemy Base",
+        icon: mobControlLogo,
+        url: "/playableAds/MobControlUnityExport.html",
+        isHighlighted: true,
+    },
     {
         appName: "Cash Giraffe",
         playableName: "Goods Sort",
