@@ -52,7 +52,6 @@ export default function PlayableAd({
     }, [isOverlayVisible]);
 
     const handleClick = (targetURL: string) => {
-        console.log('sasas')
         if (window.innerWidth < 640 || window.innerHeight < 640) {
             window.open(targetURL, '_blank');
         } else {
