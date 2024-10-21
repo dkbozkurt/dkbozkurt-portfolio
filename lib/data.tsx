@@ -60,6 +60,16 @@ import newTestEmAllLogo from "@/public/AppIcons/NewTestEmAllLogo.png";
 import cashGrannyLogo from '@/public/AppIcons/CashGrannyLogo.png'
 import shootDefenderLogo from '@/public/AppIcons/Shoot Defender.png'
 import mobControlLogo from '@/public/AppIcons/MobControl.png'
+import blockBlastLogo from '@/public/AppIcons/blockblast.png'
+import diceMergeLogo from '@/public/AppIcons/dicemerge.png'
+import fruitMergeLogo from '@/public/AppIcons/fruitmerge.png'
+import goodsSortLogo from '@/public/AppIcons/goodssort.png'
+import matchFactoryLogo from '@/public/AppIcons/matchfactory.png'
+import parkingJamLogo from '@/public/AppIcons/parkingjam.png'
+import pizzaReadyLogo from '@/public/AppIcons/pizzaready.png'
+import tapAwayLogo from '@/public/AppIcons/tapaway.png'
+import trafficEspaceLogo from '@/public/AppIcons/trafficescape.png'
+import waterSortLogo from '@/public/AppIcons/watersort.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -560,14 +570,14 @@ export const playableAdsData = [
     {
         appName: "Cash Giraffe",
         playableName: "Goods Sort",
-        icon: cashGiraffeLogo,
+        icon: goodsSortLogo,
         url: "/playableAds/GoodsSorting_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
         appName: "Cash Em All",
         playableName: "Fruit Merge",
-        icon: cashEmAllLogo,
+        icon: fruitMergeLogo,
         url: "/playableAds/FruitMerge_CashEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
@@ -630,35 +640,35 @@ export const playableAdsData = [
     {
         appName: "Cash Cow",
         playableName: "Dice Merge",
-        icon: cashCowLogo,
+        icon: diceMergeLogo,
         url: "/playableAds/DiceMerge_CashCow_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
         appName: "Money Turn",
         playableName: "Tap Away",
-        icon: moneyTurnLogo,
+        icon: tapAwayLogo,
         url: "/playableAds/TapAway_MoneyTurn_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
         appName: "AppStation",
         playableName: "Traffic Escape!",
-        icon: appStationLogo,
+        icon: trafficEspaceLogo,
         url: "/playableAds/TrafficEscape_Appstation_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
         appName: "Money Well",
         playableName: "Block Blast",
-        icon: moneyWellLogo,
+        icon: blockBlastLogo,
         url: "/playableAds/BlockBlast_MoneyWell_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
         appName: "Test Em All",
         playableName: "IEC-Water Sort",
-        icon: testEmAllLogo,
+        icon: waterSortLogo,
         url: "/playableAds/IEC-WaterSort_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
@@ -679,14 +689,14 @@ export const playableAdsData = [
     {
         appName: "Test Em All",
         playableName: "Match Factory",
-        icon: testEmAllLogo,
+        icon: matchFactoryLogo,
         url: "/playableAds/MatchFactory_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
         appName: "Cash Giraffe",
         playableName: "Water Sort",
-        icon: cashGiraffeLogo,
+        icon: waterSortLogo,
         url: "/playableAds/WaterSort-EASY_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
@@ -728,14 +738,14 @@ export const playableAdsData = [
     {
         appName: "Cash Em All",
         playableName: "Parking Lot",
-        icon: cashEmAllLogo,
+        icon: parkingJamLogo,
         url: "/playableAds/ParkingLot_CashEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
         appName: "Game Perks",
         playableName: "Cafe Clicker",
-        icon: gamePerksLogo,
+        icon: pizzaReadyLogo,
         url: "/playableAds/CafeClicker_GamePerks_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
