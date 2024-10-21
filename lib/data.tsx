@@ -628,7 +628,7 @@ export const playableAdsData = [
         playableName: "KnifeHit",
         icon: knifeHitLogo,
         url: "/playableAds/KnifeHit_MoneyTurn_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Test Em All",
@@ -663,7 +663,7 @@ export const playableAdsData = [
         playableName: "Traffic Escape!",
         icon: trafficEspaceLogo,
         url: "/playableAds/TrafficEscape_Appstation_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: false,
+        isHighlighted: true,
     },
     {
         appName: "Money Well",
@@ -747,7 +747,7 @@ export const playableAdsData = [
         playableName: "Parking Lot",
         icon: parkingJamLogo,
         url: "/playableAds/ParkingLot_CashEmAll_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Game Perks",
@@ -803,7 +803,7 @@ export const playableAdsData = [
         playableName: "Free Fall",
         icon: moneyWellLogo,
         url: "/playableAds/FreeFall_MoneyWell_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Cashyy",
@@ -1041,7 +1041,7 @@ export const playableAdsData = [
         playableName: "Destroy The Avocado",
         icon: destroyMasterLogo,
         url: "/playableAds/KillTheAvacado_DestroyMaster_PLY_01.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Guess And Hit",
@@ -1083,7 +1083,7 @@ export const playableAdsData = [
         playableName: "Airport Manager",
         icon: airportMasterLogo,
         url: "/playableAds/AirportManager_AirportMaster_PLY_01.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Clay Shop",
@@ -1111,7 +1111,7 @@ export const playableAdsData = [
         playableName: "Guess The Word",
         icon: wChallengeLogo,
         url: "/playableAds/Drink_Worle_PLY_02.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Roll Merge 3D",
