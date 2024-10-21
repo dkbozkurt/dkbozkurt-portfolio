@@ -379,6 +379,7 @@ export const skillsData = [
         "MatterJS",
         "GSAP",
         "GLSL",
+        "UIkit",
         "Tween.js",
         "Framer Motion",
         "React Three Fiber",
