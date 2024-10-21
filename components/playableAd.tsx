@@ -69,11 +69,9 @@ export default function PlayableAd({
             <motion.div
                 ref={ref}
                 className="mx-[1rem] group sm:mb-8 last:mb-0"
-                // whileHover={{ scale: 1.05 }}
-                // transition={{ type: "spring", stiffness: 400, damping: 10 }}
             >
                 <section className={cardClasses}>
-                    {isHighlighted && !isOverlayVisible && (
+                    {isHighlighted && (
                         <>
                             <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
                                 <div className="absolute inset-0 bg-yellow-300 opacity-20"></div>
