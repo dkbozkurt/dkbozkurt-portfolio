@@ -70,6 +70,13 @@ import pizzaReadyLogo from '@/public/AppIcons/pizzaready.png'
 import tapAwayLogo from '@/public/AppIcons/tapaway.png'
 import trafficEspaceLogo from '@/public/AppIcons/trafficescape.png'
 import waterSortLogo from '@/public/AppIcons/watersort.png'
+import hexaSortLogo from '@/public/AppIcons/hexasort.png'
+import knifeHitLogo from '@/public/AppIcons/knifehit.png'
+import knowWordsLogo from '@/public/AppIcons/knotwords.png'
+import monopolyLogo from '@/public/AppIcons/monopoly.png'
+import oneLineDrawingLogo from '@/public/AppIcons/oneLineDrawing.png'
+import toonBlastLogo from '@/public/AppIcons/toonblast.png'
+import woodsNutLogo from '@/public/AppIcons/woodsnut.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -612,28 +619,28 @@ export const playableAdsData = [
     {
         appName: "Test Em All",
         playableName: "Wood Nut & Bolt Puzzle",
-        icon: testEmAllLogo,
+        icon: woodsNutLogo,
         url: "/playableAds/ScrewPuzzle_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
         appName: "Money Turn",
         playableName: "KnifeHit",
-        icon: moneyTurnLogo,
+        icon: knifeHitLogo,
         url: "/playableAds/KnifeHit_MoneyTurn_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
         appName: "Test Em All",
         playableName: "OneLine",
-        icon: newTestEmAllLogo,
+        icon: oneLineDrawingLogo,
         url: "/playableAds/OneLine_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
         appName: "Test Em All",
         playableName: "Monopoly",
-        icon: newTestEmAllLogo,
+        icon: monopolyLogo,
         url: "/playableAds/Monopoly_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
@@ -675,7 +682,7 @@ export const playableAdsData = [
     {
         appName: "Test Em All",
         playableName: "Hexa Sort",
-        icon: testEmAllLogo,
+        icon: hexaSortLogo,
         url: "/playableAds/HexaSort_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
@@ -703,7 +710,7 @@ export const playableAdsData = [
     {
         appName: "Test Em All",
         playableName: "Knot Words",
-        icon: testEmAllLogo,
+        icon: knowWordsLogo,
         url: "/playableAds/KnotWords_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
@@ -752,7 +759,7 @@ export const playableAdsData = [
     {
         appName: "App Station",
         playableName: "Toon Blast",
-        icon: appStationLogo,
+        icon: toonBlastLogo,
         url: "/playableAds/ToonBlast_Appstation_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
