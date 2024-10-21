@@ -600,7 +600,7 @@ export const playableAdsData = [
         playableName: "MoneyBunny Base GP",
         icon: gamePerksLogo,
         url: "/playableAds/MoneyBunnyBaseGP_GamePerks_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Game Perks",
@@ -649,7 +649,7 @@ export const playableAdsData = [
         playableName: "Dice Merge",
         icon: diceMergeLogo,
         url: "/playableAds/DiceMerge_CashCow_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Money Turn",
@@ -747,7 +747,7 @@ export const playableAdsData = [
         playableName: "Parking Lot",
         icon: parkingJamLogo,
         url: "/playableAds/ParkingLot_CashEmAll_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: false,
+        isHighlighted: true,
     },
     {
         appName: "Game Perks",
@@ -768,7 +768,7 @@ export const playableAdsData = [
         playableName: "Carousel Gifs",
         icon: moneyWellLogo,
         url: "/playableAds/CarouselGifs_MoneyWell_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Cash Empire",
@@ -915,7 +915,7 @@ export const playableAdsData = [
         playableName: "Place House Items",
         icon: beMyGuestLogo,
         url: "/playableAds/PlaceHouseItems_BeMyGuest_PLY_05.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Model Agency",
@@ -978,7 +978,7 @@ export const playableAdsData = [
         playableName: "Cacao Factory",
         icon: myChocolateShopLogo,
         url: "/playableAds/CacaoFactory_CacaoMaster_PLY_01.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Airport Master",
