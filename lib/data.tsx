@@ -1219,3 +1219,5 @@ export const playableAdsData = [
         isHighlighted: false,
     },
 ] as const;
+
+export const allStarPlayableAds = playableAdsData.filter(ad => ad.isHighlighted);
