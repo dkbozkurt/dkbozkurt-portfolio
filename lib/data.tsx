@@ -600,7 +600,7 @@ export const playableAdsData = [
         playableName: "MoneyBunny Base GP",
         icon: gamePerksLogo,
         url: "/playableAds/MoneyBunnyBaseGP_GamePerks_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Game Perks",
@@ -628,7 +628,7 @@ export const playableAdsData = [
         playableName: "KnifeHit",
         icon: knifeHitLogo,
         url: "/playableAds/KnifeHit_MoneyTurn_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Test Em All",
@@ -649,7 +649,7 @@ export const playableAdsData = [
         playableName: "Dice Merge",
         icon: diceMergeLogo,
         url: "/playableAds/DiceMerge_CashCow_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Money Turn",
@@ -663,7 +663,7 @@ export const playableAdsData = [
         playableName: "Traffic Escape!",
         icon: trafficEspaceLogo,
         url: "/playableAds/TrafficEscape_Appstation_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: false,
+        isHighlighted: true,
     },
     {
         appName: "Money Well",
@@ -768,7 +768,7 @@ export const playableAdsData = [
         playableName: "Carousel Gifs",
         icon: moneyWellLogo,
         url: "/playableAds/CarouselGifs_MoneyWell_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Cash Empire",
@@ -803,7 +803,7 @@ export const playableAdsData = [
         playableName: "Free Fall",
         icon: moneyWellLogo,
         url: "/playableAds/FreeFall_MoneyWell_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Cashyy",
@@ -915,7 +915,7 @@ export const playableAdsData = [
         playableName: "Place House Items",
         icon: beMyGuestLogo,
         url: "/playableAds/PlaceHouseItems_BeMyGuest_PLY_05.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Model Agency",
@@ -978,7 +978,7 @@ export const playableAdsData = [
         playableName: "Cacao Factory",
         icon: myChocolateShopLogo,
         url: "/playableAds/CacaoFactory_CacaoMaster_PLY_01.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Airport Master",
@@ -1041,7 +1041,7 @@ export const playableAdsData = [
         playableName: "Destroy The Avocado",
         icon: destroyMasterLogo,
         url: "/playableAds/KillTheAvacado_DestroyMaster_PLY_01.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Guess And Hit",
@@ -1083,7 +1083,7 @@ export const playableAdsData = [
         playableName: "Airport Manager",
         icon: airportMasterLogo,
         url: "/playableAds/AirportManager_AirportMaster_PLY_01.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Clay Shop",
@@ -1111,7 +1111,7 @@ export const playableAdsData = [
         playableName: "Guess The Word",
         icon: wChallengeLogo,
         url: "/playableAds/Drink_Worle_PLY_02.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Roll Merge 3D",
@@ -1219,3 +1219,5 @@ export const playableAdsData = [
         isHighlighted: false,
     },
 ] as const;
+
+export const allStarPlayableAds = playableAdsData.filter(ad => ad.isHighlighted);
