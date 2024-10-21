@@ -9,8 +9,9 @@ import { FaStar } from "react-icons/fa";
 
 type PlayableAdsProps = typeof playableAdsData[number];
 
-const StarAnimation = ({ delay }: { delay: number }) => {
+const StarAnimation = () => {
     const randomScale = Math.random() * 0.5 + 0.5; // Random scale between 0.5 and 1
+    const randomDelay = Math.random() * 2; // Random delay between 0 and 2 seconds
     return (
         <motion.div
             initial={{ opacity: 0, scale: 0 }}
@@ -18,7 +19,7 @@ const StarAnimation = ({ delay }: { delay: number }) => {
             transition={{
                 duration: 2,
                 repeat: Infinity,
-                delay: delay,
+                delay: randomDelay,
             }}
         >
             <FaStar className="text-yellow-400 text-8xl" />
@@ -36,8 +37,9 @@ export default function PlayableAd({
     const [isOverlayVisible, setOverlayVisible] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
 
-    const cardClasses = `bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[16rem] h-[16rem] ${isHighlighted ? "bg-yellow-200 hover:bg-yellow-300 relative" : ""
-        }`;
+    const cardClasses = `bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[16rem] h-[16rem] ${
+        isHighlighted ? "bg-yellow-200 hover:bg-yellow-300 relative" : ""
+    }`;
 
     useEffect(() => {
         if (isOverlayVisible) {
@@ -76,17 +78,17 @@ export default function PlayableAd({
                             <div className="absolute inset-0 bg-yellow-300 opacity-20"></div>
                             <div className="absolute inset-0 animate-[spin_3s_linear_infinite] bg-gradient-to-r from-transparent via-white to-transparent opacity-30"></div>
                         </div>
-                        <div className="absolute -top-2 -left-2 z--20">
-                            <StarAnimation delay={0} />
+                        <div className="absolute -top-2 -left-2 z--2">
+                            <StarAnimation />
                         </div>
-                        <div className="absolute -top-2 -right-2 z--20">
-                            <StarAnimation delay={0.5} />
+                        <div className="absolute -top-2 -right-2 z--2">
+                            <StarAnimation />
                         </div>
-                        <div className="absolute -bottom-2 -left-2 z--20">
-                            <StarAnimation delay={1} />
+                        <div className="absolute -bottom-2 -left-2 z--2">
+                            <StarAnimation />
                         </div>
-                        <div className="absolute -bottom-2 -right-2 z--20">
-                            <StarAnimation delay={1.5} />
+                        <div className="absolute -bottom-2 -right-2 z--2">
+                            <StarAnimation />
                         </div>
                     </>
                 )}
