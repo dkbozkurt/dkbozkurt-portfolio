@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import { playableAdsData, allStarPlayableAds } from '@/lib/data'
+import { playableAdsData } from '@/lib/data'
 import { motion } from "framer-motion";
 import { useSectionInView } from '@/lib/hooks';
 import SectionHeading from './section-heading';
