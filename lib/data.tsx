@@ -141,12 +141,30 @@ export const links = [
 
 export const experiencesData = [
     {
+        title: "Senior Playable Ads Developer",
+        company: "JustDice",
+        location: "Hamburg, Germany",
+        description: [
+            "Developing a web-based platform using TypeScript and Node.js to streamline IEC and Playable Ads creation, featuring built-in optimization and Ad network export tools.",
+            "Designing engaging playable ads for apps and mobile games utilizing JavaScript, ThreeJS, CannonJS, PixiJS as well as Unity, LunaLabs, and C#",
+            "Designing 3D & 2D assets for marketing campaigns using Blender, Adobe PhotoShop and Figma.",
+        ],
+        icon: <Image
+            src={justdiceLogo}
+            alt="logo"
+            style={{
+                objectFit: 'contain',
+                borderRadius: '50%'
+            }}
+        />,
+        date: "Oct. 2024 - Present",
+    },
+    {
         title: "Playable Ads Developer",
         company: "JustDice",
         location: "Hamburg, Germany",
         description: [
             "Designing engaging playable ads for apps and mobile games utilizing JavaScript, ThreeJS, CannonJS, PixiJS as well as Unity, LunaLabs, and C#",
-            "Developing a web-based platform using TypeScript and Node.js to streamline IEC and Playable Ads creation, featuring built-in optimization and Ad network export tools.",
             "Designing 3D & 2D assets for marketing campaigns using Blender, Adobe PhotoShop and Figma.",
             "Developing plugins to automate the playable ads development process, including an integrated auto-translation extension for Unity.",
             "Building automation plugins for Adobe Apps to support the Design Team, utilizing ExtendScript, JavaScript, HTML, CSS, and UXP.",
@@ -159,7 +177,7 @@ export const experiencesData = [
                 borderRadius: '50%'
             }}
         />,
-        date: "Apr. 2023 - Present",
+        date: "Apr. 2023 - Oct. 2024",
     },
     {
         title: "Playable Ads & Marketing Game Developer",
@@ -217,7 +235,7 @@ export const experiencesData = [
         date: "Aug. 2021 - Sep. 2021",
     },
     {
-        title: "Game Developer",
+        title: "Game Developer - Intern",
         company: "GEFEASOFT",
         location: "Mugla, Turkey",
         description: [
@@ -292,6 +310,13 @@ export const educationData = [
 ] as const;
 
 export const projectsData = [
+    {
+        title: "AdCraft",
+        date: "Oct. 2024",
+        description:
+            "AdCraft is a tool designed to streamline the manipulation of ad network requirements and enable efficient build generation. It simplifies the complex process of integrating various ad networks by providing an intuitive interface.",
+        tags: ["React", "TypeScript", "Tailwind", "HTML", "CSS", "NodeJS", "Vite"],
+    },
     {
         title: "Chrome Extension- Waffle Flash Cards",
         date: "Jan. 2024 - Present",
