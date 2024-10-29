@@ -314,15 +314,8 @@ export const projectsData = [
         title: "AdCraft",
         date: "Oct. 2024",
         description:
-            "AdCraft is a tool designed to streamline the manipulation of ad network requirements and enable efficient build generation. It simplifies the complex process of integrating various ad networks by providing an intuitive interface.",
+            "AdCraft is a tool designed to streamline the manipulation of ad network requirements and enable efficient build generation by providing a simple interface.",
         tags: ["React", "TypeScript", "Tailwind", "HTML", "CSS", "NodeJS", "Vite"],
-    },
-    {
-        title: "Chrome Extension- Waffle Flash Cards",
-        date: "Jan. 2024 - Present",
-        description:
-            "Developed a Google Chrome extension focused on English-German flashcards, aimed at enhancing vocabulary skills.",
-        tags: ["React", "TypeScript", "Tailwind", "HTML", "CSS"],
     },
     {
         title: "Adobe PhotoShop Design Tool",
