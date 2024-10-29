@@ -146,8 +146,7 @@ export const experiencesData = [
         location: "Hamburg, Germany",
         description: [
             "Developing a web-based platform using TypeScript and Node.js to streamline IEC and Playable Ads creation, featuring built-in optimization and Ad network export tools.",
-            "Designing engaging playable ads for apps and mobile games utilizing JavaScript, ThreeJS, CannonJS, PixiJS as well as Unity, LunaLabs, and C#",
-            "Designing 3D & 2D assets for marketing campaigns using Blender, Adobe PhotoShop and Figma.",
+            "Leading end-to-end Playable Ads development from market research and ideation through asset design and development to post-launch KPI analysis, ensuring campaign alignment and performance insights.",
         ],
         icon: <Image
             src={justdiceLogo}

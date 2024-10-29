@@ -23,7 +23,7 @@ export default function About() {
         <p
         className="mb-6"
         >
-            After completing programming-based courses in university and earning a bachelor's degree in Electrical & Electronics Engineering, I decided to pursue my passion for software development. I enrolled in volunteer software development internships and acquired the fundamentals of software development through hands-on work. My favorite aspect of programming is discovering creative solutions to problems. I love the feeling of finally figuring out a solution. My core stack includes C#, JavaScript, C++, Python, and I am also familiar with TypeScript. I am always eager to learn new technologies and keep my GitHub fresh and updated.
+            After completing programming-based courses in university and earning a bachelor's degree in Electrical & Electronics Engineering, I decided to pursue my passion for software development. I enrolled in volunteer software development internships and acquired the fundamentals of software development through hands-on work. My favorite aspect of programming is discovering creative solutions to problems. I love the feeling of finally figuring out a solution. My core stack includes C#, TypeScript, JavaScript, C++ and Python. I am always eager to learn new technologies and keep my GitHub fresh and updated.
         </p>
         <p className = "mb-6">
             After starting my working life, I closely collaborated with design and marketing teams. My interest in the field of art drew me into the world of design. "Design" helps me express my creative ideas. I wouldn't call myself a designer, but I like to spend time doodling or using modeling apps.
