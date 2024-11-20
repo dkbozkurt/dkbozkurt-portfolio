@@ -77,6 +77,7 @@ import monopolyLogo from '@/public/AppIcons/monopoly.png'
 import oneLineDrawingLogo from '@/public/AppIcons/oneLineDrawing.png'
 import toonBlastLogo from '@/public/AppIcons/toonblast.png'
 import woodsNutLogo from '@/public/AppIcons/woodsnut.png'
+import busOutLogo from '@/public/AppIcons/BusOut.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -584,6 +585,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Cash Giraffe",
+        playableName: "Bus Out",
+        icon: busOutLogo,
+        url: "/playableAds/BusOut_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName: "Mob Control",
         playableName: "Defeat Enemy Base",
