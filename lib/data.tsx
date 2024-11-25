@@ -147,8 +147,8 @@ export const experiencesData = [
         company: "JustDice",
         location: "Hamburg, Germany",
         description: [
+            "Leading end-to-end Playable Ads development from market research and ideation through 2D-3D asset design and game development to post-launch KPI analysis, ensuring campaign alignment and performance insights.",
             "Developing a web-based platform using TypeScript and Node.js to streamline IEC and Playable Ads creation, featuring built-in optimization and Ad network export tools.",
-            "Leading end-to-end Playable Ads development from market research and ideation through asset design and development to post-launch KPI analysis, ensuring campaign alignment and performance insights.",
         ],
         icon: <Image
             src={justdiceLogo}
