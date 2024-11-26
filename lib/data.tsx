@@ -586,13 +586,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
-    // {
-    //     appName:"Cash Giraffe",
-    //     playableName: "Travel Town",
-    //     icon: travelTownLogo,
-    //     url: "/playableAds/TravelTown_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
-    //     isHighlighted: true,
-    // },
+    {
+        appName:"Cash Giraffe",
+        playableName: "Travel Town",
+        icon: travelTownLogo,
+        url: "/playableAds/TravelTown_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName:"Cash Giraffe",
         playableName: "Bus Out",
@@ -619,7 +619,7 @@ export const playableAdsData = [
         playableName: "Fruit Merge",
         icon: fruitMergeLogo,
         url: "/playableAds/FruitMerge_CashEmAll_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Shoot Defender",
