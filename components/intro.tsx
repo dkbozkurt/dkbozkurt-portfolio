@@ -76,7 +76,7 @@ export default function Intro() {
         }}
         >
             <Link href="#contact"
-            className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105"
+            className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white/50"
             onClick={()=> {
                 setActiveSection("Contact");
                 setTimeOfLastClick(Date.now());
@@ -88,7 +88,7 @@ export default function Intro() {
             </Link>
 
             <a 
-            className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack"
+            className="flex items-center gap-2 py-3 transition bg-white rounded-full outline-none cursor-pointer group px-7 focus:scale-110 hover:scale-110 active:scale-105 borderBlack dark:bg-white/10"
             href="/CV_DogukanKaanBozkurt.pdf" 
             download={true}
             >
@@ -99,7 +99,7 @@ export default function Intro() {
 
             <div className= "flex items-stretch gap-2">
             <a
-            className="flex items-center gap-2 p-4 text-gray-700 transition bg-white rounded-full cursor-pointer focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 borderBlack"
+            className="flex items-center gap-2 p-4 text-gray-700 transition bg-white rounded-full cursor-pointer focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://www.linkedin.com/in/dkbozkurt/en" target="_blank"
             >
                 <BsLinkedin />
@@ -107,7 +107,7 @@ export default function Intro() {
 
 
             <a
-            className="flex items-center gap-2 p-4 text-[1.35rem] text-gray-700 transition bg-white rounded-full cursor-pointer focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 borderBlack"
+            className="flex items-center gap-2 p-4 text-[1.35rem] text-gray-700 transition bg-white rounded-full cursor-pointer focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://github.com/dkbozkurt" target="_blank"
             >
                 <FaGithubSquare/>
@@ -115,7 +115,7 @@ export default function Intro() {
 
 
             <a
-            className="flex items-center gap-2 p-4 text-[1.35rem] text-gray-700 transition bg-white rounded-full cursor-pointer focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 borderBlack"
+            className="flex items-center gap-2 p-4 text-[1.35rem] text-gray-700 transition bg-white rounded-full cursor-pointer focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 borderBlack dark:bg-white/10 dark:text-white/60"
             href="https://behance.com/dkbozkurt" target="_blank"
             >
                 <FaBehanceSquare/>

@@ -33,7 +33,7 @@ export default function Certificate({
     className="mb-3 h-50 group sm:mb-8 last:mb-6"
     >
         <section 
-        className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 rounded-lg"
+        className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[20rem] hover:bg-gray-200 transition sm:group-even:pl-8 rounded-lg dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
         >
             <div
             className="px-5 pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-4 sm:max-w-[58%] flex flex-col h-full sm:group-even:ml-[18rem]"
@@ -51,12 +51,12 @@ export default function Certificate({
                 </p>
 
                 <p
-                className="mt-2 leading-relaxed text-gray-700"
+                className="mt-2 leading-relaxed text-gray-700 dark:text-white/70"
                 >
                     {company}
                 </p>
                 <ul
-                className="flex flex-wrap gap-2 mt-4 sm:mt-auto"
+                className="flex flex-wrap gap-2 mt-4 sm:mt-auto dark:text-white/70"
                 >
                     {tags.map((tag, index) => (
                         <li 
