@@ -31,7 +31,7 @@ export default function Project({
     className="mb-3 group sm:mb-8 last:mb-6"
     >
         <section 
-        className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[15rem] hover:bg-gray-200 transition rounded-lg"
+        className="bg-gray-100 max-w-[42rem] border border-black/5 overflow-hidden sm:pr-8 relative sm:h-[15rem] hover:bg-gray-200 transition rounded-lg dark:bg-white/10 dark:hover:bg-white/20 dark:text-white"
         >
             <div
             className="flex flex-col h-full px-5 pt-4 pb-7 sm:pl-10 sm:pr-2 sm:pt-4"
@@ -49,13 +49,13 @@ export default function Project({
                 </p>
 
                 <p
-                className="mt-2 leading-relaxed text-gray-700"
+                className="mt-2 leading-relaxed text-gray-700 dark:text-white/70"
                 >
                     {description}
                 </p>
     
                 <ul
-                className="flex flex-wrap gap-2 mt-4 sm:mt-auto"
+                className="flex flex-wrap gap-2 mt-4 sm:mt-auto dark:text-white/70"
                 >
                     {tags.map((tag, index) => (
                         <li 

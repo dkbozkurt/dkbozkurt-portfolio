@@ -37,7 +37,7 @@ export default function PlayableAd({
     const [isOverlayVisible, setOverlayVisible] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
 
-    const cardClasses = `bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[16rem] h-[16rem] ${isHighlighted ? "bg-yellow-200 hover:bg-yellow-300 relative" : ""
+    const cardClasses = `bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[16rem] h-[16rem] dark:bg-white/20 ${isHighlighted ? "bg-yellow-200 hover:bg-yellow-300 relative dark:bg-yellow-600 dark:hover:bg-yellow-500" : ""
         }`;
 
     useEffect(() => {
@@ -73,7 +73,7 @@ export default function PlayableAd({
                     {isHighlighted && (
                         <>
                             <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
-                                <div className="absolute inset-0 bg-yellow-300 opacity-20"></div>
+                                <div className="absolute inset-0 bg-yellow-300 opacity-20 dark:bg-yellow-100 dark:opacity-40"></div>
                                 <div className="absolute inset-0 animate-[spin_3s_linear_infinite] bg-gradient-to-r from-transparent via-white to-transparent opacity-30"></div>
                             </div>
                             <div className="absolute -top-2 -left-2 z--2">
@@ -98,8 +98,8 @@ export default function PlayableAd({
                     />
 
                     <div className="z-10 flex flex-col items-center pb-3 mt-auto">
-                        <h3 className="text-2xl font-bold">{appName}</h3>
-                        <p className="pb-1 text-gray-700">{playableName}</p>
+                        <h3 className="text-2xl font-bold dark:text-white/90">{appName}</h3>
+                        <p className="pb-1 text-gray-700 dark:text-white/60">{playableName}</p>
                         <div className="transition items-center flex w-[11rem] h-2 gap-1 pl-8 p-4 text-white text-m bg-gray-900 rounded-full outline-none sm:w-[12rem]">
                             Click to Play
                             <BsArrowRight className="transition opacity-70 group-hover:translate-x-2" />

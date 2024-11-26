@@ -31,7 +31,7 @@ export default function Skills() {
         >
             <SectionHeading>Skills</SectionHeading>
 
-            <h1 className="mb-4 text-lg text-gray-800">- Technical Skills -</h1>
+            <h1 className="mb-4 text-lg text-gray-800 dark:text-white/50">- Technical Skills -</h1>
 
             {/* Loop through each skill group */}
             {skillsData.map((skillGroup, groupIndex) => (
@@ -40,7 +40,7 @@ export default function Skills() {
                         {skillGroup.map((skill, index) => (
                             <motion.li
                                 key={index}
-                                className="px-5 py-3 bg-white borderBlack rounded-xl"
+                                className="px-5 py-3 bg-white borderBlack rounded-xl dark:bg-white/10 dark:text-white/80"
                                 variants={fadeInAnimationVariants}
                                 initial="initial"
                                 whileInView="animate"
@@ -54,13 +54,13 @@ export default function Skills() {
                 </div>
             ))}
 
-            <h1 className="mt-24 mb-4 text-lg text-gray-800">- Soft Skills -</h1>
+            <h1 className="mt-24 mb-4 text-lg text-gray-800 dark:text-white/50">- Soft Skills -</h1>
 
             <ul className="flex flex-wrap justify-center gap-1 text-lg text-gray-800">
                 {softSkillsData.map((skill, index) => (
                     <motion.li
                         key={index}
-                        className="px-5 py-3 bg-white borderBlack rounded-xl"
+                        className="px-5 py-3 bg-white borderBlack rounded-xl dark:bg-white/10 dark:text-white/80"
                         variants={fadeInAnimationVariants}
                         initial="initial"
                         whileInView="animate"

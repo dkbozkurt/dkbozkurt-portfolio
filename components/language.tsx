@@ -23,7 +23,7 @@ export default function Language({
         >
             <section 
         className="bg-white border borderBlack overflow-hidden transition rounded-lg flex flex-col items-center w-[24rem] h-[5rem] 
-        sm:h-[12rem] sm:w-[12rem]"
+        sm:h-[12rem] sm:w-[12rem] dark:bg-white/10"
         >
             <Image 
             src={icon} 
@@ -37,12 +37,12 @@ export default function Language({
 
             <div className="flex flex-col items-center pb-4 mt-3 sm:mt-auto">
                 <h3
-                className = "text-2xl font-bold"
+                className = "text-2xl font-bold dark:text-white/80"
                 >
                     {title}
                 </h3>
                 <p
-                className="text-gray-700"
+                className="text-gray-700 dark:text-white/50"
                 >
                     {level}
                 </p>
