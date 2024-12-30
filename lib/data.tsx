@@ -15,6 +15,7 @@ import michiganCertificate from "@/public/certificateImages/michiganCertificate.
 import udemyCertificate from "@/public/certificateImages/udemyCertificate.png";
 import udemyThreeJSCertificate from "@/public/certificateImages/udemyThreeJSCertificate.png";
 import threeJSJourneyCertificate from "@/public/certificateImages/threeJSJourneyCertificate.png";
+import professionalCSSCertificate from "@/public/certificateImages/professionalCSSCertificate.png";
 
 import hundredMysteryButtonsLogo from "@/public/AppIcons/100 Mystery Buttons.png";
 import airportMasterLogo from "@/public/AppIcons/Airport Master.png";
@@ -527,6 +528,13 @@ export const activitiesData = [
 ] as const;
 
 export const certificatesData = [
+    {
+        title: "Professional CSS",
+        company: "by ByteGrad",
+        date: "Jan. 2025",
+        tags: ["HTML","CSS", "Grid & Flexbox", "Responsiveness", "Sass/SCSS", "BEM", "Animations & Transitions"],
+        imageUrl: professionalCSSCertificate,
+    },
     {
         title: "Three.js Journey",
         company: "three.js journey by Bruno Simon",
