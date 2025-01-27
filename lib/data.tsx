@@ -473,11 +473,11 @@ export const languageData = [
 
 export const activitiesData = [
     {
-        title: "Software Engineer",
+        title: "Founder",
         company: "Kind Crab",
         location: "Hamburg, Germany",
         description: [
-            "Integrating logic code for creating and editing interactive end cards and contributing to the development of the website as a Fullstack developer.",
+            "Developing a platform for automated interactive end cards and playable ads, leveraging AI integration to enhance engagement and streamline user experience.",
         ],
         icon: <Image
             src={kindCrabLogo}
@@ -487,7 +487,7 @@ export const activitiesData = [
                 borderRadius: '50%'
             }}
         />,
-        date: "Apr. 2024 - Present",
+        date: "Nov. 2024 - Present",
     },
     {
         title: "Co-Founder & Administrative Assistant",
