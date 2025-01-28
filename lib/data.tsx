@@ -407,6 +407,7 @@ export const skillsData = [
     [
         "Unity",
         "LunaLabs",
+        "Cocos Creator",
     ],
 
     // Graphics & Animation Libraries
