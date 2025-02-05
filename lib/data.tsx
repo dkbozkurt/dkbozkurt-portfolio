@@ -80,6 +80,7 @@ import toonBlastLogo from '@/public/AppIcons/toonblast.png'
 import woodsNutLogo from '@/public/AppIcons/woodsnut.png'
 import busOutLogo from '@/public/AppIcons/BusOut.png'
 import travelTownLogo from '@/public/AppIcons/TravelTown.png'
+import colorBlockJamLogo from '@/public/AppIcons/ColorBlockJam.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -399,6 +400,7 @@ export const skillsData = [
         "npm",
         "Vite",
         "Webpack",
+        "GraphQL",
         "Rollup",
         "UXP",
     ],
@@ -596,6 +598,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Cash Giraffe",
+        playableName: "Color Block Jam",
+        icon: colorBlockJamLogo,
+        url: "/playableAds/ColorBlockJam_CashEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName:"Cash Giraffe",
         playableName: "Travel Town",
