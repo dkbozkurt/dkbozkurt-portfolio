@@ -602,7 +602,7 @@ export const playableAdsData = [
         appName:"Cash Giraffe",
         playableName: "Valentines Goods Sort",
         icon: goodsSortLogo,
-        url: "/playableAds/Valentines-GoodsSorting_CashEmAll_Responsive_Playable_01_Unity_ALL.html",
+        url: "/playableAds/Valentines-GoodsSort_CashEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
