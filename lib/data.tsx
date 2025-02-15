@@ -399,7 +399,7 @@ export const skillsData = [
         "Git",
         "npm",
         "Vite",
-        "Webpack",
+        "CI/CD",
         "GraphQL",
         "Rollup",
         "UXP",
