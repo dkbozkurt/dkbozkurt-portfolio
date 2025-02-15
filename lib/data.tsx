@@ -314,6 +314,13 @@ export const educationData = [
 
 export const projectsData = [
     {
+        title: "Text Localization - GEO Package",
+        date: "Jan. 2025 - Fe. 2025",
+        description:
+            "Developed a localization package that auto-detects device language and updates playable ads texts for seamless multilingual support.",
+        tags: ["TypeScript", "NodeJS"],
+    },
+    {
         title: "AdCraft",
         date: "Oct. 2024",
         description:
