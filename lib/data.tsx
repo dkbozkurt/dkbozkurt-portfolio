@@ -81,7 +81,7 @@ import woodsNutLogo from '@/public/AppIcons/woodsnut.png'
 import busOutLogo from '@/public/AppIcons/BusOut.png'
 import travelTownLogo from '@/public/AppIcons/TravelTown.png'
 import colorBlockJamLogo from '@/public/AppIcons/ColorBlockJam.png'
-import miniMetroLogo from '@/public/AppIcons/MiniMetro.png'
+import miniMetroLogo from '@/public/AppIcons/Mini Metro.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
