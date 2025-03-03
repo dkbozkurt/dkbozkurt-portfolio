@@ -81,6 +81,7 @@ import woodsNutLogo from '@/public/AppIcons/woodsnut.png'
 import busOutLogo from '@/public/AppIcons/BusOut.png'
 import travelTownLogo from '@/public/AppIcons/TravelTown.png'
 import colorBlockJamLogo from '@/public/AppIcons/ColorBlockJam.png'
+import miniMetroLogo from '@/public/AppIcons/MiniMetro.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -605,6 +606,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Bonus Held",
+        playableName: "Mini Metro",
+        icon: miniMetroLogo,
+        url: "/playableAds/MiniMetro_BonusHeld_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName:"Cash Em All",
         playableName: "Color Block Jam",
