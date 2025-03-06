@@ -165,23 +165,25 @@ export const experiencesData = [
         />,
         date: "Oct. 2024 - Present",
     },
-    // {
-    //     title: "Outsource Playable Ads Developer",
-    //     company: "MyGames",
-    //     location: "Amsterdam, The Netherlands",
-    //     description: [
-    //         "Managing end-to-end Playable Ads development from market research and ideation through 2D-3D asset design and game development to post-launch KPI analysis, ensuring campaign alignment and performance insights.",
-    //     ],
-    //     icon: <Image
-    //         src={myGamesLogo}
-    //         alt="logo"
-    //         style={{
-    //             objectFit: 'contain',
-    //             borderRadius: '50%'
-    //         }}
-    //     />,
-    //     date: "Mar. 2025 - Present",
-    // },
+    {
+        title: "External Playable Ads Developer & Consultant",
+        company: "MY.GAMES",
+        location: "Amsterdam, The Netherlands",
+        description: [
+            "Developing interactive playable ads for mobile games using ThreeJS, PixiJS, TypeScript, HTML, and CSS to support marketing goals and user acquisition.",
+            "Creating custom 3D & 2D assets for marketing campaigns using Blender, Photoshop, and Figma.",
+            "Consulting on playable ad strategies, optimizing user engagement, and enhancing interactive ad performance."
+        ],
+        icon: <Image
+            src={myGamesLogo}
+            alt="logo"
+            style={{
+                objectFit: 'contain',
+                borderRadius: '50%'
+            }}
+        />,
+        date: "Mar. 2025 - Present",
+    },
     {
         title: "Playable Ads Developer",
         company: "JustDice",
