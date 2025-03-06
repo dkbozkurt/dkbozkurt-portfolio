@@ -82,6 +82,7 @@ import busOutLogo from '@/public/AppIcons/BusOut.png'
 import travelTownLogo from '@/public/AppIcons/TravelTown.png'
 import colorBlockJamLogo from '@/public/AppIcons/ColorBlockJam.png'
 import miniMetroLogo from '@/public/AppIcons/Mini Metro.png'
+import coffeePackLogo from '@/public/AppIcons/CoffeePackLogo.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -90,6 +91,7 @@ import justdiceLogo from '@/public/companyIcons/justdice_logo.jpeg'
 import panteonLogo from '@/public/companyIcons/panteon_logo.jpeg'
 import tempaPanoLogo from '@/public/companyIcons/tempapano_logo.jpeg'
 import tuprasLogo from '@/public/companyIcons/tupras_logo.jpeg'
+import myGamesLogo from '@/public/companyIcons/myGames_logo.jpeg';
 
 import oguLogo from '@/public/companyIcons/ogu_logo.jpeg';
 
@@ -163,6 +165,23 @@ export const experiencesData = [
         />,
         date: "Oct. 2024 - Present",
     },
+    // {
+    //     title: "Outsource Playable Ads Developer",
+    //     company: "MyGames",
+    //     location: "Amsterdam, The Netherlands",
+    //     description: [
+    //         "Managing end-to-end Playable Ads development from market research and ideation through 2D-3D asset design and game development to post-launch KPI analysis, ensuring campaign alignment and performance insights.",
+    //     ],
+    //     icon: <Image
+    //         src={myGamesLogo}
+    //         alt="logo"
+    //         style={{
+    //             objectFit: 'contain',
+    //             borderRadius: '50%'
+    //         }}
+    //     />,
+    //     date: "Mar. 2025 - Present",
+    // },
     {
         title: "Playable Ads Developer",
         company: "JustDice",
@@ -606,6 +625,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    // {
+    //     appName:"Game Perks",
+    //     playableName: "Coffee Pack",
+    //     icon: coffeePackLogo,
+    //     url: "/playableAds/CoffeePack_GamePerks_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted: true,
+    // },
     {
         appName:"Bonus Held",
         playableName: "Mini Metro",
