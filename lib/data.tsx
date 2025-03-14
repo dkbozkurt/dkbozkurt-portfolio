@@ -627,13 +627,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
-    // {
-    //     appName:"Game Perks",
-    //     playableName: "Coffee Pack",
-    //     icon: coffeePackLogo,
-    //     url: "/playableAds/CoffeePack_GamePerks_Responsive_Playable_01_Unity_ALL.html",
-    //     isHighlighted: true,
-    // },
+    {
+        appName:"Game Perks",
+        playableName: "Coffee Pack",
+        icon: coffeePackLogo,
+        url: "/playableAds/CoffeePack_GamePerks_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName:"Bonus Held",
         playableName: "Mini Metro",
