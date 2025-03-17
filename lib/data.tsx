@@ -639,7 +639,7 @@ export const playableAdsData = [
         playableName: "Mini Metro",
         icon: miniMetroLogo,
         url: "/playableAds/MiniMetro_BonusHeld_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName:"Cash Em All",
@@ -723,7 +723,7 @@ export const playableAdsData = [
         playableName: "Wood Nut & Bolt Puzzle",
         icon: woodsNutLogo,
         url: "/playableAds/ScrewPuzzle_TestEmAll_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: false,
+        isHighlighted: true,
     },
     {
         appName: "Money Turn",
