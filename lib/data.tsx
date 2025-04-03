@@ -83,6 +83,7 @@ import travelTownLogo from '@/public/AppIcons/TravelTown.png'
 import colorBlockJamLogo from '@/public/AppIcons/ColorBlockJam.png'
 import miniMetroLogo from '@/public/AppIcons/Mini Metro.png'
 import coffeePackLogo from '@/public/AppIcons/CoffeePackLogo.png'
+import reignsLogo from '@/public/AppIcons/ReignsLogo.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -627,6 +628,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Just Games",
+        playableName: "Reigns",
+        icon: reignsLogo,
+        url: "/playableAds/StoryTeller_JustGames_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
     {
         appName:"Game Perks",
         playableName: "Coffee Pack",
