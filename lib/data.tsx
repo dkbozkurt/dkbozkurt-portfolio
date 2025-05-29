@@ -84,6 +84,7 @@ import colorBlockJamLogo from '@/public/AppIcons/ColorBlockJam.png'
 import miniMetroLogo from '@/public/AppIcons/Mini Metro.png'
 import coffeePackLogo from '@/public/AppIcons/CoffeePackLogo.png'
 import reignsLogo from '@/public/AppIcons/ReignsLogo.png'
+import mahjongLogo from '@/public/AppIcons/MahjongIcon.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -628,6 +629,20 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Just Games",
+        playableName: "Mahjong With GameIcons",
+        icon: mahjongLogo,
+        url: "/playableAds/MahjongCarousel_JustGames_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName:"Just Games",
+        playableName: "Mahjong Original",
+        icon: mahjongLogo,
+        url: "/playableAds/MahjongOriginal_JustGames_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
     {
         appName:"Just Games",
         playableName: "Reigns",
