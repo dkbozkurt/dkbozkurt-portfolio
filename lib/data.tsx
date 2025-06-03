@@ -85,6 +85,7 @@ import miniMetroLogo from '@/public/AppIcons/Mini Metro.png'
 import coffeePackLogo from '@/public/AppIcons/CoffeePackLogo.png'
 import reignsLogo from '@/public/AppIcons/ReignsLogo.png'
 import mahjongLogo from '@/public/AppIcons/MahjongIcon.png'
+import grandHotelManiaLogo from '@/public/AppIcons/GrandHotelManiaIcon.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -630,6 +631,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Grand Hotel Mania",
+        playableName: "Prepare Street Food",
+        icon: grandHotelManiaLogo,
+        url: "/playableAds/PBStreetFood_GrandHotelMania_MyGames_DogukanKaanBozkurt.html",
+        isHighlighted: true,
+    },
     {
         appName:"Just Games",
         playableName: "Mahjong With GameIcons",
