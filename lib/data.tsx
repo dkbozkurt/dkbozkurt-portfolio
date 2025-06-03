@@ -475,7 +475,8 @@ export const softSkillsData = [
     "Communication",
     "Teamwork",
     "Market-Trend Analysis",
-    "Quick Learner"
+    "Quick Learner",
+    "Efficient AI User"
 ] as const;
 
 export const languageData = [
