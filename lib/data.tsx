@@ -631,13 +631,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
-    {
-        appName:"Cash Giraffe",
-        playableName: "Hole.IO",
-        icon: holeIOLogo,
-        url: "/playableAds/HoleIO_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
-    },
+    // {
+    //     appName:"Cash Giraffe",
+    //     playableName: "Hole.IO",
+    //     icon: holeIOLogo,
+    //     url: "/playableAds/HoleIO_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted: true,
+    // },
     {
         appName:"Grand Hotel Mania",
         playableName: "Prepare Street Food",
