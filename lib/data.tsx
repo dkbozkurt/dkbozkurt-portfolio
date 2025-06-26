@@ -633,6 +633,13 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName:"TEST",
+        playableName: "test",
+        icon: cashGiraffeLogo,
+        url: "/playableAds/test-playable.html",
+        isHighlighted: false,
+    },
+    {
         appName:"Cash Giraffe",
         playableName: "Hole.IO",
         icon: holeIOLogo,
