@@ -340,6 +340,20 @@ export const educationData = [
 
 export const projectsData = [
     {
+        title: "base122 encoding - npm library",
+        date: "Aug. 2025- Present",
+        description:
+            "Developed an npm library implementing Base‑122 encoding, reducing data size by up to ~30% compared to Base‑64 for use in data URIs.",
+        tags: ["npm","TypeScript","Vite"],
+    },
+    {
+        title: "Figma Design Plugin",
+        date: "Jul. 2025- Present",
+        description:
+            "Developed a Figma plugin that automates the creation of static store screens, network end-cards, and marketing assets, featuring DeepL API integration for seamless multi‑GEO translations.",
+        tags: ["Figma","HTML","CSS","TypeScript","Vite"],
+    },
+    {
         title: "Text Localization - GEO Package",
         date: "Jan. 2025 - Fe. 2025",
         description:
@@ -432,7 +446,6 @@ export const skillsData = [
         "Git",
         "npm",
         "Vite",
-        "CI/CD",
         "GraphQL",
         "Rollup",
         "UXP",
