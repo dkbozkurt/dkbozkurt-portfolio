@@ -87,6 +87,7 @@ import reignsLogo from '@/public/AppIcons/ReignsLogo.png'
 import mahjongLogo from '@/public/AppIcons/MahjongIcon.png'
 import grandHotelManiaLogo from '@/public/AppIcons/GrandHotelManiaIcon.png'
 import holeIOLogo from '@/public/AppIcons/hole-ioLogo.png'
+import blockJam3DLogo from '@/public/AppIcons/blockJam3D-ColorPuzzle.png';
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -645,6 +646,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    // {
+    //     appName:"Play Zone",
+    //     playableName: "Block Jam 3D: Color Puzzle",
+    //     icon: blockJam3DLogo,
+    //     url: "/playableAds/BlockJam3D_PlayZone_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted: true,
+    // },
     {
         appName:"Cash Giraffe",
         playableName: "Hole.IO",
