@@ -525,7 +525,7 @@ export const languageData = [
 export const activitiesData = [
     {
         title: "Founder",
-        company: "Kind Crab",
+        company: "Crabtic",
         location: "Hamburg, Germany",
         description: [
             "Developing a platform for automated interactive end cards and playable ads, leveraging AI integration to enhance engagement and streamline user experience.",
@@ -538,7 +538,7 @@ export const activitiesData = [
                 borderRadius: '50%'
             }}
         />,
-        date: "Nov. 2024 - Present",
+        date: "Jun. 2025 - Present",
     },
     {
         title: "Co-Founder & Administrative Assistant",
