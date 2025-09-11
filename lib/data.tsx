@@ -88,6 +88,7 @@ import mahjongLogo from '@/public/AppIcons/MahjongIcon.png'
 import grandHotelManiaLogo from '@/public/AppIcons/GrandHotelManiaIcon.png'
 import holeIOLogo from '@/public/AppIcons/hole-ioLogo.png'
 import blockJam3DLogo from '@/public/AppIcons/blockJam3D-ColorPuzzle.png';
+import toTheMoonLogo from '@/public/AppIcons/ToTheMoonLogo.png';
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -646,6 +647,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Cash Giraffe",
+        playableName: "2 The Moon",
+        icon: toTheMoonLogo,
+        url: "/playableAds/ToTheMoon_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     // {
     //     appName:"Play Zone",
     //     playableName: "Block Jam 3D: Color Puzzle",
