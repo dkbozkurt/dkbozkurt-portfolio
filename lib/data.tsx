@@ -89,6 +89,7 @@ import grandHotelManiaLogo from '@/public/AppIcons/GrandHotelManiaIcon.png'
 import holeIOLogo from '@/public/AppIcons/hole-ioLogo.png'
 import blockJam3DLogo from '@/public/AppIcons/blockJam3D-ColorPuzzle.png';
 import toTheMoonLogo from '@/public/AppIcons/ToTheMoonLogo.png';
+import bundesBankLogo from '@/public/AppIcons/BundesBank.jpg'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -647,6 +648,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Money Well",
+        playableName: "Bundes Bank",
+        icon: bundesBankLogo,
+        url: "/playableAds/BundesBank_MoneyWell_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName:"Cash Giraffe",
         playableName: "2 The Moon",
