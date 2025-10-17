@@ -662,13 +662,13 @@ export const playableAdsData = [
         url: "/playableAds/ToTheMoon_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
-    // {
-    //     appName:"Play Zone",
-    //     playableName: "Block Jam 3D: Color Puzzle",
-    //     icon: blockJam3DLogo,
-    //     url: "/playableAds/BlockJam3D_PlayZone_Responsive_Playable_01_Unity_ALL.html",
-    //     isHighlighted: true,
-    // },
+    {
+        appName:"Play Zone",
+        playableName: "Block Jam 3D: Color Puzzle",
+        icon: blockJam3DLogo,
+        url: "/playableAds/BlockJam3D_PlayZone_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName:"Cash Giraffe",
         playableName: "Hole.IO",
