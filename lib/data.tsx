@@ -419,37 +419,44 @@ export const skillsData = [
         "C#",
         "TypeScript",
         "JavaScript",
-        "ExtendScript",
         "Python",
         "C++",
         "C",
     ],
 
-    // Frontend & Styling & Testing
+    // Frontend & Styling
     [
-        "HTML5",
+        "HTML",
         "CSS",
         "TailwindCSS",
         "Sass",
         "React",
-        "Jest"
     ],
 
     // Backend & Databases
     [
-        "Node.js",
-        "Express",
         ".Net",
+        "Node.js",
+        "Express.js",
+        "RESTful",
+        "GraphQL",
         "MySQL",
         "MongoDB",
+    ],
+
+    // Testing & DevOps
+    [
+        "Jest",
+        "Docker",
+        "AWS",
     ],
 
     // Tools, Package Managers
     [
         "Git",
         "npm",
+        "Webpack",
         "Vite",
-        "GraphQL",
         "Rollup",
         "UXP",
     ],
@@ -457,21 +464,16 @@ export const skillsData = [
     // Game Development
     [
         "Unity",
-        "LunaLabs",
+        "Luna ( Unity Playworks )",
         "Cocos Creator",
     ],
 
-    // Graphics & Animation Libraries
+    // Libraries
     [
         "ThreeJS",
-        "CannonJS",
         "PixiJS",
-        "MatterJS",
         "GSAP",
         "GLSL",
-        "UIkit",
-        "Tween.js",
-        "Framer Motion",
         "React Three Fiber",
     ],
 
