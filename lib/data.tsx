@@ -464,7 +464,7 @@ export const skillsData = [
     // Game Development
     [
         "Unity",
-        "Luna ( Unity Playworks )",
+        "Luna (Unity Playworks)",
         "Cocos Creator",
     ],
 
