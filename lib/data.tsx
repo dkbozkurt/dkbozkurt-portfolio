@@ -343,11 +343,18 @@ export const educationData = [
 
 export const projectsData = [
     {
-        title: "base122 encoding - npm library",
+        title: "base122-encoding (npm library)",
         date: "Aug. 2025- Present",
         description:
             "Developed an npm library implementing Base‑122 encoding, reducing data size by up to ~30% compared to Base‑64 for use in data URIs.",
         tags: ["npm","TypeScript","Vite"],
+    },
+    {
+        title: "texture-optimize-pro (npm library)",
+        date: "Oct. 2025- Oct. 2025",
+        description:
+            "Developed a texture optimization library for HTML5 games (PixiJS/ThreeJS), leveraging Sharp for high-performance image processing with per-texture configuration of max size, format, and quality.",
+        tags: ["npm","TypeScript","Sharp"],
     },
     {
         title: "Figma Design Plugin",
