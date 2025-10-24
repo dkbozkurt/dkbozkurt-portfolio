@@ -35,7 +35,7 @@ export default function About() {
                 Most recently, I've developed a playable ads engine for automating both Playable Ad and IEC processes. This engine also fits ads into different ad network requirements and uses both Three.js and PixiJS to further facilitate ad crafting to pass through a searing optimization and coding stage. Through performance and marketing KPI analyses, I also gained insights into UA strategies.
             </p>
             <p>
-                When I'm not coding or designing, I enjoy traveling, savoring sushi, and exploring geography. Having visited 30 countries so far, I'm continually inspired to discover more of our incredible planet.
+                When I'm not coding or designing, I enjoy traveling, savoring sushi, and exploring geography. Having visited 35 countries so far, I'm continually inspired to discover more of our incredible planet.
             </p>
 
         </motion.section>

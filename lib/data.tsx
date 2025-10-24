@@ -160,7 +160,7 @@ export const experiencesData = [
         location: "Hamburg, Germany",
         description: [
             "Managing end-to-end Playable Ads development from market research and ideation through 2D-3D asset design and game development to post-launch KPI analysis, ensuring campaign alignment and performance insights.",
-            "Developing a web-based platform using TypeScript and Node.js to streamline IEC and Playable Ads creation, featuring built-in optimization and Ad network export tools.",
+            "Developing a web-based platform to streamline IEC and Playable Ads creation, featuring built-in optimization and Ad network export tools.",
         ],
         icon: <Image
             src={justdiceLogo}
@@ -177,8 +177,7 @@ export const experiencesData = [
         company: "MY.GAMES",
         location: "Amsterdam, The Netherlands",
         description: [
-            "Developing interactive playable ads for mobile games using ThreeJS, PixiJS, TypeScript, HTML, and CSS to support marketing goals and user acquisition.",
-            "Creating custom 3D & 2D assets for marketing campaigns using Blender, Photoshop, and Figma.",
+            "Developing interactive playable ads for mobile games to support marketing goals and user acquisition.",
             "Consulting on playable ad strategies, optimizing user engagement, and enhancing interactive ad performance."
         ],
         icon: <Image
@@ -196,10 +195,10 @@ export const experiencesData = [
         company: "JustDice",
         location: "Hamburg, Germany",
         description: [
-            "Designing engaging playable ads for apps and mobile games utilizing JavaScript, ThreeJS, CannonJS, PixiJS as well as Unity, LunaLabs, and C#",
+            "Designing engaging playable ads for apps and mobile games.",
             "Designing 3D & 2D assets for marketing campaigns using Blender, Adobe PhotoShop and Figma.",
-            "Developing plugins to automate the playable ads development process, including an integrated auto-translation extension for Unity.",
-            "Building automation plugins for Adobe Apps to support the Design Team, utilizing ExtendScript, JavaScript, HTML, CSS, and UXP.",
+            "Developing plugins to automate the playable ads development process.",
+            "Building automation plugins for Adobe Apps to support the Design Team.",
         ],
         icon: <Image
             src={justdiceLogo}
@@ -216,9 +215,9 @@ export const experiencesData = [
         company: "Panteon Games",
         location: "Ankara, Turkey",
         description: [
-            "Designed and developed captivating playable ads using Unity, LunaLabs, and C#.",
-            "Enhanced gameplay, integrated new mechanics/features, and applied creative elements to maximize game attractiveness for advertising.",
-            "Developed extensions/packages for playable ads. and creative game development in Unity using C#."
+            "Designed and developed playable ads.",
+            "Enhanced gameplay, integrated new mechanics/features, and applied creative elements to boost game appeal and optimize marketing performance of advertising assets.",
+            "Developed extensions/packages for playable ads. and creative game development."
         ],
         icon: <Image
             src={panteonLogo}
@@ -271,7 +270,7 @@ export const experiencesData = [
         company: "GEFEASOFT",
         location: "Mugla, Turkey",
         description: [
-            "Developed WebGL & Mobile based serious games and VR-based Anatomy Atlas in the healthcare industry using Unity and C#."
+            "Developed WebGL, Mobile and HTML5 based serious games."
         ],
         icon: <Image
             src={gefeasoftLogo}
@@ -288,7 +287,7 @@ export const experiencesData = [
         company: "Avocuda",
         location: "Istanbul, Turkey",
         description: [
-            "Contributed to mobile application development in the development team, utilizing React-Native and Adobe XD."
+            "Contributed to mobile application development in the development team."
         ],
         icon: <Image
             src={avocudaLogo}
@@ -306,7 +305,7 @@ export const experiencesData = [
         location: "Kocaeli, Turkey",
         description: [
             "Interned as a test and design engineer in an electrical enclosure-producing factory.",
-            "Engaged in projects utilizing EPLAN and AutoCAD, including electrical enclosure projects such as Rayyan Stadium in Qatar and the International Reception Center of Ashgabat in Turkmenistan."
+            "Engaged in projects including electrical enclosure projects such as Rayyan Stadium in Qatar and the International Reception Center of Ashgabat in Turkmenistan."
         ],
         icon: <Image
             src={tempaPanoLogo}
@@ -326,8 +325,10 @@ export const educationData = [
         university: "Eskisehir Osmangazi University",
         location: "Eskisehir, Turkey",
         description: [
-            "Graduated with a GPA of 3.01/4.0.",
-            "Worked as an intern in the Artificial Intelligence and Robotics Lab. Played an active role in developing the website for the course.",
+            "Graduated with a GPA of 3.01/ 4.0",
+            "Successfully completed the English preparatory year and took elective courses from the Computer Science department, in addition to my regular classes.",
+            "Worked as an intern in the Artificial Intelligence and Robotics Lab.",
+            "Played an active role in developing the website for the university's Artificial Intelligence and Robotics Lab course.",
         ],
         icon: <Image
             src={oguLogo}
@@ -428,7 +429,6 @@ export const skillsData = [
         "JavaScript",
         "Python",
         "C++",
-        "C",
     ],
 
     // Frontend & Styling
@@ -462,7 +462,6 @@ export const skillsData = [
     [
         "Git",
         "npm",
-        "Webpack",
         "Vite",
         "Rollup",
         "UXP",
@@ -481,6 +480,7 @@ export const skillsData = [
         "PixiJS",
         "GSAP",
         "GLSL",
+        "Sharp",
         "React Three Fiber",
     ],
 
