@@ -173,7 +173,7 @@ export const experiencesData = [
         date: "Oct. 2024 - Present",
     },
     {
-        title: "External Playable Ads Developer & Consultant",
+        title: "Playable Ads Developer & Consultant (External)",
         company: "MY.GAMES",
         location: "Amsterdam, The Netherlands",
         description: [
