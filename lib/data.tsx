@@ -345,7 +345,7 @@ export const educationData = [
 export const projectsData = [
     {
         title: "base122-encoding (npm library)",
-        date: "Aug. 2025- Present",
+        date: "Sep. 2025- Present",
         description:
             "Developed an npm library implementing Base‑122 encoding, reducing data size by up to ~30% compared to Base‑64 for use in data URIs.",
         tags: ["npm","TypeScript","Vite"],
