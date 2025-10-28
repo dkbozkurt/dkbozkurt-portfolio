@@ -159,8 +159,8 @@ export const experiencesData = [
         company: "JustDice",
         location: "Hamburg, Germany",
         description: [
-            "Managing end-to-end Playable Ads development from market research and ideation through 2D-3D asset design and game development to post-launch KPI analysis, ensuring campaign alignment and performance insights.",
-            "Developing a web-based platform to streamline IEC and Playable Ads creation, featuring built-in optimization and Ad network export tools.",
+            "Managing end-to-end playable ads development from market research and ideation through 2D-3D asset design and game development to post-launch KPI analysis, ensuring campaign alignment and performance insights.",
+            "Developing a web-based platform using TypeScript and Node.js to streamline IEC and Playable Ads creation, featuring built-in optimization and Ad network export tools.",
         ],
         icon: <Image
             src={justdiceLogo}
@@ -177,7 +177,7 @@ export const experiencesData = [
         company: "MY.GAMES",
         location: "Amsterdam, The Netherlands",
         description: [
-            "Developing interactive playable ads for mobile games to support marketing goals and user acquisition.",
+            "Developing interactive playable ads for mobile games using ThreeJS, PixiJS, TypeScript, HTML and CSS to support marketing goals and user acquisition.",
             "Consulting on playable ad strategies, optimizing user engagement, and enhancing interactive ad performance."
         ],
         icon: <Image
@@ -195,10 +195,10 @@ export const experiencesData = [
         company: "JustDice",
         location: "Hamburg, Germany",
         description: [
-            "Designing engaging playable ads for apps and mobile games.",
+            "Developing engaging playable ads./ HTML5 games for apps and mobile games utilizing TypeScript, ThreeJS, PixiJS as well as Unity, LunaLabs and C#.",
             "Designing 3D & 2D assets for marketing campaigns using Blender, Adobe PhotoShop and Figma.",
             "Developing plugins to automate the playable ads development process.",
-            "Building automation plugins for Adobe Apps to support the Design Team.",
+            "Building automation plugins for Adobe Apps to support the Design Team, utilizing ExtendScript, JavaScript, HTML, CSS and UXP.",
         ],
         icon: <Image
             src={justdiceLogo}
@@ -215,9 +215,9 @@ export const experiencesData = [
         company: "Panteon Games",
         location: "Ankara, Turkey",
         description: [
-            "Designed and developed playable ads.",
+            "Designed and developed playable ads./ HTML5 games using Unity, LunaLabs and C#.",
             "Enhanced gameplay, integrated new mechanics/features, and applied creative elements to boost game appeal and optimize marketing performance of advertising assets.",
-            "Developed extensions/packages for playable ads. and creative game development."
+            "Developed extensions/packages for playable ads. and creative game development in Unity using C#."
         ],
         icon: <Image
             src={panteonLogo}
@@ -270,7 +270,7 @@ export const experiencesData = [
         company: "GEFEASOFT",
         location: "Mugla, Turkey",
         description: [
-            "Developed WebGL, Mobile and HTML5 based serious games."
+            "Developed WebGL and HTML5 based serious games, by using C# and Unity."
         ],
         icon: <Image
             src={gefeasoftLogo}
@@ -280,7 +280,7 @@ export const experiencesData = [
                 borderRadius: '50%'
             }}
         />,
-        date: "Mar. 2021 - Jun. 2021",
+        date: "Mar. 2021 - Jul. 2021",
     },
     {
         title: "Software Engineer - Intern",
@@ -348,14 +348,14 @@ export const projectsData = [
         date: "Sep. 2025- Present",
         description:
             "Developing an npm library implementing Base‑122 encoding, reducing data size by up to ~30% compared to Base‑64 for use in data URIs.",
-        tags: ["npm","TypeScript","Vite"],
+        tags: ["TypeScript","NodeJS","Vite"],
     },
     {
         title: "texture-optimize-pro (npm library)",
         date: "Oct. 2025- Oct. 2025",
         description:
             "Developed a texture optimization library for HTML5 games (PixiJS/ThreeJS), leveraging Sharp for high-performance image processing with per-texture configuration of max size, format, and quality.",
-        tags: ["npm","TypeScript","Sharp"],
+        tags: ["TypeScript","NodeJS","Sharp"],
     },
     {
         title: "Figma Design Plugin",
@@ -368,14 +368,14 @@ export const projectsData = [
         title: "Text Localization - GEO Package",
         date: "Jan. 2025 - Fe. 2025",
         description:
-            "Developed a localization package that auto-detects device language and updates playable ads texts for seamless multilingual support.",
+            "Developed a localization package that detects device language and updates playable ads./ HTML5 game texts for multilingual support.",
         tags: ["TypeScript", "NodeJS"],
     },
     {
         title: "AdCraft",
         date: "Oct. 2024",
         description:
-            "AdCraft is a tool designed to streamline the manipulation of ad network requirements and enable efficient build generation by providing a simple interface.",
+            "Developed a tool designed to streamline the manipulation of ad network requirements and enable efficient build generation by providing a simple interface for playable ads./ HTML5 games.",
         tags: ["React", "TypeScript", "Tailwind", "HTML", "CSS", "NodeJS", "Vite"],
     },
     {
@@ -463,8 +463,8 @@ export const skillsData = [
     [
         "Git",
         "npm",
+        "Webpack",
         "Vite",
-        "Rollup",
         "UXP",
     ],
 
@@ -480,8 +480,10 @@ export const skillsData = [
         "ThreeJS",
         "PixiJS",
         "GSAP",
+        "TweenJS",
+        "Cannon.js",
+        "Matter.js",
         "GLSL",
-        "Sharp",
         "React Three Fiber",
     ],
 
@@ -540,7 +542,7 @@ export const activitiesData = [
         company: "Crabtic",
         location: "Hamburg, Germany",
         description: [
-            "Developing a platform for automated interactive end cards and playable ads, leveraging AI integration to enhance engagement and streamline user experience.",
+            "Developing a platform for automated interactive end cards and playable ads./ HTML5 games, leveraging AI integration to enhance engagement and streamline user experience.",
         ],
         icon: <Image
             src={kindCrabLogo}
