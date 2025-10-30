@@ -455,8 +455,8 @@ export const skillsData = [
     // Testing & DevOps
     [
         "Jest",
-        "Docker",
         "CI/CD",
+        "Docker",
     ],
 
     // Tools, Package Managers
