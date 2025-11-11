@@ -438,6 +438,7 @@ export const skillsData = [
         "TailwindCSS",
         "Sass",
         "React",
+        "Svelte",
     ],
 
     // Backend & Databases
@@ -446,10 +447,11 @@ export const skillsData = [
         "Node.js",
         "Express.js",
         "RESTful",
-        "GraphQL",
         "MySQL",
         "PostgreSQL",
         "MongoDB",
+        "Prisma",
+        "Redis",
     ],
 
     // Testing & DevOps
@@ -481,8 +483,6 @@ export const skillsData = [
         "PixiJS",
         "GSAP",
         "TweenJS",
-        "Cannon.js",
-        "Matter.js",
         "GLSL",
         "React Three Fiber",
     ],
