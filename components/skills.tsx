@@ -1,6 +1,7 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import SectionHeading from "./section-heading";
 import { skillsData, softSkillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
@@ -35,19 +36,28 @@ export default function Skills() {
 
             {/* Loop through each skill group */}
             {skillsData.map((skillGroup, groupIndex) => (
-                <div key={groupIndex} className="mb-8"> {/* Add spacing between groups */}
-                    <ul className="flex flex-wrap justify-center gap-1 text-lg text-gray-800">
+                <div key={groupIndex} className="mb-8">
+                    <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
                         {skillGroup.map((skill, index) => (
                             <motion.li
                                 key={index}
-                                className="px-5 py-3 bg-white borderBlack rounded-xl dark:bg-white/10 dark:text-white/80"
+                                className="flex flex-col items-center justify-start w-24 gap-2 px-2 py-3 bg-white borderBlack rounded-xl dark:bg-white/10 dark:text-white/80"
                                 variants={fadeInAnimationVariants}
                                 initial="initial"
                                 whileInView="animate"
                                 viewport={{ once: true }}
                                 custom={index}
                             >
-                                {skill}
+                            <div className="flex items-center justify-center w-10 h-10">
+                                <Image
+                                    src={skill.icon}
+                                    alt={`${skill.name} icon`}
+                                    width={40}
+                                    height={40}
+                                    className="object-contain"
+                                />
+                            </div>
+                                <span className="text-sm leading-tight text-center">{skill.name}</span>
                             </motion.li>
                         ))}
                     </ul>

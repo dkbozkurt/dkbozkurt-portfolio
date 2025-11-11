@@ -106,6 +106,48 @@ import aiesecLogo from '@/public/companyIcons/aiesec_logo.jpeg';
 import kindCrabLogo from '@/public/companyIcons/kindCrab_logo.jpeg';
 import koreanCulturalCenterLogo from '@/public/companyIcons/koreanCulturalCenter_logo.jpeg';
 
+import csharpIcon from "@/public/skillIcons/csharp.svg";
+import typescriptIcon from "@/public/skillIcons/typescript.svg";
+import javascriptIcon from "@/public/skillIcons/javascript.svg";
+import pythonIcon from "@/public/skillIcons/python.svg";
+import cppIcon from "@/public/skillIcons/cpp.svg";
+import htmlIcon from "@/public/skillIcons/html.svg";
+import cssIcon from "@/public/skillIcons/css.svg";
+import tailwindIcon from "@/public/skillIcons/tailwind.svg";
+import sassIcon from "@/public/skillIcons/sass.svg";
+import reactIcon from "@/public/skillIcons/react.svg";
+import svelteIcon from "@/public/skillIcons/svelte.svg";
+import dotnetIcon from "@/public/skillIcons/dotnet.svg";
+import nodejsIcon from "@/public/skillIcons/nodejs.svg";
+import expressjsIcon from "@/public/skillIcons/expressjs.svg";
+import mysqlIcon from "@/public/skillIcons/mysql.svg";
+import postgresqlIcon from "@/public/skillIcons/postgresql.svg";
+import mongodbIcon from "@/public/skillIcons/mongodb.svg";
+import prismaIcon from "@/public/skillIcons/prisma.svg";
+import redisIcon from "@/public/skillIcons/redis.svg";
+import jestIcon from "@/public/skillIcons/jest.svg";
+import dockerIcon from "@/public/skillIcons/docker.svg";
+import gitIcon from "@/public/skillIcons/git.svg";
+import npmIcon from "@/public/skillIcons/npm.svg";
+import webpackIcon from "@/public/skillIcons/webpack.svg";
+import viteIcon from "@/public/skillIcons/vite.svg";
+import uxpIcon from "@/public/skillIcons/uxp.svg";
+import unityIcon from "@/public/skillIcons/unity.svg";
+import lunaIcon from "@/public/skillIcons/luna.svg";
+import cocosIcon from "@/public/skillIcons/cocos.svg";
+import threejsIcon from "@/public/skillIcons/threejs.svg";
+import pixijsIcon from "@/public/skillIcons/pixi.svg";
+import gsapIcon from "@/public/skillIcons/gsap.svg";
+import tweenjsIcon from "@/public/skillIcons/tweenjs.svg";
+import glslIcon from "@/public/skillIcons/glsl.svg";
+import r3fIcon from "@/public/skillIcons/r3f.svg";
+import blenderIcon from "@/public/skillIcons/blender.svg";
+import splineIcon from "@/public/skillIcons/spline.svg";
+import figmaIcon from "@/public/skillIcons/figma.svg";
+import photoshopIcon from "@/public/skillIcons/photoshop.svg";
+import premiereIcon from "@/public/skillIcons/premiere.svg";
+
+
 export const links = [
     {
         name: "Home",
@@ -424,76 +466,74 @@ export const projectsData = [
 export const skillsData = [
     // Programming Languages
     [
-        "C#",
-        "TypeScript",
-        "JavaScript",
-        "Python",
-        "C++",
+        { name: "C#", icon: csharpIcon },
+        { name: "TypeScript", icon: typescriptIcon },
+        { name: "JavaScript", icon: javascriptIcon },
+        { name: "Python", icon: pythonIcon },
+        { name: "C++", icon: cppIcon },
     ],
 
     // Frontend & Styling
     [
-        "HTML",
-        "CSS",
-        "TailwindCSS",
-        "Sass",
-        "React",
-        "Svelte",
+        { name: "HTML", icon: htmlIcon },
+        { name: "CSS", icon: cssIcon },
+        { name: "TailwindCSS", icon: tailwindIcon },
+        { name: "Sass", icon: sassIcon },
+        { name: "React", icon: reactIcon },
+        { name: "Svelte", icon: svelteIcon },
     ],
 
     // Backend & Databases
     [
-        ".Net",
-        "Node.js",
-        "Express.js",
-        "RESTful",
-        "MySQL",
-        "PostgreSQL",
-        "MongoDB",
-        "Prisma",
-        "Redis",
+        { name: ".Net", icon: dotnetIcon },
+        { name: "Node.js", icon: nodejsIcon },
+        { name: "Express.js", icon: expressjsIcon },
+        { name: "MySQL", icon: mysqlIcon },
+        { name: "PostgreSQL", icon: postgresqlIcon },
+        { name: "MongoDB", icon: mongodbIcon },
+        { name: "Prisma", icon: prismaIcon },
+        { name: "Redis", icon: redisIcon },
     ],
 
     // Testing & DevOps
     [
-        "Jest",
-        "CI/CD",
-        "Docker",
+        { name: "Jest", icon: jestIcon },
+        { name: "Docker", icon: dockerIcon },
     ],
 
     // Tools, Package Managers
     [
-        "Git",
-        "npm",
-        "Webpack",
-        "Vite",
-        "UXP",
+        { name: "Git", icon: gitIcon },
+        { name: "npm", icon: npmIcon },
+        { name: "Webpack", icon: webpackIcon },
+        { name: "Vite", icon: viteIcon },
+        { name: "UXP", icon: uxpIcon },
     ],
 
     // Game Development
     [
-        "Unity",
-        "Luna (Unity Playworks)",
-        "Cocos Creator",
+        { name: "Unity", icon: unityIcon },
+        { name: "Luna (Unity Playworks)", icon: lunaIcon },
+        { name: "Cocos Creator", icon: cocosIcon },
     ],
 
     // Libraries
     [
-        "ThreeJS",
-        "PixiJS",
-        "GSAP",
-        "TweenJS",
-        "GLSL",
-        "React Three Fiber",
+        { name: "ThreeJS", icon: threejsIcon },
+        { name: "PixiJS", icon: pixijsIcon },
+        { name: "GSAP", icon: gsapIcon },
+        { name: "TweenJS", icon: tweenjsIcon },
+        { name: "GLSL", icon: glslIcon },
+        { name: "React Three Fiber", icon: r3fIcon },
     ],
 
     // Design Tools
     [
-        "Blender",
-        "Spline",
-        "Figma",
-        "Adobe PhotoShop",
-        "Adobe Premier Pro",
+        { name: "Blender", icon: blenderIcon },
+        { name: "Spline", icon: splineIcon },
+        { name: "Figma", icon: figmaIcon },
+        { name: "Adobe PhotoShop", icon: photoshopIcon },
+        { name: "Adobe Premier Pro", icon: premiereIcon },
     ]
 ] as const;
 
