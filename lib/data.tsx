@@ -202,7 +202,7 @@ export const experiencesData = [
         location: "Hamburg, Germany",
         description: [
             "Managing end-to-end playable ads development from market research and ideation through 2D-3D asset design and game development to post-launch KPI analysis, ensuring campaign alignment and performance insights.",
-            "Developing a web-based platform using TypeScript and Node.js to streamline IEC and Playable Ads creation, featuring built-in optimization and Ad network export tools.",
+            "Developing a web-based platform using TypeScript and Node.js to streamline HTML5 games/ Playable Ads and IEC creation, featuring built-in optimization and Ad network export tools.",
         ],
         icon: <Image
             src={justdiceLogo}
