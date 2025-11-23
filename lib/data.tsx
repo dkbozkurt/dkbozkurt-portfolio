@@ -90,6 +90,7 @@ import holeIOLogo from '@/public/AppIcons/hole-ioLogo.png'
 import blockJam3DLogo from '@/public/AppIcons/blockJam3D-ColorPuzzle.png';
 import toTheMoonLogo from '@/public/AppIcons/ToTheMoonLogo.png';
 import bundesBankLogo from '@/public/AppIcons/BundesBank.jpg'
+import sodaSortLogo from '@/public/AppIcons/SodaSort.png'
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -700,6 +701,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName:"Soda Sort",
+        playableName: "Agave Games",
+        icon: sodaSortLogo,
+        url: "/playableAds/SodaSort_AgaveGames_Responsive_Playable_01_Applovin_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName:"Money Well",
         playableName: "Bundes Bank",
