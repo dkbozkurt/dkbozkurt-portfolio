@@ -701,13 +701,20 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
-    {
-        appName:"Soda Sort",
-        playableName: "Agave Games",
-        icon: sodaSortLogo,
-        url: "/playableAds/SodaSort_AgaveGames_Responsive_Playable_01_Applovin_ALL.html",
-        isHighlighted: true,
-    },
+    // {
+    //     appName:"Cash Clash",
+    //     playableName: "Ninja Jump",
+    //     icon: ninjaJumpLogo,
+    //     url: "/playableAds/NinjaJump_CashClash_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted: false,
+    // },
+    // {
+    //     appName:"Soda Sort",
+    //     playableName: "Agave Games",
+    //     icon: sodaSortLogo,
+    //     url: "/playableAds/SodaSort_AgaveGames_Responsive_Playable_01_Applovin_ALL.html",
+    //     isHighlighted: true,
+    // },
     {
         appName:"Money Well",
         playableName: "Bundes Bank",
