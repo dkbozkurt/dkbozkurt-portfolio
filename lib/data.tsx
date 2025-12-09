@@ -89,8 +89,9 @@ import grandHotelManiaLogo from '@/public/AppIcons/GrandHotelManiaIcon.png'
 import holeIOLogo from '@/public/AppIcons/hole-ioLogo.png'
 import blockJam3DLogo from '@/public/AppIcons/blockJam3D-ColorPuzzle.png';
 import toTheMoonLogo from '@/public/AppIcons/ToTheMoonLogo.png';
-import bundesBankLogo from '@/public/AppIcons/BundesBank.jpg'
-import sodaSortLogo from '@/public/AppIcons/SodaSort.png'
+import bundesBankLogo from '@/public/AppIcons/BundesBank.jpg';
+import sodaSortLogo from '@/public/AppIcons/SodaSort.png';
+import ninjaJumpLogo from '@/public/AppIcons/NinjaJump.png';
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -708,19 +709,19 @@ export const playableAdsData = [
     //     url: "/playableAds/NinjaJump_CashClash_Responsive_Playable_01_Unity_ALL.html",
     //     isHighlighted: false,
     // },
-    // {
-    //     appName:"Soda Sort",
-    //     playableName: "Agave Games",
-    //     icon: sodaSortLogo,
-    //     url: "/playableAds/SodaSort_AgaveGames_Responsive_Playable_01_Applovin_ALL.html",
-    //     isHighlighted: true,
-    // },
+    {
+        appName:"Soda Sort",
+        playableName: "Agave Games",
+        icon: sodaSortLogo,
+        url: "/playableAds/SodaSort_AgaveGames_Responsive_Playable_01_Applovin_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName:"Money Well",
         playableName: "Bundes Bank",
         icon: bundesBankLogo,
         url: "/playableAds/BundesBank_MoneyWell_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName:"Cash Giraffe",
