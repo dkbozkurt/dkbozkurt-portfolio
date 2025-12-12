@@ -101,6 +101,7 @@ import panteonLogo from '@/public/companyIcons/panteon_logo.jpeg'
 import tempaPanoLogo from '@/public/companyIcons/tempapano_logo.jpeg'
 import tuprasLogo from '@/public/companyIcons/tupras_logo.jpeg'
 import myGamesLogo from '@/public/companyIcons/myGames_logo.jpeg';
+import gameGameLogo from '@/public/companyIcons/gamegame_logo.jpg';
 
 import oguLogo from '@/public/companyIcons/ogu_logo.jpeg';
 
@@ -233,6 +234,23 @@ export const experiencesData = [
             }}
         />,
         date: "Mar. 2025 - Present",
+    },
+    {
+        title: "Playable Ads Development Consultant",
+        company: "GameGame",
+        location: "Hamburg, Germany",
+        description: [
+            "Providing consultation on playable ad development, including structural planning, strategic guidance, user-engagement optimization, and overall performance enhancement."
+        ],
+        icon: <Image
+            src={gameGameLogo}
+            alt="logo"
+            style={{
+                objectFit: 'contain',
+                borderRadius: '50%'
+            }}
+        />,
+        date: "Jul. 2025 - Nov. 2025",
     },
     {
         title: "Playable Ads Developer",
