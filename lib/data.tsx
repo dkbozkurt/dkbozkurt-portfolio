@@ -720,13 +720,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
-    // {
-    //     appName:"Cash Clash",
-    //     playableName: "Ninja Jump",
-    //     icon: ninjaJumpLogo,
-    //     url: "/playableAds/NinjaJump_CashClash_Responsive_Playable_01_Unity_ALL.html",
-    //     isHighlighted: false,
-    // },
+    {
+        appName:"Cash Clash",
+        playableName: "Ninja Jump",
+        icon: ninjaJumpLogo,
+        url: "/playableAds/NinjaJump_CashClash_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
     {
         appName:"Soda Sort",
         playableName: "Agave Games",
@@ -760,7 +760,7 @@ export const playableAdsData = [
         playableName: "Hole.IO",
         icon: holeIOLogo,
         url: "/playableAds/HoleIO_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName:"Grand Hotel Mania",
