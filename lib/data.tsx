@@ -223,7 +223,7 @@ export const experiencesData = [
         location: "Amsterdam, The Netherlands",
         description: [
             "Developing interactive playable ads for mobile games using ThreeJS, PixiJS, TypeScript, HTML and CSS to support marketing goals and user acquisition.",
-            "Consulting on playable ad strategies, optimizing user engagement, and enhancing interactive ad performance."
+            "Consulting on and executing technical strategies for playable ads, focusing on seamless runtime performance and polished gameplay mechanics to boost player retention."
         ],
         icon: <Image
             src={myGamesLogo}
@@ -240,7 +240,7 @@ export const experiencesData = [
         company: "GameGame",
         location: "Hamburg, Germany",
         description: [
-            "Providing consultation on playable ad development, including structural planning, strategic guidance, user-engagement optimization, and overall performance enhancement."
+            "Providing consultation on playable ad development, including structural planning, strategic guidance, playable ad optimization, and overall performance enhancement."
         ],
         icon: <Image
             src={gameGameLogo}
