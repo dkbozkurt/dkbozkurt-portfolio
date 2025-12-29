@@ -102,6 +102,7 @@ import tempaPanoLogo from '@/public/companyIcons/tempapano_logo.jpeg'
 import tuprasLogo from '@/public/companyIcons/tupras_logo.jpeg'
 import myGamesLogo from '@/public/companyIcons/myGames_logo.jpeg';
 import gameGameLogo from '@/public/companyIcons/gamegame_logo.jpg';
+import agaveLogo from '@/public/companyIcons/agave_logo.jpeg';
 
 import oguLogo from '@/public/companyIcons/ogu_logo.jpeg';
 
@@ -199,6 +200,25 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+    {
+        title: "Senior Software Engineer, Performance Marketing",
+        company: "Agave Games",
+        location: "Istanbul, Turkey",
+        description: [
+            "Leading the end-to-end lifecycle of playable ads, from market-driven ideation through game development to post-launch KPI analysis, ensuring every creative element is refined to maximize CTR and drive high-intent user conversions.",
+            "Executing rapid gameplay iterations and A/B testing to implement 'creative hooks' and responsive mechanics that bridge the gap between technical polish and top-tier IPM results for global advertising campaigns.",
+            "Architecting a proprietary TypeScript/Node.js engine to automate playable ad/ HTML5 game and IEC creation, featuring integrated asset compression and ad network export tools to ensure minimum build size and peak runtime performance.",
+        ],
+        icon: <Image
+            src={agaveLogo}
+            alt="logo"
+            style={{
+                objectFit: 'contain',
+                borderRadius: '50%'
+            }}
+        />,
+        date: "April. 2026 - Present",
+    },
     {
         title: "Senior Playable Ads Developer",
         company: "JustDice",
