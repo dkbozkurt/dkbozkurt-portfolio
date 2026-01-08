@@ -104,6 +104,7 @@ import myGamesLogo from '@/public/companyIcons/myGames_logo.jpeg';
 import gameGameLogo from '@/public/companyIcons/gamegame_logo.jpg';
 
 import oguLogo from '@/public/companyIcons/ogu_logo.jpeg';
+import uhhLogo from '@/public/companyIcons/uhh_logo.png';
 
 import aiesecLogo from '@/public/companyIcons/aiesec_logo.jpeg';
 import kindCrabLogo from '@/public/companyIcons/kindCrab_logo.jpeg';
@@ -382,6 +383,23 @@ export const experiencesData = [
 ] as const;
 
 export const educationData = [
+    {
+        title: "M.Sc., Computer Science",
+        university: "University of Hamburg",
+        location: "Hamburg, Germany",
+        description: [
+            "Dropout - Relocation",
+        ],
+        icon: <Image
+            src={uhhLogo}
+            alt="logo"
+            style={{
+                objectFit: 'contain',
+                borderRadius: '50%'
+            }}
+        />,
+        date: "April. 2025 - Jan. 2026",
+    },
     {
         title: "B.S., Electrical & Electronics Engineering (%100 English)",
         university: "Eskisehir Osmangazi University",
