@@ -731,7 +731,7 @@ export const playableAdsData = [
         appName:"Soda Sort",
         playableName: "Agave Games",
         icon: sodaSortLogo,
-        url: "/playableAds/SodaSort_AgaveGames_Responsive_Playable_01_Applovin_ALL.html",
+        url: "/playableAds/SodaSort_AgaveGames_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
