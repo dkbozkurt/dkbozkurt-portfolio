@@ -150,6 +150,7 @@ import splineIcon from "@/public/skillIcons/spline.svg";
 import figmaIcon from "@/public/skillIcons/figma.svg";
 import photoshopIcon from "@/public/skillIcons/photoshop.svg";
 import premiereIcon from "@/public/skillIcons/premiere.svg";
+import rabbitmqIcon from "@/public/skillIcons/rabbitmq.svg";
 
 
 export const links = [
@@ -428,21 +429,21 @@ export const projectsData = [
         date: "Sep. 2025- Present",
         description:
             "Developing an npm library implementing Base‑122 encoding, reducing data size by up to ~30% compared to Base‑64 for use in data URIs.",
-        tags: ["TypeScript","NodeJS","Vite"],
+        tags: ["TypeScript", "NodeJS", "Vite"],
     },
     {
         title: "texture-optimize-pro (npm library)",
         date: "Oct. 2025- Oct. 2025",
         description:
             "Developed a texture optimization library for HTML5 games (PixiJS/ThreeJS), leveraging Sharp for high-performance image processing with per-texture configuration of max size, format, and quality.",
-        tags: ["TypeScript","NodeJS","Sharp"],
+        tags: ["TypeScript", "NodeJS", "Sharp"],
     },
     {
         title: "Figma Design Plugin",
         date: "Jul. 2025- Present",
         description:
             "Developed a Figma plugin that automates the creation of static store screens, network end-cards, and marketing assets, featuring DeepL API integration for seamless multi‑GEO translations.",
-        tags: ["Figma","HTML","CSS","TypeScript","Vite"],
+        tags: ["Figma", "HTML", "CSS", "TypeScript", "Vite"],
     },
     {
         title: "Text Localization - GEO Package",
@@ -539,6 +540,10 @@ export const skillsData = [
         { name: "Docker", icon: dockerIcon },
     ],
 
+    // Messaging & Queues
+    [
+        { name: "RabbitMQ", icon: rabbitmqIcon },
+    ],
     // Tools, Package Managers
     [
         { name: "Git", icon: gitIcon },
@@ -676,7 +681,7 @@ export const certificatesData = [
         title: "Professional CSS",
         company: "by ByteGrad",
         date: "Jan. 2025",
-        tags: ["HTML","CSS", "Grid & Flexbox", "Responsiveness", "Sass/SCSS", "BEM", "Animations & Transitions"],
+        tags: ["HTML", "CSS", "Grid & Flexbox", "Responsiveness", "Sass/SCSS", "BEM", "Animations & Transitions"],
         imageUrl: professionalCSSCertificate,
     },
     {
@@ -739,112 +744,112 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
-        appName:"Cash Clash",
+        appName: "Cash Clash",
         playableName: "Ninja Jump",
         icon: ninjaJumpLogo,
         url: "/playableAds/NinjaJump_CashClash_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
-        appName:"Soda Sort",
+        appName: "Soda Sort",
         playableName: "Agave Games",
         icon: sodaSortLogo,
         url: "/playableAds/SodaSort_AgaveGames_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
-        appName:"Money Well",
+        appName: "Money Well",
         playableName: "Bundes Bank",
         icon: bundesBankLogo,
         url: "/playableAds/BundesBank_MoneyWell_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
-        appName:"Cash Giraffe",
+        appName: "Cash Giraffe",
         playableName: "2 The Moon",
         icon: toTheMoonLogo,
         url: "/playableAds/ToTheMoon_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
-        appName:"Play Zone",
+        appName: "Play Zone",
         playableName: "Block Jam 3D: Color Puzzle",
         icon: blockJam3DLogo,
         url: "/playableAds/BlockJam3D_PlayZone_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
-        appName:"Cash Giraffe",
+        appName: "Cash Giraffe",
         playableName: "Hole.IO",
         icon: holeIOLogo,
         url: "/playableAds/HoleIO_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
-        appName:"Grand Hotel Mania",
+        appName: "Grand Hotel Mania",
         playableName: "Prepare Street Food",
         icon: grandHotelManiaLogo,
         url: "/playableAds/PBStreetFood_GrandHotelMania_MyGames_DogukanKaanBozkurt.html",
         isHighlighted: true,
     },
     {
-        appName:"Just Games",
+        appName: "Just Games",
         playableName: "Mahjong With GameIcons",
         icon: mahjongLogo,
         url: "/playableAds/MahjongCarousel_JustGames_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
-        appName:"Just Games",
+        appName: "Just Games",
         playableName: "Mahjong Original",
         icon: mahjongLogo,
         url: "/playableAds/MahjongOriginal_JustGames_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
-        appName:"Just Games",
+        appName: "Just Games",
         playableName: "Reigns",
         icon: reignsLogo,
         url: "/playableAds/StoryTeller_JustGames_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
-        appName:"Game Perks",
+        appName: "Game Perks",
         playableName: "Coffee Pack",
         icon: coffeePackLogo,
         url: "/playableAds/CoffeePack_GamePerks_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
-        appName:"Bonus Held",
+        appName: "Bonus Held",
         playableName: "Mini Metro",
         icon: miniMetroLogo,
         url: "/playableAds/MiniMetro_BonusHeld_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
-        appName:"Cash Em All",
+        appName: "Cash Em All",
         playableName: "Color Block Jam",
         icon: colorBlockJamLogo,
         url: "/playableAds/ColorBlockJam_CashEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
-        appName:"Cash Giraffe",
+        appName: "Cash Giraffe",
         playableName: "Valentines Goods Sort",
         icon: goodsSortLogo,
         url: "/playableAds/Valentines-GoodsSort_CashEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
-        appName:"Cash Giraffe",
+        appName: "Cash Giraffe",
         playableName: "Travel Town",
         icon: travelTownLogo,
         url: "/playableAds/TravelTown_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
-        appName:"Cash Giraffe",
+        appName: "Cash Giraffe",
         playableName: "Bus Out",
         icon: busOutLogo,
         url: "/playableAds/BusOut_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
