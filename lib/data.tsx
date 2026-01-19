@@ -401,7 +401,7 @@ export const educationData = [
         date: "April. 2025 - Jan. 2026",
     },
     {
-        title: "B.S., Electrical & Electronics Engineering (%100 English)",
+        title: "B.Sc., Electrical & Electronics Engineering (%100 English)",
         university: "Eskisehir Osmangazi University",
         location: "Eskisehir, Turkey",
         description: [
@@ -518,7 +518,7 @@ export const skillsData = [
         { name: "TailwindCSS", icon: tailwindIcon },
         { name: "Sass", icon: sassIcon },
         { name: "React", icon: reactIcon },
-        { name: "Svelte", icon: svelteIcon },
+        // { name: "Svelte", icon: svelteIcon },
     ],
 
     // Backend & Databases
@@ -529,8 +529,8 @@ export const skillsData = [
         { name: "MySQL", icon: mysqlIcon },
         { name: "PostgreSQL", icon: postgresqlIcon },
         { name: "MongoDB", icon: mongodbIcon },
-        { name: "Prisma", icon: prismaIcon },
-        { name: "Redis", icon: redisIcon },
+        // { name: "Prisma", icon: prismaIcon },
+        // { name: "Redis", icon: redisIcon },
     ],
 
     // Testing & DevOps
