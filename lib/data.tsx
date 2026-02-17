@@ -92,6 +92,7 @@ import toTheMoonLogo from '@/public/AppIcons/ToTheMoonLogo.png';
 import bundesBankLogo from '@/public/AppIcons/BundesBank.jpg';
 import sodaSortLogo from '@/public/AppIcons/SodaSort.png';
 import ninjaJumpLogo from '@/public/AppIcons/NinjaJump.png';
+import ballBlastLogo from '@/public/AppIcons/BallBlast.png';
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
