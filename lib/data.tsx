@@ -744,6 +744,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    // {
+    //     appName: "Cash Giraffe",
+    //     playableName: "Google - Color Tiles",
+    //     icon: googleColorTilesLogo,
+    //     url: "/playableAds/ColorTiles_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted: true,
+    // },
     {
         appName: "Cash Giraffe",
         playableName: "Ball Blast",
