@@ -745,6 +745,13 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Cash Giraffe",
+        playableName: "Ball Blast",
+        icon: ballBlastLogo,
+        url: "/playableAds/BallBlast_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
         appName: "Cash Clash",
         playableName: "Ninja Jump",
         icon: ninjaJumpLogo,
