@@ -93,6 +93,7 @@ import bundesBankLogo from '@/public/AppIcons/BundesBank.jpg';
 import sodaSortLogo from '@/public/AppIcons/SodaSort.png';
 import ninjaJumpLogo from '@/public/AppIcons/NinjaJump.png';
 import ballBlastLogo from '@/public/AppIcons/BallBlast.png';
+import googleColorTilesLogo from '@/public/AppIcons/colorTilesLogo.png';
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -744,13 +745,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
-    // {
-    //     appName: "Cash Giraffe",
-    //     playableName: "Google - Color Tiles",
-    //     icon: googleColorTilesLogo,
-    //     url: "/playableAds/ColorTiles_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
-    //     isHighlighted: true,
-    // },
+    {
+        appName: "Cash Giraffe",
+        playableName: "Google - Color Tiles",
+        icon: googleColorTilesLogo,
+        url: "/playableAds/ColorTiles_CashGiraffe_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName: "Cash Giraffe",
         playableName: "Ball Blast",
