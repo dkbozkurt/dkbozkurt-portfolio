@@ -221,7 +221,7 @@ export const experiencesData = [
                 borderRadius: '50%'
             }}
         />,
-        date: "April. 2026 - Present",
+        date: "Apr. 2026 - Present",
     },
     {
         title: "Senior Playable Ads Developer",
@@ -239,7 +239,7 @@ export const experiencesData = [
                 borderRadius: '50%'
             }}
         />,
-        date: "Oct. 2024 - Present",
+        date: "Oct. 2024 - Apr. 2026",
     },
     {
         title: "Playable Ads Developer & Consultant (External)",
@@ -257,7 +257,7 @@ export const experiencesData = [
                 borderRadius: '50%'
             }}
         />,
-        date: "Mar. 2025 - Present",
+        date: "Mar. 2025 - Mar. 2026",
     },
     {
         title: "Playable Ads Development Consultant",
