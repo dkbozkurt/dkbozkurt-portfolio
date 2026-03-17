@@ -21,21 +21,15 @@ export default function About() {
                 About me
             </SectionHeading>
             <p
-                className="mb-6"
+                className="mb-12 mt-36"
             >
-                After taking programming courses during my bachelor's in Electrical & Electronics Engineering, I pursued my passion for a career in software development. I began by undertaking a few volunteer internships, where hands-on experience solidified my foundations in coding and problem-solving. Nothing excites me more than finding creative ways to solve challenging problems, which ultimately culminates in that satisfying “aha” moment when it all clicks into place.
+                I'm a Software Developer specializing in Playable Ads and HTML5 game development, with a strong background in building high-performance, lightweight interactive experiences. My work spans the full lifecycle of playable ads; from game mechanics and UI/UX to 2D/ 3D asset integration and performance optimization, ensuring each experience meets both creative and marketing goals.
             </p>
-            <p className="mb-6">
-                My core tech stack comprises C#, TypeScript, JavaScript, C++, and Python, though I continually look forward to learning any new technologies while keeping GitHub updated. Across my career, I have contributed to almost 30 shipped game projects. My experience as a Marketing Game Developer across various brands of hyper and hybrid casual games placed me in an appropriate position for the integration of novel mechanics, frequently pinpointing the correct time to jump in and implement massive functionality at a superior pace. This experience further deepened my love for OOP and clear maintainable code.
+            <p className="mb-12">
+                With experience across 30+ shipped games and playable ads, I've worked with TypeScript, JavaScript, C#, Unity Playworks(LunaLabs) PixiJS, and Three.js, often stepping in at critical moments to deliver scalable features at speed. This background has reinforced my appreciation for clean architecture, OOP principles, and maintainable codebases.
             </p>
-            <p className="mb-6">
-                In addition, my work as a Playable Ads Developer honed my optimization skills to ensure every feature not only met but exceeded performance expectations. I've developed playable ads./ HTML5 games for diverse games, apps and brands, creating both 2D and 3D assets and integrating them seamlessly. This role expanded my design background, improved my UI/UX skills, and provided valuable experience with audio and video editing applications to fine-tune in-game sound and IEC-based ads.
-            </p>
-            <p className="mb-6">
-                Most recently, I've developed a playable ads engine for automating both Playable Ad and IEC processes. This engine also fits ads into different ad network requirements and uses both Three.js and PixiJS to further facilitate ad crafting to pass through a searing optimization and coding stage. Through performance and marketing KPI analyses, I also gained insights into UA strategies.
-            </p>
-            <p>
-                When I'm not coding or designing, I enjoy traveling, savoring sushi, and exploring geography. Having visited 35 countries so far, I'm continually inspired to discover more of our incredible planet.
+            <p className="mb-12">
+                Beyond development, I've built internal tools, npm libraries and engines to streamline Playable Ad and IEC production as well as supporting Design and Marketing teams, while leveraging performance data and marketing KPIs to inform technical decisions. I enjoy turning constraints into creative solutions, and continuously refining the craft of interactive advertising.
             </p>
 
         </motion.section>
