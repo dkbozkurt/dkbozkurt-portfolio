@@ -95,6 +95,7 @@ import ninjaJumpLogo from '@/public/AppIcons/NinjaJump.png';
 import ballBlastLogo from '@/public/AppIcons/BallBlast.png';
 import googleColorTilesLogo from '@/public/AppIcons/colorTilesLogo.png';
 import findTheCatLogo from "@/public/AppIcons/FindTheCat.png";
+import artBlockPuzzleLogo from "@/public/AppIcons/ArtBlockPuzzleLogo.png";
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -766,6 +767,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName: "Art Block Puzzle",
+        playableName: "Puzzle",
+        icon: artBlockPuzzleLogo,
+        url: "/playableAds/Puzzle_ArtBlockPuzzle_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName: "Find The Cat",
         playableName: "Survey",
