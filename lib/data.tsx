@@ -449,8 +449,15 @@ export const educationData = [
 
 export const projectsData = [
     {
+        title: "smart-sheet-translate",
+        date: "Apr. 2026- Apr. 2026",
+        description:
+            "Developed a Google Sheets add-on that automates batch translation of localization sheets via a custom HTTP API, enabling full multi-language coverage directly from the spreadsheet.",
+        tags: ["Google Apps Script", "Node.js","clasp", "OpenAI API"],
+    },
+    {
         title: "base122-encoding (npm library)",
-        date: "Sep. 2025- Present",
+        date: "Sep. 2025- Nov. 2025",
         description:
             "Developing an npm library implementing Base‑122 encoding, reducing data size by up to ~30% compared to Base‑64 for use in data URIs.",
         tags: ["TypeScript", "NodeJS", "Vite"],
