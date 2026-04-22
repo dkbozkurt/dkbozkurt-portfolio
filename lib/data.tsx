@@ -775,6 +775,13 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Find The Cat",
+        playableName: "CountAndPickAnswer",
+        icon: findTheCatLogo,
+        url: "/playableAds/CountAndPickAnswer_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
         appName: "Art Block Puzzle",
         playableName: "Puzzle",
         icon: artBlockPuzzleLogo,
