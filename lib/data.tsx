@@ -776,6 +776,13 @@ export const certificatesData = [
 export const playableAdsData = [
     {
         appName: "Find The Cat",
+        playableName: "Find The Selected Animal",
+        icon: findTheCatLogo,
+        url: "/playableAds/FindTheSelectedAnimal_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Find The Cat",
         playableName: "CountAndPickAnswer",
         icon: findTheCatLogo,
         url: "/playableAds/CountAndPickAnswer_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
@@ -793,7 +800,7 @@ export const playableAdsData = [
         playableName: "Survey",
         icon: findTheCatLogo,
         url: "/playableAds/Survey_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Cash Giraffe",
