@@ -775,6 +775,13 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Art Block Puzzle",
+        playableName: "Flip Card",
+        icon: artBlockPuzzleLogo,
+        url: "/playableAds/FlipCard_ArtBlockPuzzle_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
         appName: "Find The Cat",
         playableName: "Find The Selected Animal",
         icon: findTheCatLogo,
