@@ -96,6 +96,8 @@ import ballBlastLogo from '@/public/AppIcons/BallBlast.png';
 import googleColorTilesLogo from '@/public/AppIcons/colorTilesLogo.png';
 import findTheCatLogo from "@/public/AppIcons/FindTheCat.png";
 import artBlockPuzzleLogo from "@/public/AppIcons/ArtBlockPuzzleLogo.png";
+import findTheCat2Logo from "@/public/AppIcons/FindTheCat2Logo.png";
+import findEmAllLogo from "@/public/AppIcons/FindEmAllLogo.png";
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -774,6 +776,13 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName: "Find The Cat 2",
+        playableName: "Collect On Score UI",
+        icon: findTheCat2Logo,
+        url: "/playableAds/CollectOnScoreUI_FindTheCat2_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName: "Art Block Puzzle",
         playableName: "Flip Card",
