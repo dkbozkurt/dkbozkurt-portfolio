@@ -777,6 +777,13 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Find The Cat",
+        playableName: "Base Game Play-Level 622",
+        icon: findTheCatLogo,
+        url: "/playableAds/BaseGamePlay-Level622_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
         appName: "Find The Cat 2",
         playableName: "Collect On Score UI",
         icon: findTheCat2Logo,
@@ -788,7 +795,7 @@ export const playableAdsData = [
         playableName: "Flip Card",
         icon: artBlockPuzzleLogo,
         url: "/playableAds/FlipCard_ArtBlockPuzzle_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     {
         appName: "Find The Cat",
