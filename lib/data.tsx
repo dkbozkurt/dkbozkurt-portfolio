@@ -777,6 +777,34 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Soda Match",
+        playableName: "Long Strawberry Bottle",
+        icon: sodaSortLogo,
+        url: "/playableAds/LongStrawberryBottle_SodaMatch_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Find The Cat",
+        playableName: "Zoom& Pan - WhaleLevel",
+        icon: findTheCat2Logo,
+        url: "/playableAds/Zoom&PanWhaleLevel_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
+        appName: "Find The Cat 2",
+        playableName: "Zoom& Pan& Collect To UI",
+        icon: findTheCat2Logo,
+        url: "/playableAds/Zoom&Pan&CollectToUI_FindTheCat2_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Find Em All",
+        playableName: "Collect Scroll Area - Lvl 26",
+        icon: findEmAllLogo,
+        url: "/playableAds/CollectOnScrollAreaLevel26_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
         appName: "Find The Cat",
         playableName: "Base Game Play-Level 622",
         icon: findTheCatLogo,
