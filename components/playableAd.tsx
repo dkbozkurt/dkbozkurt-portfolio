@@ -2,6 +2,12 @@
 
 import { useRef, useState, useEffect } from "react";
 import { playableAdsData } from "@/lib/data";
+import {
+    getPlayableId,
+    parsePlayIdFromHash,
+    buildPlayableHash,
+    PLAYABLE_SECTION_HASH,
+} from "@/lib/playable-id";
 import Image from 'next/image'
 import { motion } from "framer-motion"
 import { BsArrowRight } from "react-icons/bs";
@@ -36,6 +42,7 @@ export default function PlayableAd({
 }: PlayableAdsProps) {
     const [isOverlayVisible, setOverlayVisible] = useState(false);
     const ref = useRef<HTMLDivElement>(null);
+    const playableId = getPlayableId(url);
 
     const cardClasses = `bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[16rem] h-[16rem] dark:bg-white/20 ${isHighlighted ? "bg-yellow-200 hover:bg-yellow-300 relative dark:bg-yellow-600 dark:hover:bg-yellow-500" : ""
         }`;
@@ -51,15 +58,72 @@ export default function PlayableAd({
         };
     }, [isOverlayVisible]);
 
+    // Auto-open this playable if the URL matches on first load
+    // (e.g. someone opened a shared link /#playableAds?play=<id>).
+    useEffect(() => {
+        if (typeof window === 'undefined') return;
+        const playId = parsePlayIdFromHash(window.location.hash);
+        if (playId !== playableId) return;
+
+        if (window.innerWidth < 640 || window.innerHeight < 640) {
+            // On mobile we open the playable directly in a new tab,
+            // matching the click-behavior on small screens.
+            window.open(url, '_blank');
+            return;
+        }
+        setOverlayVisible(true);
+        // Defer scroll until after layout so the card position is known.
+        setTimeout(() => {
+            ref.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        }, 100);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
+
+    // React to browser back/forward buttons so the modal opens/closes in
+    // sync with history state.
+    useEffect(() => {
+        const onPopState = () => {
+            const playId = parsePlayIdFromHash(window.location.hash);
+            setOverlayVisible(playId === playableId);
+        };
+        window.addEventListener('popstate', onPopState);
+        return () => window.removeEventListener('popstate', onPopState);
+    }, [playableId]);
+
     const handleClick = (targetURL: string) => {
         if (window.innerWidth < 640 || window.innerHeight < 640) {
             window.open(targetURL, '_blank');
+            return;
+        }
+        if (!isOverlayVisible) {
+            // Update the URL so the playable becomes shareable.
+            const newHash = buildPlayableHash(playableId);
+            window.history.pushState(
+                { playableId },
+                '',
+                `${window.location.pathname}${window.location.search}${newHash}`,
+            );
+            setOverlayVisible(true);
         } else {
-            setOverlayVisible(!isOverlayVisible);
+            handleClose();
         }
     };
 
     const handleClose = () => {
+        if (typeof window !== 'undefined') {
+            const playId = parsePlayIdFromHash(window.location.hash);
+            if (playId === playableId) {
+                // Drop ?play=<id> from the fragment but keep #playableAds
+                // so the section anchor (and scroll position) is preserved.
+                // Use replaceState to avoid leaving a "ghost" history entry
+                // that would re-open the modal on Forward.
+                window.history.replaceState(
+                    {},
+                    '',
+                    `${window.location.pathname}${window.location.search}${PLAYABLE_SECTION_HASH}`,
+                );
+            }
+        }
         setOverlayVisible(false);
     };
 
