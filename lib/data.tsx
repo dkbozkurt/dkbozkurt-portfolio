@@ -778,6 +778,20 @@ export const certificatesData = [
 export const playableAdsData = [
     {
         appName: "Soda Match",
+        playableName: "Cocktails - Carousel Scroll",
+        icon: sodaSortLogo,
+        url: "/playableAds/Cocktails-CarouselScroll_SodaMatch_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Soda Match",
+        playableName: "Cocktails - Horizontal Scroll",
+        icon: sodaSortLogo,
+        url: "/playableAds/Cocktails-HorizontalScroll_SodaMatch_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
+        appName: "Soda Match",
         playableName: "Cocktails - 3 Renewable",
         icon: sodaSortLogo,
         url: "/playableAds/Cocktails-3Renewable_SodaMatch_Responsive_Playable_01_Unity_ALL.html",
