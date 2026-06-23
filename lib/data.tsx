@@ -777,6 +777,13 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Find The Cat",
+        playableName: "Newspaper - Water Paint",
+        icon: findTheCatLogo,
+        url: "/playableAds/WaterPaint_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
         appName: "Soda Match",
         playableName: "Cocktails - Carousel Scroll",
         icon: sodaSortLogo,
