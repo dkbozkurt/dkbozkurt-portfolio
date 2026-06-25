@@ -776,6 +776,41 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    // {
+    //     appName: "Find The Cat",
+    //     playableName: "MultiLevel",
+    //     icon: findTheCatLogo,
+    //     url: "/playableAds/MultiLevel_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted: false,
+    // },
+    {
+        appName: "Find Em All",
+        playableName: "AscendingTileClear - Lvl 11",
+        icon: findEmAllLogo,
+        url: "/playableAds/AscendingTileClearLevel11_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    // {
+    //     appName: "Find The Cat",
+    //     playableName: "ScrollableCollectOnUI",
+    //     icon: findTheCatLogo,
+    //     url: "/playableAds/ScrollableCollectOnUI_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted: true,
+    // },
+    // {
+    //     appName: "Find The Cat",
+    //     playableName: "StaticCollectOnUI",
+    //     icon: findTheCatLogo,
+    //     url: "/playableAds/StaticCollectOnUI_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted: false,
+    // },
+    // {
+    //     appName: "Art Block Puzzle",
+    //     playableName: "Pyramid",
+    //     icon: artBlockPuzzleLogo,
+    //     url: "/playableAds/Pyramid_ArtBlockPuzzle_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted: true,
+    // },
     {
         appName: "Find The Cat",
         playableName: "Newspaper - Water Paint",
