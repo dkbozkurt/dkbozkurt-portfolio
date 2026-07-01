@@ -811,13 +811,13 @@ export const playableAdsData = [
     //     url: "/playableAds/StaticCollectOnUI_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
     //     isHighlighted: false,
     // },
-    // {
-    //     appName: "Art Block Puzzle",
-    //     playableName: "Pyramid",
-    //     icon: artBlockPuzzleLogo,
-    //     url: "/playableAds/Pyramid_ArtBlockPuzzle_Responsive_Playable_01_Unity_ALL.html",
-    //     isHighlighted: true,
-    // },
+    {
+        appName: "Art Block Puzzle",
+        playableName: "Pyramid",
+        icon: artBlockPuzzleLogo,
+        url: "/playableAds/Pyramid_ArtBlockPuzzle_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName: "Find The Cat",
         playableName: "Newspaper - Water Paint",
