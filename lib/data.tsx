@@ -777,6 +777,13 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Find Em All",
+        playableName: "MultipleCategoryCollect - Lvl35",
+        icon: findEmAllLogo,
+        url: "/playableAds/MultipleCategoryCollectLevel35_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
         appName: "Art Block Puzzle",
         playableName: "Step Zoom Out",
         icon: artBlockPuzzleLogo,
