@@ -28,7 +28,7 @@ const StarAnimation = () => {
                 delay: randomDelay,
             }}
         >
-            <FaStar className="text-yellow-400 text-8xl" />
+            <FaStar className="text-yellow-400 text-4xl sm:text-8xl" />
         </motion.div>
     );
 };
@@ -44,7 +44,7 @@ export default function PlayableAd({
     const ref = useRef<HTMLDivElement>(null);
     const playableId = getPlayableId(url);
 
-    const cardClasses = `bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-[16rem] h-[16rem] dark:bg-white/20 ${isHighlighted ? "bg-yellow-200 hover:bg-yellow-300 relative dark:bg-yellow-600 dark:hover:bg-yellow-500" : ""
+    const cardClasses = `bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-full h-[13rem] sm:w-[16rem] sm:h-[16rem] dark:bg-white/20 ${isHighlighted ? "bg-yellow-200 hover:bg-yellow-300 relative dark:bg-yellow-600 dark:hover:bg-yellow-500" : ""
         }`;
 
     useEffect(() => {
@@ -128,10 +128,10 @@ export default function PlayableAd({
     };
 
     return (
-        <a onClick={() => handleClick(url)}>
+        <a onClick={() => handleClick(url)} className="block w-[calc(50%-0.375rem)] sm:w-auto">
             <motion.div
                 ref={ref}
-                className="mx-[1rem] group sm:mb-8 last:mb-0"
+                className="mx-0 group mb-0 sm:mx-[1rem] sm:mb-8 last:mb-0"
             >
                 <section className={cardClasses}>
                     {isHighlighted && (
@@ -158,14 +158,15 @@ export default function PlayableAd({
                         src={icon}
                         alt="Playable icon"
                         quality={95}
-                        className="rounded-[2rem] transition flex justify-center group-hover:scale-[1.1] shadow-2xl m-5 relative h-[8rem] w-[8rem] rounded-m mt-3 mb-2 mr-5 z-10"
+                        className="rounded-[1.25rem] sm:rounded-[2rem] transition flex justify-center group-hover:scale-[1.1] shadow-2xl relative h-[4.5rem] w-[4.5rem] m-2 mt-6 mb-2 sm:h-[8rem] sm:w-[8rem] sm:m-5 sm:mt-3 sm:mb-2 sm:mr-5 z-10"
                     />
 
-                    <div className="z-10 flex flex-col items-center pb-3 mt-auto">
-                        <h3 className="text-2xl font-bold dark:text-white/90">{appName}</h3>
-                        <p className="pb-1 text-gray-700 dark:text-white/60">{playableName}</p>
-                        <div className="transition items-center flex w-[11rem] h-2 gap-1 pl-8 p-4 text-white text-m bg-gray-900 rounded-full outline-none sm:w-[12rem]">
-                            Click to Play
+                    <div className="z-10 flex flex-col items-center px-2 pb-2 mt-auto sm:px-0 sm:pb-3">
+                        <h3 className="text-center text-sm font-bold leading-tight line-clamp-1 dark:text-white/90 sm:text-2xl">{appName}</h3>
+                        <p className="text-center text-[0.65rem] leading-tight text-gray-700 line-clamp-1 pb-1 dark:text-white/60 sm:text-base">{playableName}</p>
+                        <div className="transition items-center justify-center flex w-[7rem] h-2 gap-1 p-3 text-white text-sm bg-gray-900 rounded-full outline-none sm:w-[11rem] sm:gap-1 sm:p-4 sm:text-lg md:w-[12rem]">
+                            <span className="sm:hidden">Play</span>
+                            <span className="hidden sm:inline">Click to Play</span>
                             <BsArrowRight className="transition opacity-70 group-hover:translate-x-2" />
                         </div>
                     </div>

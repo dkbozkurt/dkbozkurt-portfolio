@@ -21,7 +21,7 @@ export default function PlayableAds() {
         >
             <SectionHeading>Playable Ads</SectionHeading>
 
-            <div className="flex flex-wrap justify-center w-full gap-x-0 text-lg text-gray-800 gap-y-8 sm:w-full lg:w-[60rem] xl:w-[80rem]">
+            <div className="flex flex-wrap justify-center w-full gap-x-3 gap-y-3 text-lg text-gray-800 sm:gap-x-0 sm:gap-y-8 sm:w-full lg:w-[60rem] xl:w-[80rem]">
                 {playableAdsData.map((playableAd, index) => (
                     <React.Fragment key={index}>
                         <PlayableAd {...playableAd} />
