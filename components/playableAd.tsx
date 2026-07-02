@@ -138,7 +138,17 @@ export default function PlayableAd({
                         <>
                             <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
                                 <div className="absolute inset-0 bg-yellow-300 opacity-20 dark:bg-yellow-100 dark:opacity-40"></div>
-                                <div className="absolute inset-0 animate-[spin_3s_linear_infinite] bg-gradient-to-r from-transparent via-white to-transparent opacity-30"></div>
+                                <motion.div
+                                    className="absolute left-0 top-0 h-full w-1/4 -skew-x-12 bg-gradient-to-r from-transparent via-white/70 to-transparent"
+                                    initial={{ x: "-150%" }}
+                                    animate={{ x: "500%" }}
+                                    transition={{
+                                        duration: 1.4,
+                                        repeat: Infinity,
+                                        repeatDelay: 2.2,
+                                        ease: "easeInOut",
+                                    }}
+                                />
                             </div>
                             <div className="absolute -top-2 -left-2 z--2">
                                 <StarAnimation />
