@@ -98,6 +98,8 @@ import findTheCatLogo from "@/public/AppIcons/FindTheCat.png";
 import artBlockPuzzleLogo from "@/public/AppIcons/ArtBlockPuzzleLogo.png";
 import findTheCat2Logo from "@/public/AppIcons/FindTheCat2Logo.png";
 import findEmAllLogo from "@/public/AppIcons/FindEmAllLogo.png";
+import catLogicPuzzleIcon from "@/public/AppIcons/CLP_Icon.png";
+import wordTilesIcon from "@/public/AppIcons/WT_Icon.png";
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -777,6 +779,55 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Cat Logic Puzzle",
+        playableName: "Base Gameplay",
+        icon: catLogicPuzzleIcon,
+        url: "/playableAds/BaseGameplay_CatLogicPuzzle_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Cat Logic Puzzle",
+        playableName: "Spotlight And No Fail",
+        icon: catLogicPuzzleIcon,
+        url: "/playableAds/SpotlightAndNoFail_CatLogicPuzzle_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
+        appName: "Find Em All",
+        playableName: "Find A Like Level101",
+        icon: findEmAllLogo,
+        url: "/playableAds/FindALikeLevel101_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Find The Cat 2",
+        playableName: "Breakable Ascending Tile Clear",
+        icon: findTheCat2Logo,
+        url: "/playableAds/BreakableAscendingTileClear_FindTheCat2_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Art Block Puzzle",
+        playableName: "Multiple Levels",
+        icon: artBlockPuzzleLogo,
+        url: "/playableAds/MultipleLevels_ArtBlockPuzzle_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
+        appName: "Find Em All",
+        playableName: "Multiple Levels Collect On Scrollable UI",
+        icon: findEmAllLogo,
+        url: "/playableAds/MultipleLevelsCollectOnScrollableUI_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Find The Cat 2",
+        playableName: "Clap For Hard Cats",
+        icon: findTheCat2Logo,
+        url: "/playableAds/ClapForHardCatZoom&Pan&CollectToUI_FindTheCat2_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
         appName: "Find Em All",
         playableName: "Multiple Category Collect",
         icon: findEmAllLogo,
@@ -802,7 +853,7 @@ export const playableAdsData = [
         playableName: "AscendingTileClear - Lvl 11",
         icon: findEmAllLogo,
         url: "/playableAds/AscendingTileClearLevel11_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
-        isHighlighted: true,
+        isHighlighted: false,
     },
     // {
     //     appName: "Find The Cat",
@@ -811,13 +862,13 @@ export const playableAdsData = [
     //     url: "/playableAds/ScrollableCollectOnUI_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
     //     isHighlighted: true,
     // },
-    // {
-    //     appName: "Find The Cat",
-    //     playableName: "StaticCollectOnUI",
-    //     icon: findTheCatLogo,
-    //     url: "/playableAds/StaticCollectOnUI_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
-    //     isHighlighted: false,
-    // },
+    {
+        appName: "Find The Cat",
+        playableName: "StaticCollectOnUI",
+        icon: findTheCatLogo,
+        url: "/playableAds/StaticCollectOnUI_FindTheCat_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
     {
         appName: "Art Block Puzzle",
         playableName: "Pyramid",
