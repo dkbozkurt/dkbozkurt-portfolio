@@ -9,7 +9,7 @@ import Language from './language';
 
 export default function Languages() {
 
-    const {ref} = useSectionInView("Languages",0.5);
+    const {ref} = useSectionInView("Languages");
     
     return (
     <motion.section

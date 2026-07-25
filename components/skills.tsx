@@ -54,6 +54,7 @@ export default function Skills() {
                                     alt={`${skill.name} icon`}
                                     width={40}
                                     height={40}
+                                    sizes="40px"
                                     className="object-contain"
                                 />
                             </div>

@@ -8,7 +8,7 @@ import SectionHeading from './section-heading';
 import PlayableAd from './playableAd';
 
 export default function PlayableAds() {
-    const { ref } = useSectionInView("PlayableAds", 0.5);
+    const { ref } = useSectionInView("PlayableAds");
 
     return (
         <motion.section

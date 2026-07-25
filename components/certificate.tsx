@@ -66,10 +66,11 @@ export default function Certificate({
                 </ul>
             </div>
                     
-            <Image 
-            src={imageUrl} 
-            alt="Project Image" 
-            quality={95}
+            <Image
+            src={imageUrl}
+            alt={`${title} certificate`}
+            quality={85}
+            sizes="452px"
             className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition 
                     
             group-hover:scale-[1.04] 

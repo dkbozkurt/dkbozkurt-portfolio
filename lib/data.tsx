@@ -838,7 +838,7 @@ export const playableAdsData = [
         appName: "Art Block Puzzle",
         playableName: "Step Zoom Out",
         icon: artBlockPuzzleLogo,
-        url: "/playableAds/Pyramid_ArtBlockPuzzle_Responsive_Playable_01_Unity_ALL.html",
+        url: "/playableAds/StepZoomOut_ArtBlockPuzzle_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     // {

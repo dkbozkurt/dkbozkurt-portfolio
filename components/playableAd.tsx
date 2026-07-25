@@ -1,6 +1,7 @@
 "use client"
 
-import { useRef, useState, useEffect } from "react";
+import { useCallback, useRef, useState, useEffect } from "react";
+import { useInView } from "react-intersection-observer";
 import { playableAdsData } from "@/lib/data";
 import {
     getPlayableId,
@@ -41,8 +42,27 @@ export default function PlayableAd({
     isHighlighted
 }: PlayableAdsProps) {
     const [isOverlayVisible, setOverlayVisible] = useState(false);
-    const ref = useRef<HTMLDivElement>(null);
+    const [isIconLoaded, setIconLoaded] = useState(false);
+    const [isPlayableLoaded, setPlayableLoaded] = useState(false);
+    const ref = useRef<HTMLDivElement | null>(null);
     const playableId = getPlayableId(url);
+
+    // The highlight decoration is five infinitely-repeating animations per
+    // card. With ~57 highlighted cards that is nearly 300 animations ticking
+    // every frame, including on cards far outside the viewport. Mount them
+    // only while the card is actually near the screen.
+    const { ref: inViewRef, inView: isCardNearViewport } = useInView({
+        rootMargin: '300px 0px',
+        threshold: 0,
+    });
+
+    const setCardRef = useCallback(
+        (node: HTMLDivElement | null) => {
+            ref.current = node;
+            inViewRef(node);
+        },
+        [inViewRef],
+    );
 
     const cardClasses = `bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-full h-[13rem] sm:w-[16rem] sm:h-[16rem] dark:bg-white/20 ${isHighlighted ? "bg-yellow-200 hover:bg-yellow-300 relative dark:bg-yellow-600 dark:hover:bg-yellow-500" : ""
         }`;
@@ -127,14 +147,31 @@ export default function PlayableAd({
         setOverlayVisible(false);
     };
 
+    // The playable build is only ever requested while the modal is open;
+    // closing it unmounts the iframe so the next open starts from scratch.
+    useEffect(() => {
+        if (!isOverlayVisible) setPlayableLoaded(false);
+    }, [isOverlayVisible]);
+
+    // Escape closes the modal, matching the X button.
+    useEffect(() => {
+        if (!isOverlayVisible) return;
+        const onKeyDown = (event: KeyboardEvent) => {
+            if (event.key === 'Escape') handleClose();
+        };
+        window.addEventListener('keydown', onKeyDown);
+        return () => window.removeEventListener('keydown', onKeyDown);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [isOverlayVisible]);
+
     return (
         <a onClick={() => handleClick(url)} className="block w-[calc(50%-0.375rem)] sm:w-auto">
             <motion.div
-                ref={ref}
+                ref={setCardRef}
                 className="mx-0 group mb-0 sm:mx-[1rem] sm:mb-8 last:mb-0"
             >
                 <section className={cardClasses}>
-                    {isHighlighted && (
+                    {isHighlighted && isCardNearViewport && (
                         <>
                             <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
                                 <div className="absolute inset-0 bg-yellow-300 opacity-20 dark:bg-yellow-100 dark:opacity-40"></div>
@@ -164,12 +201,39 @@ export default function PlayableAd({
                             </div>
                         </>
                     )}
-                    <Image
-                        src={icon}
-                        alt="Playable icon"
-                        quality={95}
-                        className="rounded-[1.25rem] sm:rounded-[2rem] transition flex justify-center group-hover:scale-[1.1] shadow-2xl relative h-[4.5rem] w-[4.5rem] m-2 mt-6 mb-2 sm:h-[8rem] sm:w-[8rem] sm:m-5 sm:mt-3 sm:mb-2 sm:mr-5 z-10"
-                    />
+                    {/* Keep the static yellow tint on off-screen highlighted
+                        cards so only the animation is deferred, not the look. */}
+                    {isHighlighted && !isCardNearViewport && (
+                        <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
+                            <div className="absolute inset-0 bg-yellow-300 opacity-20 dark:bg-yellow-100 dark:opacity-40"></div>
+                        </div>
+                    )}
+
+                    <div className="relative z-10 m-2 mt-6 mb-2 h-[4.5rem] w-[4.5rem] sm:h-[8rem] sm:w-[8rem] sm:m-5 sm:mt-3 sm:mb-2 sm:mr-5">
+                        {/* Holds the card layout steady and signals that the
+                            icon is still downloading. Off-screen cards get the
+                            same block without the pulse, so we don't keep 140
+                            idle animations alive for icons nobody is looking at. */}
+                        {!isIconLoaded && (
+                            <div
+                                aria-hidden="true"
+                                className={`absolute inset-0 rounded-[1.25rem] bg-gray-300/70 dark:bg-white/10 sm:rounded-[2rem] ${isCardNearViewport ? "animate-pulse" : ""}`}
+                            />
+                        )}
+                        <Image
+                            src={icon}
+                            alt={`${appName} icon`}
+                            quality={85}
+                            // Rendered at 72px (mobile) / 128px (desktop). Giving
+                            // explicit dimensions instead of `sizes` keeps the
+                            // srcset to a 1x/2x pair rather than 13 candidates
+                            // across 143 cards worth of markup.
+                            width={128}
+                            height={128}
+                            onLoad={() => setIconLoaded(true)}
+                            className={`rounded-[1.25rem] sm:rounded-[2rem] transition-[transform,opacity] duration-300 flex justify-center group-hover:scale-[1.1] shadow-2xl relative h-full w-full ${isIconLoaded ? "opacity-100" : "opacity-0"}`}
+                        />
+                    </div>
 
                     <div className="z-10 flex flex-col items-center px-2 pb-2 mt-auto sm:px-0 sm:pb-3">
                         <h3 className="text-center text-sm font-bold leading-tight line-clamp-1 dark:text-white/90 sm:text-2xl">{appName}</h3>
@@ -197,6 +261,9 @@ export default function PlayableAd({
                                 borderRadius: '16px', // Adjust as needed
                                 border: '6px solid white', // Thicker and white border
                             }}
+                            // Without this, clicks anywhere inside the modal
+                            // frame bubble up to the card and close the playable.
+                            onClick={(event) => event.stopPropagation()}
                         >
 
                             <button className="absolute flex items-center justify-center bg-white shadow-md cursor-pointer"
@@ -213,15 +280,29 @@ export default function PlayableAd({
                                     alignItems: 'center',
                                     boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)', // Optional shadow
                                 }}
+                                aria-label="Close playable"
                                 onClick={handleClose}
                             >
                                 <span className="font-black text-[20px]">X</span>
                             </button>
+
+                            {/* A playable build is 3-5 MB, so show progress
+                                instead of a blank white frame while it loads. */}
+                            {!isPlayableLoaded && (
+                                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-white rounded-lg">
+                                    <div className="w-10 h-10 border-4 border-gray-200 rounded-full border-t-gray-900 animate-spin" />
+                                    <p className="text-sm font-medium text-gray-500">
+                                        Loading {appName}…
+                                    </p>
+                                </div>
+                            )}
+
                             <iframe
-                                title="Popup Content"
+                                title={`${appName} — ${playableName}`}
                                 src={url}
                                 className="w-full h-full rounded-lg"
                                 frameBorder="0"
+                                onLoad={() => setPlayableLoaded(true)}
                             />
                         </div>
                     </div>

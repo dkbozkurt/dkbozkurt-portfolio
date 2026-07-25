@@ -7,7 +7,7 @@ import Certificate from "./certificate";
 import { useSectionInView } from '@/lib/hooks';
 
 export default function Certificates() {
-    const {ref} = useSectionInView("Certificates",0.5);
+    const {ref} = useSectionInView("Certificates");
 
   return (
     <section
