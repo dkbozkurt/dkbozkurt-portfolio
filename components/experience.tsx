@@ -144,7 +144,7 @@ function ExperienceCard({ group, index }: { group: CompanyGroup; index: number }
                     <p className="mt-0.5 text-sm text-gray-600 dark:text-white/60">
                         {group.location}
                     </p>
-                    <p className="mt-0.5 text-xs font-medium text-gray-500 dark:text-white/45">
+                    <p className="mt-0.5 text-xs font-medium text-gray-500 dark:text-white/50">
                         {group.dateRange}
                         {hasMultipleRoles && (
                             <>
@@ -157,13 +157,37 @@ function ExperienceCard({ group, index }: { group: CompanyGroup; index: number }
             </header>
 
             {hasMultipleRoles ? (
-                <ol className="relative ml-2 mt-5 space-y-6 border-l-2 border-gray-300 pl-6 dark:border-white/15 sm:ml-3">
-                    {group.roles.map((role, i) => (
-                        <li key={i} className="relative">
-                            <span className="absolute -left-[31px] top-1 h-3.5 w-3.5 rounded-full border-2 border-gray-300 bg-gray-100 dark:border-white/25 dark:bg-gray-900" />
-                            <RoleContent role={role} groupLocation={group.location} />
-                        </li>
-                    ))}
+                <ol className="mt-5">
+                    {group.roles.map((role, i) => {
+                        const isLast = i === group.roles.length - 1;
+                        const isNewest = i === 0;
+
+                        return (
+                            <li key={i} className="flex gap-4">
+                                {/* Sub-timeline rail: connector line + dot, always centered together */}
+                                <div className="relative flex w-4 shrink-0 justify-center">
+                                    {!isLast && (
+                                        <span
+                                            aria-hidden
+                                            className="absolute left-1/2 top-3 h-full w-0.5 -translate-x-1/2 rounded-full bg-gray-300 dark:bg-white/20"
+                                        />
+                                    )}
+                                    <span
+                                        className={
+                                            "relative z-10 mt-1 h-4 w-4 shrink-0 rounded-full border-2 " +
+                                            (isNewest
+                                                ? "border-gray-500 bg-gray-500 dark:border-white/80 dark:bg-white/80"
+                                                : "border-gray-400 bg-white dark:border-white/40 dark:bg-white/10")
+                                        }
+                                    />
+                                </div>
+
+                                <div className={"min-w-0 flex-1 " + (isLast ? "" : "pb-6")}>
+                                    <RoleContent role={role} groupLocation={group.location} />
+                                </div>
+                            </li>
+                        );
+                    })}
                 </ol>
             ) : (
                 <div className="mt-4">
