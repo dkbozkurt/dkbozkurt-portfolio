@@ -322,24 +322,6 @@ export const experiencesData = [
         date: "Nov. 2021 - Apr. 2023",
     },
     {
-        title: "Technical Customer Support Specialist",
-        company: "Ekmob SFA",
-        location: "Istanbul, Turkey",
-        description: [
-            "Addressed customer-reported problems and resolved software bugs.",
-            "Communicated technical aspects of our software apps to customers."
-        ],
-        icon: <Image
-            src={ekmobLogo}
-            alt="logo"
-            style={{
-                objectFit: 'contain',
-                borderRadius: '50%'
-            }}
-        />,
-        date: "Sep. 2021 - Oct. 2021",
-    },
-    {
         title: "Project Engineer - Intern",
         company: "TUPRAS",
         location: "Kocaeli, Turkey",
@@ -713,25 +695,11 @@ export const activitiesData = [
 
 export const certificatesData = [
     {
-        title: "Professional CSS",
-        company: "by ByteGrad",
-        date: "Jan. 2025",
-        tags: ["HTML", "CSS", "Grid & Flexbox", "Responsiveness", "Sass/SCSS", "BEM", "Animations & Transitions"],
-        imageUrl: professionalCSSCertificate,
-    },
-    {
         title: "Three.js Journey",
         company: "three.js journey by Bruno Simon",
         date: "Jun. 2024",
         tags: ["ThreeJS", "JavaScript", "React", "React Three Fiber", "HTML", "CSS", "Blender", "GLSL", "GSAP", "CannonJS", "Rapier"],
         imageUrl: threeJSJourneyCertificate,
-    },
-    {
-        title: "Three.js and TypeScript",
-        company: "Udemy",
-        date: "Apr. 2024",
-        tags: ["ThreeJS", "TypeScript", "Blender"],
-        imageUrl: udemyThreeJSCertificate,
     },
     {
         title: "Back-End Apps with Node.js and Express",
@@ -748,32 +716,11 @@ export const certificatesData = [
         imageUrl: metaCertificate,
     },
     {
-        title: "3D Web Game Development With Three.JS",
-        company: "Udemy",
-        date: "Sep. 2023",
-        tags: ["JavaScript", "ThreeJs", "CannonJS"],
-        imageUrl: udemyCertificate,
-    },
-    {
-        title: "JavaScript Algorithms and Data Structures",
-        company: "freeCodeCamp",
-        date: "Jul. 2023",
-        tags: ["Javascript"],
-        imageUrl: freeCodeCampCertificate,
-    },
-    {
         title: "Intermediate Object-Oriented Programming for Unity",
         company: "University of Colorado",
         date: "May 2021",
         tags: ["C#", "Unity"],
         imageUrl: coloradoCertificate,
-    },
-    {
-        title: "Game Design and Development",
-        company: "Michigan State University",
-        date: "Mar. 2021",
-        tags: ["C#", "Unity"],
-        imageUrl: michiganCertificate,
     },
 ]
 
