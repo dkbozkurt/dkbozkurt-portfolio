@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion } from "framer-motion";
+import { motion, useReducedMotion, type Variants } from "framer-motion";
 import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
@@ -76,19 +76,48 @@ function computeDateRange(roles: Role[]): string {
     return `${start} - ${end}`;
 }
 
-const fadeInAnimationVariants = {
-    initial: {
-        opacity: 0,
-        y: 80,
-    },
-    animate: (index: number) => ({
-        opacity: 1,
-        y: 0,
-        transition: {
-            delay: 0.08 * index,
+// Smooth ease-out curve (easeOutQuint-ish) for a gentle, decelerating entrance.
+const EASE_OUT = [0.22, 1, 0.36, 1] as const;
+
+// Each card animates as it scrolls into view and cascades its own content
+// (header first, then the roles) rather than relying on a global-index delay,
+// which made later cards visibly lag after they were already on screen.
+function getCardVariants(reduce: boolean): Variants {
+    return {
+        hidden: { opacity: 0, y: reduce ? 0 : 32 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: {
+                duration: reduce ? 0.2 : 0.55,
+                ease: EASE_OUT,
+                delayChildren: reduce ? 0 : 0.12,
+                staggerChildren: reduce ? 0 : 0.07,
+            },
         },
-    }),
-};
+    };
+}
+
+// Orchestration-only wrapper: no visual change, just staggers its children.
+function getListVariants(reduce: boolean): Variants {
+    return {
+        hidden: {},
+        visible: {
+            transition: { staggerChildren: reduce ? 0 : 0.06 },
+        },
+    };
+}
+
+function getItemVariants(reduce: boolean): Variants {
+    return {
+        hidden: { opacity: 0, y: reduce ? 0 : 12 },
+        visible: {
+            opacity: 1,
+            y: 0,
+            transition: { duration: reduce ? 0.2 : 0.45, ease: EASE_OUT },
+        },
+    };
+}
 
 function RoleContent({ role, groupLocation }: { role: Role; groupLocation: string }) {
     return (
@@ -120,19 +149,23 @@ function RoleContent({ role, groupLocation }: { role: Role; groupLocation: strin
     );
 }
 
-function ExperienceCard({ group, index }: { group: CompanyGroup; index: number }) {
+function ExperienceCard({ group }: { group: CompanyGroup }) {
+    const reduce = useReducedMotion() ?? false;
+    const cardVariants = getCardVariants(reduce);
+    const listVariants = getListVariants(reduce);
+    const itemVariants = getItemVariants(reduce);
     const hasMultipleRoles = group.roles.length > 1;
 
     return (
         <motion.article
-            className="rounded-2xl border border-black/10 bg-gray-100/70 p-5 text-left shadow-sm dark:border-white/10 dark:bg-white/5 sm:p-6"
-            variants={fadeInAnimationVariants}
-            initial="initial"
-            whileInView="animate"
+            className="rounded-2xl border border-black/10 bg-gray-100/70 p-5 text-left shadow-sm transition-shadow duration-300 hover:shadow-md dark:border-white/10 dark:bg-white/5 sm:p-6"
+            variants={cardVariants}
+            initial="hidden"
+            whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
-            custom={index}
+            whileHover={reduce ? undefined : { y: -4, transition: { duration: 0.2, ease: "easeOut" } }}
         >
-            <header className="flex items-start gap-4">
+            <motion.header variants={itemVariants} className="flex items-start gap-4">
                 <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-full border border-black/10 bg-white dark:border-white/10 dark:bg-white/10 [&_img]:!h-full [&_img]:!w-full [&_img]:!rounded-full [&_img]:!object-contain">
                     {group.icon}
                 </div>
@@ -154,15 +187,15 @@ function ExperienceCard({ group, index }: { group: CompanyGroup; index: number }
                         )}
                     </p>
                 </div>
-            </header>
+            </motion.header>
 
             {hasMultipleRoles ? (
-                <ol className="mt-5">
+                <motion.ol variants={listVariants} className="mt-5">
                     {group.roles.map((role, i) => {
                         const isLast = i === group.roles.length - 1;
 
                         return (
-                            <li key={i} className="flex gap-4">
+                            <motion.li key={i} variants={itemVariants} className="flex gap-4">
                                 {/* Sub-timeline rail: connector line + dot, always centered together */}
                                 <div className="relative flex w-4 shrink-0 justify-center">
                                     {!isLast && (
@@ -177,14 +210,14 @@ function ExperienceCard({ group, index }: { group: CompanyGroup; index: number }
                                 <div className={"min-w-0 flex-1 " + (isLast ? "" : "pb-6")}>
                                     <RoleContent role={role} groupLocation={group.location} />
                                 </div>
-                            </li>
+                            </motion.li>
                         );
                     })}
-                </ol>
+                </motion.ol>
             ) : (
-                <div className="mt-4">
+                <motion.div variants={itemVariants} className="mt-4">
                     <RoleContent role={group.roles[0]} groupLocation={group.location} />
-                </div>
+                </motion.div>
             )}
         </motion.article>
     );
@@ -206,8 +239,8 @@ export default function Experience() {
             <SectionHeading>Experience</SectionHeading>
 
             <div className="mx-auto flex max-w-[45rem] flex-col gap-6">
-                {groupedExperiences.map((group, index) => (
-                    <ExperienceCard key={group.company} group={group} index={index} />
+                {groupedExperiences.map((group) => (
+                    <ExperienceCard key={group.company} group={group} />
                 ))}
             </div>
         </section>
