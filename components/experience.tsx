@@ -160,7 +160,6 @@ function ExperienceCard({ group, index }: { group: CompanyGroup; index: number }
                 <ol className="mt-5">
                     {group.roles.map((role, i) => {
                         const isLast = i === group.roles.length - 1;
-                        const isNewest = i === 0;
 
                         return (
                             <li key={i} className="flex gap-4">
@@ -169,17 +168,10 @@ function ExperienceCard({ group, index }: { group: CompanyGroup; index: number }
                                     {!isLast && (
                                         <span
                                             aria-hidden
-                                            className="absolute left-1/2 top-3 h-full w-0.5 -translate-x-1/2 rounded-full bg-gray-300 dark:bg-white/20"
+                                            className="absolute left-1/2 top-3 h-full w-0.5 -translate-x-1/2 rounded-full bg-gray-300 dark:bg-gray-600"
                                         />
                                     )}
-                                    <span
-                                        className={
-                                            "relative z-10 mt-1 h-4 w-4 shrink-0 rounded-full border-2 " +
-                                            (isNewest
-                                                ? "border-gray-500 bg-gray-500 dark:border-white/80 dark:bg-white/80"
-                                                : "border-gray-400 bg-white dark:border-white/40 dark:bg-white/10")
-                                        }
-                                    />
+                                    <span className="relative z-10 mt-1 h-3.5 w-3.5 shrink-0 rounded-full bg-gray-400 dark:bg-gray-500" />
                                 </div>
 
                                 <div className={"min-w-0 flex-1 " + (isLast ? "" : "pb-6")}>
