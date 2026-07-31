@@ -303,7 +303,26 @@ export const experiencesData = [
         date: "Apr. 2023 - Oct. 2024",
     },
     {
-        title: "Playable Ads & Marketing Game Developer",
+        title: "Playable Ads Developer",
+        company: "Panteon Games",
+        location: "Ankara, Turkey",
+        description: [
+            "Designed and developed playable ads./ HTML5 games using Unity, LunaLabs and C#.",
+            "Enhanced gameplay, integrated new mechanics/features, and applied creative elements to boost game appeal and optimize marketing performance of advertising assets.",
+            "Developed extensions/packages for playable ads. and creative game development in Unity using C#."
+        ],
+        icon: <Image
+            src={panteonLogo}
+            alt="logo"
+            style={{
+                objectFit: 'contain',
+                borderRadius: '50%'
+            }}
+        />,
+        date: "Nov. 2021 - Apr. 2023",
+    },
+    {
+        title: "Marketing Game Developer",
         company: "Panteon Games",
         location: "Ankara, Turkey",
         description: [
