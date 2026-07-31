@@ -125,7 +125,7 @@ function ExperienceCard({ group, index }: { group: CompanyGroup; index: number }
 
     return (
         <motion.article
-            className="rounded-2xl border border-black/10 bg-gray-100/70 p-5 text-left shadow-sm backdrop-blur-sm dark:border-white/10 dark:bg-white/5 sm:p-6"
+            className="rounded-2xl border border-black/10 bg-gray-100/70 p-5 text-left shadow-sm dark:border-white/10 dark:bg-white/5 sm:p-6"
             variants={fadeInAnimationVariants}
             initial="initial"
             whileInView="animate"
