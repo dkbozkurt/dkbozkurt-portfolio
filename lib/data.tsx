@@ -363,7 +363,8 @@ export const experiencesData = [
         company: "GEFEASOFT",
         location: "Mugla, Turkey",
         description: [
-            "Developed WebGL and HTML5 based serious games, by using C# and Unity."
+            "Developed WebGL and HTML5-based serious games using C# and Unity.",
+            "Designed and implemented gameplay systems, optimized performance for web deployment, and participated in feature development throughout the project lifecycle."
         ],
         icon: <Image
             src={gefeasoftLogo}
@@ -380,7 +381,7 @@ export const experiencesData = [
         company: "Avocuda",
         location: "Istanbul, Turkey",
         description: [
-            "Contributed to mobile application development in the development team."
+            "Developed and maintained frontend features for mobile applications as part of the engineering team."
         ],
         icon: <Image
             src={avocudaLogo}
