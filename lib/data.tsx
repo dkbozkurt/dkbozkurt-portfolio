@@ -217,10 +217,10 @@ export const experiencesData = [
         location: "Istanbul, Turkey",
         description: [
             // "Lead and coach a team of playable ad developers embedded in franchise squads — acting as the technical and strategic reference, staying hands-on in production, and defining the team's standards, workflows, and best practices."
-            "Own the end-to-end lifecycle of playable ads reaching millions of users, from market-driven ideation through game development to post-launch KPI analysis, partnering with PMs, growth managers, and artists to maximize CTR and high-intent conversions.",
-            "Drive rapid gameplay iteration and A/B testing to implement creative hooks and responsive mechanics that bridge technical polish and top-tier IPM across global UA campaigns; benchmark competitor playables to drive innovation in formats and stay ahead of market trends.",
-            "Built AI-powered tooling to accelerate marketing creative production: optimizing artists' gameplay-video workflows and generating UGC-style videos, reducing turnaround per creative and expanding the volume of testable ad variants.",
-            "Built a JSON-driven templating web based system, that let designers and growth managers ship various playable variants without engineering."
+            "Own playable ads end-to-end — from ideation to post-launch KPI analysis — partnering with PMs, growth, and artists to maximize CTR.",
+            "Drive rapid A/B testing and competitor benchmarking to ship creative hooks that lift IPM across global UA campaigns.",
+            "Built AI-powered tooling to speed up creative production and generate UGC-style videos, cutting turnaround per creative.",
+            "Built a JSON-driven web templating system that lets designers ship playable variants without engineering."
             // "Architected a proprietary TypeScript/Node.js engine — with AI-powered tooling, integrated asset compression, cross-device optimization, and one-click ad-network export — to automate playable ad, HTML5 game, and IEC creation at minimum build size and peak runtime performance.",
         ],
         icon: <Image
@@ -238,10 +238,10 @@ export const experiencesData = [
         company: "JustDice",
         location: "Hamburg, Germany",
         description: [
-            "Owned playable ads end-to-end for games and consumer apps; from market research and competitor benchmarking, through 2D/3D asset design and development to post-launch KPI analysis, optimizing against CTR, IPM, and CVR to steer each creative iteration.",
-            "Built an internal TypeScript/Node.js platform to streamline playable ad/ HTML5 game, and IEC creation, with built-in size optimization and one-click ad-network export, cutting production time per creative, and letting designers ship without engineering.",
-            "Analyzed A/B tests and interaction-event data to pinpoint engagement and drop-off points across the user journey, refining creative direction to lift CVR/ install rate.",
-            "Built plugins and packages, including AI-powered tools, for Unity, Photoshop, After Effects, and Figma to accelerate the design team's workflow and speed up playable ad production; contributed to transversal initiatives by rolling these tools out across teams."
+            "Owned playable ads end-to-end, from research and asset design to KPI analysis, optimizing CTR, IPM, and CVR.",
+            "Built a TypeScript/Node.js platform with size optimization and one-click ad-network export, letting designers ship without engineering.",
+            "Analyzed A/B tests and interaction data to pinpoint drop-off points and lift CVR.",
+            "Built plugins and AI-powered tools for Unity, Photoshop, After Effects, and Figma to accelerate the design team's workflow."
         ],
         icon: <Image
             src={justdiceLogo}
@@ -258,8 +258,8 @@ export const experiencesData = [
         company: "MY.GAMES",
         location: "Amsterdam, The Netherlands",
         description: [
-            "Developed and designed playable ads for mobile games in Three.js, PixiJS, and TypeScript (HTML/CSS), delivering network-compliant creatives across multiple networks to drive user acquisition.",
-            "Advised on and implemented the technical approach for each playable ad, optimizing runtime performance and tightening core gameplay hooks to lift CTR and IPM metrics.",
+            "Built playable ads in Three.js, PixiJS, and TypeScript, delivering network-compliant creatives to drive user acquisition.",
+            "Defined the technical approach per ad, optimizing runtime and gameplay hooks to lift CTR and IPM.",
         ],
         icon: <Image
             src={myGamesLogo}
@@ -276,7 +276,7 @@ export const experiencesData = [
         company: "GameGame",
         location: "Hamburg, Germany",
         description: [
-            "Established the company's first playable ad development pipeline from the ground up, defining the tech stack, build tooling, and QA/delivery workflow that took them from zero to shipping network-ready playables."
+            "Built the company's first playable ad pipeline from scratch — tech stack, build tooling, and QA/delivery — taking them from zero to shipping."
         ],
         icon: <Image
             src={gameGameLogo}
@@ -293,9 +293,9 @@ export const experiencesData = [
         company: "JustDice",
         location: "Hamburg, Germany",
         description: [
-            "Designed and developed engaging Playable Ads (Luna)/ HTML5 Games, into size-optimized, scalable, interactive experiences for apps and mobile games, ensuring alignment with marketing objectives and user acquisition strategies using Unity, Luna and C#.",
-            "Created and optimized 3D and 2D playable ad assets for performance and visual quality, supporting overall campaign strategy, using Blender, Adobe Photoshop, and Figma.",
-            "Built plugins and packages for Unity, PhotoShop, AfterEffects and Figma to accelerate the Design team's creative workflow and improve playable ad production, using ExtendScript, UXP, JavaScript, HTML, and CSS.",
+            "Designed and developed size-optimized Playable Ads and HTML5 games in Unity, Luna, and C#, aligned with UA strategy.",
+            "Created and optimized 2D/3D ad assets in Blender, Photoshop, and Figma for performance and visual quality.",
+            "Built plugins for Unity, Photoshop, After Effects, and Figma to accelerate the design team's workflow.",
         ],
         icon: <Image
             src={justdiceLogo}
@@ -312,9 +312,9 @@ export const experiencesData = [
         company: "Panteon Games",
         location: "Ankara, Turkey",
         description: [
-            "Designed and developed Playable Ads (Luna)/ HTML5 Games, transforming core gameplay into size-optimized, scalable, interactive experiences for hyper-casual and hybrid-casual titles.",
-            "Built reusable, customizable playable ad templates and internal Unity packages, usable by designers and UA/ growth managers, to accelerate development and iteration across multiple ad networks and campaigns.",
-            "Led and mentored junior playable ad developers, guiding their understanding of the playable ad pipeline, core UA/performance marketing principles and best practices."
+            "Designed and developed size-optimized Playable Ads and HTML5 games for hyper- and hybrid-casual titles.",
+            "Built reusable playable ad templates and Unity packages, letting designers and growth managers iterate across ad networks.",
+            "Led and mentored junior developers on the playable ad pipeline and UA best practices."
         ],
         icon: <Image
             src={panteonLogo}
@@ -331,9 +331,9 @@ export const experiencesData = [
         company: "Panteon Games",
         location: "Ankara, Turkey",
         description: [
-            "Rapidly transformed creative ideas into gameplay prototypes in Unity, to maximize advertising impact.",
-            "Collaborated with growth, marketing, and creative teams to modify and iterate on gameplay mechanics, showcasing engaging gameplay moments for advertising campaigns.",
-            "Built reusable Unity tools and editor extensions to improve development efficiency and accelerate creative iteration."
+            "Turned creative ideas into Unity gameplay prototypes to maximize ad impact.",
+            "Iterated on gameplay mechanics with growth and creative teams to showcase engaging moments for campaigns.",
+            "Built reusable Unity tools and editor extensions to speed up creative iteration."
         ],
         icon: <Image
             src={panteonLogo}
@@ -350,8 +350,8 @@ export const experiencesData = [
         company: "TUPRAS",
         location: "Kocaeli, Turkey",
         description: [
-            "Led 'susTRAINable' project at TUPRAS, targeting net-zero railway emissions by 2050, aligning with 6 UN Sustainable Development Goals.",
-            "Led 'TogetHER' project focused on improving women's lives in the refinery and energy sectors, including mentorship programs for STEM-inclined women."
+            "Led the 'susTRAINable' project targeting net-zero railway emissions by 2050, aligned with 6 UN SDGs.",
+            "Led the 'TogetHER' project supporting women in energy, including STEM mentorship programs."
         ],
         icon: <Image
             src={tuprasLogo}
@@ -369,7 +369,7 @@ export const experiencesData = [
         location: "Mugla, Turkey",
         description: [
             "Developed WebGL and HTML5-based serious games using C# and Unity.",
-            "Designed and implemented gameplay systems, optimized performance for web deployment, and participated in feature development throughout the project lifecycle."
+            "Designed gameplay systems and optimized performance for web deployment."
         ],
         icon: <Image
             src={gefeasoftLogo}
@@ -386,7 +386,7 @@ export const experiencesData = [
         company: "Avocuda",
         location: "Istanbul, Turkey",
         description: [
-            "Developed and maintained frontend features for mobile applications as part of the engineering team."
+            "Developed and maintained frontend features for mobile applications."
         ],
         icon: <Image
             src={avocudaLogo}
