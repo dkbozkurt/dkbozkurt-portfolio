@@ -732,6 +732,20 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Word Tiles",
+        playableName: "Descending Square Words",
+        icon: wordTilesIcon,
+        url: "/playableAds/DescendingSquareWords_WordTiles_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true
+    },
+    {
+        appName: "Word Tiles",
+        playableName: "Base Gameplay 3x3 - 3 Levels",
+        icon: wordTilesIcon,
+        url: "/playableAds/BaseGameplay3x3-3Levels_WordTiles_Responsive_Playable_01_Unity_ALL.html", // DescendingSquareWords
+        isHighlighted: true
+    },
+    {
         appName: "Cat Logic Puzzle",
         playableName: "Base Gameplay",
         icon: catLogicPuzzleIcon,
