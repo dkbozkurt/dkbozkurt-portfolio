@@ -220,7 +220,6 @@ export const experiencesData = [
             "Executing rapid gameplay iterations and A/B testing to implement 'creative hooks' and responsive mechanics that bridge the gap between technical polish and top-tier IPM results for global advertising campaigns.",
             "Architecting a proprietary TypeScript/Node.js engine to automate playable ad/ HTML5 game and IEC creation, featuring integrated asset compression and ad network export tools to ensure minimum build size and peak runtime performance.",
             //"Created a JSON-driven templating system letting 3 graphic designers ship variants without engineering, reducing turnaround from 3 days to 4 hours."
-            // "Integrated a lightweight analytics/event layer tracking taps, drop-off, and time-to-CTA; insights drove a redesign that raised install rate 22%."
         ],
         icon: <Image
             src={agaveLogo}
@@ -313,7 +312,7 @@ export const experiencesData = [
         description: [
             "Designed and developed Playable Ads (Luna)/ HTML5 Games, transforming core gameplay into size-optimized, scalable, interactive experiences for hyper-casual and hybrid-casual titles.",
             "Built reusable, customizable playable ad templates and internal Unity packages, usable by designers and UA/ growth managers, to accelerate development and iteration across multiple ad networks and campaigns.",
-            "Led and mentored junior playable ad developers, guiding their understanding of the Unity playable ad pipeline and core UA/performance marketing principles."
+            "Led and mentored junior playable ad developers, guiding their understanding of the playable ad pipeline, core UA/performance marketing principles and best practices."
         ],
         icon: <Image
             src={panteonLogo}
