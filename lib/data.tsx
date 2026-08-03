@@ -294,7 +294,7 @@ export const experiencesData = [
         location: "Hamburg, Germany",
         description: [
             "Designed and developed engaging Playable Ads (Luna)/ HTML5 Games, into size-optimized, scalable, interactive experiences for apps and mobile games, ensuring alignment with marketing objectives and user acquisition strategies using Unity, Luna and C#.",
-            "Created and optimized 3D and 2D playable ad assets for performance and visual quality, supporting overall campaign strategy, using Blender, Adobe Photoshop, and Figma.",
+            "Created and optimized 3D/ 2D assets for performance and visual quality, supporting overall campaign strategy, using Blender, Photoshop, and Figma.",
             "Built plugins and packages for Unity, PhotoShop, AfterEffects and Figma to accelerate the Design team's creative workflow and improve playable ad production, using ExtendScript, UXP, JavaScript, HTML, and CSS.",
         ],
         icon: <Image
@@ -314,7 +314,7 @@ export const experiencesData = [
         description: [
             "Designed and developed Playable Ads (Luna)/ HTML5 Games, transforming core gameplay into size-optimized, scalable, interactive experiences for hyper-casual and hybrid-casual titles.",
             "Built reusable, customizable playable ad templates and internal Unity packages, usable by designers and UA/ growth managers, to accelerate development and iteration across multiple ad networks and campaigns.",
-            "Led and mentored junior playable ad developers, guiding their understanding of the playable ad pipeline, core UA/performance marketing principles and best practices."
+            "Led and mentored junior playable ad devs, guiding on the playable ad pipeline, core UA/performance marketing principles and best practices."
         ],
         icon: <Image
             src={panteonLogo}
@@ -369,7 +369,7 @@ export const experiencesData = [
         location: "Mugla, Turkey",
         description: [
             "Developed WebGL and HTML5-based serious games using C# and Unity.",
-            "Designed and implemented gameplay systems, optimized performance for web deployment, and participated in feature development throughout the project lifecycle."
+            "Designed gameplay systems, optimized performance for web deployment, and participated in feature development throughout the project lifecycle."
         ],
         icon: <Image
             src={gefeasoftLogo}
@@ -471,7 +471,7 @@ export const projectsData = [
     },
     {
         title: "Text Localization - GEO Package",
-        date: "Jan. 2025 - Fe. 2025",
+        date: "Jan. 2025 - Feb. 2025",
         description:
             "Developed a localization package that detects device language and updates playable ads./ HTML5 game texts for multilingual support.",
         tags: ["TypeScript", "NodeJS"],
