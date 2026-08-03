@@ -237,10 +237,10 @@ export const experiencesData = [
         company: "JustDice",
         location: "Hamburg, Germany",
         description: [
-            "Owned end-to-end game and consumer app playable ads, from market research and ideation through 2D/3D asset design and development to post-launch KPI analysis, optimizing against CTR, IPM, and CVR to steer each creative iteration.",
-            "Built a TypeScript/Node.js platform to streamline playable ad/ HTML5 game, and IEC creation, with built-in size optimization and one-click ad-network export, cutting production time per creative, and letting designers ship without engineering.",
+            "Owned playable ads end-to-end for games and consumer apps; from market research and competitor benchmarking, through 2D/3D asset design and development to post-launch KPI analysis, optimizing against CTR, IPM, and CVR to steer each creative iteration.",
+            "Built an internal TypeScript/Node.js platform to streamline playable ad/ HTML5 game, and IEC creation, with built-in size optimization and one-click ad-network export, cutting production time per creative, and letting designers ship without engineering.",
             "Analyzed A/B tests and interaction-event data to pinpoint engagement and drop-off points across the user journey, refining creative direction to lift CVR/ install rate.",
-            "Built plugins and packages — including AI-powered tools — for Unity, Photoshop, After Effects, and Figma to accelerate the design team's workflow and speed up playable ad production; contributed to transversal initiatives by rolling these tools out across teams."
+            "Built plugins and packages, including AI-powered tools, for Unity, Photoshop, After Effects, and Figma to accelerate the design team's workflow and speed up playable ad production; contributed to transversal initiatives by rolling these tools out across teams."
         ],
         icon: <Image
             src={justdiceLogo}
