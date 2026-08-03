@@ -471,7 +471,7 @@ export const projectsData = [
     },
     {
         title: "Text Localization - GEO Package",
-        date: "Jan. 2025 - Fe. 2025",
+        date: "Jan. 2025 - Feb. 2025",
         description:
             "Developed a localization package that detects device language and updates playable ads./ HTML5 game texts for multilingual support.",
         tags: ["TypeScript", "NodeJS"],
