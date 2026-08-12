@@ -732,6 +732,13 @@ export const certificatesData = [
 
 export const playableAdsData = [
     {
+        appName: "Find Em All",
+        playableName: "BreakableOpenCenterTiles Level35",
+        icon: findEmAllLogo,
+        url: "/playableAds/BreakableOpenCenter52TilesLevel35_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
         appName: "Word Tiles",
         playableName: "Descending Square Words",
         icon: wordTilesIcon,
