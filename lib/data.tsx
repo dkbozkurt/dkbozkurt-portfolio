@@ -733,6 +733,13 @@ export const certificatesData = [
 export const playableAdsData = [
     {
         appName: "Find Em All",
+        playableName: "ZoomPanCollectOnUI-Level95",
+        icon: findEmAllLogo,
+        url: "/playableAds/ZoomPanCollectOnUI-Level95_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Find Em All",
         playableName: "BreakableOpenCenterTiles Level35",
         icon: findEmAllLogo,
         url: "/playableAds/BreakableOpenCenter52TilesLevel35_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
