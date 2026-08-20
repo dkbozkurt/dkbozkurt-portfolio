@@ -100,6 +100,8 @@ import findTheCat2Logo from "@/public/AppIcons/FindTheCat2Logo.png";
 import findEmAllLogo from "@/public/AppIcons/FindEmAllLogo.png";
 import catLogicPuzzleIcon from "@/public/AppIcons/CLP_Icon.png";
 import wordTilesIcon from "@/public/AppIcons/WT_Icon.png";
+import mathLogicPuzzleIcon from "@/public/AppIcons/mathLogicPuzzleIcon.png";
+import hiddenMatchIcon from "@/public/AppIcons/hiddenMatchIcon.png";
 
 import avocudaLogo from '@/public/companyIcons/avocuda_logo.jpeg'
 import ekmobLogo from '@/public/companyIcons/ekmob_sfa_logo.jpeg'
@@ -731,6 +733,27 @@ export const certificatesData = [
 ]
 
 export const playableAdsData = [
+    {
+        appName: "Find Em All",
+        playableName: "Find Multiple Same Objects",
+        icon: findEmAllLogo,
+        url: "/playableAds/FindMultipleSameObjects_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    // {
+    //     appName: "Hidden Match",
+    //     playableName: "Base Gameplay",
+    //     icon: hiddenMatchIcon,
+    //     url: "/playableAds/BaseGameplay_HiddenMatch_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted: true,
+    // },
+    // {
+    //     appName: "Math Logic Puzzle",
+    //     playableName: "Base Gameplay",
+    //     icon: mathLogicPuzzleIcon,
+    //     url: "/playableAds/BaseGameplay_MathLogicPuzzle_Responsive_Playable_01_Unity_ALL.html",
+    //     isHighlighted: true,
+    // },
     {
         appName: "Find Em All",
         playableName: "ZoomPanCollectOnUI-Level95",
