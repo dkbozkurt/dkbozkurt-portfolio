@@ -740,13 +740,13 @@ export const playableAdsData = [
         url: "/playableAds/FindMultipleSameObjects_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
-    // {
-    //     appName: "Hidden Match",
-    //     playableName: "Base Gameplay",
-    //     icon: hiddenMatchIcon,
-    //     url: "/playableAds/BaseGameplay_HiddenMatch_Responsive_Playable_01_Unity_ALL.html",
-    //     isHighlighted: true,
-    // },
+    {
+        appName: "Hidden Match",
+        playableName: "Base Gameplay- Level 44",
+        icon: hiddenMatchIcon,
+        url: "/playableAds/BaseGameplay-Level44_HiddenMatch_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     // {
     //     appName: "Math Logic Puzzle",
     //     playableName: "Base Gameplay",
