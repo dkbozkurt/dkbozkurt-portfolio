@@ -735,6 +735,13 @@ export const certificatesData = [
 export const playableAdsData = [
     {
         appName: "Find Em All",
+        playableName: "Search It Multiple Collections",
+        icon: findEmAllLogo,
+        url: "/playableAds/SearchItMultipleCollection_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
+        appName: "Find Em All",
         playableName: "Find Multiple Same Objects",
         icon: findEmAllLogo,
         url: "/playableAds/FindMultipleSameObjects_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
@@ -747,13 +754,13 @@ export const playableAdsData = [
         url: "/playableAds/BaseGameplay-Level44_HiddenMatch_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
-    // {
-    //     appName: "Math Logic Puzzle",
-    //     playableName: "Base Gameplay",
-    //     icon: mathLogicPuzzleIcon,
-    //     url: "/playableAds/BaseGameplay_MathLogicPuzzle_Responsive_Playable_01_Unity_ALL.html",
-    //     isHighlighted: true,
-    // },
+    {
+        appName: "Math Logic Puzzle",
+        playableName: "Base Gameplay",
+        icon: mathLogicPuzzleIcon,
+        url: "/playableAds/BaseGameplay_MathLogicPuzzle_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
     {
         appName: "Find Em All",
         playableName: "ZoomPanCollectOnUI-Level95",
