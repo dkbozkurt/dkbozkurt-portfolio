@@ -1,11 +1,34 @@
 "use client";
 
-import React from "react";
-import Image from "next/image";
+import React, { useState } from "react";
+import Image, { type ImageProps } from "next/image";
 import SectionHeading from "./section-heading";
 import { skillsData, softSkillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { Skeleton } from "./skeleton";
+
+// These are SVGs, so Next serves them untouched — a couple of them are over
+// 100 KB. Holding the 40x40 slot with a placeholder keeps the grid from
+// popping around while they trickle in.
+function SkillIcon({ src, name }: { src: ImageProps["src"]; name: string }) {
+    const [isLoaded, setLoaded] = useState(false);
+
+    return (
+        <div className="relative flex items-center justify-center w-10 h-10">
+            {!isLoaded && <Skeleton className="absolute inset-0 rounded-md" />}
+            <Image
+                src={src}
+                alt={`${name} icon`}
+                width={40}
+                height={40}
+                sizes="40px"
+                onLoad={() => setLoaded(true)}
+                className={`object-contain transition-opacity duration-300 ${isLoaded ? "opacity-100" : "opacity-0"}`}
+            />
+        </div>
+    );
+}
 
 const fadeInAnimationVariants = {
     initial: {
@@ -48,16 +71,7 @@ export default function Skills() {
                                 viewport={{ once: true }}
                                 custom={index}
                             >
-                            <div className="flex items-center justify-center w-10 h-10">
-                                <Image
-                                    src={skill.icon}
-                                    alt={`${skill.name} icon`}
-                                    width={40}
-                                    height={40}
-                                    sizes="40px"
-                                    className="object-contain"
-                                />
-                            </div>
+                            <SkillIcon src={skill.icon} name={skill.name} />
                                 <span className="text-sm leading-tight text-center">{skill.name}</span>
                             </motion.li>
                         ))}

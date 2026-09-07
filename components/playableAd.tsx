@@ -2,7 +2,7 @@
 
 import { useCallback, useRef, useState, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { playableAdsData } from "@/lib/data";
+import type { PlayableAdItem } from "@/lib/playable-ads-data";
 import {
     getPlayableId,
     parsePlayIdFromHash,
@@ -13,8 +13,18 @@ import Image from 'next/image'
 import { motion } from "framer-motion"
 import { BsArrowRight } from "react-icons/bs";
 import { FaStar } from "react-icons/fa";
+import { Skeleton } from "./skeleton";
 
-type PlayableAdsProps = typeof playableAdsData[number];
+type PlayableAdsProps = PlayableAdItem & {
+    /**
+     * Cards in the first batch skip the wait for the intersection observer and
+     * request their icon as soon as they mount, so the top of the grid is
+     * never a wall of placeholders. The browser still decides *when* to fetch:
+     * these stay `loading="lazy"` because the section is thousands of pixels
+     * below the fold on a normal visit and must not compete with the hero.
+     */
+    isInFirstRows?: boolean;
+};
 
 const StarAnimation = () => {
     const randomScale = Math.random() * 0.5 + 0.5; // Random scale between 0.5 and 1
@@ -39,11 +49,11 @@ export default function PlayableAd({
     playableName,
     icon,
     url,
-    isHighlighted
+    isHighlighted,
+    isInFirstRows = false,
 }: PlayableAdsProps) {
     const [isOverlayVisible, setOverlayVisible] = useState(false);
     const [isIconLoaded, setIconLoaded] = useState(false);
-    const [isPlayableLoaded, setPlayableLoaded] = useState(false);
     const ref = useRef<HTMLDivElement | null>(null);
     const playableId = getPlayableId(url);
 
@@ -52,9 +62,30 @@ export default function PlayableAd({
     // every frame, including on cards far outside the viewport. Mount them
     // only while the card is actually near the screen.
     const { ref: inViewRef, inView: isCardNearViewport } = useInView({
-        rootMargin: '300px 0px',
+        rootMargin: '400px 0px',
         threshold: 0,
     });
+
+    // The icons are the bulk of the page: 150 cards x an <Image> with a srcset
+    // is ~300 KB of markup and 150 lazy-load candidates the browser has to
+    // track. Mounting the <Image> only once its card has come within 400px of
+    // the viewport keeps the initial HTML small and means an icon is never
+    // requested for a card the visitor never scrolls to. The latch makes it
+    // one-way, so scrolling back up doesn't tear icons out of the DOM.
+    const [hasReachedViewport, setHasReachedViewport] = useState(isInFirstRows);
+    useEffect(() => {
+        if (isCardNearViewport) setHasReachedViewport(true);
+    }, [isCardNearViewport]);
+
+    // Safety net: without IntersectionObserver the latch above could never
+    // flip and the card would sit on a grey placeholder forever, so fall back
+    // to rendering every icon and letting native `loading="lazy"` pace them.
+    const [isObserverUnavailable, setObserverUnavailable] = useState(false);
+    useEffect(() => {
+        if (typeof IntersectionObserver === 'undefined') setObserverUnavailable(true);
+    }, []);
+
+    const shouldRenderIcon = isInFirstRows || hasReachedViewport || isObserverUnavailable;
 
     const setCardRef = useCallback(
         (node: HTMLDivElement | null) => {
@@ -147,12 +178,6 @@ export default function PlayableAd({
         setOverlayVisible(false);
     };
 
-    // The playable build is only ever requested while the modal is open;
-    // closing it unmounts the iframe so the next open starts from scratch.
-    useEffect(() => {
-        if (!isOverlayVisible) setPlayableLoaded(false);
-    }, [isOverlayVisible]);
-
     // Escape closes the modal, matching the X button.
     useEffect(() => {
         if (!isOverlayVisible) return;
@@ -166,7 +191,7 @@ export default function PlayableAd({
 
     return (
         <a onClick={() => handleClick(url)} className="block w-[calc(50%-0.375rem)] sm:w-auto">
-            <motion.div
+            <div
                 ref={setCardRef}
                 className="mx-0 group mb-0 sm:mx-[1rem] sm:mb-8 last:mb-0"
             >
@@ -215,30 +240,32 @@ export default function PlayableAd({
                             same block without the pulse, so we don't keep 140
                             idle animations alive for icons nobody is looking at. */}
                         {!isIconLoaded && (
-                            <div
-                                aria-hidden="true"
-                                className={`absolute inset-0 rounded-[1.25rem] bg-gray-300/70 dark:bg-white/10 sm:rounded-[2rem] ${isCardNearViewport ? "animate-pulse" : ""}`}
+                            <Skeleton
+                                animate={isCardNearViewport}
+                                className="absolute inset-0 rounded-[1.25rem] sm:rounded-[2rem]"
                             />
                         )}
-                        <Image
-                            src={icon}
-                            alt={`${appName} icon`}
-                            quality={85}
-                            // Rendered at 72px (mobile) / 128px (desktop). Giving
-                            // explicit dimensions instead of `sizes` keeps the
-                            // srcset to a 1x/2x pair rather than 13 candidates
-                            // across 143 cards worth of markup.
-                            width={128}
-                            height={128}
-                            onLoad={() => setIconLoaded(true)}
-                            className={`rounded-[1.25rem] sm:rounded-[2rem] transition-[transform,opacity] duration-300 flex justify-center group-hover:scale-[1.1] shadow-2xl relative h-full w-full ${isIconLoaded ? "opacity-100" : "opacity-0"}`}
-                        />
+                        {shouldRenderIcon && (
+                            <Image
+                                src={icon}
+                                alt={`${appName} icon`}
+                                quality={85}
+                                // Rendered at 72px (mobile) / 128px (desktop). Giving
+                                // explicit dimensions instead of `sizes` keeps the
+                                // srcset to a 1x/2x pair rather than 13 candidates
+                                // across 143 cards worth of markup.
+                                width={128}
+                                height={128}
+                                onLoad={() => setIconLoaded(true)}
+                                className={`rounded-[1.25rem] sm:rounded-[2rem] transition-[transform,opacity] duration-300 flex justify-center group-hover:scale-[1.1] shadow-2xl relative h-full w-full ${isIconLoaded ? "opacity-100" : "opacity-0"}`}
+                            />
+                        )}
                     </div>
 
-                    <div className="z-10 flex flex-col items-center px-2 pb-2 mt-auto sm:px-0 sm:pb-3">
-                        <h3 className="text-center text-sm font-bold leading-tight line-clamp-1 dark:text-white/90 sm:text-2xl">{appName}</h3>
-                        <p className="text-center text-[0.65rem] leading-tight text-gray-700 line-clamp-1 pb-1 dark:text-white/60 sm:text-base">{playableName}</p>
-                        <div className="transition items-center justify-center flex w-[7rem] h-2 gap-1 p-3 text-white text-sm bg-gray-900 rounded-full outline-none sm:w-[11rem] sm:gap-1 sm:p-4 sm:text-lg md:w-[12rem]">
+                    <div className="z-10 flex flex-col items-center w-full px-2 pb-2 mt-auto sm:px-0 sm:pb-3">
+                        <h3 className="w-full text-base font-bold leading-tight text-center line-clamp-1 dark:text-white/90 sm:text-2xl">{appName}</h3>
+                        <p className="w-full pb-1 text-xs leading-tight text-center text-gray-700 line-clamp-1 dark:text-white/60 sm:text-base">{playableName}</p>
+                        <div className="transition items-center justify-center flex w-[8.5rem] h-9 gap-1.5 px-4 text-white text-sm bg-gray-900 rounded-full outline-none sm:w-[11rem] sm:h-10 sm:px-5 sm:text-lg md:w-[12rem]">
                             <span className="sm:hidden">Play</span>
                             <span className="hidden sm:inline">Click to Play</span>
                             <BsArrowRight className="transition opacity-70 group-hover:translate-x-2" />
@@ -286,28 +313,19 @@ export default function PlayableAd({
                                 <span className="font-black text-[20px]">X</span>
                             </button>
 
-                            {/* A playable build is 3-5 MB, so show progress
-                                instead of a blank white frame while it loads. */}
-                            {!isPlayableLoaded && (
-                                <div className="absolute inset-0 flex flex-col items-center justify-center gap-4 bg-white rounded-lg">
-                                    <div className="w-10 h-10 border-4 border-gray-200 rounded-full border-t-gray-900 animate-spin" />
-                                    <p className="text-sm font-medium text-gray-500">
-                                        Loading {appName}…
-                                    </p>
-                                </div>
-                            )}
-
+                            {/* No loading overlay here on purpose: every
+                                playable build ships its own loading screen, and
+                                stacking ours on top just delayed showing it. */}
                             <iframe
                                 title={`${appName} — ${playableName}`}
                                 src={url}
                                 className="w-full h-full rounded-lg"
                                 frameBorder="0"
-                                onLoad={() => setPlayableLoaded(true)}
                             />
                         </div>
                     </div>
                 )}
-            </motion.div>
+            </div>
         </a>
     );
 }

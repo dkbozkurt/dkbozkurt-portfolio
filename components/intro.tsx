@@ -1,7 +1,7 @@
 "use client";
 
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import { motion } from "framer-motion";
 import Link from 'next/link';
 import { BsArrowRight, BsBehance, BsLinkedin } from "react-icons/bs";
@@ -9,10 +9,12 @@ import { HiDownload } from "react-icons/hi";
 import { FaBehanceSquare, FaGithubSquare } from 'react-icons/fa';
 import { useSectionInView } from '@/lib/hooks';
 import { useActiveSectionContext } from '@/context/active-section-context';
+import { Skeleton } from './skeleton';
 
 export default function Intro() {
     const { ref } = useSectionInView("Home");
     const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+    const [isPortraitLoaded, setPortraitLoaded] = useState(false);
 
     return (
         <section
@@ -29,15 +31,21 @@ export default function Intro() {
                             duration: 0.2,
                         }}
                     >
-                        <Image
-                            src="/infoImages/DogukanProfile.jpg"
-                            alt="Dogukan portrait"
-                            width="192"
-                            height="192"
-                            quality="100"
-                            priority={true}
-                            className="mt-16 w-40 h-40 rounded-full object-cover border-[0.35rem] border-white shadow-xl sm:w-48 sm:h-48 sm:mt-0 w-"
-                        />
+                        <div className="relative w-40 h-40 mt-16 sm:mt-0 sm:h-48 sm:w-48">
+                            {!isPortraitLoaded && (
+                                <Skeleton className="absolute inset-0 rounded-full border-[0.35rem] border-white shadow-xl" />
+                            )}
+                            <Image
+                                src="/infoImages/DogukanProfile.jpg"
+                                alt="Dogukan portrait"
+                                width="192"
+                                height="192"
+                                quality="100"
+                                priority={true}
+                                onLoad={() => setPortraitLoaded(true)}
+                                className={`h-full w-full rounded-full object-cover border-[0.35rem] border-white shadow-xl transition-opacity duration-300 ${isPortraitLoaded ? "opacity-100" : "opacity-0"}`}
+                            />
+                        </div>
                     </motion.div>
                     {/* <motion.span 
                 className= "absolute bottom-0 right-0 text-5xl sm:text-6xl "

@@ -1,5 +1,3 @@
-import { playableAdsData } from "./data";
-
 /**
  * Deterministic short id derived from a playable's URL.
  * Stable across reloads/deploys — the same playable always gets the same id,
@@ -15,10 +13,6 @@ export function getPlayableId(url: string): string {
     }
     const unsigned = hash >>> 0;
     return unsigned.toString(36).padStart(6, "0").slice(-6);
-}
-
-export function findPlayableById(id: string) {
-    return playableAdsData.find((p) => getPlayableId(p.url) === id);
 }
 
 /**

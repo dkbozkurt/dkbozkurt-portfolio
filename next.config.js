@@ -22,9 +22,6 @@ const nextConfig = {
             },
         ],
     },
-    experimental: {
-        serverActions: true,
-    },
     async headers() {
         return [
             {
@@ -35,7 +32,11 @@ const nextConfig = {
                 headers: [
                     {
                         key: 'Cache-Control',
-                        value: 'public, max-age=3600, stale-while-revalidate=86400',
+                        // A build only ever changes when its filename does,
+                        // so a day of hard caching plus a month of
+                        // stale-while-revalidate keeps re-opens instant
+                        // without pinning a stale bundle forever.
+                        value: 'public, max-age=86400, stale-while-revalidate=2592000',
                     },
                 ],
             },

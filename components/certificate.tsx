@@ -1,9 +1,10 @@
 "use client";
 
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import { certificatesData} from "@/lib/data";
 import Image from 'next/image'
 import { motion, useScroll, useTransform } from "framer-motion"
+import { Skeleton } from "./skeleton";
 
 type CertificateProps = (typeof certificatesData)[number];
 
@@ -22,7 +23,8 @@ export default function Certificate({
     });
     const scaleProgress= useTransform(scrollYProgress, [0,1], [0.7,1]);
     const opacityProgress= useTransform(scrollYProgress, [0,1], [0.6,1]);
-    
+    const [isImageLoaded, setImageLoaded] = useState(false);
+
     return (
     <motion.div
     ref={ref}
@@ -66,25 +68,36 @@ export default function Certificate({
                 </ul>
             </div>
                     
-            <Image
-            src={imageUrl}
-            alt={`${title} certificate`}
-            quality={85}
-            sizes="452px"
-            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] rounded-t-lg shadow-2xl transition 
-                    
-            group-hover:scale-[1.04] 
-            group-hover:-translate-x-3 
-            group:hover:translate-y-3 
-            group-hover:-rotate-2 
-                    
-            group-even:group-hover:translate-x-3 
-            group-even:group:hover:translate-y-3 
-            group-even:group-hover:rotate-2 
-                    
+            {/* The wrapper owns the position so the placeholder can sit
+                exactly where the certificate will land, while the hover
+                transforms stay on the image itself. */}
+            <div
+            className="absolute hidden sm:block top-8 -right-40 w-[28.25rem] 
             group-even:right-[initial] 
             group-even:-left-40 "
-            />
+            >
+                {!isImageLoaded && (
+                    <Skeleton className="absolute inset-0 rounded-t-lg" />
+                )}
+                <Image
+                src={imageUrl}
+                alt={`${title} certificate`}
+                quality={85}
+                sizes="452px"
+                onLoad={() => setImageLoaded(true)}
+                className={`w-full h-auto rounded-t-lg shadow-2xl transition 
+                        
+                group-hover:scale-[1.04] 
+                group-hover:-translate-x-3 
+                group:hover:translate-y-3 
+                group-hover:-rotate-2 
+                        
+                group-even:group-hover:translate-x-3 
+                group-even:group:hover:translate-y-3 
+                group-even:group-hover:rotate-2 
+                ${isImageLoaded ? "opacity-100" : "opacity-0"}`}
+                />
+            </div>
         </section>
     </motion.div>
     );

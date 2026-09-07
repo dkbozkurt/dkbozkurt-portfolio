@@ -1,15 +1,48 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import SectionHeading from './section-heading';
 import { motion } from "framer-motion";
 import { useSectionInView } from '@/lib/hooks';
-import { sendEmail } from '@/actions/sendEmail';
 import SubmitBtn from './submit-btn';
 import toast from 'react-hot-toast';
 
 export default function Contact() {
     const { ref } = useSectionInView("Contact");
+    const [isPending, setPending] = useState(false);
+
+    // Posts to /api/contact instead of a Server Action so that `/` stays a
+    // statically generated, CDN-cached page. See app/api/contact/route.ts.
+    const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+        event.preventDefault();
+        const form = event.currentTarget;
+        const formData = new FormData(form);
+
+        setPending(true);
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    senderEmail: formData.get('senderEmail'),
+                    message: formData.get('message'),
+                }),
+            });
+            const { error } = await response.json();
+
+            if (error) {
+                toast.error(error);
+                return;
+            }
+
+            toast.success("Email sent successfully!");
+            form.reset();
+        } catch (error) {
+            toast.error("Could not send the message. Please try again.");
+        } finally {
+            setPending(false);
+        }
+    };
 
     return (
         <motion.section
@@ -33,17 +66,7 @@ export default function Contact() {
                 </a>
                 {" "}or through this form.</p>
 
-            <form className="flex flex-col mt-10 dark:text-black"
-                action={async (formData) => {
-                    const { data, error } = await sendEmail(formData);
-                    if (error) {
-                        toast.error(error);
-                        return;
-                    }
-
-                    toast.success("Email sent successfully!");
-                }}
-            >
+            <form className="flex flex-col mt-10 dark:text-black" onSubmit={handleSubmit}>
                 <input
                     className="px-4 transition-all rounded-lg h-14 borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 dark:outline-none"
                     name="senderEmail"
@@ -60,7 +83,7 @@ export default function Contact() {
                     placeholder="Your message..."
                 />
 
-                <SubmitBtn />
+                <SubmitBtn pending={isPending} />
             </form>
         </motion.section>
     )
