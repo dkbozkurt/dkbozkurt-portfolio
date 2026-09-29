@@ -11,6 +11,34 @@ export type PlayableAdItem = {
 
 export const playableAdsData: PlayableAdItem[] = [
     {
+        appName: "Word Tiles",
+        playableName: "Q-A Many Letters",
+        icon: "/AppIcons/WT_Icon.png",
+        url: "/playableAds/QAManyLetters_WordTiles_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
+        appName: "Word Tiles",
+        playableName: "Family Feud",
+        icon: "/AppIcons/WT_Icon.png",
+        url: "/playableAds/FamilyFeud_WordTiles_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Word Tiles",
+        playableName: "No Break Many Words",
+        icon: "/AppIcons/WT_Icon.png",
+        url: "/playableAds/NoBreakManyWords_WordTiles_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
+        appName: "Word Tiles",
+        playableName: "Descending Square Words With Flexible Groups",
+        icon: "/AppIcons/WT_Icon.png",
+        url: "/playableAds/DescendingSquareWordsWFlexibleGroupSizes_WordTiles_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
         appName: "Find Em All",
         playableName: "Search It Multiple Collections",
         icon: "/AppIcons/FindEmAllLogo.png",
@@ -40,9 +68,9 @@ export const playableAdsData: PlayableAdItem[] = [
     },
     {
         appName: "Find Em All",
-        playableName: "ZoomPanCollectOnUI-Level95",
+        playableName: "ZoomPanCollectOnUI-Level323",
         icon: "/AppIcons/FindEmAllLogo.png",
-        url: "/playableAds/ZoomPanCollectOnUI-Level95_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
+        url: "/playableAds/ZoomPanCollectOnUI-Level323_FindEmAll_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: true,
     },
     {
@@ -110,9 +138,9 @@ export const playableAdsData: PlayableAdItem[] = [
     },
     {
         appName: "Find The Cat 2",
-        playableName: "Clap For Hard Cats",
+        playableName: "Zoom Pan UI Collect - LvL 1616",
         icon: "/AppIcons/FindTheCat2Logo.png",
-        url: "/playableAds/ClapForHardCatZoom&Pan&CollectToUI_FindTheCat2_Responsive_Playable_01_Unity_ALL.html",
+        url: "/playableAds/ZoomPanUICollect-LvL1616_FindTheCat2_Responsive_Playable_01_Unity_ALL.html",
         isHighlighted: false,
     },
     {
