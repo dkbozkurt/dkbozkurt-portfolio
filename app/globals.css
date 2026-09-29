@@ -13,3 +13,88 @@ html.dark {
 .borderBlack {
   @apply border border-black/10;
 }
+
+/* ---------------------------------------------------------------------------
+ * Highlighted playable card particles (components/playable-highlight.tsx).
+ * Only `transform` and `opacity` are animated so every frame is handled by the
+ * compositor. Per-particle variation comes in through CSS custom properties.
+ * ------------------------------------------------------------------------- */
+
+.hl-sparkle {
+  width: calc(var(--size) * var(--k, 1));
+  height: calc(var(--size) * var(--k, 1));
+  opacity: 0;
+  animation: hl-twinkle var(--dur) ease-in-out var(--delay) infinite;
+}
+
+.hl-ember {
+  width: calc(var(--size) * var(--k, 1));
+  height: calc(var(--size) * var(--k, 1));
+  opacity: 0;
+  animation: hl-rise var(--dur) linear var(--delay) infinite;
+}
+
+.hl-sweep {
+  animation: hl-sweep 3.6s ease-in-out infinite;
+}
+
+.hl-glow {
+  animation: hl-glow 3.2s ease-in-out infinite;
+}
+
+.hl-rim {
+  animation: hl-rim 3.2s ease-in-out infinite;
+}
+
+/* Sparkles are centred on their anchor point, hence the translate. */
+@keyframes hl-twinkle {
+  0%, 100% { opacity: 0; transform: translate(-50%, -50%) scale(0) rotate(0deg); }
+  45% { opacity: 1; transform: translate(-50%, -50%) scale(1) rotate(calc(var(--spin) * 0.5)); }
+  70% { opacity: 0; transform: translate(-50%, -50%) scale(0.2) rotate(var(--spin)); }
+}
+
+@keyframes hl-rise {
+  0% { opacity: 0; transform: translate3d(0, 50%, 0) scale(0.5); }
+  15% { opacity: 1; }
+  70% { opacity: 0.8; }
+  100% { opacity: 0; transform: translate3d(var(--drift), calc(-1 * var(--rise) * var(--k, 1)), 0) scale(1); }
+}
+
+@keyframes hl-sweep {
+  0% { transform: translateX(-150%) skewX(-12deg); }
+  40%, 100% { transform: translateX(500%) skewX(-12deg); }
+}
+
+@keyframes hl-glow {
+  0%, 100% { opacity: 0.45; transform: translate(-50%, -50%) scale(0.9); }
+  50% { opacity: 0.9; transform: translate(-50%, -50%) scale(1.05); }
+}
+
+@keyframes hl-rim {
+  0%, 100% { opacity: 0.35; }
+  50% { opacity: 1; }
+}
+
+/* While a playable is open the grid is hidden behind the modal backdrop, and
+   the playable itself needs the GPU far more than the sparkles do. */
+body[data-playable-open] .hl-anim {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hl-anim {
+    animation: none !important;
+  }
+  /* Keep a still, decorative version instead of dropping the look entirely. */
+  .hl-sparkle {
+    opacity: 0.85;
+  }
+  .hl-glow,
+  .hl-rim {
+    opacity: 0.6;
+  }
+  .hl-ember,
+  .hl-sweep {
+    display: none;
+  }
+}

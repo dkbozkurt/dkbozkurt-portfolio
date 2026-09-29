@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { motion, useReducedMotion, type Variants } from "framer-motion";
+import { m, useReducedMotion, type Variants } from "framer-motion";
 import SectionHeading from "./section-heading";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
@@ -157,7 +157,7 @@ function ExperienceCard({ group }: { group: CompanyGroup }) {
     const hasMultipleRoles = group.roles.length > 1;
 
     return (
-        <motion.article
+        <m.article
             className="rounded-2xl border border-black/10 bg-gray-100/70 p-5 text-left shadow-sm transition-shadow duration-300 hover:shadow-md dark:border-white/10 dark:bg-white/5 sm:p-6"
             variants={cardVariants}
             initial="hidden"
@@ -165,7 +165,7 @@ function ExperienceCard({ group }: { group: CompanyGroup }) {
             viewport={{ once: true, amount: 0.2 }}
             whileHover={reduce ? undefined : { y: -4, transition: { duration: 0.2, ease: "easeOut" } }}
         >
-            <motion.header variants={itemVariants} className="flex items-start gap-4">
+            <m.header variants={itemVariants} className="flex items-start gap-4">
                 <div className="flex h-14 w-14 shrink-0 items-center justify-center overflow-hidden rounded-full border border-black/10 bg-white dark:border-white/10 dark:bg-white/10 [&_img]:!h-full [&_img]:!w-full [&_img]:!rounded-full [&_img]:!object-contain">
                     {group.icon}
                 </div>
@@ -187,15 +187,15 @@ function ExperienceCard({ group }: { group: CompanyGroup }) {
                         )}
                     </p>
                 </div>
-            </motion.header>
+            </m.header>
 
             {hasMultipleRoles ? (
-                <motion.ol variants={listVariants} className="mt-5">
+                <m.ol variants={listVariants} className="mt-5">
                     {group.roles.map((role, i) => {
                         const isLast = i === group.roles.length - 1;
 
                         return (
-                            <motion.li key={i} variants={itemVariants} className="flex gap-4">
+                            <m.li key={i} variants={itemVariants} className="flex gap-4">
                                 {/* Sub-timeline rail: connector line + dot, always centered together */}
                                 <div className="relative flex w-4 shrink-0 justify-center">
                                     {!isLast && (
@@ -210,16 +210,16 @@ function ExperienceCard({ group }: { group: CompanyGroup }) {
                                 <div className={"min-w-0 flex-1 " + (isLast ? "" : "pb-6")}>
                                     <RoleContent role={role} groupLocation={group.location} />
                                 </div>
-                            </motion.li>
+                            </m.li>
                         );
                     })}
-                </motion.ol>
+                </m.ol>
             ) : (
-                <motion.div variants={itemVariants} className="mt-4">
+                <m.div variants={itemVariants} className="mt-4">
                     <RoleContent role={group.roles[0]} groupLocation={group.location} />
-                </motion.div>
+                </m.div>
             )}
-        </motion.article>
+        </m.article>
     );
 }
 

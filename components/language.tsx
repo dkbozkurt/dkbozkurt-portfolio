@@ -3,7 +3,6 @@
 import { useRef } from "react";
 import { languageData } from "@/lib/data";
 import Image from 'next/image'
-import { motion } from "framer-motion"
 
 type LanguageProps = typeof languageData[number];
 
@@ -17,7 +16,7 @@ export default function Language({
     const ref = useRef<HTMLDivElement>(null);
     
     return (
-        <motion.div
+        <div
         ref={ref}
         className="mx-[1rem] group sm:mb-8 last:mb-0"
         >
@@ -53,6 +52,6 @@ export default function Language({
                 </p>
             </div>
         </section>
-        </motion.div>
+        </div>
     );
 }

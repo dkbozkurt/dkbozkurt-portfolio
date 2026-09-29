@@ -3,7 +3,7 @@
 import { useRef, useState } from "react";
 import { certificatesData} from "@/lib/data";
 import Image from 'next/image'
-import { motion, useScroll, useTransform } from "framer-motion"
+import { m, useScroll, useTransform } from "framer-motion"
 import { Skeleton } from "./skeleton";
 
 type CertificateProps = (typeof certificatesData)[number];
@@ -26,7 +26,7 @@ export default function Certificate({
     const [isImageLoaded, setImageLoaded] = useState(false);
 
     return (
-    <motion.div
+    <m.div
     ref={ref}
     style={{
         scale: scaleProgress,
@@ -99,6 +99,6 @@ export default function Certificate({
                 />
             </div>
         </section>
-    </motion.div>
+    </m.div>
     );
 }

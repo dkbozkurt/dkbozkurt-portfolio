@@ -10,10 +10,9 @@ import {
     PLAYABLE_SECTION_HASH,
 } from "@/lib/playable-id";
 import Image from 'next/image'
-import { motion } from "framer-motion"
 import { BsArrowRight } from "react-icons/bs";
-import { FaStar } from "react-icons/fa";
 import { Skeleton } from "./skeleton";
+import { PlayableHighlightBase, PlayableHighlightParticles } from "./playable-highlight";
 
 type PlayableAdsProps = PlayableAdItem & {
     /**
@@ -24,24 +23,6 @@ type PlayableAdsProps = PlayableAdItem & {
      * below the fold on a normal visit and must not compete with the hero.
      */
     isInFirstRows?: boolean;
-};
-
-const StarAnimation = () => {
-    const randomScale = Math.random() * 0.5 + 0.5; // Random scale between 0.5 and 1
-    const randomDelay = Math.random() * 2; // Random delay between 0 and 2 seconds
-    return (
-        <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: [0, 1, 0], scale: [0, randomScale, 0] }}
-            transition={{
-                duration: 2,
-                repeat: Infinity,
-                delay: randomDelay,
-            }}
-        >
-            <FaStar className="text-yellow-400 text-4xl sm:text-8xl" />
-        </motion.div>
-    );
 };
 
 export default function PlayableAd({
@@ -57,10 +38,10 @@ export default function PlayableAd({
     const ref = useRef<HTMLDivElement | null>(null);
     const playableId = getPlayableId(url);
 
-    // The highlight decoration is five infinitely-repeating animations per
-    // card. With ~57 highlighted cards that is nearly 300 animations ticking
-    // every frame, including on cards far outside the viewport. Mount them
-    // only while the card is actually near the screen.
+    // The highlight particles are a dozen infinitely-repeating animations per
+    // card. With ~60 highlighted cards that would be hundreds of layers
+    // ticking far outside the viewport. Mount them only while the card is
+    // actually near the screen.
     const { ref: inViewRef, inView: isCardNearViewport } = useInView({
         rootMargin: '400px 0px',
         threshold: 0,
@@ -101,11 +82,15 @@ export default function PlayableAd({
     useEffect(() => {
         if (isOverlayVisible) {
             document.body.style.overflow = 'hidden';
+            // Pauses the highlight particles behind the modal (globals.css).
+            document.body.dataset.playableOpen = '';
         } else {
             document.body.style.overflow = 'visible';
+            delete document.body.dataset.playableOpen;
         }
         return () => {
             document.body.style.overflow = 'visible';
+            delete document.body.dataset.playableOpen;
         };
     }, [isOverlayVisible]);
 
@@ -196,42 +181,9 @@ export default function PlayableAd({
                 className="mx-0 group mb-0 sm:mx-[1rem] sm:mb-8 last:mb-0"
             >
                 <section className={cardClasses}>
+                    {isHighlighted && <PlayableHighlightBase />}
                     {isHighlighted && isCardNearViewport && (
-                        <>
-                            <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
-                                <div className="absolute inset-0 bg-yellow-300 opacity-20 dark:bg-yellow-100 dark:opacity-40"></div>
-                                <motion.div
-                                    className="absolute left-0 top-0 h-full w-1/4 -skew-x-12 bg-gradient-to-r from-transparent via-white/70 to-transparent"
-                                    initial={{ x: "-150%" }}
-                                    animate={{ x: "500%" }}
-                                    transition={{
-                                        duration: 1.4,
-                                        repeat: Infinity,
-                                        repeatDelay: 2.2,
-                                        ease: "easeInOut",
-                                    }}
-                                />
-                            </div>
-                            <div className="absolute -top-2 -left-2 z--2">
-                                <StarAnimation />
-                            </div>
-                            <div className="absolute -top-2 -right-2 z--2">
-                                <StarAnimation />
-                            </div>
-                            <div className="absolute -bottom-2 -left-2 z--2">
-                                <StarAnimation />
-                            </div>
-                            <div className="absolute -bottom-2 -right-2 z--2">
-                                <StarAnimation />
-                            </div>
-                        </>
-                    )}
-                    {/* Keep the static yellow tint on off-screen highlighted
-                        cards so only the animation is deferred, not the look. */}
-                    {isHighlighted && !isCardNearViewport && (
-                        <div className="absolute inset-0 z-0 overflow-hidden rounded-lg">
-                            <div className="absolute inset-0 bg-yellow-300 opacity-20 dark:bg-yellow-100 dark:opacity-40"></div>
-                        </div>
+                        <PlayableHighlightParticles seed={playableId} />
                     )}
 
                     <div className="relative z-10 m-2 mt-6 mb-2 h-[4.5rem] w-[4.5rem] sm:h-[8rem] sm:w-[8rem] sm:m-5 sm:mt-3 sm:mb-2 sm:mr-5">

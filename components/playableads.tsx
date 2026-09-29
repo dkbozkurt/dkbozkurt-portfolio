@@ -2,7 +2,6 @@
 
 import React, { useEffect, useRef, useState } from 'react'
 import { playableAdsData } from '@/lib/playable-ads-data'
-import { motion } from "framer-motion";
 import { useSectionInView } from '@/lib/hooks';
 import { getPlayableId, parsePlayIdFromHash } from '@/lib/playable-id';
 import SectionHeading from './section-heading';
@@ -72,11 +71,9 @@ export default function PlayableAds() {
     const placeholderCount = playableAdsData.length - visibleCount;
 
     return (
-        <motion.section
+        <section
             ref={ref}
-            className="scroll-mt-28 mb-28"
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            className="scroll-mt-28 mb-28 animate-fade-in motion-reduce:animate-none"
             id="playableAds"
         >
             <SectionHeading>Playable Ads</SectionHeading>
@@ -97,6 +94,6 @@ export default function PlayableAds() {
                     />
                 )}
             </div>
-        </motion.section>
+        </section>
     );
 }

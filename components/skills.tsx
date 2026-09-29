@@ -5,7 +5,7 @@ import Image, { type ImageProps } from "next/image";
 import SectionHeading from "./section-heading";
 import { skillsData, softSkillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { Skeleton } from "./skeleton";
 
 // These are SVGs, so Next serves them untouched — a couple of them are over
@@ -62,7 +62,7 @@ export default function Skills() {
                 <div key={groupIndex} className="mb-8">
                     <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
                         {skillGroup.map((skill, index) => (
-                            <motion.li
+                            <m.li
                                 key={index}
                                 className="flex flex-col items-center justify-start w-24 gap-2 px-2 py-3 bg-white borderBlack rounded-xl dark:bg-white/10 dark:text-white/80"
                                 variants={fadeInAnimationVariants}
@@ -73,7 +73,7 @@ export default function Skills() {
                             >
                             <SkillIcon src={skill.icon} name={skill.name} />
                                 <span className="text-sm leading-tight text-center">{skill.name}</span>
-                            </motion.li>
+                            </m.li>
                         ))}
                     </ul>
                 </div>
@@ -83,7 +83,7 @@ export default function Skills() {
 
             <ul className="flex flex-wrap justify-center gap-1 text-lg text-gray-800">
                 {softSkillsData.map((skill, index) => (
-                    <motion.li
+                    <m.li
                         key={index}
                         className="px-5 py-3 bg-white borderBlack rounded-xl dark:bg-white/10 dark:text-white/80"
                         variants={fadeInAnimationVariants}
@@ -93,7 +93,7 @@ export default function Skills() {
                         custom={index}
                     >
                         {skill}
-                    </motion.li>
+                    </m.li>
                 ))}
             </ul>
         </section>

@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import SectionHeading from './section-heading';
-import { motion } from "framer-motion";
+import { m } from "framer-motion";
 import { useSectionInView } from '@/lib/hooks';
 import SubmitBtn from './submit-btn';
 import toast from 'react-hot-toast';
@@ -45,7 +45,7 @@ export default function Contact() {
     };
 
     return (
-        <motion.section
+        <m.section
             ref={ref}
             id="contact"
             className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
@@ -85,6 +85,6 @@ export default function Contact() {
 
                 <SubmitBtn pending={isPending} />
             </form>
-        </motion.section>
+        </m.section>
     )
 }

@@ -2,7 +2,6 @@
 
 import React from 'react'
 import { languageData } from '@/lib/data'
-import { motion } from "framer-motion";
 import { useSectionInView } from '@/lib/hooks';
 import SectionHeading from './section-heading';
 import Language from './language';
@@ -12,12 +11,9 @@ export default function Languages() {
     const {ref} = useSectionInView("Languages");
     
     return (
-    <motion.section
+    <section
     ref = {ref}
-    className="scroll-mt-28 mb-28"
-    initial={{ opacity: 0, x: -100 }}
-    animate={{ opacity: 1, x: 0 }}
-    transition = {{ delay: 0.2 }}
+    className="scroll-mt-28 mb-28 animate-slide-in-left motion-reduce:animate-none"
     id="languages"
     >
         <SectionHeading>
@@ -34,6 +30,6 @@ export default function Languages() {
             }
         </div>
 
-    </motion.section>
+    </section>
     );
 }

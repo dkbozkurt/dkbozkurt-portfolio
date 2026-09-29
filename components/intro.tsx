@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import React, { useState } from 'react'
-import { motion } from "framer-motion";
 import Link from 'next/link';
 import { BsArrowRight, BsBehance, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
@@ -23,15 +22,12 @@ export default function Intro() {
             id="home">
             <div className="flex items-center justify-center sm:mb-0">
                 <div className="relative">
-                    <motion.div
-                        initial={{ opacity: 0, scale: 0 }}
-                        animate={{ opacity: 1, scale: 1 }}
-                        transition={{
-                            type: "tween",
-                            duration: 0.2,
-                        }}
-                    >
+                    <div className="animate-pop-in motion-reduce:animate-none">
                         <div className="relative w-40 h-40 mt-16 sm:mt-0 sm:h-48 sm:w-48">
+                            {/* Sits behind the portrait rather than gating its
+                                opacity on `onLoad`: that handler only runs after
+                                hydration, so the LCP image stayed invisible until
+                                the whole JS bundle had loaded. */}
                             {!isPortraitLoaded && (
                                 <Skeleton className="absolute inset-0 rounded-full border-[0.35rem] border-white shadow-xl" />
                             )}
@@ -40,13 +36,13 @@ export default function Intro() {
                                 alt="Dogukan portrait"
                                 width="192"
                                 height="192"
-                                quality="100"
+                                quality="90"
                                 priority={true}
                                 onLoad={() => setPortraitLoaded(true)}
-                                className={`h-full w-full rounded-full object-cover border-[0.35rem] border-white shadow-xl transition-opacity duration-300 ${isPortraitLoaded ? "opacity-100" : "opacity-0"}`}
+                                className="relative h-full w-full rounded-full object-cover border-[0.35rem] border-white shadow-xl"
                             />
                         </div>
-                    </motion.div>
+                    </div>
                     {/* <motion.span 
                 className= "absolute bottom-0 right-0 text-5xl sm:text-6xl "
                 initial ={{opacity: 0, scale: 0}}
@@ -62,27 +58,16 @@ export default function Intro() {
                 </div>
             </div>
 
-            <motion.h1
-                className="mb-16 mt-16 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl"
-                initial={{ opacity: 0, y: 100 }}
-                animate={{ opacity: 1, y: 0 }}
-            >
+            <h1 className="mb-16 mt-16 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl animate-rise-in motion-reduce:animate-none">
                 <span className="font-bold">Hello,</span> I'm {" "}
                 <span className="font-bold">Dogukan Kaan Bozkurt.</span> I'm a{" "}
                 <span className="font-bold">Senior Playable Ads. Developer/ HTML5 Game Developer/ Web Developer.</span> I enjoy crafting{" "}
                 <span className="italic">automation tools,</span> building{" "}
                 <span className="italic">interactive advertisements,</span> and bringing{" "}
                 <span className="italic">innovative designs</span> to life.
-            </motion.h1>
+            </h1>
 
-            <motion.div
-                className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row"
-                initial={{ opacity: 0, y: 100 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{
-                    delay: 0.1,
-                }}
-            >
+            <div className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row animate-rise-in [animation-delay:0.1s] motion-reduce:animate-none">
                 <Link href="#contact"
                     className="flex items-center gap-2 py-3 text-white transition bg-gray-900 rounded-full outline-none group px-7 focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-30"
                     onClick={() => {
@@ -131,7 +116,7 @@ export default function Intro() {
                 </div>
 
 
-            </motion.div>
+            </div>
         </section>
     );
 }

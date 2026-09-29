@@ -2,19 +2,15 @@
 
 import React from 'react'
 import SectionHeading from './section-heading';
-import { motion } from "framer-motion";
 import { useSectionInView } from '@/lib/hooks';
 
 export default function About() {
     const { ref } = useSectionInView("About");
 
     return (
-        <motion.section
+        <section
             ref={ref}
-            className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28"
-            initial={{ opacity: 0, y: 100 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.175 }}
+            className="mb-28 max-w-[45rem] text-center leading-8 sm:mb-40 scroll-mt-28 animate-rise-in [animation-delay:0.175s] motion-reduce:animate-none"
             id="about"
         >
             <SectionHeading>
@@ -32,6 +28,6 @@ export default function About() {
                 Beyond development, I've built internal tools, npm libraries and engines to streamline Playable Ad and IEC production as well as supporting Design and Marketing teams, while leveraging performance data and marketing KPIs to inform technical decisions. I enjoy turning constraints into creative solutions, and continuously refining the craft of interactive advertising.
             </p>
 
-        </motion.section>
+        </section>
     );
 }

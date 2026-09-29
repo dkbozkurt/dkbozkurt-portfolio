@@ -18,10 +18,15 @@ export function Skeleton({
      */
     animate?: boolean;
 }) {
+    // Callers overlaying an image pass `absolute`. Adding `relative` as well
+    // would win (Tailwind emits it later), leaving the placeholder in-flow and
+    // zero-height. Either one positions the shimmer child.
+    const position = /(^|\s)(absolute|fixed)(\s|$)/.test(className) ? "" : "relative";
+
     return (
         <div
             aria-hidden="true"
-            className={`relative overflow-hidden bg-gray-200/80 dark:bg-white/[0.08] ${className}`}
+            className={`${position} overflow-hidden bg-gray-200/80 dark:bg-white/[0.08] ${className}`}
         >
             {animate && (
                 <div className="absolute inset-0 -translate-x-full animate-shimmer bg-gradient-to-r from-transparent via-white/60 to-transparent motion-reduce:animate-none dark:via-white/10" />

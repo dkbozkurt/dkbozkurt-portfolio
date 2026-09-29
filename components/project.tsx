@@ -2,7 +2,7 @@
 
 import { useRef } from "react";
 import { projectsData } from "@/lib/data";
-import { motion,useScroll, useTransform} from "framer-motion"
+import { m, useScroll, useTransform } from "framer-motion"
 
 type ProjectProps = (typeof projectsData)[number];
 
@@ -22,7 +22,7 @@ export default function Project({
     const opacityProgress= useTransform(scrollYProgress, [0,1], [0.6,1]);
 
     return (
-    <motion.div
+    <m.div
     ref={ref}
     style={{
         scale: scaleProgress,
@@ -66,6 +66,6 @@ export default function Project({
             </div>
 
         </section>
-    </motion.div>
+    </m.div>
     );
 }
