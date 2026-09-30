@@ -11,6 +11,13 @@ export type PlayableAdItem = {
 
 export const playableAdsData: PlayableAdItem[] = [
     {
+        appName: "Match Tiles",
+        playableName: "BaseGameplay - 5 Levels",
+        icon: "/AppIcons/MT_Icon.png",
+        url: "/playableAds/BaseGameplay-5Levels_MatchTiles_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
         appName: "Word Tiles",
         playableName: "Q-A Many Letters",
         icon: "/AppIcons/WT_Icon.png",
