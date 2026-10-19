@@ -11,6 +11,27 @@ export type PlayableAdItem = {
 
 export const playableAdsData: PlayableAdItem[] = [
     {
+        appName: "Word Tiles",
+        playableName: "Categories With Counter - Yin Yang 2",
+        icon: "/AppIcons/WT_Icon.png",
+        url: "/playableAds/CategoriesWithCounter-YinYang2_WordTiles_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Word Tiles",
+        playableName: "Multiple Category - Animals, Fruits, Colors",
+        icon: "/AppIcons/WT_Icon.png",
+        url: "/playableAds/MultipleCategory-AnimalsFruitsColors_WordTiles_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
+        appName: "Word Tiles",
+        playableName: "Many Letters - 5 Level 3",
+        icon: "/AppIcons/WT_Icon.png",
+        url: "/playableAds/ManyLetters-5Level3_WordTiles_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
         appName: "Bubble Word Sort",
         playableName: "BaseGameplay - Level 1-3",
         icon: "/AppIcons/BWS_Icon.png",
