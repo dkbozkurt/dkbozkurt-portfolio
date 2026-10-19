@@ -11,6 +11,20 @@ export type PlayableAdItem = {
 
 export const playableAdsData: PlayableAdItem[] = [
     {
+        appName: "Bubble Word Sort",
+        playableName: "BaseGameplay - Level 1-3",
+        icon: "/AppIcons/BWS_Icon.png",
+        url: "/playableAds/BaseGameplay-Level1-3_BubbleWordSort_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Seekdom",
+        playableName: "BaseGameplay - Level 24",
+        icon: "/AppIcons/SD_Icon.png",
+        url: "/playableAds/BaseGameplay-Level24_Seekdom_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
         appName: "Match Tiles",
         playableName: "BaseGameplay - 5 Levels",
         icon: "/AppIcons/MT_Icon.png",
