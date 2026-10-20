@@ -129,6 +129,12 @@ export const links = [
 ] as const;
 
 export const experiencesData = [
+    {
+        title: "Software Engineer, Performance Marketing",
+        company: "Goodgame Studios (Stillfront Group)",
+        location: "Hamburg, Germany",
+        description: [
+            "Build playable ads and creative video bases: design the mechanic, ship it as a self-contained web build (TypeScript/Three.js) and as a Unity version for video production, and package it for multiple ad networks.",
             "Own the creative side of the UA funnel from first ad impression to Day 3: run creative and marketability A/B tests and keep ads true to gameplay, optimizing CTR, IPM, CVR, D1/D3 retention, and ROAS through pre-launch, soft launch, and global launch.",
             "Build AI-driven creative automation: LLM-assisted variant and localization generation, Node.js build/QA pipelines for multi-network packaging, and ad-network reporting data feeding back into iteration, scaling creative-testing velocity for UA.",
         ],
@@ -148,10 +154,10 @@ export const experiencesData = [
         location: "Istanbul, Turkey",
         description: [
             // "Lead and coach a team of playable ad developers embedded in franchise squads — acting as the technical and strategic reference, staying hands-on in production, and defining the team's standards, workflows, and best practices."
-            "Own the end-to-end lifecycle of playable ads reaching millions of users, from market-driven ideation through game development to post-launch KPI analysis, partnering with PMs, growth managers, and artists to maximize CTR and high-intent conversions.",
-            "Drive rapid gameplay iteration and A/B testing to implement creative hooks and responsive mechanics that bridge technical polish and top-tier IPM across global UA campaigns; benchmark competitor playables to drive innovation in formats and stay ahead of market trends.",
-            "Built AI-powered tooling to accelerate marketing creative production: optimizing artists' gameplay-video workflows and generating UGC-style videos, reducing turnaround per creative and expanding the volume of testable ad variants.",
-            "Built a JSON-driven templating web based system, that let designers and growth managers ship various playable variants without engineering."
+            "Own playable ads end-to-end for a 50M+ install puzzle portfolio; scaled one title to 320+ variants in 7 languages, reaching $560K+ daily ROAS spend and 1M+ daily clicks.",
+            "Drive rapid gameplay iteration and A/B testing with PMs, growth managers, and artists, shipping creative hooks that lift CTR, IPM, and CVR while keeping ads true to gameplay to protect early retention; benchmark competitor playables to stay ahead of market trends.",
+            "Co-built Agave AI Studio, an internal AI creative platform replacing a third-party UGC tool at ~1/3 the cost, with AI video generation, 33-language localization, and an LLM agent that turns gameplay videos into playables.",
+            "Built a JSON-driven, web-based playable templating system that lets designers and growth managers configure and ship playable variants without engineering, feeding high-volume creative testing.",
             // "Architected a proprietary TypeScript/Node.js engine — with AI-powered tooling, integrated asset compression, cross-device optimization, and one-click ad-network export — to automate playable ad, HTML5 game, and IEC creation at minimum build size and peak runtime performance.",
         ],
         icon: <Image
@@ -535,14 +541,14 @@ export const skillsData = [
 
 
 export const softSkillsData = [
+    "Performance Marketing KPIs Analysis",
+    "A/B Testing & Experimentation",
+    "AI-Assisted Engineering & LLM Tooling",
+    "Creative Strategy & Competitor Benchmarking",
     "Problem Solving",
-    "Marketing KPI Analysis",
-    "Creativity",
-    "Communication",
-    "Teamwork",
-    "Market-Trend Analysis",
+    "Cross-functional Communication",
     "Quick Learner",
-    "Efficient AI User"
+    "Mentoring"
 ] as const;
 
 export const languageData = [
@@ -568,7 +574,7 @@ export const languageData = [
         title: "German",
         level: "A2",
         icon: germanFlagImg,
-        description: "",
+        description: "GOETHE A1 89/100",
     },
 ] as const;
 
