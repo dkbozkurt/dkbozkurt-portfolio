@@ -12,7 +12,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
     title: 'Dogukan Kaan Bozkurt | Personal Portfolio',
-    description: 'Playable Ads/ Web developer with 3 years of experience/',
+    description: 'Senior Software Engineer, Ads & Growth: playable ads, HTML5 games, and AI-powered marketing tools, with 6 years of experience.',
 }
 
 export default function RootLayout({

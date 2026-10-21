@@ -19,13 +19,13 @@ export default function About() {
             <p
                 className="mb-12 mt-36"
             >
-                I'm a Software Developer specializing in Playable Ads and HTML5 game development, with a strong background in building high-performance, lightweight interactive experiences. My work spans the full lifecycle of playable ads; from game mechanics and UI/UX to 2D/ 3D asset integration and performance optimization, ensuring each experience meets both creative and marketing goals.
+                I'm a Software Engineer working at the intersection of ads, games, and growth, with 5 years of experience building playable ads, HTML5 games, and the tooling behind them. My work spans the full lifecycle of an ad unit; from mechanic design and 2D/ 3D development to network packaging and post-launch analysis of ROAS, IPM, CTR, CVR, and retention.
             </p>
             <p className="mb-12">
-                With experience across 30+ shipped games and playable ads, I've worked with TypeScript, JavaScript, C#, Unity Playworks(LunaLabs) PixiJS, and Three.js, often stepping in at critical moments to deliver scalable features at speed. This background has reinforced my appreciation for clean architecture, OOP principles, and maintainable codebases.
+                I've shipped playables for mobile games with tens of millions of installs; my most recent playable set ran 320+ variants across 7 languages and scaled to $560K+ in daily ROAS-campaign spend, with 14M+ daily impressions and 1M+ daily clicks. I work with TypeScript, JavaScript, C#, Unity, Luna Playworks, PixiJS, and Three.js. This background has reinforced my appreciation for clean architecture, OOP principles, and maintainable codebases.
             </p>
             <p className="mb-12">
-                Beyond development, I've built internal tools, npm libraries and engines to streamline Playable Ad and IEC production as well as supporting Design and Marketing teams, while leveraging performance data and marketing KPIs to inform technical decisions. I enjoy turning constraints into creative solutions, and continuously refining the craft of interactive advertising.
+                Beyond the ads themselves, I build AI-powered tools, Node.js platforms, and npm libraries that automate creative production, and I use campaign and experiment data to drive technical decisions. I'm continuing to grow toward ad platforms and AdTech engineering: experimentation, measurement, and large-scale systems that make advertising work better for users and advertisers.
             </p>
 
         </section>

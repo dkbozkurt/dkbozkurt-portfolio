@@ -61,10 +61,10 @@ export default function Intro() {
             <h1 className="mb-16 mt-16 px-4 text-2xl font-medium !leading-[1.5] sm:text-4xl animate-rise-in motion-reduce:animate-none">
                 <span className="font-bold">Hello,</span> I'm {" "}
                 <span className="font-bold">Dogukan Kaan Bozkurt.</span> I'm a{" "}
-                <span className="font-bold">Senior Playable Ads. Developer/ HTML5 Game Developer/ Web Developer.</span> I enjoy crafting{" "}
-                <span className="italic">automation tools,</span> building{" "}
-                <span className="italic">interactive advertisements,</span> and bringing{" "}
-                <span className="italic">innovative designs</span> to life.
+                <span className="font-bold">Senior Software Engineer, Ads & Growth/ Playable Ads Developer/ HTML5 Game Developer.</span> I enjoy building{" "}
+                <span className="italic">interactive ads,</span> crafting{" "}
+                <span className="italic">AI-powered automation tools,</span> and turning{" "}
+                <span className="italic">campaign data</span> into growth.
             </h1>
 
             <div className="flex flex-col items-center justify-center gap-2 px-4 text-lg font-medium sm:flex-row animate-rise-in [animation-delay:0.1s] motion-reduce:animate-none">
