@@ -22,7 +22,12 @@ export function PlayableAdCardSkeleton({
     shimmer?: boolean;
 }) {
     return (
-        <div ref={innerRef} className="w-[calc(50%-0.375rem)] sm:mx-[1rem] sm:mb-8 sm:w-auto">
+        // Must take up exactly as much room as a mounted card. A real card's
+        // `sm:mb-8` loses to its `last:mb-0`, so it has no bottom margin; an
+        // extra 2rem here made every placeholder row taller than the row that
+        // replaced it, and the page shrank by ~1,400px while batches loaded,
+        // throwing nav-link scrolls to Projects/Contact off target.
+        <div ref={innerRef} className="w-[calc(50%-0.375rem)] sm:mx-[1rem] sm:w-auto">
             <div className="flex h-[13rem] w-full flex-col items-center rounded-lg border border-black/5 bg-gray-100 dark:bg-white/20 sm:h-[16rem] sm:w-[16rem]">
                 <Skeleton
                     animate={shimmer}

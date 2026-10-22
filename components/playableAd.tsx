@@ -1,6 +1,7 @@
 "use client"
 
 import { useCallback, useRef, useState, useEffect } from "react";
+import { createPortal } from "react-dom";
 import { useInView } from "react-intersection-observer";
 import type { PlayableAdItem } from "@/lib/playable-ads-data";
 import {
@@ -79,17 +80,17 @@ export default function PlayableAd({
     const cardClasses = `bg-gray-100 border border-black/5 overflow-hidden hover:bg-gray-200 transition cursor-pointer rounded-lg flex flex-col items-center w-full h-[13rem] sm:w-[16rem] sm:h-[16rem] dark:bg-white/20 ${isHighlighted ? "bg-yellow-200 hover:bg-yellow-300 relative dark:bg-yellow-600 dark:hover:bg-yellow-500" : ""
         }`;
 
+    // Only the card whose modal is open may touch <body>. This used to reset
+    // the scroll lock from every card whose modal was closed, so when a new
+    // batch of cards mounted behind an open playable (e.g. after a shared
+    // link scrolled the grid), each of them unlocked the page again.
     useEffect(() => {
-        if (isOverlayVisible) {
-            document.body.style.overflow = 'hidden';
-            // Pauses the highlight particles behind the modal (globals.css).
-            document.body.dataset.playableOpen = '';
-        } else {
-            document.body.style.overflow = 'visible';
-            delete document.body.dataset.playableOpen;
-        }
+        if (!isOverlayVisible) return;
+        document.body.style.overflow = 'hidden';
+        // Pauses the highlight particles behind the modal (globals.css).
+        document.body.dataset.playableOpen = '';
         return () => {
-            document.body.style.overflow = 'visible';
+            document.body.style.overflow = '';
             delete document.body.dataset.playableOpen;
         };
     }, [isOverlayVisible]);
@@ -101,13 +102,12 @@ export default function PlayableAd({
         const playId = parsePlayIdFromHash(window.location.hash);
         if (playId !== playableId) return;
 
-        if (window.innerWidth < 640 || window.innerHeight < 640) {
-            // On mobile we open the playable directly in a new tab,
-            // matching the click-behavior on small screens.
-            window.open(url, '_blank');
-            return;
-        }
-        setOverlayVisible(true);
+        // On small screens a tap opens the playable in a new tab, but a
+        // window.open() without a user gesture is swallowed by the popup
+        // blocker, which left mobile visitors of a shared link at the top of
+        // the page. Bring them to the card instead, one tap away from playing.
+        const isSmallScreen = window.innerWidth < 640 || window.innerHeight < 640;
+        if (!isSmallScreen) setOverlayVisible(true);
         // Defer scroll until after layout so the card position is known.
         setTimeout(() => {
             ref.current?.scrollIntoView({ behavior: 'smooth', block: 'center' });
@@ -225,7 +225,12 @@ export default function PlayableAd({
                     </div>
                 </section>
 
-                {isOverlayVisible && (
+                {/* Portalled to <body>: #playableAds has a fill-mode `both`
+                    fade-in, which keeps it a stacking context, so a modal
+                    nested inside it was painted under the fixed header (hiding
+                    the close button). React still bubbles clicks from the
+                    portal to the card, so clicking the backdrop still closes. */}
+                {isOverlayVisible && createPortal(
                     <div className="fixed top-0 left-0 w-full h-full" style={{ zIndex: 9998 }}>
 
                         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50"
@@ -234,8 +239,11 @@ export default function PlayableAd({
 
                         <div className="fixed z-50 flex flex-col items-center justify-center transform -translate-x-1/2 -translate-y-1/2 bg-white border-white top-1/2 left-1/2"
                             style={{
-                                width: '405px',
-                                height: '720px',
+                                // 405x720 (9:16) when it fits. Shorter windows,
+                                // like a 1366x768 laptop, used to cut off the
+                                // top and bottom, close button included.
+                                width: 'min(405px, calc((100vh - 64px) * 9 / 16))',
+                                height: 'min(720px, calc(100vh - 64px))',
                                 zIndex: 9999,
                                 borderRadius: '16px', // Adjust as needed
                                 border: '6px solid white', // Thicker and white border
@@ -275,7 +283,8 @@ export default function PlayableAd({
                                 frameBorder="0"
                             />
                         </div>
-                    </div>
+                    </div>,
+                    document.body,
                 )}
             </div>
         </a>
