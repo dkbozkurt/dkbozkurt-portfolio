@@ -350,87 +350,81 @@ export const educationData = [
 
 export const projectsData = [
     {
-        title: "smart-sheet-translate",
-        date: "Apr. 2026- Apr. 2026",
+        title: "Agave AI Studio",
+        date: "Aug. 2026 - Present",
         description:
-            "Developed a Google Sheets add-on that automates batch translation of localization sheets via a custom HTTP API, enabling full multi-language coverage directly from the spreadsheet.",
+            "Co-built Agave's internal generative AI platform for image, video, lipsync, and localization ads at 1/3 the cost of a third-party UGC tool. Built an LLM agent (Claude, OpenAI) that turns gameplay videos into HTML5 playable ads.",
+        tags: ["Next.js", "React", "TypeScript", "Node.js", "MongoDB", "GCP", "LLM"],
+    },
+    {
+        title: "smart-sheet-translate",
+        date: "Apr. 2026",
+        description:
+            "Built a Google Sheets add-on in Google Apps Script that batch-translates game localization sheets through a custom Node.js API and the OpenAI API, delivering full multi-language coverage directly inside the spreadsheet.",
         tags: ["Google Apps Script", "Node.js", "clasp", "OpenAI API"],
     },
     {
         title: "base122-encoding (npm library)",
-        date: "Sep. 2025- Nov. 2025",
+        date: "Sep. 2025 - Nov. 2025",
         description:
-            "Developing an npm library implementing Base‑122 encoding, reducing data size by up to ~30% compared to Base‑64 for use in data URIs.",
-        tags: ["TypeScript", "NodeJS", "Vite"],
+            "Built a TypeScript npm library implementing Base-122 binary-to-text encoding for data URIs, cutting encoding overhead from 33% (Base64) to about 14% and shrinking embedded assets in single-file HTML5 playable ads.",
+        tags: ["TypeScript", "Node.js", "Vite"],
     },
     {
         title: "texture-optimize-pro (npm library)",
-        date: "Oct. 2025- Oct. 2025",
+        date: "Oct. 2025",
         description:
-            "Developed a texture optimization library for HTML5 games (PixiJS/ThreeJS), leveraging Sharp for high-performance image processing with per-texture configuration of max size, format, and quality.",
-        tags: ["TypeScript", "NodeJS", "Sharp"],
+            "Built a TypeScript npm library that batch-optimizes textures for PixiJS and Three.js HTML5 games using Sharp, with per-texture max size, format, and quality settings to keep builds within ad-network size limits.",
+        tags: ["TypeScript", "Node.js", "Sharp"],
     },
     {
         title: "Figma Design Plugin",
-        date: "Jul. 2025- Present",
+        date: "Jul. 2025 - Present",
         description:
-            "Developed a Figma plugin that automates the creation of static store screens, network end-cards, and marketing assets, featuring DeepL API integration for seamless multi‑GEO translations.",
-        tags: ["Figma", "HTML", "CSS", "TypeScript", "Vite"],
-    },
-    {
-        title: "Text Localization - GEO Package",
-        date: "Jan. 2025 - Feb. 2025",
-        description:
-            "Developed a localization package that detects device language and updates playable ads./ HTML5 game texts for multilingual support.",
-        tags: ["TypeScript", "NodeJS"],
+            "Built a Figma plugin in TypeScript that automates production of app store screenshots, ad-network end cards, and marketing assets, with DeepL API integration for one-click localization across multiple GEOs.",
+        tags: ["Figma", "TypeScript", "DeepL API", "HTML", "CSS", "Vite"],
     },
     {
         title: "AdCraft",
         date: "Oct. 2024",
         description:
-            "Developed a tool designed to streamline the manipulation of ad network requirements and enable efficient build generation by providing a simple interface for playable ads./ HTML5 games.",
-        tags: ["React", "TypeScript", "Tailwind", "HTML", "CSS", "NodeJS", "Vite"],
+            "Built a React and TypeScript web tool that manages ad-network requirements and generates network-ready builds of playable ads and HTML5 games from a single interface, replacing manual per-network packaging.",
+        tags: ["React", "TypeScript", "Node.js", "Tailwind CSS", "Vite"],
     },
     {
-        title: "Adobe PhotoShop Design Tool",
+        title: "Adobe Photoshop Design Tool",
         date: "Jul. 2023 - Dec. 2023",
-        description: "Developed a Adobe PhotoShop extension focused on generating static store screens, network end cards and marketing purposed resources.",
-        tags: ["ExtendScript", "JavaScript", "CSS", "HTML", "UXP"]
+        description:
+            "Built an Adobe Photoshop plugin with UXP and ExtendScript that automates generation of app store screenshots, ad-network end cards, and marketing assets, reducing manual design work for the creative team.",
+        tags: ["UXP", "ExtendScript", "JavaScript", "HTML", "CSS"]
     },
     {
         title: "Unity Playable Ads Kit",
         date: "Apr. 2022 - Sep. 2023",
         description:
-            "Developed a plugin for playable ads development, featuring essential template generation, translation(localization) package, utility methods, ...",
+            "Built a Unity (C#) package for playable ad development with project template generation, a localization system, and reusable gameplay utilities, accelerating production of new playables and A/B test variants.",
         tags: ["C#", "Unity"],
     },
     {
         title: "Semantic Segmentation using Deep Learning",
         date: "Sep. 2020 - Jun. 2021",
         description:
-            "Implemented deep learning methods using Python libraries, for robot's capabilities in search and rescue scenarios.",
-        tags: ["Python", "NumPy", "PyTorch", "pandas", "SciPy", "OpenGL"],
+            "Implemented deep learning models in PyTorch for 3D point cloud semantic segmentation, enabling a mobile robot to understand its surroundings in search-and-rescue scenarios at the university's AI and Robotics Lab.",
+        tags: ["Python", "PyTorch", "NumPy", "pandas", "SciPy", "OpenGL"],
     },
     {
-        title: "Interface design for Segmentation Data",
-        date: "May. 2021 - Jun. 2021",
+        title: "Interface Design for Segmentation Data",
+        date: "May 2021 - Jun. 2021",
         description:
-            "An interface for streamlined input organization in deep learning, facilitating  training, testing, and visualization with S3DIS and ESOGU RAMPS datasets.",
+            "Built a Python desktop application with Qt and OpenGL to organize input data, train and test segmentation models, and visualize 3D point cloud results on the S3DIS and ESOGU RAMPS datasets.",
         tags: ["Python", "Qt", "OpenGL"],
     },
     {
         title: "Point Cloud Data Optimization",
-        date: "Nov. 2020- Jan. 2021",
+        date: "Nov. 2020 - Jan. 2021",
         description:
-            "Developed a data size reduction technique using point cloud information for a specified object, employing similarity measures and midpoints for classification in deep learning applications.",
+            "Developed a C++ point cloud downsampling algorithm that uses similarity measures and midpoint merging to reduce object data size while preserving the features needed for deep learning classification.",
         tags: ["C++"],
-    },
-    {
-        title: "Counting products on a Conveyor Belt",
-        date: "Sep. 2018 - Dec. 2018",
-        description:
-            "Utilized Proteus to design a circuit system that sorts and separates products on a conveyor belt according to their individual colors.",
-        tags: ["Proteus"],
     },
 ] as const;
 
