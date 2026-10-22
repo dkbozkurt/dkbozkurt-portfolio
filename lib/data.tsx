@@ -134,7 +134,7 @@ export const experiencesData = [
         company: "Goodgame Studios (Stillfront Group)",
         location: "Hamburg, Germany",
         description: [
-            "Build playable ads and creative video bases: design the mechanic, ship it as a self-contained web build (TypeScript/Three.js) and as a Unity version for video production, and package it for multiple ad networks.",
+            "Build playable ads and creative video bases: design the mechanic, ship it as a self-contained web build (TypeScript/Three.js) and as a Unity version for video production",
             "Own the creative side of the UA funnel from first ad impression to Day 3: run creative and marketability A/B tests and keep ads true to gameplay, optimizing CTR, IPM, CVR, D1/D3 retention, and ROAS through pre-launch, soft launch, and global launch.",
             "Build AI-driven creative automation: LLM-assisted variant and localization generation, Node.js build/QA pipelines for multi-network packaging, and ad-network reporting data feeding back into iteration, scaling creative-testing velocity for UA.",
         ],
