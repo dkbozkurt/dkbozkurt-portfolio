@@ -141,6 +141,8 @@ export const experiencesData = [
         icon: <Image
             src={agaveLogo}
             alt="logo"
+            // Shown at 40-60px; without `sizes` Next serves the 256px variant.
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -160,6 +162,7 @@ export const experiencesData = [
         icon: <Image
             src={justdiceLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -178,6 +181,7 @@ export const experiencesData = [
         icon: <Image
             src={myGamesLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -195,6 +199,7 @@ export const experiencesData = [
         icon: <Image
             src={gameGameLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -214,6 +219,7 @@ export const experiencesData = [
         icon: <Image
             src={justdiceLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -234,6 +240,7 @@ export const experiencesData = [
         icon: <Image
             src={panteonLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -252,6 +259,7 @@ export const experiencesData = [
         icon: <Image
             src={tuprasLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -270,6 +278,7 @@ export const experiencesData = [
         icon: <Image
             src={gefeasoftLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -287,6 +296,7 @@ export const experiencesData = [
         icon: <Image
             src={avocudaLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -307,6 +317,7 @@ export const educationData = [
         icon: <Image
             src={uhhLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -327,6 +338,7 @@ export const educationData = [
         icon: <Image
             src={oguLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -549,6 +561,7 @@ export const activitiesData = [
         icon: <Image
             src={kindCrabLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -568,6 +581,7 @@ export const activitiesData = [
         icon: <Image
             src={koreanCulturalCenterLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'
@@ -586,6 +600,7 @@ export const activitiesData = [
         icon: <Image
             src={aiesecLogo}
             alt="logo"
+            sizes="60px"
             style={{
                 objectFit: 'contain',
                 borderRadius: '50%'

@@ -26,8 +26,10 @@ export default function Language({
         >
             <Image 
             src={icon} 
-            alt="Language Image" 
+            alt="Language Image"
             quality={95}
+            // 3rem on mobile, 4rem from `sm`. Without it the 256px source is sent.
+            sizes="(min-width: 640px) 64px, 48px"
             className="
             transition rounded-s flex justify-center group-hover:scale-[1.2] shadow-2xl 
             absolute m-5 w-[3rem] mr-[18rem]
