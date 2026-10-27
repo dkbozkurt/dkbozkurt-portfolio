@@ -130,7 +130,7 @@ export const links = [
 
 export const experiencesData = [
     {
-        title: "Software Engineer, Performance Marketing",
+        title: "Senior Software Engineer, Performance Marketing",
         company: "Goodgame Studios (Stillfront Group)",
         location: "Hamburg, Germany",
         description: [
@@ -329,7 +329,7 @@ export const experiencesData = [
 
 export const educationData = [
     {
-        title: "M.Sc., Computer Science",
+        title: "M.Sc., Informatik (Computer Science)",
         university: "University of Hamburg",
         location: "Hamburg, Germany",
         description: [
