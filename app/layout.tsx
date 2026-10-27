@@ -17,7 +17,7 @@ const themeScript = `try{var t=localStorage.getItem('theme');if(t==='dark'||(!t&
 
 export const metadata = {
     title: 'Dogukan Kaan Bozkurt | Personal Portfolio',
-    description: 'Senior Software Engineer, Ads & Growth: playable ads, HTML5 games, and AI-powered marketing tools, with 6 years of experience.',
+    description: 'Senior Software Engineer, Ads & Growth: playable ads, HTML5 games, and AI-powered marketing tools, with 5 years of experience.',
 }
 
 export default function RootLayout({
