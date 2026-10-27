@@ -19,7 +19,7 @@ export default function About() {
             <p
                 className="mb-12 mt-36"
             >
-                I'm a Software Engineer working at the intersection of ads, games, and growth, with 5 years of experience building playable ads, HTML5 games, and the tooling behind them. My work spans the full lifecycle of an ad unit; from mechanic design and 2D/ 3D development to network packaging and post-launch analysis of ROAS, IPM, CTR, CVR, and retention.
+                I'm a Software Engineer working at the intersection of ads, games, and growth, with 5 years of experience building playable ads, HTML5 games, and the tooling behind them. My work spans the full lifecycle of an ad unit: from mechanic design and 2D/3D development to network packaging and post-launch analysis of ROAS, IPM, CTR, CVR, and retention.
             </p>
             <p className="mb-12">
                 I've shipped playables for mobile games with tens of millions of installs; my most recent playable set, localized into 15 languages, was the main driver of its title's scale, reaching $560K+ in daily ROAS-campaign spend, 14M+ daily impressions, and 1M+ daily clicks, and helping push the game into the Top 10 charts on both iOS and Android. I work with TypeScript, JavaScript, C#, Unity, Luna Playworks, PixiJS, and Three.js. This background has reinforced my appreciation for clean architecture, OOP principles, and maintainable codebases.

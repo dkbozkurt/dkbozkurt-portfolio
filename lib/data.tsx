@@ -137,7 +137,7 @@ export const experiencesData = [
             "Lead playable ad and video-base production end to end: design each mechanic, ship it as both a self-contained web playable (TypeScript/Three.js) and a Unity build, and test new formats and interactions to stay ahead of market trends.",
             "Own the creative side of the UA funnel from first impression to Day 3: benchmark competitor playables and run creative and marketability A/B tests with growth managers and creative strategists, optimizing CTR, IPM, CVR, D1/D3 retention, and ROAS from pre-launch through global launch.",
             "Define the playable workflow, tooling, and standards: a no-code tuning editor connected directly to the playables, Node.js build/QA pipelines for multi-network packaging, and ad-network reporting feeding back into iteration.",
-            "Drive AI-assisted code and asset based production, and automate LLM-assisted variant and localization generation to scale creative-testing velocity.",
+            "Drive AI-assisted code and asset-based production, and automate LLM-assisted variant and localization generation to scale creative-testing velocity.",
         ],
         icon: <Image
             src={goodgameLogo}
@@ -173,7 +173,7 @@ export const experiencesData = [
     },
     {
         title: "Senior Playable Ads Developer",
-        company: "JustDice",
+        company: "JustDice GmbH",
         location: "Hamburg, Germany",
         description: [
             "Owned playable ads and IECs end-to-end across a rewarded-gaming portfolio of 20+ apps and 300M+ lifetime downloads, including the flagship title Cash Giraffe (10M+ installs), from competitor benchmarking and concept development to post-launch optimization of CTR, IPM, CVR, and ROAS.",
@@ -196,7 +196,7 @@ export const experiencesData = [
         company: "MY.GAMES",
         location: "Amsterdam, The Netherlands",
         description: [
-            "Designed and developed playable ads for mobile games in TypeScript, Three.js, and PixiJS, MRAID-compliant creatives within each ad network's size and CTA rules for global UA campaigns.",
+            "Designed and developed playable ads for mobile games in TypeScript, Three.js, and PixiJS, delivering single-file, MRAID-compliant creatives within each ad network's size and CTA rules for global UA campaigns.",
             "Advised on the technical and creative approach for each playable, optimizing load time and runtime performance on low-end devices and tightening core gameplay hooks to lift CTR and IPM.",
         ],
         icon: <Image
@@ -230,7 +230,7 @@ export const experiencesData = [
     },
     {
         title: "Playable Ads Developer",
-        company: "JustDice",
+        company: "JustDice GmbH",
         location: "Hamburg, Germany",
         description: [
             "Developed size-optimized playable ads and HTML5 games for rewarded-gaming apps, aligned with UA strategy and optimized for CTR, IPM, and CVR.",
@@ -256,7 +256,7 @@ export const experiencesData = [
             "Developed size-optimized Unity/Luna playable ads and HTML5 games for hyper- and hybrid-casual titles, supporting global UA campaigns.",
             "Rapidly prototyped gameplay mechanics in Unity (C#) for video creatives and marketability tests, validating hooks through CTR and IPM performance.",
             "Built reusable playable ad templates, Unity packages, and editor tools to streamline production and accelerate creative A/B testing across ad networks.",
-            "Collaborated with growth, and creative teams to optimize ad performance (IPM, CPI, CTR) while mentoring junior developers on production workflows."
+            "Collaborated with growth and creative teams to optimize ad performance (IPM, CPI, CTR) while mentoring junior developers on production workflows."
         ],
         icon: <Image
             src={panteonLogo}
@@ -270,7 +270,7 @@ export const experiencesData = [
         date: "Nov. 2021 - Apr. 2023",
     },
     {
-        title: "Project Engineer - Intern",
+        title: "Project Engineer (Intern)",
         company: "TUPRAS",
         location: "Kocaeli, Turkey",
         description: [
@@ -289,7 +289,7 @@ export const experiencesData = [
         date: "Aug. 2021 - Sep. 2021",
     },
     {
-        title: "Game Developer - Intern",
+        title: "Game Developer (Intern)",
         company: "GEFEASOFT",
         location: "Mugla, Turkey",
         description: [
@@ -308,7 +308,7 @@ export const experiencesData = [
         date: "Mar. 2021 - Jul. 2021",
     },
     {
-        title: "Software Engineer - Intern",
+        title: "Software Engineer (Intern)",
         company: "Avocuda",
         location: "Istanbul, Turkey",
         description: [
@@ -344,14 +344,14 @@ export const educationData = [
                 borderRadius: '50%'
             }}
         />,
-        date: "April. 2025 - Jan. 2026",
+        date: "Apr. 2025 - Jan. 2026",
     },
     {
-        title: "B.Sc., Electrical & Electronics Engineering (%100 English)",
+        title: "B.Sc., Electrical & Electronics Engineering (100% English)",
         university: "Eskisehir Osmangazi University",
         location: "Eskisehir, Turkey",
         description: [
-            "Graduated with a GPA of 3.01/ 4.0",
+            "Graduated with a GPA of 3.01/4.00",
             "Successfully completed the English preparatory year and took elective courses from the Computer Science department, in addition to my regular classes.",
             "Worked as an intern in the Artificial Intelligence and Robotics Lab.",
             "Played an active role in developing the website for the university's Artificial Intelligence and Robotics Lab course.",
@@ -372,7 +372,7 @@ export const educationData = [
 export const projectsData = [
     {
         title: "Agave AI Studio",
-        date: "Aug. 2026 - Present",
+        date: "Aug. 2026 - Nov. 2026",
         description:
             "Co-built Agave's internal generative AI platform for image, video, lipsync, and localization ads at 1/3 the cost of a third-party UGC tool. Built an LLM agent (Claude, OpenAI) that turns gameplay videos into HTML5 playables, and a JSON-driven variant generator for non-engineers.",
         tags: ["Next.js", "React", "TypeScript", "Node.js", "MongoDB", "GCP", "LLM"],
@@ -386,7 +386,7 @@ export const projectsData = [
     },
     {
         title: "base122-encoding (npm library)",
-        date: "Sep. 2025 - Nov. 2025",
+        date: "Dec. 2025 - Jan. 2026",
         description:
             "Built a TypeScript npm library implementing Base-122 binary-to-text encoding for data URIs, cutting encoding overhead from 33% (Base64) to about 14% and shrinking embedded assets in single-file HTML5 playable ads.",
         tags: ["TypeScript", "Node.js", "Vite"],
@@ -400,7 +400,7 @@ export const projectsData = [
     },
     {
         title: "Figma Design Plugin",
-        date: "Jul. 2025 - Present",
+        date: "Jul. 2025 - Dec. 2025",
         description:
             "Built a Figma plugin in TypeScript that automates production of app store screenshots, ad-network end cards, and marketing assets, with DeepL API integration for one-click localization across multiple GEOs.",
         tags: ["Figma", "TypeScript", "DeepL API", "HTML", "CSS", "Vite"],
@@ -520,9 +520,9 @@ export const skillsData = [
         { name: "Blender", icon: blenderIcon },
         { name: "Spline", icon: splineIcon },
         { name: "Figma", icon: figmaIcon },
-        { name: "Adobe PhotoShop", icon: photoshopIcon },
+        { name: "Adobe Photoshop", icon: photoshopIcon },
         { name: "Adobe After Effects", icon: afterEffectsIcon },
-        { name: "Adobe Premier Pro", icon: premiereIcon },
+        { name: "Adobe Premiere Pro", icon: premiereIcon },
     ]
 ] as const;
 
@@ -571,7 +571,7 @@ export const activitiesData = [
         company: "Crabtic",
         location: "Hamburg, Germany",
         description: [
-            "Developing a platform for automated interactive end cards and playable ads./ HTML5 games, leveraging AI integration to enhance engagement and streamline user experience.",
+            "Developing a platform for automated interactive end cards and playable ads/HTML5 games, leveraging AI integration to enhance engagement and streamline user experience.",
         ],
         icon: <Image
             src={kindCrabLogo}
@@ -582,11 +582,11 @@ export const activitiesData = [
                 borderRadius: '50%'
             }}
         />,
-        date: "Jun. 2025 - Present",
+        date: "Aug. 2025 - Present",
     },
     {
         title: "Co-Founder & Administrative Assistant",
-        company: "Eskisehir Korean Culture Academy",
+        company: "Korean Culture Academy",
         location: "Eskisehir, Turkey",
         description: [
             "Engaged in founding, overseeing, and managing academy operations.",
@@ -628,7 +628,7 @@ export const activitiesData = [
 export const certificatesData = [
     {
         title: "Three.js Journey",
-        company: "three.js journey by Bruno Simon",
+        company: "Bruno Simon",
         date: "Jun. 2024",
         tags: ["ThreeJS", "JavaScript", "React", "React Three Fiber", "HTML", "CSS", "Blender", "GLSL", "GSAP", "CannonJS", "Rapier"],
         imageUrl: threeJSJourneyCertificate,
@@ -642,13 +642,13 @@ export const certificatesData = [
     },
     {
         title: "Professional Meta Front-End Developer Certificate",
-        company: "META",
+        company: "Meta",
         date: "Nov. 2023",
         tags: ["React", "JavaScript", "Bootstrap", "HTML", "CSS", "npm", "Jest", "Figma", "Sass"],
         imageUrl: metaCertificate,
     },
     {
-        title: "Intermediate Object-Oriented Programming for Unity",
+        title: "Intermediate Object-Oriented Programming for Unity Games",
         company: "University of Colorado",
         date: "May 2021",
         tags: ["C#", "Unity"],
