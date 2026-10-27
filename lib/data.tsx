@@ -134,9 +134,10 @@ export const experiencesData = [
         company: "Goodgame Studios (Stillfront Group)",
         location: "Hamburg, Germany",
         description: [
-            "Build playable ads and creative video bases: design the mechanic, ship it as a self-contained web build (TypeScript/Three.js) and as a Unity version for video production",
-            "Own the creative side of the UA funnel from first ad impression to Day 3: run creative and marketability A/B tests and keep ads true to gameplay, optimizing CTR, IPM, CVR, D1/D3 retention, and ROAS through pre-launch, soft launch, and global launch.",
-            "Build AI-driven creative automation: LLM-assisted variant and localization generation, Node.js build/QA pipelines for multi-network packaging, and ad-network reporting data feeding back into iteration, scaling creative-testing velocity for UA.",
+            "Lead playable ad and video-base production end to end: design each mechanic, ship it as both a self-contained web playable (TypeScript/Three.js) and a Unity build, and test new formats and interactions to stay ahead of market trends.",
+            "Own the creative side of the UA funnel from first impression to Day 3: benchmark competitor playables and run creative and marketability A/B tests with growth managers and creative strategists, optimizing CTR, IPM, CVR, D1/D3 retention, and ROAS from pre-launch through global launch.",
+            "Define the playable workflow, tooling, and standards: a no-code tuning editor connected directly to the playables, Node.js build/QA pipelines for multi-network packaging, and ad-network reporting feeding back into iteration.",
+            "Drive AI-assisted code and asset based production, and automate LLM-assisted variant and localization generation to scale creative-testing velocity.",
         ],
         icon: <Image
             src={goodgameLogo}
@@ -154,10 +155,9 @@ export const experiencesData = [
         company: "Agave Games",
         location: "Istanbul, Turkey",
         description: [
-            "Owned end-to-end playable ad development for a 50M+ install puzzle portfolio, scaling one title to 500+ variants, driving $560K+ in daily ad spend from playables alone and 1M+ daily clicks.",
-            "Collaborated with PMs, growth managers, and artists on rapid gameplay iteration, A/B testing, and competitor benchmarking to improve CTR, IPM, and CVR while preserving gameplay accuracy and early retention.",
-            "Co-built Agave AI Studio, an internal AI creative platform replacing a third-party UGC tool at ~1/3 the cost, featuring AI video generation, localization, and an LLM agent converting gameplay videos into playables.",
-            "Built a JSON-driven web templating system enabling designers and growth managers to create and ship playable variants independently, accelerating high-volume creative testing."
+            "Owned end-to-end playable ad development for a 50M+ install puzzle portfolio; my playables were the main driver of one title's UA scale, reaching $560K+ in daily ad spend and 1M+ daily clicks and helping push it into the Top 10 charts on both iOS and Android.",
+            "Led playable creative iteration: benchmarked competitor ads to spot winning hooks, then designed and ran gameplay iterations and A/B tests to improve CTR, IPM, and CVR while keeping ads true to gameplay to protect early retention.",
+            "Co-built Agave AI Studio, an internal AI creative platform replacing a third-party UGC tool at ~1/3 the cost, featuring AI video generation, localization, an LLM agent converting gameplay videos into playables, and a JSON-driven variant generator that lets designers and growth managers ship playable variants without engineering, accelerating high-volume creative testing."
         ],
         icon: <Image
             src={agaveLogo}
@@ -256,7 +256,7 @@ export const experiencesData = [
             "Developed size-optimized Unity/Luna playable ads and HTML5 games for hyper- and hybrid-casual titles, supporting global UA campaigns.",
             "Rapidly prototyped gameplay mechanics in Unity (C#) for video creatives and marketability tests, validating hooks through CTR and IPM performance.",
             "Built reusable playable ad templates, Unity packages, and editor tools to streamline production and accelerate creative A/B testing across ad networks.",
-            "Collaborated with UA, growth, and creative teams to optimize ad performance (IPM, CPI, CTR) while mentoring junior developers on production workflows."
+            "Collaborated with growth, and creative teams to optimize ad performance (IPM, CPI, CTR) while mentoring junior developers on production workflows."
         ],
         icon: <Image
             src={panteonLogo}
@@ -374,7 +374,7 @@ export const projectsData = [
         title: "Agave AI Studio",
         date: "Aug. 2026 - Present",
         description:
-            "Co-built Agave's internal generative AI platform for image, video, lipsync, and localization ads at 1/3 the cost of a third-party UGC tool. Built an LLM agent (Claude, OpenAI) that turns gameplay videos into HTML5 playable ads.",
+            "Co-built Agave's internal generative AI platform for image, video, lipsync, and localization ads at 1/3 the cost of a third-party UGC tool. Built an LLM agent (Claude, OpenAI) that turns gameplay videos into HTML5 playables, and a JSON-driven variant generator for non-engineers.",
         tags: ["Next.js", "React", "TypeScript", "Node.js", "MongoDB", "GCP", "LLM"],
     },
     {
