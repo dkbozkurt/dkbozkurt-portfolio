@@ -11,6 +11,20 @@ export type PlayableAdItem = {
 
 export const playableAdsData: PlayableAdItem[] = [
     {
+        appName: "Hexa Word",
+        playableName: "Base Gameplay - Museum",
+        icon: "/AppIcons/HW_Icon.png",
+        url: "/playableAds/BaseGameplay-Museum_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
+        appName: "Seekdom",
+        playableName: "Base Gameplay - Level 22",
+        icon: "/AppIcons/SD_Icon.png",
+        url: "/playableAds/BaseGameplay-Level22_Seekdom_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: false,
+    },
+    {
         appName: "Word Tiles",
         playableName: "Categories With Counter - Yin Yang 2",
         icon: "/AppIcons/WT_Icon.png",
