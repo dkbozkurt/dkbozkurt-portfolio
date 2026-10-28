@@ -11,6 +11,13 @@ export type PlayableAdItem = {
 
 export const playableAdsData: PlayableAdItem[] = [
     {
+        appName: "Word Tiles",
+        playableName: "BaseGameplay - Feedback Improvements",
+        icon: "/AppIcons/WT_Icon.png",
+        url: "/playableAds/BaseGameplay-FeedbackImprovements_WordTiles_Responsive_Playable_01_Unity_ALL.html",
+        isHighlighted: true,
+    },
+    {
         appName: "Hexa Word",
         playableName: "Base Gameplay - Museum",
         icon: "/AppIcons/HW_Icon.png",
